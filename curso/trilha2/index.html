@@ -4,28 +4,28 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<meta content="claude-code" name="inema-course"/>
-<title>Trilha 2 · Plan e Loop Modes | Claude Code</title>
+<meta content="claude-code" name="ARCKHÉ-course"/>
+<title>Trilha 2 Â· Plan e Loop Modes | Claude Code</title>
 <script>
   (function () {
     try {
       var html = document.documentElement;
-      var DEF = { theme: 'inema-dark', font: 'inter', fontScale: 100, lineWidth: 68, leading: 1.7, accent: 'blue' };
+      var DEF = { theme: 'ARCKHÉ-dark', font: 'inter', fontScale: 100, lineWidth: 68, leading: 1.7, accent: 'blue' };
       function clone(o){var r={};for(var x in o)r[x]=o[x];return r;}
       var p = clone(DEF);
       try {
-        var raw = localStorage.getItem('inema.prefs');
+        var raw = localStorage.getItem('ARCKHÉ.prefs');
         if (raw) { var parsed = JSON.parse(raw); if (parsed && typeof parsed==='object'){ for (var k in DEF) if (parsed[k]!=null) p[k]=parsed[k]; } }
-        else { var legacy = localStorage.getItem('theme'); if (legacy==='light') p.theme='claro'; else if (legacy==='dark') p.theme='inema-dark'; }
+        else { var legacy = localStorage.getItem('theme'); if (legacy==='light') p.theme='claro'; else if (legacy==='dark') p.theme='ARCKHÉ-dark'; }
       } catch (e) { p = clone(DEF); }
-      var THEMES = { 'inema-dark':{dark:true,attr:null,cs:'dark'},'claro':{dark:false,attr:null,cs:'light'},'sepia':{dark:false,attr:'sepia',cs:'light'},'foco':{dark:null,attr:'foco',cs:null},'contraste':{dark:true,attr:'contraste',cs:'dark'} };
-      var t = THEMES[p.theme] || THEMES['inema-dark'];
+      var THEMES = { 'ARCKHÉ-dark':{dark:true,attr:null,cs:'dark'},'claro':{dark:false,attr:null,cs:'light'},'sepia':{dark:false,attr:'sepia',cs:'light'},'foco':{dark:null,attr:'foco',cs:null},'contraste':{dark:true,attr:'contraste',cs:'dark'} };
+      var t = THEMES[p.theme] || THEMES['ARCKHÉ-dark'];
       if (t.dark===true) html.classList.add('dark'); else if (t.dark===false) html.classList.remove('dark');
       if (t.attr) html.setAttribute('data-theme', t.attr); else html.removeAttribute('data-theme');
       html.style.colorScheme = (t.cs ? t.cs : (html.classList.contains('dark')?'dark':'light'));
       html.setAttribute('data-font', p.font||'inter'); html.setAttribute('data-accent', p.accent||'blue');
       var s = html.style, scale=(+p.fontScale||100);
-      s.setProperty('--inema-font-scale',(scale/100).toString()); s.setProperty('font-size',scale+'%');
+      s.setProperty('--ARCKHÉ-font-scale',(scale/100).toString()); s.setProperty('font-size',scale+'%');
       s.setProperty('--measure',(+p.lineWidth||68)+'ch'); s.setProperty('--lh-body',(+p.leading||1.7).toString());
     } catch (err) { try { document.documentElement.classList.add('dark'); document.documentElement.style.colorScheme='dark'; } catch(e){} }
   })();
@@ -36,45 +36,45 @@
   </script>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
 <link href="../../assets/learn.css" rel="stylesheet"/>
-<script data-inema-manifest="" type="application/json">
+<script data-ARCKHÉ-manifest="" type="application/json">
 {
   "course": "claude-code",
   "tracks": [
-    { "n": "1", "title": "CLI e Configuração", "modules": [
-      { "id": "1-1", "title": "Instalação e Primeiro Comando", "topics": 6, "href": "curso/trilha1/modulo-1-1.html" },
+    { "n": "1", "title": "CLI e ConfiguraÃ§Ã£o", "modules": [
+      { "id": "1-1", "title": "InstalaÃ§Ã£o e Primeiro Comando", "topics": 6, "href": "curso/trilha1/modulo-1-1.html" },
       { "id": "1-2", "title": "Navegando o CLI como um Pro", "topics": 6, "href": "curso/trilha1/modulo-1-2.html" },
-      { "id": "1-3", "title": "CLAUDE.md — O Cérebro do Projeto", "topics": 6, "href": "curso/trilha1/modulo-1-3.html" },
-      { "id": "1-4", "title": "Configuração Avançada", "topics": 6, "href": "curso/trilha1/modulo-1-4.html" },
+      { "id": "1-3", "title": "CLAUDE.md â€” O CÃ©rebro do Projeto", "topics": 6, "href": "curso/trilha1/modulo-1-3.html" },
+      { "id": "1-4", "title": "ConfiguraÃ§Ã£o AvanÃ§ada", "topics": 6, "href": "curso/trilha1/modulo-1-4.html" },
       { "id": "1-5", "title": "Memory e Contexto Persistente", "topics": 6, "href": "curso/trilha1/modulo-1-5.html" },
       { "id": "1-6", "title": "Seu Workflow Pessoal", "topics": 6, "href": "curso/trilha1/modulo-1-6.html" }
     ]},
     { "n": "2", "title": "Plan e Loop Modes", "modules": [
-      { "id": "2-1", "title": "Plan Mode — Pense Antes de Codar", "topics": 6, "href": "curso/trilha2/modulo-2-1.html" },
+      { "id": "2-1", "title": "Plan Mode â€” Pense Antes de Codar", "topics": 6, "href": "curso/trilha2/modulo-2-1.html" },
       { "id": "2-2", "title": "Planos que Funcionam", "topics": 6, "href": "curso/trilha2/modulo-2-2.html" },
-      { "id": "2-3", "title": "Loop Mode — Automação Iterativa", "topics": 6, "href": "curso/trilha2/modulo-2-3.html" },
-      { "id": "2-4", "title": "Patterns de Loop na Prática", "topics": 6, "href": "curso/trilha2/modulo-2-4.html" },
+      { "id": "2-3", "title": "Loop Mode â€” AutomaÃ§Ã£o Iterativa", "topics": 6, "href": "curso/trilha2/modulo-2-3.html" },
+      { "id": "2-4", "title": "Patterns de Loop na PrÃ¡tica", "topics": 6, "href": "curso/trilha2/modulo-2-4.html" },
       { "id": "2-5", "title": "Combinando Plan + Loop", "topics": 6, "href": "curso/trilha2/modulo-2-5.html" },
-      { "id": "2-6", "title": "Agentic Coding — O Novo Normal", "topics": 6, "href": "curso/trilha2/modulo-2-6.html" }
+      { "id": "2-6", "title": "Agentic Coding â€” O Novo Normal", "topics": 6, "href": "curso/trilha2/modulo-2-6.html" }
     ]},
     { "n": "3", "title": "MCP Servers", "modules": [
-      { "id": "3-1", "title": "O que são MCP Servers", "topics": 6, "href": "curso/trilha3/modulo-3-1.html" },
+      { "id": "3-1", "title": "O que sÃ£o MCP Servers", "topics": 6, "href": "curso/trilha3/modulo-3-1.html" },
       { "id": "3-2", "title": "Seus Primeiros MCPs", "topics": 6, "href": "curso/trilha3/modulo-3-2.html" },
       { "id": "3-3", "title": "MCPs de Produtividade", "topics": 6, "href": "curso/trilha3/modulo-3-3.html" },
       { "id": "3-4", "title": "MCPs de Database e APIs", "topics": 6, "href": "curso/trilha3/modulo-3-4.html" },
-      { "id": "3-5", "title": "Criando seu Próprio MCP Server", "topics": 6, "href": "curso/trilha3/modulo-3-5.html" },
+      { "id": "3-5", "title": "Criando seu PrÃ³prio MCP Server", "topics": 6, "href": "curso/trilha3/modulo-3-5.html" },
       { "id": "3-6", "title": "Ecossistema e Marketplace", "topics": 6, "href": "curso/trilha3/modulo-3-6.html" }
     ]},
     { "n": "4", "title": "Subagentes e Git", "modules": [
-      { "id": "4-1", "title": "Subagentes — Conceitos", "topics": 6, "href": "curso/trilha4/modulo-4-1.html" },
+      { "id": "4-1", "title": "Subagentes â€” Conceitos", "topics": 6, "href": "curso/trilha4/modulo-4-1.html" },
       { "id": "4-2", "title": "Paralelismo Real", "topics": 6, "href": "curso/trilha4/modulo-4-2.html" },
       { "id": "4-3", "title": "Patterns de Multi-Agent", "topics": 6, "href": "curso/trilha4/modulo-4-3.html" },
-      { "id": "4-4", "title": "Git com IA — Versionamento", "topics": 6, "href": "curso/trilha4/modulo-4-4.html" },
+      { "id": "4-4", "title": "Git com IA â€” Versionamento", "topics": 6, "href": "curso/trilha4/modulo-4-4.html" },
       { "id": "4-5", "title": "Pull Requests e Code Review", "topics": 6, "href": "curso/trilha4/modulo-4-5.html" },
       { "id": "4-6", "title": "CI/CD e GitHub Actions", "topics": 6, "href": "curso/trilha4/modulo-4-6.html" }
     ]},
     { "n": "5", "title": "Python e Ship", "modules": [
       { "id": "5-1", "title": "Python + Claude Code", "topics": 6, "href": "curso/trilha5/modulo-5-1.html" },
-      { "id": "5-2", "title": "Automação de Scripts", "topics": 6, "href": "curso/trilha5/modulo-5-2.html" },
+      { "id": "5-2", "title": "AutomaÃ§Ã£o de Scripts", "topics": 6, "href": "curso/trilha5/modulo-5-2.html" },
       { "id": "5-3", "title": "FastAPI e Web Services", "topics": 6, "href": "curso/trilha5/modulo-5-3.html" },
       { "id": "5-4", "title": "Testing Automatizado", "topics": 6, "href": "curso/trilha5/modulo-5-4.html" },
       { "id": "5-5", "title": "Deploy e Infraestrutura", "topics": 6, "href": "curso/trilha5/modulo-5-5.html" },
@@ -133,16 +133,16 @@
       .wf-a:nth-child(4){animation-delay:.75s} .wf-a:nth-child(5){animation-delay:1s}
     }
   </style>
-<link href="https://inematds.github.io/claude-code-curso/curso/trilha2/" hreflang="pt-BR" rel="alternate"/><link href="https://inematds.github.io/claude-code-curso/en/curso/trilha2/" hreflang="en" rel="alternate"/><link href="https://inematds.github.io/claude-code-curso/es/curso/trilha2/" hreflang="es" rel="alternate"/></head>
-<body class="bg-dark-900 text-neutral-100 min-h-screen"><div class="inema-lang" style="position:fixed;right:14px;bottom:14px;z-index:9999;display:flex;gap:2px;padding:4px;border-radius:10px;background:rgba(12,12,16,.82);border:1px solid rgba(226,162,59,.45);font:600 12px/1 Sora,Inter,system-ui,sans-serif;backdrop-filter:blur(8px)" translate="no"><a href="./" hreflang="pt-BR" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#1a1206;background:#E2A23B">PT</a><a href="../../en/curso/trilha2/" hreflang="en" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">EN</a><a href="../../es/curso/trilha2/" hreflang="es" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">ES</a></div>
+<link href="https://linnoff88-dev.github.io/ hreflang="pt-BR" rel="alternate"/><link href="https://linnoff88-dev.github.io/ hreflang="en" rel="alternate"/><link href="https://linnoff88-dev.github.io/ hreflang="es" rel="alternate"/></head>
+<body class="bg-dark-900 text-neutral-100 min-h-screen"><div class="ARCKHÉ-lang" style="position:fixed;right:14px;bottom:14px;z-index:9999;display:flex;gap:2px;padding:4px;border-radius:10px;background:rgba(12,12,16,.82);border:1px solid rgba(226,162,59,.45);font:600 12px/1 Sora,Inter,system-ui,sans-serif;backdrop-filter:blur(8px)" translate="no"><a href="./" hreflang="pt-BR" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#1a1206;background:#E2A23B">PT</a><a href="../../en/curso/trilha2/" hreflang="en" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">EN</a><a href="../../es/curso/trilha2/" hreflang="es" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">ES</a></div>
 <a class="sr-only focus:not-sr-only focus:absolute focus:z-50 focus:top-2 focus:left-2 focus:px-4 focus:py-2 focus:bg-dark-800 focus:text-blue-400 focus:rounded-lg" href="#conteudo">Pular para o conteudo</a>
 <nav class="sticky top-0 z-50 bg-dark-900/95 backdrop-blur-sm border-b border-dark-600">
 <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
 <div class="flex justify-between items-center h-14">
 <div class="flex items-center space-x-4">
-<a class="flex items-center space-x-2 text-yellow-400 hover:text-yellow-300" href="../../index.html"><span class="text-2xl">🤖</span><span class="font-bold text-lg hidden sm:inline">Claude Code</span></a>
+<a class="flex items-center space-x-2 text-yellow-400 hover:text-yellow-300" href="../../index.html"><span class="text-2xl">ðŸ¤–</span><span class="font-bold text-lg hidden sm:inline">Claude Code</span></a>
 <span class="text-neutral-600">|</span>
-<a class="text-sky-400 hover:text-sky-300 text-sm font-medium" href="https://inema.club" target="_blank">INEMA.CLUB</a>
+<a class="text-sky-400 hover:text-sky-300 text-sm font-medium" href="https://ARCKHÉ AI" target="_blank">ARCKHÉ AI</a>
 </div>
 <div class="flex items-center space-x-1 sm:space-x-2">
 <a class="px-3 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-emerald-400 hover:bg-emerald-500/10 transition-colors" href="../trilha1/index.html"><span class="sm:hidden">T1</span><span class="hidden sm:inline">CLI</span></a>
@@ -150,7 +150,7 @@
 <a class="px-3 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-purple-400 hover:bg-purple-500/10 transition-colors" href="../trilha3/index.html"><span class="sm:hidden">T3</span><span class="hidden sm:inline">MCP</span></a>
 <a class="px-3 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-amber-400 hover:bg-amber-500/10 transition-colors" href="../trilha4/index.html"><span class="sm:hidden">T4</span><span class="hidden sm:inline">Agentes</span></a>
 <a class="px-3 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-teal-400 hover:bg-teal-500/10 transition-colors" href="../trilha5/index.html"><span class="sm:hidden">T5</span><span class="hidden sm:inline">Python</span></a>
-<button class="hidden sm:inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-sm text-neutral-300 hover:text-neutral-100 hover:bg-dark-700 transition-colors ml-1" data-inema-journey-open="" type="button"><span aria-hidden="true">◷</span><span>Minha jornada</span><span aria-hidden="true" class="inema-journey-badge hidden"></span></button>
+<button class="hidden sm:inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-sm text-neutral-300 hover:text-neutral-100 hover:bg-dark-700 transition-colors ml-1" data-ARCKHÉ-journey-open="" type="button"><span aria-hidden="true">â—·</span><span>Minha jornada</span><span aria-hidden="true" class="ARCKHÉ-journey-badge hidden"></span></button>
 <button aria-label="Alternar tema" class="p-2 rounded-lg bg-dark-700 hover:bg-dark-600 transition-colors ml-1" id="theme-toggle">
 <svg class="hidden w-5 h-5 text-neutral-300" fill="currentColor" id="theme-toggle-dark-icon" viewbox="0 0 20 20"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg>
 <svg class="hidden w-5 h-5 text-neutral-300" fill="currentColor" id="theme-toggle-light-icon" viewbox="0 0 20 20"><path clip-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" fill-rule="evenodd"></path></svg>
@@ -162,7 +162,7 @@
 <header class="bg-gradient-to-br from-blue-900/30 via-dark-800 to-dark-800 py-12 border-b border-dark-600">
 <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
 <span class="inline-block px-3 py-1 bg-blue-500/20 text-blue-400 text-xs font-semibold rounded-full mb-4">TRILHA 2</span>
-<h1 class="text-3xl sm:text-4xl font-bold mb-4">🤖 Plan e Loop Modes</h1>
+<h1 class="text-3xl sm:text-4xl font-bold mb-4">ðŸ¤– Plan e Loop Modes</h1>
 <p class="text-lg text-neutral-400 max-w-3xl mb-6">O Claude Code tem dois modos poderosos que transformam como voce trabalha: Plan Mode para pensar antes de agir, e Loop Mode para automacao iterativa. Domine os dois e combine-os para velocidade maxima com seguranca.</p>
 <div class="rounded-2xl border border-blue-500/30 bg-dark-900/40 p-3 sm:p-4 mb-6 overflow-hidden">
 <svg aria-label="Diagrama: Plan Mode alimenta Loop Mode que produz resultado iterativo" class="w-full h-auto" role="img" viewbox="0 0 1000 220">
@@ -196,10 +196,10 @@
 <div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-blue-400">Inter</div><div class="text-xs text-neutral-400">Nivel</div></div>
 </div>
 <div class="mt-6 max-w-2xl">
-<div aria-label="Progresso da trilha 2" aria-valuemax="100" aria-valuemin="0" class="inema-meter flex items-center gap-3" data-inema-meter="trilha:2" role="progressbar">
+<div aria-label="Progresso da trilha 2" aria-valuemax="100" aria-valuemin="0" class="ARCKHÉ-meter flex items-center gap-3" data-ARCKHÉ-meter="trilha:2" role="progressbar">
 <span class="text-sm text-neutral-400">Progresso da trilha:</span>
-<span class="inema-meter-pct text-blue-400 font-bold text-sm">0%</span>
-<span class="inema-meter-count text-xs text-neutral-500">0 de 36</span>
+<span class="ARCKHÉ-meter-pct text-blue-400 font-bold text-sm">0%</span>
+<span class="ARCKHÉ-meter-count text-xs text-neutral-500">0 de 36</span>
 </div>
 </div>
 </div>
@@ -210,7 +210,7 @@
 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
 <a class="group bg-dark-800 rounded-xl border border-dark-600 hover:border-blue-500/30 p-5 transition-all" href="#modulo-2-1">
 <div class="flex items-center justify-between mb-2"><span class="text-blue-400 font-bold text-sm">2.1</span><span class="text-xs text-neutral-500">~40 min</span></div>
-<h3 class="font-semibold mb-1 group-hover:text-blue-400 transition-colors">Plan Mode — Pense Antes de Codar</h3>
+<h3 class="font-semibold mb-1 group-hover:text-blue-400 transition-colors">Plan Mode â€” Pense Antes de Codar</h3>
 <p class="text-xs text-neutral-400">O modo de planejamento</p>
 </a>
 <a class="group bg-dark-800 rounded-xl border border-dark-600 hover:border-blue-500/30 p-5 transition-all" href="#modulo-2-2">
@@ -220,7 +220,7 @@
 </a>
 <a class="group bg-dark-800 rounded-xl border border-dark-600 hover:border-blue-500/30 p-5 transition-all" href="#modulo-2-3">
 <div class="flex items-center justify-between mb-2"><span class="text-blue-400 font-bold text-sm">2.3</span><span class="text-xs text-neutral-500">~40 min</span></div>
-<h3 class="font-semibold mb-1 group-hover:text-blue-400 transition-colors">Loop Mode — Automacao Iterativa</h3>
+<h3 class="font-semibold mb-1 group-hover:text-blue-400 transition-colors">Loop Mode â€” Automacao Iterativa</h3>
 <p class="text-xs text-neutral-400">Execucao autonoma</p>
 </a>
 <a class="group bg-dark-800 rounded-xl border border-dark-600 hover:border-blue-500/30 p-5 transition-all" href="#modulo-2-4">
@@ -235,23 +235,23 @@
 </a>
 <a class="group bg-dark-800 rounded-xl border border-dark-600 hover:border-blue-500/30 p-5 transition-all" href="#modulo-2-6">
 <div class="flex items-center justify-between mb-2"><span class="text-blue-400 font-bold text-sm">2.6</span><span class="text-xs text-neutral-500">~35 min</span></div>
-<h3 class="font-semibold mb-1 group-hover:text-blue-400 transition-colors">Agentic Coding — O Novo Normal</h3>
+<h3 class="font-semibold mb-1 group-hover:text-blue-400 transition-colors">Agentic Coding â€” O Novo Normal</h3>
 <p class="text-xs text-neutral-400">O mindset shift</p>
 </a>
 </div>
 </section>
 <h2 class="text-2xl font-bold mb-6">Conteudo detalhado</h2>
-<div class="bg-dark-800 rounded-xl border border-dark-600 mb-6" data-inema-module="2-1" data-inema-track="2" id="modulo-2-1">
+<div class="bg-dark-800 rounded-xl border border-dark-600 mb-6" data-ARCKHÉ-module="2-1" data-ARCKHÉ-track="2" id="modulo-2-1">
 <div class="p-6 border-b border-dark-600">
 <div class="flex items-center justify-between mb-2"><span class="text-blue-400 font-bold">2.1</span><span class="text-xs text-neutral-500">~40 min</span></div>
-<h3 class="text-2xl font-bold mb-2">Plan Mode — Pense Antes de Codar</h3>
+<h3 class="text-2xl font-bold mb-2">Plan Mode â€” Pense Antes de Codar</h3>
 <p class="text-neutral-400 text-sm">O fundamento: como e quando usar plan mode para pensar antes de executar.</p>
 </div>
 <div class="divide-y divide-dark-600">
 <div class="topic-item"><button aria-expanded="false" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)"><span class="w-6 h-6 rounded-full bg-blue-500/20 text-blue-400 text-sm font-bold flex items-center justify-center flex-shrink-0">1</span><div><span class="font-medium">O que e plan mode</span><span class="text-neutral-500 text-sm ml-2">- Conceito base</span></div></button><div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9"><div><span class="text-blue-400 font-semibold">O que e:</span><p class="text-neutral-300 text-sm">Modo que faz o Claude pensar e propor um plano antes de executar qualquer acao.</p></div><div><span class="text-blue-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">Evita erros caros e retrabalho ao planejar primeiro.</p></div><div><span class="text-blue-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">Shift+Tab para ativar; plano visivel antes da execucao.</p></div></div></div></div>
-<div class="topic-item"><button aria-expanded="false" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)"><span class="w-6 h-6 rounded-full bg-blue-500/20 text-blue-400 text-sm font-bold flex items-center justify-center flex-shrink-0">2</span><div><span class="font-medium">Quando usar (e quando nao)</span><span class="text-neutral-500 text-sm ml-2">- Contexto certo</span></div></button><div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9"><div><span class="text-blue-400 font-semibold">O que e:</span><p class="text-neutral-300 text-sm">Criterios para decidir se plan mode compensa ou se execucao direta e mais rapida.</p></div><div><span class="text-blue-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">Nem toda tarefa precisa de plano; usar sem necessidade desperdiça tokens.</p></div><div><span class="text-blue-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">Complexidade, risco, numero de arquivos afetados.</p></div></div></div></div>
+<div class="topic-item"><button aria-expanded="false" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)"><span class="w-6 h-6 rounded-full bg-blue-500/20 text-blue-400 text-sm font-bold flex items-center justify-center flex-shrink-0">2</span><div><span class="font-medium">Quando usar (e quando nao)</span><span class="text-neutral-500 text-sm ml-2">- Contexto certo</span></div></button><div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9"><div><span class="text-blue-400 font-semibold">O que e:</span><p class="text-neutral-300 text-sm">Criterios para decidir se plan mode compensa ou se execucao direta e mais rapida.</p></div><div><span class="text-blue-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">Nem toda tarefa precisa de plano; usar sem necessidade desperdiÃ§a tokens.</p></div><div><span class="text-blue-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">Complexidade, risco, numero de arquivos afetados.</p></div></div></div></div>
 <div class="topic-item"><button aria-expanded="false" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)"><span class="w-6 h-6 rounded-full bg-blue-500/20 text-blue-400 text-sm font-bold flex items-center justify-center flex-shrink-0">3</span><div><span class="font-medium">Anatomia de um plano</span><span class="text-neutral-500 text-sm ml-2">- Estrutura interna</span></div></button><div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9"><div><span class="text-blue-400 font-semibold">O que e:</span><p class="text-neutral-300 text-sm">Os componentes que formam um bom plano: objetivo, passos, dependencias, riscos.</p></div><div><span class="text-blue-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">Saber ler um plano te permite avaliar se ele vai funcionar antes de aprovar.</p></div><div><span class="text-blue-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">Steps, file list, risk assessment, order of operations.</p></div></div></div></div>
-<div class="topic-item"><button aria-expanded="false" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)"><span class="w-6 h-6 rounded-full bg-blue-500/20 text-blue-400 text-sm font-bold flex items-center justify-center flex-shrink-0">4</span><div><span class="font-medium">Approval flow — revisando e ajustando</span><span class="text-neutral-500 text-sm ml-2">- Controle humano</span></div></button><div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9"><div><span class="text-blue-400 font-semibold">O que e:</span><p class="text-neutral-300 text-sm">O fluxo de aprovacao onde voce revisa o plano e pode ajustar antes de rodar.</p></div><div><span class="text-blue-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">E o ponto de controle: voce decide se executa, modifica ou rejeita.</p></div><div><span class="text-blue-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">Approve, reject, refine; feedback loop antes da acao.</p></div></div></div></div>
+<div class="topic-item"><button aria-expanded="false" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)"><span class="w-6 h-6 rounded-full bg-blue-500/20 text-blue-400 text-sm font-bold flex items-center justify-center flex-shrink-0">4</span><div><span class="font-medium">Approval flow â€” revisando e ajustando</span><span class="text-neutral-500 text-sm ml-2">- Controle humano</span></div></button><div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9"><div><span class="text-blue-400 font-semibold">O que e:</span><p class="text-neutral-300 text-sm">O fluxo de aprovacao onde voce revisa o plano e pode ajustar antes de rodar.</p></div><div><span class="text-blue-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">E o ponto de controle: voce decide se executa, modifica ou rejeita.</p></div><div><span class="text-blue-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">Approve, reject, refine; feedback loop antes da acao.</p></div></div></div></div>
 <div class="topic-item"><button aria-expanded="false" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)"><span class="w-6 h-6 rounded-full bg-blue-500/20 text-blue-400 text-sm font-bold flex items-center justify-center flex-shrink-0">5</span><div><span class="font-medium">Iterando no plano antes de executar</span><span class="text-neutral-500 text-sm ml-2">- Refinamento</span></div></button><div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9"><div><span class="text-blue-400 font-semibold">O que e:</span><p class="text-neutral-300 text-sm">Tecnica de pedir ajustes no plano multiplas vezes ate ele ficar ideal.</p></div><div><span class="text-blue-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">Um plano refinado economiza horas de correcao depois.</p></div><div><span class="text-blue-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">Multi-turn planning; plano como draft vivo.</p></div></div></div></div>
 <div class="topic-item"><button aria-expanded="false" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)"><span class="w-6 h-6 rounded-full bg-blue-500/20 text-blue-400 text-sm font-bold flex items-center justify-center flex-shrink-0">6</span><div><span class="font-medium">Anti-patterns comuns</span><span class="text-neutral-500 text-sm ml-2">- O que evitar</span></div></button><div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9"><div><span class="text-blue-400 font-semibold">O que e:</span><p class="text-neutral-300 text-sm">Erros frequentes: aprovar sem ler, planejar demais, ignorar plano e executar direto.</p></div><div><span class="text-blue-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">Reconhecer anti-patterns te mantem no caminho produtivo.</p></div><div><span class="text-blue-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">Over-planning; rubber-stamp approval; plan drift.</p></div></div></div></div>
 </div>
@@ -259,7 +259,7 @@
 <a class="px-4 py-2 text-sm bg-blue-600 hover:bg-blue-500 text-white rounded-lg transition-colors" href="modulo-2-1.html">Ver Completo</a>
 </div>
 </div>
-<div class="bg-dark-800 rounded-xl border border-dark-600 mb-6" data-inema-module="2-2" data-inema-track="2" id="modulo-2-2">
+<div class="bg-dark-800 rounded-xl border border-dark-600 mb-6" data-ARCKHÉ-module="2-2" data-ARCKHÉ-track="2" id="modulo-2-2">
 <div class="p-6 border-b border-dark-600">
 <div class="flex items-center justify-between mb-2"><span class="text-blue-400 font-bold">2.2</span><span class="text-xs text-neutral-500">~45 min</span></div>
 <h3 class="text-2xl font-bold mb-2">Planos que Funcionam</h3>
@@ -277,10 +277,10 @@
 <a class="px-4 py-2 text-sm bg-blue-600 hover:bg-blue-500 text-white rounded-lg transition-colors" href="modulo-2-2.html">Ver Completo</a>
 </div>
 </div>
-<div class="bg-dark-800 rounded-xl border border-dark-600 mb-6" data-inema-module="2-3" data-inema-track="2" id="modulo-2-3">
+<div class="bg-dark-800 rounded-xl border border-dark-600 mb-6" data-ARCKHÉ-module="2-3" data-ARCKHÉ-track="2" id="modulo-2-3">
 <div class="p-6 border-b border-dark-600">
 <div class="flex items-center justify-between mb-2"><span class="text-blue-400 font-bold">2.3</span><span class="text-xs text-neutral-500">~40 min</span></div>
-<h3 class="text-2xl font-bold mb-2">Loop Mode — Automacao Iterativa</h3>
+<h3 class="text-2xl font-bold mb-2">Loop Mode â€” Automacao Iterativa</h3>
 <p class="text-neutral-400 text-sm">Deixe o Claude executar em loop: fix, test, fix ate passar. O fundamento do modo autonomo.</p>
 </div>
 <div class="divide-y divide-dark-600">
@@ -295,7 +295,7 @@
 <a class="px-4 py-2 text-sm bg-blue-600 hover:bg-blue-500 text-white rounded-lg transition-colors" href="modulo-2-3.html">Ver Completo</a>
 </div>
 </div>
-<div class="bg-dark-800 rounded-xl border border-dark-600 mb-6" data-inema-module="2-4" data-inema-track="2" id="modulo-2-4">
+<div class="bg-dark-800 rounded-xl border border-dark-600 mb-6" data-ARCKHÉ-module="2-4" data-ARCKHÉ-track="2" id="modulo-2-4">
 <div class="p-6 border-b border-dark-600">
 <div class="flex items-center justify-between mb-2"><span class="text-blue-400 font-bold">2.4</span><span class="text-xs text-neutral-500">~45 min</span></div>
 <h3 class="text-2xl font-bold mb-2">Patterns de Loop na Pratica</h3>
@@ -306,14 +306,14 @@
 <div class="topic-item"><button aria-expanded="false" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)"><span class="w-6 h-6 rounded-full bg-blue-500/20 text-blue-400 text-sm font-bold flex items-center justify-center flex-shrink-0">2</span><div><span class="font-medium">Loop de lint/format</span><span class="text-neutral-500 text-sm ml-2">- Codigo limpo</span></div></button><div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9"><div><span class="text-blue-400 font-semibold">O que e:</span><p class="text-neutral-300 text-sm">Rodar linter, corrigir warnings, re-rodar ate zero erros.</p></div><div><span class="text-blue-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">Limpar lint de codebase inteiro em minutos, nao horas.</p></div><div><span class="text-blue-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">eslint --fix; black/ruff; iterative cleanup.</p></div></div></div></div>
 <div class="topic-item"><button aria-expanded="false" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)"><span class="w-6 h-6 rounded-full bg-blue-500/20 text-blue-400 text-sm font-bold flex items-center justify-center flex-shrink-0">3</span><div><span class="font-medium">Loop de migracao</span><span class="text-neutral-500 text-sm ml-2">- Upgrades em massa</span></div></button><div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9"><div><span class="text-blue-400 font-semibold">O que e:</span><p class="text-neutral-300 text-sm">Migrar APIs, dependencias ou versoes arquivo por arquivo com validacao.</p></div><div><span class="text-blue-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">Migracoes sao tediosas pra humanos, perfeitas pra loops.</p></div><div><span class="text-blue-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">File-by-file; type-check gate; incremental commit.</p></div></div></div></div>
 <div class="topic-item"><button aria-expanded="false" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)"><span class="w-6 h-6 rounded-full bg-blue-500/20 text-blue-400 text-sm font-bold flex items-center justify-center flex-shrink-0">4</span><div><span class="font-medium">Loop de dados</span><span class="text-neutral-500 text-sm ml-2">- ETL e transformacao</span></div></button><div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9"><div><span class="text-blue-400 font-semibold">O que e:</span><p class="text-neutral-300 text-sm">Processar, transformar e validar datasets iterativamente.</p></div><div><span class="text-blue-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">Dados sujos precisam de multiplas passadas; loop faz isso sem voce.</p></div><div><span class="text-blue-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">Schema validation; data cleaning passes; assertion gates.</p></div></div></div></div>
-<div class="topic-item"><button aria-expanded="false" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)"><span class="w-6 h-6 rounded-full bg-blue-500/20 text-blue-400 text-sm font-bold flex items-center justify-center flex-shrink-0">5</span><div><span class="font-medium">Loop de docs</span><span class="text-neutral-500 text-sm ml-2">- Documentacao viva</span></div></button><div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9"><div><span class="text-blue-400 font-semibold">O que e:</span><p class="text-neutral-300 text-sm">Gerar docs, validar links, atualizar exemplos ate tudo consistente.</p></div><div><span class="text-blue-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">Docs desatualizados matam projetos; loop mantém sincronizado.</p></div><div><span class="text-blue-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">Docstring sync; link checker; example runner.</p></div></div></div></div>
+<div class="topic-item"><button aria-expanded="false" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)"><span class="w-6 h-6 rounded-full bg-blue-500/20 text-blue-400 text-sm font-bold flex items-center justify-center flex-shrink-0">5</span><div><span class="font-medium">Loop de docs</span><span class="text-neutral-500 text-sm ml-2">- Documentacao viva</span></div></button><div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9"><div><span class="text-blue-400 font-semibold">O que e:</span><p class="text-neutral-300 text-sm">Gerar docs, validar links, atualizar exemplos ate tudo consistente.</p></div><div><span class="text-blue-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">Docs desatualizados matam projetos; loop mantÃ©m sincronizado.</p></div><div><span class="text-blue-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">Docstring sync; link checker; example runner.</p></div></div></div></div>
 <div class="topic-item"><button aria-expanded="false" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)"><span class="w-6 h-6 rounded-full bg-blue-500/20 text-blue-400 text-sm font-bold flex items-center justify-center flex-shrink-0">6</span><div><span class="font-medium">Loop composto</span><span class="text-neutral-500 text-sm ml-2">- Multiplos criterios</span></div></button><div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9"><div><span class="text-blue-400 font-semibold">O que e:</span><p class="text-neutral-300 text-sm">Combinar criterios de saida: testes + lint + types + build tudo verde.</p></div><div><span class="text-blue-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">O loop composto e o mais parecido com CI/CD rodando localmente.</p></div><div><span class="text-blue-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">Multi-gate loop; combined exit criteria; script orchestration.</p></div></div></div></div>
 </div>
 <div class="p-4 bg-dark-700/30 flex justify-start space-x-3">
 <a class="px-4 py-2 text-sm bg-blue-600 hover:bg-blue-500 text-white rounded-lg transition-colors" href="modulo-2-4.html">Ver Completo</a>
 </div>
 </div>
-<div class="bg-dark-800 rounded-xl border border-dark-600 mb-6" data-inema-module="2-5" data-inema-track="2" id="modulo-2-5">
+<div class="bg-dark-800 rounded-xl border border-dark-600 mb-6" data-ARCKHÉ-module="2-5" data-ARCKHÉ-track="2" id="modulo-2-5">
 <div class="p-6 border-b border-dark-600">
 <div class="flex items-center justify-between mb-2"><span class="text-blue-400 font-bold">2.5</span><span class="text-xs text-neutral-500">~50 min</span></div>
 <h3 class="text-2xl font-bold mb-2">Combinando Plan + Loop</h3>
@@ -331,10 +331,10 @@
 <a class="px-4 py-2 text-sm bg-blue-600 hover:bg-blue-500 text-white rounded-lg transition-colors" href="modulo-2-5.html">Ver Completo</a>
 </div>
 </div>
-<div class="bg-dark-800 rounded-xl border border-dark-600 mb-6" data-inema-module="2-6" data-inema-track="2" id="modulo-2-6">
+<div class="bg-dark-800 rounded-xl border border-dark-600 mb-6" data-ARCKHÉ-module="2-6" data-ARCKHÉ-track="2" id="modulo-2-6">
 <div class="p-6 border-b border-dark-600">
 <div class="flex items-center justify-between mb-2"><span class="text-blue-400 font-bold">2.6</span><span class="text-xs text-neutral-500">~35 min</span></div>
-<h3 class="text-2xl font-bold mb-2">Agentic Coding — O Novo Normal</h3>
+<h3 class="text-2xl font-bold mb-2">Agentic Coding â€” O Novo Normal</h3>
 <p class="text-neutral-400 text-sm">A filosofia por tras de tudo: delegacao, confianca e o mindset shift para produtividade 10x.</p>
 </div>
 <div class="divide-y divide-dark-600">
@@ -350,15 +350,15 @@
 </div>
 </div>
 </main>
-<footer class="border-t border-dark-600 py-8 mt-16"><div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-neutral-500 text-sm"><p>Claude Code — Transicao para o Claude Code · <a class="text-sky-400 hover:text-sky-300" href="https://inema.club" target="_blank">INEMA.CLUB</a></p></div></footer>
+<footer class="border-t border-dark-600 py-8 mt-16"><div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-neutral-500 text-sm"><p>Claude Code â€” Transicao para o Claude Code Â· <a class="text-sky-400 hover:text-sky-300" href="https://ARCKHÉ AI" target="_blank">ARCKHÉ AI</a></p></div></footer>
 <script>
     function toggleTopic(button){ const ti=button.closest('.topic-item'); if(!ti)return; const e=ti.querySelector('.topic-explanation'); if(e){e.classList.toggle('active'); button.setAttribute('aria-expanded', e.classList.contains('active'));} }
-    (function(){ const tt=document.getElementById('theme-toggle'),di=document.getElementById('theme-toggle-dark-icon'),li=document.getElementById('theme-toggle-light-icon'),h=document.documentElement; function s(){ if(h.classList.contains('dark')){li.classList.remove('hidden');di.classList.add('hidden');}else{di.classList.remove('hidden');li.classList.add('hidden');} } s(); tt&&tt.addEventListener('click',function(){h.classList.toggle('dark');var d=h.classList.contains('dark');h.style.colorScheme=d?'dark':'light';try{var p=JSON.parse(localStorage.getItem('inema.prefs')||'{}');p.theme=d?'inema-dark':'claro';localStorage.setItem('inema.prefs',JSON.stringify(p));localStorage.setItem('theme',d?'dark':'light');}catch(e){}s();}); })();
+    (function(){ const tt=document.getElementById('theme-toggle'),di=document.getElementById('theme-toggle-dark-icon'),li=document.getElementById('theme-toggle-light-icon'),h=document.documentElement; function s(){ if(h.classList.contains('dark')){li.classList.remove('hidden');di.classList.add('hidden');}else{di.classList.remove('hidden');li.classList.add('hidden');} } s(); tt&&tt.addEventListener('click',function(){h.classList.toggle('dark');var d=h.classList.contains('dark');h.style.colorScheme=d?'dark':'light';try{var p=JSON.parse(localStorage.getItem('ARCKHÉ.prefs')||'{}');p.theme=d?'ARCKHÉ-dark':'claro';localStorage.setItem('ARCKHÉ.prefs',JSON.stringify(p));localStorage.setItem('theme',d?'dark':'light');}catch(e){}s();}); })();
   </script>
 <script src="../../assets/learn.js"></script>
 <script>
     document.addEventListener('DOMContentLoaded', function () {
-      if (window.INEMA && typeof INEMA.init === 'function') INEMA.init();
+      if (window.ARCKHÉ && typeof ARCKHÉ.init === 'function') ARCKHÉ.init();
     });
   </script>
 </body>

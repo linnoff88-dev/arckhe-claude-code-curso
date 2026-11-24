@@ -4,28 +4,28 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<meta content="claude-code" name="inema-course"/>
-<title>4.1 Subagents — Concepts | Claude Code</title>
+<meta content="claude-code" name="ARCKHÉ-course"/>
+<title>4.1 Subagents â€” Concepts | Claude Code</title>
 <script>
   (function () {
     try {
       var html = document.documentElement;
-      var DEF = { theme: 'inema-dark', font: 'inter', fontScale: 100, lineWidth: 68, leading: 1.7, accent: 'amber' };
+      var DEF = { theme: 'ARCKHÉ-dark', font: 'inter', fontScale: 100, lineWidth: 68, leading: 1.7, accent: 'amber' };
       function clone(o){var r={};for(var x in o)r[x]=o[x];return r;}
       var p = clone(DEF);
       try {
-        var raw = localStorage.getItem('inema.prefs');
+        var raw = localStorage.getItem('ARCKHÉ.prefs');
         if (raw) { var parsed = JSON.parse(raw); if (parsed && typeof parsed==='object'){ for (var k in DEF) if (parsed[k]!=null) p[k]=parsed[k]; } }
-        else { var legacy = localStorage.getItem('theme'); if (legacy==='light') p.theme='claro'; else if (legacy==='dark') p.theme='inema-dark'; }
+        else { var legacy = localStorage.getItem('theme'); if (legacy==='light') p.theme='claro'; else if (legacy==='dark') p.theme='ARCKHÉ-dark'; }
       } catch (e) { p = clone(DEF); }
-      var THEMES = { 'inema-dark':{dark:true,attr:null,cs:'dark'},'claro':{dark:false,attr:null,cs:'light'},'sepia':{dark:false,attr:'sepia',cs:'light'},'foco':{dark:null,attr:'foco',cs:null},'contraste':{dark:true,attr:'contraste',cs:'dark'} };
-      var t = THEMES[p.theme] || THEMES['inema-dark'];
+      var THEMES = { 'ARCKHÉ-dark':{dark:true,attr:null,cs:'dark'},'claro':{dark:false,attr:null,cs:'light'},'sepia':{dark:false,attr:'sepia',cs:'light'},'foco':{dark:null,attr:'foco',cs:null},'contraste':{dark:true,attr:'contraste',cs:'dark'} };
+      var t = THEMES[p.theme] || THEMES['ARCKHÉ-dark'];
       if (t.dark===true) html.classList.add('dark'); else if (t.dark===false) html.classList.remove('dark');
       if (t.attr) html.setAttribute('data-theme', t.attr); else html.removeAttribute('data-theme');
       html.style.colorScheme = (t.cs ? t.cs : (html.classList.contains('dark')?'dark':'light'));
       html.setAttribute('data-font', p.font||'inter'); html.setAttribute('data-accent', p.accent||'amber');
       var s = html.style, scale=(+p.fontScale||100);
-      s.setProperty('--inema-font-scale',(scale/100).toString()); s.setProperty('font-size',scale+'%');
+      s.setProperty('--ARCKHÉ-font-scale',(scale/100).toString()); s.setProperty('font-size',scale+'%');
       s.setProperty('--measure',(+p.lineWidth||68)+'ch'); s.setProperty('--lh-body',(+p.leading||1.7).toString());
     } catch (err) { try { document.documentElement.classList.add('dark'); document.documentElement.style.colorScheme='dark'; } catch(e){} }
   })();
@@ -36,8 +36,8 @@
   </script>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
 <link href="../../../assets/learn.css" rel="stylesheet"/>
-<script data-inema-manifest="" type="application/json">
-{"course":"claude-code","tracks":[{"n":"1","title":"CLI e Configuracao","modules":[{"id":"1-1","title":"Instalacao e Primeiro Comando","topics":6,"href":"curso/trilha1/modulo-1-1.html"},{"id":"1-2","title":"Navegando o CLI como um Pro","topics":6,"href":"curso/trilha1/modulo-1-2.html"},{"id":"1-3","title":"CLAUDE.md — O Cerebro do Projeto","topics":6,"href":"curso/trilha1/modulo-1-3.html"},{"id":"1-4","title":"Configuracao Avancada","topics":6,"href":"curso/trilha1/modulo-1-4.html"},{"id":"1-5","title":"Memory e Contexto Persistente","topics":6,"href":"curso/trilha1/modulo-1-5.html"},{"id":"1-6","title":"Seu Workflow Pessoal","topics":6,"href":"curso/trilha1/modulo-1-6.html"}]},{"n":"2","title":"Plan e Loop Modes","modules":[{"id":"2-1","title":"Plan Mode — Pense Antes de Codar","topics":6,"href":"curso/trilha2/modulo-2-1.html"},{"id":"2-2","title":"Planos que Funcionam","topics":6,"href":"curso/trilha2/modulo-2-2.html"},{"id":"2-3","title":"Loop Mode — Automacao Iterativa","topics":6,"href":"curso/trilha2/modulo-2-3.html"},{"id":"2-4","title":"Patterns de Loop na Pratica","topics":6,"href":"curso/trilha2/modulo-2-4.html"},{"id":"2-5","title":"Combinando Plan + Loop","topics":6,"href":"curso/trilha2/modulo-2-5.html"},{"id":"2-6","title":"Agentic Coding — O Novo Normal","topics":6,"href":"curso/trilha2/modulo-2-6.html"}]},{"n":"3","title":"MCP Servers","modules":[{"id":"3-1","title":"O que sao MCP Servers","topics":6,"href":"curso/trilha3/modulo-3-1.html"},{"id":"3-2","title":"Seus Primeiros MCPs","topics":6,"href":"curso/trilha3/modulo-3-2.html"},{"id":"3-3","title":"MCPs de Produtividade","topics":6,"href":"curso/trilha3/modulo-3-3.html"},{"id":"3-4","title":"MCPs de Database e APIs","topics":6,"href":"curso/trilha3/modulo-3-4.html"},{"id":"3-5","title":"Criando seu Proprio MCP Server","topics":6,"href":"curso/trilha3/modulo-3-5.html"},{"id":"3-6","title":"Ecossistema e Marketplace","topics":6,"href":"curso/trilha3/modulo-3-6.html"}]},{"n":"4","title":"Subagentes e Git","modules":[{"id":"4-1","title":"Subagentes — Conceitos","topics":6,"href":"curso/trilha4/modulo-4-1.html"},{"id":"4-2","title":"Paralelismo Real","topics":6,"href":"curso/trilha4/modulo-4-2.html"},{"id":"4-3","title":"Patterns de Multi-Agent","topics":6,"href":"curso/trilha4/modulo-4-3.html"},{"id":"4-4","title":"Git com IA — Versionamento","topics":6,"href":"curso/trilha4/modulo-4-4.html"},{"id":"4-5","title":"Pull Requests e Code Review","topics":6,"href":"curso/trilha4/modulo-4-5.html"},{"id":"4-6","title":"CI/CD e GitHub Actions","topics":6,"href":"curso/trilha4/modulo-4-6.html"}]},{"n":"5","title":"Python e Ship","modules":[{"id":"5-1","title":"Python + Claude Code","topics":6,"href":"curso/trilha5/modulo-5-1.html"},{"id":"5-2","title":"Automacao de Scripts","topics":6,"href":"curso/trilha5/modulo-5-2.html"},{"id":"5-3","title":"FastAPI e Web Services","topics":6,"href":"curso/trilha5/modulo-5-3.html"},{"id":"5-4","title":"Testing Automatizado","topics":6,"href":"curso/trilha5/modulo-5-4.html"},{"id":"5-5","title":"Deploy e Infraestrutura","topics":6,"href":"curso/trilha5/modulo-5-5.html"},{"id":"5-6","title":"Ship Your Product","topics":6,"href":"curso/trilha5/modulo-5-6.html"}]}]}
+<script data-ARCKHÉ-manifest="" type="application/json">
+{"course":"claude-code","tracks":[{"n":"1","title":"CLI e Configuracao","modules":[{"id":"1-1","title":"Instalacao e Primeiro Comando","topics":6,"href":"curso/trilha1/modulo-1-1.html"},{"id":"1-2","title":"Navegando o CLI como um Pro","topics":6,"href":"curso/trilha1/modulo-1-2.html"},{"id":"1-3","title":"CLAUDE.md â€” O Cerebro do Projeto","topics":6,"href":"curso/trilha1/modulo-1-3.html"},{"id":"1-4","title":"Configuracao Avancada","topics":6,"href":"curso/trilha1/modulo-1-4.html"},{"id":"1-5","title":"Memory e Contexto Persistente","topics":6,"href":"curso/trilha1/modulo-1-5.html"},{"id":"1-6","title":"Seu Workflow Pessoal","topics":6,"href":"curso/trilha1/modulo-1-6.html"}]},{"n":"2","title":"Plan e Loop Modes","modules":[{"id":"2-1","title":"Plan Mode â€” Pense Antes de Codar","topics":6,"href":"curso/trilha2/modulo-2-1.html"},{"id":"2-2","title":"Planos que Funcionam","topics":6,"href":"curso/trilha2/modulo-2-2.html"},{"id":"2-3","title":"Loop Mode â€” Automacao Iterativa","topics":6,"href":"curso/trilha2/modulo-2-3.html"},{"id":"2-4","title":"Patterns de Loop na Pratica","topics":6,"href":"curso/trilha2/modulo-2-4.html"},{"id":"2-5","title":"Combinando Plan + Loop","topics":6,"href":"curso/trilha2/modulo-2-5.html"},{"id":"2-6","title":"Agentic Coding â€” O Novo Normal","topics":6,"href":"curso/trilha2/modulo-2-6.html"}]},{"n":"3","title":"MCP Servers","modules":[{"id":"3-1","title":"O que sao MCP Servers","topics":6,"href":"curso/trilha3/modulo-3-1.html"},{"id":"3-2","title":"Seus Primeiros MCPs","topics":6,"href":"curso/trilha3/modulo-3-2.html"},{"id":"3-3","title":"MCPs de Produtividade","topics":6,"href":"curso/trilha3/modulo-3-3.html"},{"id":"3-4","title":"MCPs de Database e APIs","topics":6,"href":"curso/trilha3/modulo-3-4.html"},{"id":"3-5","title":"Criando seu Proprio MCP Server","topics":6,"href":"curso/trilha3/modulo-3-5.html"},{"id":"3-6","title":"Ecossistema e Marketplace","topics":6,"href":"curso/trilha3/modulo-3-6.html"}]},{"n":"4","title":"Subagentes e Git","modules":[{"id":"4-1","title":"Subagentes â€” Conceitos","topics":6,"href":"curso/trilha4/modulo-4-1.html"},{"id":"4-2","title":"Paralelismo Real","topics":6,"href":"curso/trilha4/modulo-4-2.html"},{"id":"4-3","title":"Patterns de Multi-Agent","topics":6,"href":"curso/trilha4/modulo-4-3.html"},{"id":"4-4","title":"Git com IA â€” Versionamento","topics":6,"href":"curso/trilha4/modulo-4-4.html"},{"id":"4-5","title":"Pull Requests e Code Review","topics":6,"href":"curso/trilha4/modulo-4-5.html"},{"id":"4-6","title":"CI/CD e GitHub Actions","topics":6,"href":"curso/trilha4/modulo-4-6.html"}]},{"n":"5","title":"Python e Ship","modules":[{"id":"5-1","title":"Python + Claude Code","topics":6,"href":"curso/trilha5/modulo-5-1.html"},{"id":"5-2","title":"Automacao de Scripts","topics":6,"href":"curso/trilha5/modulo-5-2.html"},{"id":"5-3","title":"FastAPI e Web Services","topics":6,"href":"curso/trilha5/modulo-5-3.html"},{"id":"5-4","title":"Testing Automatizado","topics":6,"href":"curso/trilha5/modulo-5-4.html"},{"id":"5-5","title":"Deploy e Infraestrutura","topics":6,"href":"curso/trilha5/modulo-5-5.html"},{"id":"5-6","title":"Ship Your Product","topics":6,"href":"curso/trilha5/modulo-5-6.html"}]}]}
 </script>
 <style>
     body { font-family: 'Inter', sans-serif; }
@@ -90,16 +90,16 @@
       .wf-a:nth-child(4){animation-delay:.75s} .wf-a:nth-child(5){animation-delay:1s}
     }
   </style>
-<link href="https://inematds.github.io/claude-code-curso/curso/trilha4/modulo-4-1.html" hreflang="pt-BR" rel="alternate"/><link href="https://inematds.github.io/claude-code-curso/en/curso/trilha4/modulo-4-1.html" hreflang="en" rel="alternate"/><link href="https://inematds.github.io/claude-code-curso/es/curso/trilha4/modulo-4-1.html" hreflang="es" rel="alternate"/></head>
-<body class="bg-dark-900 text-neutral-100 min-h-screen"><div class="inema-lang" style="position:fixed;right:14px;bottom:14px;z-index:9999;display:flex;gap:2px;padding:4px;border-radius:10px;background:rgba(12,12,16,.82);border:1px solid rgba(226,162,59,.45);font:600 12px/1 Sora,Inter,system-ui,sans-serif;backdrop-filter:blur(8px)" translate="no"><a href="../../../curso/trilha4/modulo-4-1.html" hreflang="pt-BR" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">PT</a><a href="modulo-4-1.html" hreflang="en" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#1a1206;background:#E2A23B">EN</a><a href="../../../es/curso/trilha4/modulo-4-1.html" hreflang="es" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">ES</a></div>
+<link href="https://linnoff88-dev.github.io/ hreflang="pt-BR" rel="alternate"/><link href="https://linnoff88-dev.github.io/ hreflang="en" rel="alternate"/><link href="https://linnoff88-dev.github.io/ hreflang="es" rel="alternate"/></head>
+<body class="bg-dark-900 text-neutral-100 min-h-screen"><div class="ARCKHÉ-lang" style="position:fixed;right:14px;bottom:14px;z-index:9999;display:flex;gap:2px;padding:4px;border-radius:10px;background:rgba(12,12,16,.82);border:1px solid rgba(226,162,59,.45);font:600 12px/1 Sora,Inter,system-ui,sans-serif;backdrop-filter:blur(8px)" translate="no"><a href="../../../curso/trilha4/modulo-4-1.html" hreflang="pt-BR" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">PT</a><a href="modulo-4-1.html" hreflang="en" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#1a1206;background:#E2A23B">EN</a><a href="../../../es/curso/trilha4/modulo-4-1.html" hreflang="es" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">ES</a></div>
 <a class="sr-only focus:not-sr-only focus:absolute focus:z-50 focus:top-2 focus:left-2 focus:px-4 focus:py-2 focus:bg-dark-800 focus:text-amber-400 focus:rounded-lg" href="#conteudo">Skip to content</a>
 <nav class="sticky top-0 z-50 bg-dark-900/95 backdrop-blur-sm border-b border-dark-600">
 <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
 <div class="flex justify-between items-center h-14">
 <div class="flex items-center space-x-4">
-<a class="flex items-center space-x-2 text-yellow-400 hover:text-yellow-300" href="../../index.html"><span class="text-2xl">🤖</span><span class="font-bold text-lg hidden sm:inline">CLAUDE CODE</span></a>
+<a class="flex items-center space-x-2 text-yellow-400 hover:text-yellow-300" href="../../index.html"><span class="text-2xl">ðŸ¤–</span><span class="font-bold text-lg hidden sm:inline">CLAUDE CODE</span></a>
 <span class="text-neutral-600">|</span>
-<a class="text-sky-400 hover:text-sky-300 text-sm font-medium" href="https://inema.club" target="_blank">INEMA.CLUB</a>
+<a class="text-sky-400 hover:text-sky-300 text-sm font-medium" href="https://ARCKHÉ AI" target="_blank">ARCKHÉ AI</a>
 </div>
 <div class="flex items-center space-x-1 sm:space-x-2">
 <a class="px-3 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-emerald-400 hover:bg-emerald-500/10 transition-colors" href="../trilha1/index.html"><span class="sm:hidden">T1</span><span class="hidden sm:inline">CLI</span></a>
@@ -107,7 +107,7 @@
 <a class="px-3 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-purple-400 hover:bg-purple-500/10 transition-colors" href="../trilha3/index.html"><span class="sm:hidden">T3</span><span class="hidden sm:inline">MCP</span></a>
 <a class="px-3 py-1.5 rounded-lg text-sm font-semibold text-amber-400 bg-amber-500/10" href="index.html"><span class="sm:hidden">T4</span><span class="hidden sm:inline">Agents</span></a>
 <a class="px-3 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-teal-400 hover:bg-teal-500/10 transition-colors" href="../trilha5/index.html"><span class="sm:hidden">T5</span><span class="hidden sm:inline">Python</span></a>
-<button class="hidden sm:inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-sm text-neutral-300 hover:text-neutral-100 hover:bg-dark-700 transition-colors ml-1" data-inema-journey-open="" type="button"><span aria-hidden="true">◷</span><span>My journey</span><span aria-hidden="true" class="inema-journey-badge hidden"></span></button>
+<button class="hidden sm:inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-sm text-neutral-300 hover:text-neutral-100 hover:bg-dark-700 transition-colors ml-1" data-ARCKHÉ-journey-open="" type="button"><span aria-hidden="true">â—·</span><span>My journey</span><span aria-hidden="true" class="ARCKHÉ-journey-badge hidden"></span></button>
 <button aria-label="Switch theme" class="p-2 rounded-lg bg-dark-700 hover:bg-dark-600 transition-colors ml-1" id="theme-toggle">
 <svg class="hidden w-5 h-5 text-neutral-300" fill="currentColor" id="theme-toggle-dark-icon" viewbox="0 0 20 20"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg>
 <svg class="hidden w-5 h-5 text-neutral-300" fill="currentColor" id="theme-toggle-light-icon" viewbox="0 0 20 20"><path clip-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" fill-rule="evenodd"></path></svg>
@@ -126,7 +126,7 @@
 <header class="bg-gradient-to-br from-amber-900/30 via-dark-800 to-dark-800 py-12 border-b border-dark-600">
 <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
 <span class="inline-block px-3 py-1 bg-amber-500/20 text-amber-400 text-xs font-semibold rounded-full mb-4">MODULE 4.1</span>
-<h1 class="text-3xl sm:text-4xl font-bold mb-4">🤖 Subagents — Concepts</h1>
+<h1 class="text-3xl sm:text-4xl font-bold mb-4">ðŸ¤– Subagents â€” Concepts</h1>
 <p class="text-lg text-neutral-400 max-w-3xl">Understand what subagents are, how the Task tool works, the available agent types, and when it makes sense to delegate work to child agents. This module lays the conceptual foundation for all the parallelism that follows.</p>
 <div class="grid grid-cols-4 gap-4 mt-8 max-w-2xl">
 <div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-amber-400">6</div><div class="text-xs text-neutral-400">Topics</div></div>
@@ -135,51 +135,51 @@
 <div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-amber-400">Found.</div><div class="text-xs text-neutral-400">Type</div></div>
 </div>
 <div class="mt-6 max-w-2xl">
-<div aria-label="Module 4.1 progress" aria-valuemax="100" aria-valuemin="0" class="inema-meter flex items-center gap-3" data-inema-meter="modulo:4-1" role="progressbar">
+<div aria-label="Module 4.1 progress" aria-valuemax="100" aria-valuemin="0" class="ARCKHÉ-meter flex items-center gap-3" data-ARCKHÉ-meter="modulo:4-1" role="progressbar">
 <span class="text-sm text-neutral-400">Progress:</span>
-<span class="inema-meter-pct text-amber-400 font-bold text-sm">0%</span>
-<span class="inema-meter-count text-xs text-neutral-500">0 of 6</span>
+<span class="ARCKHÉ-meter-pct text-amber-400 font-bold text-sm">0%</span>
+<span class="ARCKHÉ-meter-count text-xs text-neutral-500">0 of 6</span>
 </div>
 </div>
 </div>
 </header>
 <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
 <div class="lg:grid lg:grid-cols-[230px_1fr] lg:gap-10">
-<nav aria-label="Page index" class="hidden lg:block sticky top-24 self-start" data-inema-toc="">
-<p class="text-sm text-neutral-400 mb-3">Section <span class="inema-toc-pos">1</span> of <span class="inema-toc-total">6</span></p>
+<nav aria-label="Page index" class="hidden lg:block sticky top-24 self-start" data-ARCKHÉ-toc="">
+<p class="text-sm text-neutral-400 mb-3">Section <span class="ARCKHÉ-toc-pos">1</span> of <span class="ARCKHÉ-toc-total">6</span></p>
 <ul class="space-y-1 text-sm">
-<li><a class="inema-toc-link block px-3 py-1.5 rounded-lg text-neutral-400 hover:text-amber-400 hover:bg-amber-500/10" href="#topico-1">1. What subagents are</a></li>
-<li><a class="inema-toc-link block px-3 py-1.5 rounded-lg text-neutral-400 hover:text-amber-400 hover:bg-amber-500/10" href="#topico-2">2. The Task tool</a></li>
-<li><a class="inema-toc-link block px-3 py-1.5 rounded-lg text-neutral-400 hover:text-amber-400 hover:bg-amber-500/10" href="#topico-3">3. Agent types</a></li>
-<li><a class="inema-toc-link block px-3 py-1.5 rounded-lg text-neutral-400 hover:text-amber-400 hover:bg-amber-500/10" href="#topico-4">4. Parent-child communication</a></li>
-<li><a class="inema-toc-link block px-3 py-1.5 rounded-lg text-neutral-400 hover:text-amber-400 hover:bg-amber-500/10" href="#topico-5">5. Isolation and Worktrees</a></li>
-<li><a class="inema-toc-link block px-3 py-1.5 rounded-lg text-neutral-400 hover:text-amber-400 hover:bg-amber-500/10" href="#topico-6">6. When to use it vs. when not to</a></li>
+<li><a class="ARCKHÉ-toc-link block px-3 py-1.5 rounded-lg text-neutral-400 hover:text-amber-400 hover:bg-amber-500/10" href="#topico-1">1. What subagents are</a></li>
+<li><a class="ARCKHÉ-toc-link block px-3 py-1.5 rounded-lg text-neutral-400 hover:text-amber-400 hover:bg-amber-500/10" href="#topico-2">2. The Task tool</a></li>
+<li><a class="ARCKHÉ-toc-link block px-3 py-1.5 rounded-lg text-neutral-400 hover:text-amber-400 hover:bg-amber-500/10" href="#topico-3">3. Agent types</a></li>
+<li><a class="ARCKHÉ-toc-link block px-3 py-1.5 rounded-lg text-neutral-400 hover:text-amber-400 hover:bg-amber-500/10" href="#topico-4">4. Parent-child communication</a></li>
+<li><a class="ARCKHÉ-toc-link block px-3 py-1.5 rounded-lg text-neutral-400 hover:text-amber-400 hover:bg-amber-500/10" href="#topico-5">5. Isolation and Worktrees</a></li>
+<li><a class="ARCKHÉ-toc-link block px-3 py-1.5 rounded-lg text-neutral-400 hover:text-amber-400 hover:bg-amber-500/10" href="#topico-6">6. When to use it vs. when not to</a></li>
 </ul>
 </nav>
-<main class="inema-prose min-w-0" id="conteudo">
+<main class="ARCKHÉ-prose min-w-0" id="conteudo">
 <!-- GLOSSARIO VIVO -->
 <div class="bg-dark-800 border border-amber-500/30 rounded-xl p-6 mb-12">
-<h2 class="text-lg font-bold text-amber-400 mb-2 flex items-center"><span class="mr-2">📖</span> Living glossary</h2>
+<h2 class="text-lg font-bold text-amber-400 mb-2 flex items-center"><span class="mr-2">ðŸ“–</span> Living glossary</h2>
 <p class="text-sm text-neutral-400 mb-4">Core terms in this track. Come back here whenever you need to.</p>
 <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm">
-<div class="bg-dark-700/50 rounded-lg p-3"><strong class="text-amber-400">Subagent (subagent)</strong> — a separate instance of Claude Code launched by the main agent to perform an isolated task. It has its own context and returns the result to the parent.</div>
-<div class="bg-dark-700/50 rounded-lg p-3"><strong class="text-amber-400">Task tool</strong> — Claude Code’s internal tool for creating subagents. You provide a prompt and get the result when the subagent finishes.</div>
-<div class="bg-dark-700/50 rounded-lg p-3"><strong class="text-amber-400">Worktree</strong> — an additional git working directory linked to the same repository. It lets multiple agents edit files without conflicts.</div>
-<div class="bg-dark-700/50 rounded-lg p-3"><strong class="text-amber-400">Isolation (isolation)</strong> — the separation of context and filesystem between agents. Each subagent can’t see what the others are doing.</div>
-<div class="bg-dark-700/50 rounded-lg p-3"><strong class="text-amber-400">Fan-out</strong> — the pattern of launching multiple tasks in parallel from a single point (the orchestrator).</div>
+<div class="bg-dark-700/50 rounded-lg p-3"><strong class="text-amber-400">Subagent (subagent)</strong> â€” a separate instance of Claude Code launched by the main agent to perform an isolated task. It has its own context and returns the result to the parent.</div>
+<div class="bg-dark-700/50 rounded-lg p-3"><strong class="text-amber-400">Task tool</strong> â€” Claude Codeâ€™s internal tool for creating subagents. You provide a prompt and get the result when the subagent finishes.</div>
+<div class="bg-dark-700/50 rounded-lg p-3"><strong class="text-amber-400">Worktree</strong> â€” an additional git working directory linked to the same repository. It lets multiple agents edit files without conflicts.</div>
+<div class="bg-dark-700/50 rounded-lg p-3"><strong class="text-amber-400">Isolation (isolation)</strong> â€” the separation of context and filesystem between agents. Each subagent canâ€™t see what the others are doing.</div>
+<div class="bg-dark-700/50 rounded-lg p-3"><strong class="text-amber-400">Fan-out</strong> â€” the pattern of launching multiple tasks in parallel from a single point (the orchestrator).</div>
 </div>
 </div>
 <!-- TOPICO 1 -->
-<section class="mb-16" data-inema-topic="modulo-4-1#topico-1" id="topico-1">
+<section class="mb-16" data-ARCKHÉ-topic="modulo-4-1#topico-1" id="topico-1">
 <div class="flex items-center justify-between gap-4 mb-6">
 <div class="flex items-center space-x-4"><span class="flex items-center justify-center w-12 h-12 rounded-full bg-amber-500/20 text-amber-400 font-bold text-xl flex-shrink-0">1</span><h2 class="text-2xl font-bold">What are subagents</h2></div>
-<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm flex-shrink-0" data-inema-doubt-toggle="" title="Mark this topic as a question" type="button"><span aria-hidden="true">?</span><span class="hidden sm:inline">I have a question</span></button>
+<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm flex-shrink-0" data-ARCKHÉ-doubt-toggle="" title="Mark this topic as a question" type="button"><span aria-hidden="true">?</span><span class="hidden sm:inline">I have a question</span></button>
 </div>
 <div class="bg-primary/10 border border-primary/30 rounded-xl p-5 mb-6">
-<p class="text-neutral-200"><strong class="text-primary">Imagine it this way:</strong> you are a project manager. Instead of doing everything yourself, you delegate specific tasks to team members, each with their own workspace. When they finish, they hand you the result. That’s exactly what subagents do.</p>
+<p class="text-neutral-200"><strong class="text-primary">Imagine it this way:</strong> you are a project manager. Instead of doing everything yourself, you delegate specific tasks to team members, each with their own workspace. When they finish, they hand you the result. Thatâ€™s exactly what subagents do.</p>
 </div>
-<p class="text-neutral-300 mb-4 leading-relaxed" data-inema-block="m4-1-t1-p1">So far, you’ve used Claude Code as a single agent, talking directly with it. But Claude Code has a powerful capability: it can <strong class="text-amber-400">launch other agents</strong> to run tasks in parallel. These child agents are called <span class="termo" title="A separate instance of Claude Code launched by the main agent to perform an isolated task.">subagents</span>.</p>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-inema-block="m4-1-t1-p2">Each subagent receives a specific instruction, works independently (with its own context and tools), and returns the result to the parent agent when it finishes. The parent doesn't have to wait for one subagent to finish before launching another. This allows you to <strong>multiply your work capacity</strong> from Claude Code without increasing the complexity of the main context.</p>
+<p class="text-neutral-300 mb-4 leading-relaxed" data-ARCKHÉ-block="m4-1-t1-p1">So far, youâ€™ve used Claude Code as a single agent, talking directly with it. But Claude Code has a powerful capability: it can <strong class="text-amber-400">launch other agents</strong> to run tasks in parallel. These child agents are called <span class="termo" title="A separate instance of Claude Code launched by the main agent to perform an isolated task.">subagents</span>.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m4-1-t1-p2">Each subagent receives a specific instruction, works independently (with its own context and tools), and returns the result to the parent agent when it finishes. The parent doesn't have to wait for one subagent to finish before launching another. This allows you to <strong>multiply your work capacity</strong> from Claude Code without increasing the complexity of the main context.</p>
 <div class="rounded-2xl border border-amber-500/30 bg-dark-900/40 p-3 sm:p-4 mb-6 overflow-hidden">
 <svg aria-label="The parent agent launches three subagents that work in parallel and return results" class="w-full h-auto" role="img" viewbox="0 0 1000 220">
 <defs>
@@ -216,17 +216,17 @@
 <p class="text-sm text-neutral-300"><strong class="text-amber-400">In one sentence:</strong> subagents are independent Claude Code instances that the main agent launches to do work in parallel.</p>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-amber-500/20 border border-amber-500/30 text-amber-400 hover:bg-amber-500/30 transition-colors" data-inema-read-toggle="" type="button"><span aria-hidden="true" class="inema-read-icon">○</span><span class="inema-read-label">Mark as read</span></button>
+<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-amber-500/20 border border-amber-500/30 text-amber-400 hover:bg-amber-500/30 transition-colors" data-ARCKHÉ-read-toggle="" type="button"><span aria-hidden="true" class="ARCKHÉ-read-icon">â—‹</span><span class="ARCKHÉ-read-label">Mark as read</span></button>
 </div>
 </section>
 <!-- TOPICO 2 -->
-<section class="mb-16" data-inema-topic="modulo-4-1#topico-2" id="topico-2">
+<section class="mb-16" data-ARCKHÉ-topic="modulo-4-1#topico-2" id="topico-2">
 <div class="flex items-center justify-between gap-4 mb-6">
 <div class="flex items-center space-x-4"><span class="flex items-center justify-center w-12 h-12 rounded-full bg-amber-500/20 text-amber-400 font-bold text-xl flex-shrink-0">2</span><h2 class="text-2xl font-bold">The Task tool</h2></div>
-<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm flex-shrink-0" data-inema-doubt-toggle="" title="Mark this topic as a question" type="button"><span aria-hidden="true">?</span><span class="hidden sm:inline">I have a question</span></button>
+<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm flex-shrink-0" data-ARCKHÉ-doubt-toggle="" title="Mark this topic as a question" type="button"><span aria-hidden="true">?</span><span class="hidden sm:inline">I have a question</span></button>
 </div>
-<p class="text-neutral-300 mb-4 leading-relaxed" data-inema-block="m4-1-t2-p1">A <span class="termo" title="An internal Claude Code tool that creates subagents with their own prompts and context.">Task tool</span> is the mechanism Claude Code uses internally to create subagents. When Claude decides it needs to delegate a task, it invokes the Task tool with a description of what the subagent should do. The subagent receives that instruction, does the work, and returns the textual result to the parent.</p>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-inema-block="m4-1-t2-p2">In practice, you don't need to call the Task tool explicitly. Just instruct Claude with something like "do these three things in parallel" or "create a subagent to analyze the tests while you refactor the code". Claude understands and orchestrates automatically. The important point is that each Task creates a <strong>new context</strong>, with its own CLAUDE.md loaded, and it doesn’t share in-memory state with the parent.</p>
+<p class="text-neutral-300 mb-4 leading-relaxed" data-ARCKHÉ-block="m4-1-t2-p1">A <span class="termo" title="An internal Claude Code tool that creates subagents with their own prompts and context.">Task tool</span> is the mechanism Claude Code uses internally to create subagents. When Claude decides it needs to delegate a task, it invokes the Task tool with a description of what the subagent should do. The subagent receives that instruction, does the work, and returns the textual result to the parent.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m4-1-t2-p2">In practice, you don't need to call the Task tool explicitly. Just instruct Claude with something like "do these three things in parallel" or "create a subagent to analyze the tests while you refactor the code". Claude understands and orchestrates automatically. The important point is that each Task creates a <strong>new context</strong>, with its own CLAUDE.md loaded, and it doesnâ€™t share in-memory state with the parent.</p>
 <div class="bg-blue-900/20 border border-blue-500/30 rounded-xl p-6 mb-6">
 <h3 class="font-semibold text-blue-400 mb-3">How it works under the hood</h3>
 <div class="space-y-2 text-sm text-neutral-300">
@@ -241,16 +241,16 @@
 <p class="text-sm text-neutral-300"><strong class="text-amber-400">In one sentence:</strong> the Task tool creates a subagent with its own prompt, runs it in isolation, and returns the result to the parent.</p>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-amber-500/20 border border-amber-500/30 text-amber-400 hover:bg-amber-500/30 transition-colors" data-inema-read-toggle="" type="button"><span aria-hidden="true" class="inema-read-icon">○</span><span class="inema-read-label">Mark as read</span></button>
+<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-amber-500/20 border border-amber-500/30 text-amber-400 hover:bg-amber-500/30 transition-colors" data-ARCKHÉ-read-toggle="" type="button"><span aria-hidden="true" class="ARCKHÉ-read-icon">â—‹</span><span class="ARCKHÉ-read-label">Mark as read</span></button>
 </div>
 </section>
 <!-- TOPICO 3 -->
-<section class="mb-16" data-inema-topic="modulo-4-1#topico-3" id="topico-3">
+<section class="mb-16" data-ARCKHÉ-topic="modulo-4-1#topico-3" id="topico-3">
 <div class="flex items-center justify-between gap-4 mb-6">
 <div class="flex items-center space-x-4"><span class="flex items-center justify-center w-12 h-12 rounded-full bg-amber-500/20 text-amber-400 font-bold text-xl flex-shrink-0">3</span><h2 class="text-2xl font-bold">Available agent types</h2></div>
-<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm flex-shrink-0" data-inema-doubt-toggle="" title="Mark this topic as a question" type="button"><span aria-hidden="true">?</span><span class="hidden sm:inline">I have a question</span></button>
+<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm flex-shrink-0" data-ARCKHÉ-doubt-toggle="" title="Mark this topic as a question" type="button"><span aria-hidden="true">?</span><span class="hidden sm:inline">I have a question</span></button>
 </div>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-inema-block="m4-1-t3-p1">Not every subagent needs full permissions. Claude Code lets you launch agents with different access levels, following the <strong>principle of least privilege</strong>: grant only the permissions needed for the task. This reduces risk and prevents a subagent from changing something it shouldn't.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m4-1-t3-p1">Not every subagent needs full permissions. Claude Code lets you launch agents with different access levels, following the <strong>principle of least privilege</strong>: grant only the permissions needed for the task. This reduces risk and prevents a subagent from changing something it shouldn't.</p>
 <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
 <div class="bg-amber-900/20 rounded-xl border border-amber-500/30 p-5">
 <h4 class="font-bold text-amber-400 mb-2">Read-only</h4>
@@ -269,17 +269,17 @@
 <p class="text-sm text-neutral-300"><strong class="text-amber-400">In one sentence:</strong> choose the agent type based on the required permission level: read-only, full write access, or background.</p>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-amber-500/20 border border-amber-500/30 text-amber-400 hover:bg-amber-500/30 transition-colors" data-inema-read-toggle="" type="button"><span aria-hidden="true" class="inema-read-icon">○</span><span class="inema-read-label">Mark as read</span></button>
+<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-amber-500/20 border border-amber-500/30 text-amber-400 hover:bg-amber-500/30 transition-colors" data-ARCKHÉ-read-toggle="" type="button"><span aria-hidden="true" class="ARCKHÉ-read-icon">â—‹</span><span class="ARCKHÉ-read-label">Mark as read</span></button>
 </div>
 </section>
 <!-- TOPICO 4 -->
-<section class="mb-16" data-inema-topic="modulo-4-1#topico-4" id="topico-4">
+<section class="mb-16" data-ARCKHÉ-topic="modulo-4-1#topico-4" id="topico-4">
 <div class="flex items-center justify-between gap-4 mb-6">
 <div class="flex items-center space-x-4"><span class="flex items-center justify-center w-12 h-12 rounded-full bg-amber-500/20 text-amber-400 font-bold text-xl flex-shrink-0">4</span><h2 class="text-2xl font-bold">Parent-child communication</h2></div>
-<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm flex-shrink-0" data-inema-doubt-toggle="" title="Mark this topic as a question" type="button"><span aria-hidden="true">?</span><span class="hidden sm:inline">I have a question</span></button>
+<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm flex-shrink-0" data-ARCKHÉ-doubt-toggle="" title="Mark this topic as a question" type="button"><span aria-hidden="true">?</span><span class="hidden sm:inline">I have a question</span></button>
 </div>
-<p class="text-neutral-300 mb-4 leading-relaxed" data-inema-block="m4-1-t4-p1">Communication between parent and child follows a simple model: the parent sends a <strong>instruction</strong> (the Task prompt) and the child returns a <strong>text result</strong>. There is no shared in-memory state between them. If the child needs information about the codebase, it searches for it using its own tools.</p>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-inema-block="m4-1-t4-p2">The key point: the Task prompt needs to be <strong>complete and self-contained</strong>. The subagent doesn’t have access to the parent’s conversation history. If you want it to follow a specific standard, include it in the prompt. Think of it as writing instructions for a coworker who just joined the project.</p>
+<p class="text-neutral-300 mb-4 leading-relaxed" data-ARCKHÉ-block="m4-1-t4-p1">Communication between parent and child follows a simple model: the parent sends a <strong>instruction</strong> (the Task prompt) and the child returns a <strong>text result</strong>. There is no shared in-memory state between them. If the child needs information about the codebase, it searches for it using its own tools.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m4-1-t4-p2">The key point: the Task prompt needs to be <strong>complete and self-contained</strong>. The subagent doesnâ€™t have access to the parentâ€™s conversation history. If you want it to follow a specific standard, include it in the prompt. Think of it as writing instructions for a coworker who just joined the project.</p>
 <div class="bg-red-900/20 border border-red-500/30 rounded-xl p-5 mb-6">
 <h3 class="font-semibold text-red-400 mb-2">Common mistake</h3>
 <p class="text-neutral-300 text-sm">Assuming the subagent "knows" what the parent discussed earlier. The subagent starts from scratch. If the information is critical, pass it explicitly in the Task prompt.</p>
@@ -288,17 +288,17 @@
 <p class="text-sm text-neutral-300"><strong class="text-amber-400">In one sentence:</strong> the parent sends instructions, the child returns text; there is no shared memory between them.</p>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-amber-500/20 border border-amber-500/30 text-amber-400 hover:bg-amber-500/30 transition-colors" data-inema-read-toggle="" type="button"><span aria-hidden="true" class="inema-read-icon">○</span><span class="inema-read-label">Mark as read</span></button>
+<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-amber-500/20 border border-amber-500/30 text-amber-400 hover:bg-amber-500/30 transition-colors" data-ARCKHÉ-read-toggle="" type="button"><span aria-hidden="true" class="ARCKHÉ-read-icon">â—‹</span><span class="ARCKHÉ-read-label">Mark as read</span></button>
 </div>
 </section>
 <!-- TOPICO 5 -->
-<section class="mb-16" data-inema-topic="modulo-4-1#topico-5" id="topico-5">
+<section class="mb-16" data-ARCKHÉ-topic="modulo-4-1#topico-5" id="topico-5">
 <div class="flex items-center justify-between gap-4 mb-6">
 <div class="flex items-center space-x-4"><span class="flex items-center justify-center w-12 h-12 rounded-full bg-amber-500/20 text-amber-400 font-bold text-xl flex-shrink-0">5</span><h2 class="text-2xl font-bold">Isolation and worktrees</h2></div>
-<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm flex-shrink-0" data-inema-doubt-toggle="" title="Mark this topic as a question" type="button"><span aria-hidden="true">?</span><span class="hidden sm:inline">I have a question</span></button>
+<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm flex-shrink-0" data-ARCKHÉ-doubt-toggle="" title="Mark this topic as a question" type="button"><span aria-hidden="true">?</span><span class="hidden sm:inline">I have a question</span></button>
 </div>
-<p class="text-neutral-300 mb-4 leading-relaxed" data-inema-block="m4-1-t5-p1">When two agents edit the same files at the same time, conflicts arise. The solution is the <span class="termo" title="An additional Git working directory linked to the same repository, which lets you edit files without conflicts.">isolation via worktrees</span>. A <strong>git worktree</strong> is an extra working directory linked to the same repository, each with its own branch. Each subagent works in its own worktree without stepping on the others’ space.</p>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-inema-block="m4-1-t5-p2">Claude Code can automatically create worktrees when launching subagents. At the end, the worktree branches are merged back into the main branch. It's like each team member has their own copy of the project to work on, and then they put everything together.</p>
+<p class="text-neutral-300 mb-4 leading-relaxed" data-ARCKHÉ-block="m4-1-t5-p1">When two agents edit the same files at the same time, conflicts arise. The solution is the <span class="termo" title="An additional Git working directory linked to the same repository, which lets you edit files without conflicts.">isolation via worktrees</span>. A <strong>git worktree</strong> is an extra working directory linked to the same repository, each with its own branch. Each subagent works in its own worktree without stepping on the othersâ€™ space.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m4-1-t5-p2">Claude Code can automatically create worktrees when launching subagents. At the end, the worktree branches are merged back into the main branch. It's like each team member has their own copy of the project to work on, and then they put everything together.</p>
 <div class="rounded-2xl border border-amber-500/30 bg-dark-900/40 p-3 sm:p-4 mb-6 overflow-hidden">
 <svg aria-label="Three isolated worktrees that merge into a main branch" class="w-full h-auto" role="img" viewbox="0 0 1000 200">
 <defs>
@@ -325,16 +325,16 @@
 <p class="text-sm text-neutral-300"><strong class="text-amber-400">In one sentence:</strong> worktrees give each subagent its own isolated workspace, preventing file conflicts.</p>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-amber-500/20 border border-amber-500/30 text-amber-400 hover:bg-amber-500/30 transition-colors" data-inema-read-toggle="" type="button"><span aria-hidden="true" class="inema-read-icon">○</span><span class="inema-read-label">Mark as read</span></button>
+<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-amber-500/20 border border-amber-500/30 text-amber-400 hover:bg-amber-500/30 transition-colors" data-ARCKHÉ-read-toggle="" type="button"><span aria-hidden="true" class="ARCKHÉ-read-icon">â—‹</span><span class="ARCKHÉ-read-label">Mark as read</span></button>
 </div>
 </section>
 <!-- TOPICO 6 -->
-<section class="mb-16" data-inema-topic="modulo-4-1#topico-6" id="topico-6">
+<section class="mb-16" data-ARCKHÉ-topic="modulo-4-1#topico-6" id="topico-6">
 <div class="flex items-center justify-between gap-4 mb-6">
 <div class="flex items-center space-x-4"><span class="flex items-center justify-center w-12 h-12 rounded-full bg-amber-500/20 text-amber-400 font-bold text-xl flex-shrink-0">6</span><h2 class="text-2xl font-bold">When to use vs. not use</h2></div>
-<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm flex-shrink-0" data-inema-doubt-toggle="" title="Mark this topic as a question" type="button"><span aria-hidden="true">?</span><span class="hidden sm:inline">I have a question</span></button>
+<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm flex-shrink-0" data-ARCKHÉ-doubt-toggle="" title="Mark this topic as a question" type="button"><span aria-hidden="true">?</span><span class="hidden sm:inline">I have a question</span></button>
 </div>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-inema-block="m4-1-t6-p1">Subagents aren't free. Each one consumes tokens to load the context (CLAUDE.md, tools, etc.) and has startup overhead. For simple tasks that the main agent can handle in seconds, launching a subagent is wasteful. The practical rule: use subagents when the task is <strong>independent</strong>, <strong>substantial</strong> (more than 30 seconds of work) and <strong>parallelizable</strong>.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m4-1-t6-p1">Subagents aren't free. Each one consumes tokens to load the context (CLAUDE.md, tools, etc.) and has startup overhead. For simple tasks that the main agent can handle in seconds, launching a subagent is wasteful. The practical rule: use subagents when the task is <strong>independent</strong>, <strong>substantial</strong> (more than 30 seconds of work) and <strong>parallelizable</strong>.</p>
 <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
 <div class="bg-amber-900/20 rounded-xl border border-amber-500/30 p-6">
 <h4 class="font-bold text-amber-400 mb-4">Use subagents when</h4>
@@ -353,7 +353,7 @@
 <li>- Tasks depend on each other's results</li>
 <li>- The context is almost at its limit</li>
 <li>- You need real-time interaction</li>
-<li>- The token cost isn’t justified</li>
+<li>- The token cost isnâ€™t justified</li>
 </ul>
 </div>
 </div>
@@ -361,35 +361,35 @@
 <p class="text-sm text-neutral-300"><strong class="text-amber-400">In one sentence:</strong> subagents are useful for independent, substantial tasks; not for everything.</p>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-amber-500/20 border border-amber-500/30 text-amber-400 hover:bg-amber-500/30 transition-colors" data-inema-read-toggle="" type="button"><span aria-hidden="true" class="inema-read-icon">○</span><span class="inema-read-label">Mark as read</span></button>
+<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-amber-500/20 border border-amber-500/30 text-amber-400 hover:bg-amber-500/30 transition-colors" data-ARCKHÉ-read-toggle="" type="button"><span aria-hidden="true" class="ARCKHÉ-read-icon">â—‹</span><span class="ARCKHÉ-read-label">Mark as read</span></button>
 </div>
 </section>
 <!-- RESUMO -->
 <section class="mb-12">
 <div class="bg-gradient-to-br from-amber-900/40 via-dark-800 to-dark-800 rounded-xl border border-amber-500/30 p-8">
-<h2 class="text-2xl font-bold mb-6 flex items-center"><span class="mr-3">🧾</span> Module Summary</h2>
+<h2 class="text-2xl font-bold mb-6 flex items-center"><span class="mr-3">ðŸ§¾</span> Module Summary</h2>
 <div class="space-y-4 mb-8">
-<div class="flex items-start space-x-3"><span class="text-amber-400 mt-1">✓</span><div><strong class="text-white">Subagents = child agents</strong><span class="text-neutral-400"> — independent instances with their own context.</span></div></div>
-<div class="flex items-start space-x-3"><span class="text-amber-400 mt-1">✓</span><div><strong class="text-white">Task tool = the launcher</strong><span class="text-neutral-400"> — creates subagents with a prompt and returns the result.</span></div></div>
-<div class="flex items-start space-x-3"><span class="text-amber-400 mt-1">✓</span><div><strong class="text-white">Worktrees = isolation</strong><span class="text-neutral-400"> — each agent in its own space, with no file conflicts.</span></div></div>
-<div class="flex items-start space-x-3"><span class="text-amber-400 mt-1">✓</span><div><strong class="text-white">Use with discretion</strong><span class="text-neutral-400"> — subagents have overhead; reserve them for substantial, independent tasks.</span></div></div>
+<div class="flex items-start space-x-3"><span class="text-amber-400 mt-1">âœ“</span><div><strong class="text-white">Subagents = child agents</strong><span class="text-neutral-400"> â€” independent instances with their own context.</span></div></div>
+<div class="flex items-start space-x-3"><span class="text-amber-400 mt-1">âœ“</span><div><strong class="text-white">Task tool = the launcher</strong><span class="text-neutral-400"> â€” creates subagents with a prompt and returns the result.</span></div></div>
+<div class="flex items-start space-x-3"><span class="text-amber-400 mt-1">âœ“</span><div><strong class="text-white">Worktrees = isolation</strong><span class="text-neutral-400"> â€” each agent in its own space, with no file conflicts.</span></div></div>
+<div class="flex items-start space-x-3"><span class="text-amber-400 mt-1">âœ“</span><div><strong class="text-white">Use with discretion</strong><span class="text-neutral-400"> â€” subagents have overhead; reserve them for substantial, independent tasks.</span></div></div>
 </div>
-<div class="bg-dark-800/50 rounded-lg p-4 mb-8"><h3 class="font-semibold text-amber-400 mb-2">Next module:</h3><p class="text-neutral-300">4.2 — Real Parallelism: Launching Multiple Agents and Collecting Results in Practice.</p></div>
-<div class="flex flex-col sm:flex-row gap-4"><a class="flex-1 text-center px-6 py-3 bg-dark-700 text-neutral-300 rounded-lg font-semibold hover:bg-dark-600 transition-colors" href="index.html">← Back to Track</a><a class="flex-1 text-center px-6 py-3 bg-amber-600 text-white rounded-lg font-semibold hover:bg-amber-500 transition-colors" href="modulo-4-2.html">Next Module →</a></div>
+<div class="bg-dark-800/50 rounded-lg p-4 mb-8"><h3 class="font-semibold text-amber-400 mb-2">Next module:</h3><p class="text-neutral-300">4.2 â€” Real Parallelism: Launching Multiple Agents and Collecting Results in Practice.</p></div>
+<div class="flex flex-col sm:flex-row gap-4"><a class="flex-1 text-center px-6 py-3 bg-dark-700 text-neutral-300 rounded-lg font-semibold hover:bg-dark-600 transition-colors" href="index.html">â† Back to Track</a><a class="flex-1 text-center px-6 py-3 bg-amber-600 text-white rounded-lg font-semibold hover:bg-amber-500 transition-colors" href="modulo-4-2.html">Next Module â†’</a></div>
 </div>
 </section>
 </main>
 </div>
 </div>
-<footer class="border-t border-dark-600 py-8 mt-16"><div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-neutral-500 text-sm"><p>Transition to Claude Code · <a class="text-sky-400 hover:text-sky-300" href="https://inema.club" target="_blank">INEMA.CLUB</a></p></div></footer>
+<footer class="border-t border-dark-600 py-8 mt-16"><div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-neutral-500 text-sm"><p>Transition to Claude Code Â· <a class="text-sky-400 hover:text-sky-300" href="https://ARCKHÉ AI" target="_blank">ARCKHÉ AI</a></p></div></footer>
 <script>
-    (function(){ const tt=document.getElementById('theme-toggle'),di=document.getElementById('theme-toggle-dark-icon'),li=document.getElementById('theme-toggle-light-icon'),h=document.documentElement; function s(){ if(h.classList.contains('dark')){li.classList.remove('hidden');di.classList.add('hidden');}else{di.classList.remove('hidden');li.classList.add('hidden');} } s(); tt&&tt.addEventListener('click',function(){h.classList.toggle('dark');var d=h.classList.contains('dark');h.style.colorScheme=d?'dark':'light';try{var p=JSON.parse(localStorage.getItem('inema.prefs')||'{}');p.theme=d?'inema-dark':'claro';localStorage.setItem('inema.prefs',JSON.stringify(p));localStorage.setItem('theme',d?'dark':'light');}catch(e){}s();}); })();
-    function copyBox(btn){ try{ var pre=btn.closest('.copybox').querySelector('pre'); navigator.clipboard.writeText(pre.textContent); var o=btn.textContent; btn.textContent='copiado ✓'; setTimeout(function(){btn.textContent=o;},1500);}catch(e){} }
+    (function(){ const tt=document.getElementById('theme-toggle'),di=document.getElementById('theme-toggle-dark-icon'),li=document.getElementById('theme-toggle-light-icon'),h=document.documentElement; function s(){ if(h.classList.contains('dark')){li.classList.remove('hidden');di.classList.add('hidden');}else{di.classList.remove('hidden');li.classList.add('hidden');} } s(); tt&&tt.addEventListener('click',function(){h.classList.toggle('dark');var d=h.classList.contains('dark');h.style.colorScheme=d?'dark':'light';try{var p=JSON.parse(localStorage.getItem('ARCKHÉ.prefs')||'{}');p.theme=d?'ARCKHÉ-dark':'claro';localStorage.setItem('ARCKHÉ.prefs',JSON.stringify(p));localStorage.setItem('theme',d?'dark':'light');}catch(e){}s();}); })();
+    function copyBox(btn){ try{ var pre=btn.closest('.copybox').querySelector('pre'); navigator.clipboard.writeText(pre.textContent); var o=btn.textContent; btn.textContent='copiado âœ“'; setTimeout(function(){btn.textContent=o;},1500);}catch(e){} }
   </script>
 <script src="../../../assets/learn.js"></script>
 <script>
     document.addEventListener('DOMContentLoaded', function () {
-      if (window.INEMA && typeof INEMA.init === 'function') INEMA.init();
+      if (window.ARCKHÉ && typeof ARCKHÉ.init === 'function') ARCKHÉ.init();
     });
   </script>
 </body>

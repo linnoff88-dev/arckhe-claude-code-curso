@@ -4,28 +4,28 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<meta content="claude-code" name="inema-course"/>
-<title>Track 5 · Python and Ship | Claude Code</title>
+<meta content="claude-code" name="ARCKHÉ-course"/>
+<title>Track 5 Â· Python and Ship | Claude Code</title>
 <script>
   (function () {
     try {
       var html = document.documentElement;
-      var DEF = { theme: 'inema-dark', font: 'inter', fontScale: 100, lineWidth: 68, leading: 1.7, accent: 'teal' };
+      var DEF = { theme: 'ARCKHÉ-dark', font: 'inter', fontScale: 100, lineWidth: 68, leading: 1.7, accent: 'teal' };
       function clone(o){var r={};for(var x in o)r[x]=o[x];return r;}
       var p = clone(DEF);
       try {
-        var raw = localStorage.getItem('inema.prefs');
+        var raw = localStorage.getItem('ARCKHÉ.prefs');
         if (raw) { var parsed = JSON.parse(raw); if (parsed && typeof parsed==='object'){ for (var k in DEF) if (parsed[k]!=null) p[k]=parsed[k]; } }
-        else { var legacy = localStorage.getItem('theme'); if (legacy==='light') p.theme='claro'; else if (legacy==='dark') p.theme='inema-dark'; }
+        else { var legacy = localStorage.getItem('theme'); if (legacy==='light') p.theme='claro'; else if (legacy==='dark') p.theme='ARCKHÉ-dark'; }
       } catch (e) { p = clone(DEF); }
-      var THEMES = { 'inema-dark':{dark:true,attr:null,cs:'dark'},'claro':{dark:false,attr:null,cs:'light'},'sepia':{dark:false,attr:'sepia',cs:'light'},'foco':{dark:null,attr:'foco',cs:null},'contraste':{dark:true,attr:'contraste',cs:'dark'} };
-      var t = THEMES[p.theme] || THEMES['inema-dark'];
+      var THEMES = { 'ARCKHÉ-dark':{dark:true,attr:null,cs:'dark'},'claro':{dark:false,attr:null,cs:'light'},'sepia':{dark:false,attr:'sepia',cs:'light'},'foco':{dark:null,attr:'foco',cs:null},'contraste':{dark:true,attr:'contraste',cs:'dark'} };
+      var t = THEMES[p.theme] || THEMES['ARCKHÉ-dark'];
       if (t.dark===true) html.classList.add('dark'); else if (t.dark===false) html.classList.remove('dark');
       if (t.attr) html.setAttribute('data-theme', t.attr); else html.removeAttribute('data-theme');
       html.style.colorScheme = (t.cs ? t.cs : (html.classList.contains('dark')?'dark':'light'));
       html.setAttribute('data-font', p.font||'inter'); html.setAttribute('data-accent', p.accent||'teal');
       var s = html.style, scale=(+p.fontScale||100);
-      s.setProperty('--inema-font-scale',(scale/100).toString()); s.setProperty('font-size',scale+'%');
+      s.setProperty('--ARCKHÉ-font-scale',(scale/100).toString()); s.setProperty('font-size',scale+'%');
       s.setProperty('--measure',(+p.lineWidth||68)+'ch'); s.setProperty('--lh-body',(+p.leading||1.7).toString());
     } catch (err) { try { document.documentElement.classList.add('dark'); document.documentElement.style.colorScheme='dark'; } catch(e){} }
   })();
@@ -36,8 +36,8 @@
   </script>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
 <link href="../../../assets/learn.css" rel="stylesheet"/>
-<script data-inema-manifest="" type="application/json">
-{"course":"claude-code","tracks":[{"n":"1","title":"CLI e Configuração","modules":[{"id":"1-1","title":"Instalação e Primeiro Comando","topics":6,"href":"curso/trilha1/modulo-1-1.html"},{"id":"1-2","title":"Navegando o CLI como um Pro","topics":6,"href":"curso/trilha1/modulo-1-2.html"},{"id":"1-3","title":"CLAUDE.md — O Cérebro do Projeto","topics":6,"href":"curso/trilha1/modulo-1-3.html"},{"id":"1-4","title":"Configuração Avançada","topics":6,"href":"curso/trilha1/modulo-1-4.html"},{"id":"1-5","title":"Memory e Contexto Persistente","topics":6,"href":"curso/trilha1/modulo-1-5.html"},{"id":"1-6","title":"Seu Workflow Pessoal","topics":6,"href":"curso/trilha1/modulo-1-6.html"}]},{"n":"2","title":"Plan e Loop Modes","modules":[{"id":"2-1","title":"Plan Mode — Pense Antes de Codar","topics":6,"href":"curso/trilha2/modulo-2-1.html"},{"id":"2-2","title":"Planos que Funcionam","topics":6,"href":"curso/trilha2/modulo-2-2.html"},{"id":"2-3","title":"Loop Mode — Automação Iterativa","topics":6,"href":"curso/trilha2/modulo-2-3.html"},{"id":"2-4","title":"Patterns de Loop na Prática","topics":6,"href":"curso/trilha2/modulo-2-4.html"},{"id":"2-5","title":"Combinando Plan + Loop","topics":6,"href":"curso/trilha2/modulo-2-5.html"},{"id":"2-6","title":"Agentic Coding — O Novo Normal","topics":6,"href":"curso/trilha2/modulo-2-6.html"}]},{"n":"3","title":"MCP Servers","modules":[{"id":"3-1","title":"O que são MCP Servers","topics":6,"href":"curso/trilha3/modulo-3-1.html"},{"id":"3-2","title":"Seus Primeiros MCPs","topics":6,"href":"curso/trilha3/modulo-3-2.html"},{"id":"3-3","title":"MCPs de Produtividade","topics":6,"href":"curso/trilha3/modulo-3-3.html"},{"id":"3-4","title":"MCPs de Database e APIs","topics":6,"href":"curso/trilha3/modulo-3-4.html"},{"id":"3-5","title":"Criando seu Próprio MCP Server","topics":6,"href":"curso/trilha3/modulo-3-5.html"},{"id":"3-6","title":"Ecossistema e Marketplace","topics":6,"href":"curso/trilha3/modulo-3-6.html"}]},{"n":"4","title":"Subagentes e Git","modules":[{"id":"4-1","title":"Subagentes — Conceitos","topics":6,"href":"curso/trilha4/modulo-4-1.html"},{"id":"4-2","title":"Paralelismo Real","topics":6,"href":"curso/trilha4/modulo-4-2.html"},{"id":"4-3","title":"Patterns de Multi-Agent","topics":6,"href":"curso/trilha4/modulo-4-3.html"},{"id":"4-4","title":"Git com IA — Versionamento","topics":6,"href":"curso/trilha4/modulo-4-4.html"},{"id":"4-5","title":"Pull Requests e Code Review","topics":6,"href":"curso/trilha4/modulo-4-5.html"},{"id":"4-6","title":"CI/CD e GitHub Actions","topics":6,"href":"curso/trilha4/modulo-4-6.html"}]},{"n":"5","title":"Python e Ship","modules":[{"id":"5-1","title":"Python + Claude Code","topics":6,"href":"curso/trilha5/modulo-5-1.html"},{"id":"5-2","title":"Automação de Scripts","topics":6,"href":"curso/trilha5/modulo-5-2.html"},{"id":"5-3","title":"FastAPI e Web Services","topics":6,"href":"curso/trilha5/modulo-5-3.html"},{"id":"5-4","title":"Testing Automatizado","topics":6,"href":"curso/trilha5/modulo-5-4.html"},{"id":"5-5","title":"Deploy e Infraestrutura","topics":6,"href":"curso/trilha5/modulo-5-5.html"},{"id":"5-6","title":"Ship Your Product","topics":6,"href":"curso/trilha5/modulo-5-6.html"}]}]}
+<script data-ARCKHÉ-manifest="" type="application/json">
+{"course":"claude-code","tracks":[{"n":"1","title":"CLI e ConfiguraÃ§Ã£o","modules":[{"id":"1-1","title":"InstalaÃ§Ã£o e Primeiro Comando","topics":6,"href":"curso/trilha1/modulo-1-1.html"},{"id":"1-2","title":"Navegando o CLI como um Pro","topics":6,"href":"curso/trilha1/modulo-1-2.html"},{"id":"1-3","title":"CLAUDE.md â€” O CÃ©rebro do Projeto","topics":6,"href":"curso/trilha1/modulo-1-3.html"},{"id":"1-4","title":"ConfiguraÃ§Ã£o AvanÃ§ada","topics":6,"href":"curso/trilha1/modulo-1-4.html"},{"id":"1-5","title":"Memory e Contexto Persistente","topics":6,"href":"curso/trilha1/modulo-1-5.html"},{"id":"1-6","title":"Seu Workflow Pessoal","topics":6,"href":"curso/trilha1/modulo-1-6.html"}]},{"n":"2","title":"Plan e Loop Modes","modules":[{"id":"2-1","title":"Plan Mode â€” Pense Antes de Codar","topics":6,"href":"curso/trilha2/modulo-2-1.html"},{"id":"2-2","title":"Planos que Funcionam","topics":6,"href":"curso/trilha2/modulo-2-2.html"},{"id":"2-3","title":"Loop Mode â€” AutomaÃ§Ã£o Iterativa","topics":6,"href":"curso/trilha2/modulo-2-3.html"},{"id":"2-4","title":"Patterns de Loop na PrÃ¡tica","topics":6,"href":"curso/trilha2/modulo-2-4.html"},{"id":"2-5","title":"Combinando Plan + Loop","topics":6,"href":"curso/trilha2/modulo-2-5.html"},{"id":"2-6","title":"Agentic Coding â€” O Novo Normal","topics":6,"href":"curso/trilha2/modulo-2-6.html"}]},{"n":"3","title":"MCP Servers","modules":[{"id":"3-1","title":"O que sÃ£o MCP Servers","topics":6,"href":"curso/trilha3/modulo-3-1.html"},{"id":"3-2","title":"Seus Primeiros MCPs","topics":6,"href":"curso/trilha3/modulo-3-2.html"},{"id":"3-3","title":"MCPs de Produtividade","topics":6,"href":"curso/trilha3/modulo-3-3.html"},{"id":"3-4","title":"MCPs de Database e APIs","topics":6,"href":"curso/trilha3/modulo-3-4.html"},{"id":"3-5","title":"Criando seu PrÃ³prio MCP Server","topics":6,"href":"curso/trilha3/modulo-3-5.html"},{"id":"3-6","title":"Ecossistema e Marketplace","topics":6,"href":"curso/trilha3/modulo-3-6.html"}]},{"n":"4","title":"Subagentes e Git","modules":[{"id":"4-1","title":"Subagentes â€” Conceitos","topics":6,"href":"curso/trilha4/modulo-4-1.html"},{"id":"4-2","title":"Paralelismo Real","topics":6,"href":"curso/trilha4/modulo-4-2.html"},{"id":"4-3","title":"Patterns de Multi-Agent","topics":6,"href":"curso/trilha4/modulo-4-3.html"},{"id":"4-4","title":"Git com IA â€” Versionamento","topics":6,"href":"curso/trilha4/modulo-4-4.html"},{"id":"4-5","title":"Pull Requests e Code Review","topics":6,"href":"curso/trilha4/modulo-4-5.html"},{"id":"4-6","title":"CI/CD e GitHub Actions","topics":6,"href":"curso/trilha4/modulo-4-6.html"}]},{"n":"5","title":"Python e Ship","modules":[{"id":"5-1","title":"Python + Claude Code","topics":6,"href":"curso/trilha5/modulo-5-1.html"},{"id":"5-2","title":"AutomaÃ§Ã£o de Scripts","topics":6,"href":"curso/trilha5/modulo-5-2.html"},{"id":"5-3","title":"FastAPI e Web Services","topics":6,"href":"curso/trilha5/modulo-5-3.html"},{"id":"5-4","title":"Testing Automatizado","topics":6,"href":"curso/trilha5/modulo-5-4.html"},{"id":"5-5","title":"Deploy e Infraestrutura","topics":6,"href":"curso/trilha5/modulo-5-5.html"},{"id":"5-6","title":"Ship Your Product","topics":6,"href":"curso/trilha5/modulo-5-6.html"}]}]}
 </script>
 <style>
     body { font-family: 'Inter', sans-serif; }
@@ -91,16 +91,16 @@
       .wf-a:nth-child(4){animation-delay:.75s} .wf-a:nth-child(5){animation-delay:1s}
     }
   </style>
-<link href="https://inematds.github.io/claude-code-curso/curso/trilha5/" hreflang="pt-BR" rel="alternate"/><link href="https://inematds.github.io/claude-code-curso/en/curso/trilha5/" hreflang="en" rel="alternate"/><link href="https://inematds.github.io/claude-code-curso/es/curso/trilha5/" hreflang="es" rel="alternate"/></head>
-<body class="bg-dark-900 text-neutral-100 min-h-screen"><div class="inema-lang" style="position:fixed;right:14px;bottom:14px;z-index:9999;display:flex;gap:2px;padding:4px;border-radius:10px;background:rgba(12,12,16,.82);border:1px solid rgba(226,162,59,.45);font:600 12px/1 Sora,Inter,system-ui,sans-serif;backdrop-filter:blur(8px)" translate="no"><a href="../../../curso/trilha5/" hreflang="pt-BR" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">PT</a><a href="./" hreflang="en" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#1a1206;background:#E2A23B">EN</a><a href="../../../es/curso/trilha5/" hreflang="es" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">ES</a></div>
+<link href="https://linnoff88-dev.github.io/ hreflang="pt-BR" rel="alternate"/><link href="https://linnoff88-dev.github.io/ hreflang="en" rel="alternate"/><link href="https://linnoff88-dev.github.io/ hreflang="es" rel="alternate"/></head>
+<body class="bg-dark-900 text-neutral-100 min-h-screen"><div class="ARCKHÉ-lang" style="position:fixed;right:14px;bottom:14px;z-index:9999;display:flex;gap:2px;padding:4px;border-radius:10px;background:rgba(12,12,16,.82);border:1px solid rgba(226,162,59,.45);font:600 12px/1 Sora,Inter,system-ui,sans-serif;backdrop-filter:blur(8px)" translate="no"><a href="../../../curso/trilha5/" hreflang="pt-BR" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">PT</a><a href="./" hreflang="en" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#1a1206;background:#E2A23B">EN</a><a href="../../../es/curso/trilha5/" hreflang="es" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">ES</a></div>
 <a class="sr-only focus:not-sr-only focus:absolute focus:z-50 focus:top-2 focus:left-2 focus:px-4 focus:py-2 focus:bg-dark-800 focus:text-teal-400 focus:rounded-lg" href="#conteudo">Skip to content</a>
 <nav class="sticky top-0 z-50 bg-dark-900/95 backdrop-blur-sm border-b border-dark-600">
 <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
 <div class="flex justify-between items-center h-14">
 <div class="flex items-center space-x-4">
-<a class="flex items-center space-x-2 text-yellow-400 hover:text-yellow-300" href="../../index.html"><span class="text-2xl">🤖</span><span class="font-bold text-lg hidden sm:inline">CLAUDE CODE</span></a>
+<a class="flex items-center space-x-2 text-yellow-400 hover:text-yellow-300" href="../../index.html"><span class="text-2xl">ðŸ¤–</span><span class="font-bold text-lg hidden sm:inline">CLAUDE CODE</span></a>
 <span class="text-neutral-600">|</span>
-<a class="text-sky-400 hover:text-sky-300 text-sm font-medium" href="https://inema.club" target="_blank">INEMA.CLUB</a>
+<a class="text-sky-400 hover:text-sky-300 text-sm font-medium" href="https://ARCKHÉ AI" target="_blank">ARCKHÉ AI</a>
 </div>
 <div class="flex items-center space-x-1 sm:space-x-2">
 <a class="px-3 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-emerald-400 hover:bg-emerald-500/10 transition-colors" href="../trilha1/index.html"><span class="sm:hidden">T1</span><span class="hidden sm:inline">CLI</span></a>
@@ -108,7 +108,7 @@
 <a class="px-3 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-purple-400 hover:bg-purple-500/10 transition-colors" href="../trilha3/index.html"><span class="sm:hidden">T3</span><span class="hidden sm:inline">MCP</span></a>
 <a class="px-3 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-amber-400 hover:bg-amber-500/10 transition-colors" href="../trilha4/index.html"><span class="sm:hidden">T4</span><span class="hidden sm:inline">Agents</span></a>
 <a class="px-3 py-1.5 rounded-lg text-sm font-semibold text-teal-400 bg-teal-500/10" href="index.html"><span class="sm:hidden">T5</span><span class="hidden sm:inline">Python</span></a>
-<button class="hidden sm:inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-sm text-neutral-300 hover:text-neutral-100 hover:bg-dark-700 transition-colors ml-1" data-inema-journey-open="" type="button"><span aria-hidden="true">◷</span><span>My journey</span><span aria-hidden="true" class="inema-journey-badge hidden"></span></button>
+<button class="hidden sm:inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-sm text-neutral-300 hover:text-neutral-100 hover:bg-dark-700 transition-colors ml-1" data-ARCKHÉ-journey-open="" type="button"><span aria-hidden="true">â—·</span><span>My journey</span><span aria-hidden="true" class="ARCKHÉ-journey-badge hidden"></span></button>
 <button aria-label="Switch theme" class="p-2 rounded-lg bg-dark-700 hover:bg-dark-600 transition-colors ml-1" id="theme-toggle">
 <svg class="hidden w-5 h-5 text-neutral-300" fill="currentColor" id="theme-toggle-dark-icon" viewbox="0 0 20 20"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg>
 <svg class="hidden w-5 h-5 text-neutral-300" fill="currentColor" id="theme-toggle-light-icon" viewbox="0 0 20 20"><path clip-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" fill-rule="evenodd"></path></svg>
@@ -120,7 +120,7 @@
 <header class="bg-gradient-to-br from-teal-900/30 via-dark-800 to-dark-800 py-12 border-b border-dark-600">
 <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
 <span class="inline-block px-3 py-1 bg-teal-500/20 text-teal-400 text-xs font-semibold rounded-full mb-4">TRACK 5</span>
-<h1 class="text-3xl sm:text-4xl font-bold mb-4">🤖 Python and Ship</h1>
+<h1 class="text-3xl sm:text-4xl font-bold mb-4">ðŸ¤– Python and Ship</h1>
 <p class="text-lg text-neutral-400 max-w-3xl mb-6">From simple scripts to a product in production. This track connects Python to Claude Code: setup, automation, APIs, tests, deployment, and the ship mindset. By the end, you'll have a real project published.</p>
 <div class="rounded-2xl border border-teal-500/30 bg-dark-900/40 p-3 sm:p-4 mb-6 overflow-hidden">
 <svg aria-label="Pipeline: Python setup, scripts, API, tests, and deploy converge into a live product" class="w-full h-auto" role="img" viewbox="0 0 1000 220">
@@ -160,10 +160,10 @@
 <div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-teal-400">Practical</div><div class="text-xs text-neutral-400">Level</div></div>
 </div>
 <div class="mt-6 max-w-2xl">
-<div aria-label="Path 5 progress" aria-valuemax="100" aria-valuemin="0" class="inema-meter flex items-center gap-3" data-inema-meter="trilha:5" role="progressbar">
+<div aria-label="Path 5 progress" aria-valuemax="100" aria-valuemin="0" class="ARCKHÉ-meter flex items-center gap-3" data-ARCKHÉ-meter="trilha:5" role="progressbar">
 <span class="text-sm text-neutral-400">Path progress:</span>
-<span class="inema-meter-pct text-teal-400 font-bold text-sm">0%</span>
-<span class="inema-meter-count text-xs text-neutral-500">0 of 36</span>
+<span class="ARCKHÉ-meter-pct text-teal-400 font-bold text-sm">0%</span>
+<span class="ARCKHÉ-meter-count text-xs text-neutral-500">0 of 36</span>
 </div>
 </div>
 </div>
@@ -174,49 +174,49 @@
 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
 <a class="group bg-dark-800 rounded-xl border border-dark-600 hover:border-teal-500/30 p-5 transition-all" href="#modulo-5-1">
 <div class="flex items-center justify-between mb-2"><span class="text-teal-400 font-bold text-sm">5.1</span><span class="text-xs text-neutral-500">~40 min</span></div>
-<h3 class="font-semibold mb-1 group-hover:text-teal-400 transition-colors">🐍 Python + Claude Code</h3>
+<h3 class="font-semibold mb-1 group-hover:text-teal-400 transition-colors">ðŸ Python + Claude Code</h3>
 <p class="text-xs text-neutral-400">Setup, venv, and first scripts</p>
 </a>
 <a class="group bg-dark-800 rounded-xl border border-dark-600 hover:border-teal-500/30 p-5 transition-all" href="#modulo-5-2">
 <div class="flex items-center justify-between mb-2"><span class="text-teal-400 font-bold text-sm">5.2</span><span class="text-xs text-neutral-500">~45 min</span></div>
-<h3 class="font-semibold mb-1 group-hover:text-teal-400 transition-colors">⚡ Script Automation</h3>
+<h3 class="font-semibold mb-1 group-hover:text-teal-400 transition-colors">âš¡ Script Automation</h3>
 <p class="text-xs text-neutral-400">Scraping, processing, scheduling</p>
 </a>
 <a class="group bg-dark-800 rounded-xl border border-dark-600 hover:border-teal-500/30 p-5 transition-all" href="#modulo-5-3">
 <div class="flex items-center justify-between mb-2"><span class="text-teal-400 font-bold text-sm">5.3</span><span class="text-xs text-neutral-500">~50 min</span></div>
-<h3 class="font-semibold mb-1 group-hover:text-teal-400 transition-colors">🚀 FastAPI and Web Services</h3>
+<h3 class="font-semibold mb-1 group-hover:text-teal-400 transition-colors">ðŸš€ FastAPI and Web Services</h3>
 <p class="text-xs text-neutral-400">API from zero to deploy</p>
 </a>
 <a class="group bg-dark-800 rounded-xl border border-dark-600 hover:border-teal-500/30 p-5 transition-all" href="#modulo-5-4">
 <div class="flex items-center justify-between mb-2"><span class="text-teal-400 font-bold text-sm">5.4</span><span class="text-xs text-neutral-500">~45 min</span></div>
-<h3 class="font-semibold mb-1 group-hover:text-teal-400 transition-colors">🧪 Automated Testing</h3>
+<h3 class="font-semibold mb-1 group-hover:text-teal-400 transition-colors">ðŸ§ª Automated Testing</h3>
 <p class="text-xs text-neutral-400">pytest, TDD, and coverage</p>
 </a>
 <a class="group bg-dark-800 rounded-xl border border-dark-600 hover:border-teal-500/30 p-5 transition-all" href="#modulo-5-5">
 <div class="flex items-center justify-between mb-2"><span class="text-teal-400 font-bold text-sm">5.5</span><span class="text-xs text-neutral-500">~50 min</span></div>
-<h3 class="font-semibold mb-1 group-hover:text-teal-400 transition-colors">🐳 Deployment and Infrastructure</h3>
+<h3 class="font-semibold mb-1 group-hover:text-teal-400 transition-colors">ðŸ³ Deployment and Infrastructure</h3>
 <p class="text-xs text-neutral-400">Docker, cloud, and monitoring</p>
 </a>
 <a class="group bg-dark-800 rounded-xl border border-dark-600 hover:border-teal-500/30 p-5 transition-all" href="#modulo-5-6">
 <div class="flex items-center justify-between mb-2"><span class="text-teal-400 font-bold text-sm">5.6</span><span class="text-xs text-neutral-500">~35 min</span></div>
-<h3 class="font-semibold mb-1 group-hover:text-teal-400 transition-colors">🚢 Ship Your Product</h3>
+<h3 class="font-semibold mb-1 group-hover:text-teal-400 transition-colors">ðŸš¢ Ship Your Product</h3>
 <p class="text-xs text-neutral-400">MVP, launch, and iteration</p>
 </a>
 </div>
 </section>
 <h2 class="text-2xl font-bold mb-6">Detailed content</h2>
 <!-- MODULO 5.1 -->
-<div class="bg-dark-800 rounded-xl border border-dark-600 mb-6" data-inema-module="5-1" data-inema-track="5" id="modulo-5-1">
+<div class="bg-dark-800 rounded-xl border border-dark-600 mb-6" data-ARCKHÉ-module="5-1" data-ARCKHÉ-track="5" id="modulo-5-1">
 <div class="p-6 border-b border-dark-600">
 <div class="flex items-center justify-between mb-2"><span class="text-teal-400 font-bold">5.1</span><span class="text-xs text-neutral-500">~40 min</span></div>
-<h3 class="text-2xl font-bold mb-2">🐍 Python + Claude Code</h3>
+<h3 class="text-2xl font-bold mb-2">ðŸ Python + Claude Code</h3>
 <p class="text-neutral-400 text-sm">Python setup with pyenv, virtual environments, dependencies, and your first AI-assisted scripts.</p>
 </div>
 <div class="divide-y divide-dark-600">
 <div class="topic-item">
 <button aria-expanded="false" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
 <span class="w-6 h-6 rounded-full bg-teal-500/20 text-teal-400 text-sm font-bold flex items-center justify-center flex-shrink-0">1</span>
-<span class="text-lg">🔧</span><div><span class="font-medium">Python setup (pyenv/python3)</span><span class="text-neutral-500 text-sm ml-2">- Always the right version</span></div>
+<span class="text-lg">ðŸ”§</span><div><span class="font-medium">Python setup (pyenv/python3)</span><span class="text-neutral-500 text-sm ml-2">- Always the right version</span></div>
 </button>
 <div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
 <div><span class="text-teal-400 font-semibold">What is:</span><p class="text-neutral-300 text-sm">Install and manage Python versions with pyenv or native python3.</p></div>
@@ -227,7 +227,7 @@
 <div class="topic-item">
 <button aria-expanded="false" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
 <span class="w-6 h-6 rounded-full bg-teal-500/20 text-teal-400 text-sm font-bold flex items-center justify-center flex-shrink-0">2</span>
-<span class="text-lg">📦</span><div><span class="font-medium">Virtual environments (venv/uv)</span><span class="text-neutral-500 text-sm ml-2">- Project Isolation</span></div>
+<span class="text-lg">ðŸ“¦</span><div><span class="font-medium">Virtual environments (venv/uv)</span><span class="text-neutral-500 text-sm ml-2">- Project Isolation</span></div>
 </button>
 <div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
 <div><span class="text-teal-400 font-semibold">What is:</span><p class="text-neutral-300 text-sm">Virtual environments isolate dependencies by project.</p></div>
@@ -238,7 +238,7 @@
 <div class="topic-item">
 <button aria-expanded="false" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
 <span class="w-6 h-6 rounded-full bg-teal-500/20 text-teal-400 text-sm font-bold flex items-center justify-center flex-shrink-0">3</span>
-<span class="text-lg">📥</span><div><span class="font-medium">pip/uv for dependencies</span><span class="text-neutral-500 text-sm ml-2">- Quick Management</span></div>
+<span class="text-lg">ðŸ“¥</span><div><span class="font-medium">pip/uv for dependencies</span><span class="text-neutral-500 text-sm ml-2">- Quick Management</span></div>
 </button>
 <div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
 <div><span class="text-teal-400 font-semibold">What is:</span><p class="text-neutral-300 text-sm">Install packages with pip or uv (a fast alternative to pip).</p></div>
@@ -249,7 +249,7 @@
 <div class="topic-item">
 <button aria-expanded="false" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
 <span class="w-6 h-6 rounded-full bg-teal-500/20 text-teal-400 text-sm font-bold flex items-center justify-center flex-shrink-0">4</span>
-<span class="text-lg">📝</span><div><span class="font-medium">Basic automation scripts</span><span class="text-neutral-500 text-sm ml-2">- Getting started</span></div>
+<span class="text-lg">ðŸ“</span><div><span class="font-medium">Basic automation scripts</span><span class="text-neutral-500 text-sm ml-2">- Getting started</span></div>
 </button>
 <div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
 <div><span class="text-teal-400 font-semibold">What is:</span><p class="text-neutral-300 text-sm">Write simple Python scripts with help from Claude Code.</p></div>
@@ -260,7 +260,7 @@
 <div class="topic-item">
 <button aria-expanded="false" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
 <span class="w-6 h-6 rounded-full bg-teal-500/20 text-teal-400 text-sm font-bold flex items-center justify-center flex-shrink-0">5</span>
-<span class="text-lg">🐛</span><div><span class="font-medium">Debugging with Claude</span><span class="text-neutral-500 text-sm ml-2">- AI as a Debugging Partner</span></div>
+<span class="text-lg">ðŸ›</span><div><span class="font-medium">Debugging with Claude</span><span class="text-neutral-500 text-sm ml-2">- AI as a Debugging Partner</span></div>
 </button>
 <div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
 <div><span class="text-teal-400 font-semibold">What is:</span><p class="text-neutral-300 text-sm">Use Claude Code to identify and fix bugs quickly.</p></div>
@@ -271,10 +271,10 @@
 <div class="topic-item">
 <button aria-expanded="false" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
 <span class="w-6 h-6 rounded-full bg-teal-500/20 text-teal-400 text-sm font-bold flex items-center justify-center flex-shrink-0">6</span>
-<span class="text-lg">🏷️</span><div><span class="font-medium">AI-assisted type hints</span><span class="text-neutral-500 text-sm ml-2">- Safer code</span></div>
+<span class="text-lg">ðŸ·ï¸</span><div><span class="font-medium">AI-assisted type hints</span><span class="text-neutral-500 text-sm ml-2">- Safer code</span></div>
 </button>
 <div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
-<div><span class="text-teal-400 font-semibold">What is:</span><p class="text-neutral-300 text-sm">Add type hints with Claude’s help for more robust code.</p></div>
+<div><span class="text-teal-400 font-semibold">What is:</span><p class="text-neutral-300 text-sm">Add type hints with Claudeâ€™s help for more robust code.</p></div>
 <div><span class="text-teal-400 font-semibold">Why learn:</span><p class="text-neutral-300 text-sm">Type hints improve autocomplete and reduce runtime bugs.</p></div>
 <div><span class="text-teal-400 font-semibold">Key concepts:</span><p class="text-neutral-300 text-sm">str, int, list[str], Optional, TypedDict, mypy.</p></div>
 </div></div>
@@ -285,17 +285,17 @@
 </div>
 </div>
 <!-- MODULO 5.2 -->
-<div class="bg-dark-800 rounded-xl border border-dark-600 mb-6" data-inema-module="5-2" data-inema-track="5" id="modulo-5-2">
+<div class="bg-dark-800 rounded-xl border border-dark-600 mb-6" data-ARCKHÉ-module="5-2" data-ARCKHÉ-track="5" id="modulo-5-2">
 <div class="p-6 border-b border-dark-600">
 <div class="flex items-center justify-between mb-2"><span class="text-teal-400 font-bold">5.2</span><span class="text-xs text-neutral-500">~45 min</span></div>
-<h3 class="text-2xl font-bold mb-2">⚡ Script Automation</h3>
+<h3 class="text-2xl font-bold mb-2">âš¡ Script Automation</h3>
 <p class="text-neutral-400 text-sm">Web scraping, file processing, data transforms, and scheduling with cron.</p>
 </div>
 <div class="divide-y divide-dark-600">
 <div class="topic-item">
 <button aria-expanded="false" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
 <span class="w-6 h-6 rounded-full bg-teal-500/20 text-teal-400 text-sm font-bold flex items-center justify-center flex-shrink-0">1</span>
-<span class="text-lg">🌐</span><div><span class="font-medium">Web scraping with requests+bs4</span><span class="text-neutral-500 text-sm ml-2">- Web data</span></div>
+<span class="text-lg">ðŸŒ</span><div><span class="font-medium">Web scraping with requests+bs4</span><span class="text-neutral-500 text-sm ml-2">- Web data</span></div>
 </button>
 <div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
 <div><span class="text-teal-400 font-semibold">What is:</span><p class="text-neutral-300 text-sm">Extract data from web pages with requests and BeautifulSoup.</p></div>
@@ -306,7 +306,7 @@
 <div class="topic-item">
 <button aria-expanded="false" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
 <span class="w-6 h-6 rounded-full bg-teal-500/20 text-teal-400 text-sm font-bold flex items-center justify-center flex-shrink-0">2</span>
-<span class="text-lg">📁</span><div><span class="font-medium">Bulk file processing</span><span class="text-neutral-500 text-sm ml-2">- Batch operations</span></div>
+<span class="text-lg">ðŸ“</span><div><span class="font-medium">Bulk file processing</span><span class="text-neutral-500 text-sm ml-2">- Batch operations</span></div>
 </button>
 <div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
 <div><span class="text-teal-400 font-semibold">What is:</span><p class="text-neutral-300 text-sm">Process hundreds of files with pathlib and glob.</p></div>
@@ -317,7 +317,7 @@
 <div class="topic-item">
 <button aria-expanded="false" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
 <span class="w-6 h-6 rounded-full bg-teal-500/20 text-teal-400 text-sm font-bold flex items-center justify-center flex-shrink-0">3</span>
-<span class="text-lg">🔄</span><div><span class="font-medium">Data transforms (CSV/JSON)</span><span class="text-neutral-500 text-sm ml-2">- Formats and Conversions</span></div>
+<span class="text-lg">ðŸ”„</span><div><span class="font-medium">Data transforms (CSV/JSON)</span><span class="text-neutral-500 text-sm ml-2">- Formats and Conversions</span></div>
 </button>
 <div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
 <div><span class="text-teal-400 font-semibold">What is:</span><p class="text-neutral-300 text-sm">Read, transform, and export data between CSV, JSON, and other formats.</p></div>
@@ -328,7 +328,7 @@
 <div class="topic-item">
 <button aria-expanded="false" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
 <span class="w-6 h-6 rounded-full bg-teal-500/20 text-teal-400 text-sm font-bold flex items-center justify-center flex-shrink-0">4</span>
-<span class="text-lg">⏰</span><div><span class="font-medium">Scheduling with cron</span><span class="text-neutral-500 text-sm ml-2">- Time-based automation</span></div>
+<span class="text-lg">â°</span><div><span class="font-medium">Scheduling with cron</span><span class="text-neutral-500 text-sm ml-2">- Time-based automation</span></div>
 </button>
 <div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
 <div><span class="text-teal-400 font-semibold">What is:</span><p class="text-neutral-300 text-sm">Schedule scripts to run automatically with cron/systemd.</p></div>
@@ -339,7 +339,7 @@
 <div class="topic-item">
 <button aria-expanded="false" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
 <span class="w-6 h-6 rounded-full bg-teal-500/20 text-teal-400 text-sm font-bold flex items-center justify-center flex-shrink-0">5</span>
-<span class="text-lg">🔌</span><div><span class="font-medium">Third-party APIs</span><span class="text-neutral-500 text-sm ml-2">- Integrating Services</span></div>
+<span class="text-lg">ðŸ”Œ</span><div><span class="font-medium">Third-party APIs</span><span class="text-neutral-500 text-sm ml-2">- Integrating Services</span></div>
 </button>
 <div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
 <div><span class="text-teal-400 font-semibold">What is:</span><p class="text-neutral-300 text-sm">Consume REST APIs from services like GitHub, Slack, etc.</p></div>
@@ -350,7 +350,7 @@
 <div class="topic-item">
 <button aria-expanded="false" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
 <span class="w-6 h-6 rounded-full bg-teal-500/20 text-teal-400 text-sm font-bold flex items-center justify-center flex-shrink-0">6</span>
-<span class="text-lg">🛡️</span><div><span class="font-medium">Robust error handling</span><span class="text-neutral-500 text-sm ml-2">- Scripts that don’t break</span></div>
+<span class="text-lg">ðŸ›¡ï¸</span><div><span class="font-medium">Robust error handling</span><span class="text-neutral-500 text-sm ml-2">- Scripts that donâ€™t break</span></div>
 </button>
 <div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
 <div><span class="text-teal-400 font-semibold">What is:</span><p class="text-neutral-300 text-sm">try/except, logging, retries, and graceful degradation.</p></div>
@@ -364,17 +364,17 @@
 </div>
 </div>
 <!-- MODULO 5.3 -->
-<div class="bg-dark-800 rounded-xl border border-dark-600 mb-6" data-inema-module="5-3" data-inema-track="5" id="modulo-5-3">
+<div class="bg-dark-800 rounded-xl border border-dark-600 mb-6" data-ARCKHÉ-module="5-3" data-ARCKHÉ-track="5" id="modulo-5-3">
 <div class="p-6 border-b border-dark-600">
 <div class="flex items-center justify-between mb-2"><span class="text-teal-400 font-bold">5.3</span><span class="text-xs text-neutral-500">~50 min</span></div>
-<h3 class="text-2xl font-bold mb-2">🚀 FastAPI and Web Services</h3>
+<h3 class="text-2xl font-bold mb-2">ðŸš€ FastAPI and Web Services</h3>
 <p class="text-neutral-400 text-sm">Build professional APIs with FastAPI, Pydantic, and automatic docs.</p>
 </div>
 <div class="divide-y divide-dark-600">
 <div class="topic-item">
 <button aria-expanded="false" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
 <span class="w-6 h-6 rounded-full bg-teal-500/20 text-teal-400 text-sm font-bold flex items-center justify-center flex-shrink-0">1</span>
-<span class="text-lg">⚡</span><div><span class="font-medium">FastAPI from scratch</span><span class="text-neutral-500 text-sm ml-2">- Hello API</span></div>
+<span class="text-lg">âš¡</span><div><span class="font-medium">FastAPI from scratch</span><span class="text-neutral-500 text-sm ml-2">- Hello API</span></div>
 </button>
 <div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
 <div><span class="text-teal-400 font-semibold">What is:</span><p class="text-neutral-300 text-sm">Create your first API with FastAPI in minutes.</p></div>
@@ -385,7 +385,7 @@
 <div class="topic-item">
 <button aria-expanded="false" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
 <span class="w-6 h-6 rounded-full bg-teal-500/20 text-teal-400 text-sm font-bold flex items-center justify-center flex-shrink-0">2</span>
-<span class="text-lg">📐</span><div><span class="font-medium">Pydantic models</span><span class="text-neutral-500 text-sm ml-2">- Automated validation</span></div>
+<span class="text-lg">ðŸ“</span><div><span class="font-medium">Pydantic models</span><span class="text-neutral-500 text-sm ml-2">- Automated validation</span></div>
 </button>
 <div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
 <div><span class="text-teal-400 font-semibold">What is:</span><p class="text-neutral-300 text-sm">Define data schemas with Pydantic BaseModel.</p></div>
@@ -396,7 +396,7 @@
 <div class="topic-item">
 <button aria-expanded="false" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
 <span class="w-6 h-6 rounded-full bg-teal-500/20 text-teal-400 text-sm font-bold flex items-center justify-center flex-shrink-0">3</span>
-<span class="text-lg">🔁</span><div><span class="font-medium">CRUD endpoints</span><span class="text-neutral-500 text-sm ml-2">- Create, Read, Update, Delete</span></div>
+<span class="text-lg">ðŸ”</span><div><span class="font-medium">CRUD endpoints</span><span class="text-neutral-500 text-sm ml-2">- Create, Read, Update, Delete</span></div>
 </button>
 <div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
 <div><span class="text-teal-400 font-semibold">What is:</span><p class="text-neutral-300 text-sm">Implement the four basic operations of any API.</p></div>
@@ -407,7 +407,7 @@
 <div class="topic-item">
 <button aria-expanded="false" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
 <span class="w-6 h-6 rounded-full bg-teal-500/20 text-teal-400 text-sm font-bold flex items-center justify-center flex-shrink-0">4</span>
-<span class="text-lg">🔒</span><div><span class="font-medium">Middleware and authentication</span><span class="text-neutral-500 text-sm ml-2">- Basic security</span></div>
+<span class="text-lg">ðŸ”’</span><div><span class="font-medium">Middleware and authentication</span><span class="text-neutral-500 text-sm ml-2">- Basic security</span></div>
 </button>
 <div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
 <div><span class="text-teal-400 font-semibold">What is:</span><p class="text-neutral-300 text-sm">Add CORS, rate limiting, and basic authentication.</p></div>
@@ -418,7 +418,7 @@
 <div class="topic-item">
 <button aria-expanded="false" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
 <span class="w-6 h-6 rounded-full bg-teal-500/20 text-teal-400 text-sm font-bold flex items-center justify-center flex-shrink-0">5</span>
-<span class="text-lg">📄</span><div><span class="font-medium">Automatic docs (Swagger)</span><span class="text-neutral-500 text-sm ml-2">- /docs for free</span></div>
+<span class="text-lg">ðŸ“„</span><div><span class="font-medium">Automatic docs (Swagger)</span><span class="text-neutral-500 text-sm ml-2">- /docs for free</span></div>
 </button>
 <div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
 <div><span class="text-teal-400 font-semibold">What is:</span><p class="text-neutral-300 text-sm">FastAPI automatically generates Swagger UI and ReDoc.</p></div>
@@ -429,11 +429,11 @@
 <div class="topic-item">
 <button aria-expanded="false" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
 <span class="w-6 h-6 rounded-full bg-teal-500/20 text-teal-400 text-sm font-bold flex items-center justify-center flex-shrink-0">6</span>
-<span class="text-lg">🌍</span><div><span class="font-medium">Local and remote deployment</span><span class="text-neutral-500 text-sm ml-2">- From localhost to the world</span></div>
+<span class="text-lg">ðŸŒ</span><div><span class="font-medium">Local and remote deployment</span><span class="text-neutral-500 text-sm ml-2">- From localhost to the world</span></div>
 </button>
 <div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
 <div><span class="text-teal-400 font-semibold">What is:</span><p class="text-neutral-300 text-sm">Run locally with uvicorn and deploy remotely with gunicorn.</p></div>
-<div><span class="text-teal-400 font-semibold">Why learn:</span><p class="text-neutral-300 text-sm">An API that only runs locally isn’t a product.</p></div>
+<div><span class="text-teal-400 font-semibold">Why learn:</span><p class="text-neutral-300 text-sm">An API that only runs locally isnâ€™t a product.</p></div>
 <div><span class="text-teal-400 font-semibold">Key concepts:</span><p class="text-neutral-300 text-sm">uvicorn, gunicorn, reverse proxy, HTTPS.</p></div>
 </div></div>
 </div>
@@ -443,17 +443,17 @@
 </div>
 </div>
 <!-- MODULO 5.4 -->
-<div class="bg-dark-800 rounded-xl border border-dark-600 mb-6" data-inema-module="5-4" data-inema-track="5" id="modulo-5-4">
+<div class="bg-dark-800 rounded-xl border border-dark-600 mb-6" data-ARCKHÉ-module="5-4" data-ARCKHÉ-track="5" id="modulo-5-4">
 <div class="p-6 border-b border-dark-600">
 <div class="flex items-center justify-between mb-2"><span class="text-teal-400 font-bold">5.4</span><span class="text-xs text-neutral-500">~45 min</span></div>
-<h3 class="text-2xl font-bold mb-2">🧪 Automated Testing</h3>
+<h3 class="text-2xl font-bold mb-2">ðŸ§ª Automated Testing</h3>
 <p class="text-neutral-400 text-sm">pytest, fixtures, mocks, coverage, and TDD with Claude Code.</p>
 </div>
 <div class="divide-y divide-dark-600">
 <div class="topic-item">
 <button aria-expanded="false" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
 <span class="w-6 h-6 rounded-full bg-teal-500/20 text-teal-400 text-sm font-bold flex items-center justify-center flex-shrink-0">1</span>
-<span class="text-lg">✅</span><div><span class="font-medium">pytest basics</span><span class="text-neutral-500 text-sm ml-2">- Your first test</span></div>
+<span class="text-lg">âœ…</span><div><span class="font-medium">pytest basics</span><span class="text-neutral-500 text-sm ml-2">- Your first test</span></div>
 </button>
 <div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
 <div><span class="text-teal-400 font-semibold">What is:</span><p class="text-neutral-300 text-sm">Write and run tests with pytest.</p></div>
@@ -464,7 +464,7 @@
 <div class="topic-item">
 <button aria-expanded="false" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
 <span class="w-6 h-6 rounded-full bg-teal-500/20 text-teal-400 text-sm font-bold flex items-center justify-center flex-shrink-0">2</span>
-<span class="text-lg">🔩</span><div><span class="font-medium">Fixtures and conftest</span><span class="text-neutral-500 text-sm ml-2">- Reusable setup</span></div>
+<span class="text-lg">ðŸ”©</span><div><span class="font-medium">Fixtures and conftest</span><span class="text-neutral-500 text-sm ml-2">- Reusable setup</span></div>
 </button>
 <div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
 <div><span class="text-teal-400 font-semibold">What is:</span><p class="text-neutral-300 text-sm">Fixtures set up state; conftest.py shares it across files.</p></div>
@@ -475,7 +475,7 @@
 <div class="topic-item">
 <button aria-expanded="false" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
 <span class="w-6 h-6 rounded-full bg-teal-500/20 text-teal-400 text-sm font-bold flex items-center justify-center flex-shrink-0">3</span>
-<span class="text-lg">🎭</span><div><span class="font-medium">Mocks and patches</span><span class="text-neutral-500 text-sm ml-2">- Isolating Dependencies</span></div>
+<span class="text-lg">ðŸŽ­</span><div><span class="font-medium">Mocks and patches</span><span class="text-neutral-500 text-sm ml-2">- Isolating Dependencies</span></div>
 </button>
 <div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
 <div><span class="text-teal-400 font-semibold">What is:</span><p class="text-neutral-300 text-sm">Simulate external dependencies with unittest.mock.</p></div>
@@ -486,7 +486,7 @@
 <div class="topic-item">
 <button aria-expanded="false" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
 <span class="w-6 h-6 rounded-full bg-teal-500/20 text-teal-400 text-sm font-bold flex items-center justify-center flex-shrink-0">4</span>
-<span class="text-lg">📊</span><div><span class="font-medium">Coverage report</span><span class="text-neutral-500 text-sm ml-2">- How much is covered</span></div>
+<span class="text-lg">ðŸ“Š</span><div><span class="font-medium">Coverage report</span><span class="text-neutral-500 text-sm ml-2">- How much is covered</span></div>
 </button>
 <div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
 <div><span class="text-teal-400 font-semibold">What is:</span><p class="text-neutral-300 text-sm">Measure which lines of code are exercised by the tests.</p></div>
@@ -497,7 +497,7 @@
 <div class="topic-item">
 <button aria-expanded="false" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
 <span class="w-6 h-6 rounded-full bg-teal-500/20 text-teal-400 text-sm font-bold flex items-center justify-center flex-shrink-0">5</span>
-<span class="text-lg">🔴</span><div><span class="font-medium">TDD with Claude</span><span class="text-neutral-500 text-sm ml-2">- Red, green, refactor</span></div>
+<span class="text-lg">ðŸ”´</span><div><span class="font-medium">TDD with Claude</span><span class="text-neutral-500 text-sm ml-2">- Red, green, refactor</span></div>
 </button>
 <div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
 <div><span class="text-teal-400 font-semibold">What is:</span><p class="text-neutral-300 text-sm">Write the test before the code, with Claude generating the implementation.</p></div>
@@ -508,7 +508,7 @@
 <div class="topic-item">
 <button aria-expanded="false" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
 <span class="w-6 h-6 rounded-full bg-teal-500/20 text-teal-400 text-sm font-bold flex items-center justify-center flex-shrink-0">6</span>
-<span class="text-lg">🔗</span><div><span class="font-medium">CI integration</span><span class="text-neutral-500 text-sm ml-2">- Tests in the pipeline</span></div>
+<span class="text-lg">ðŸ”—</span><div><span class="font-medium">CI integration</span><span class="text-neutral-500 text-sm ml-2">- Tests in the pipeline</span></div>
 </button>
 <div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
 <div><span class="text-teal-400 font-semibold">What is:</span><p class="text-neutral-300 text-sm">Run tests automatically on every push/PR.</p></div>
@@ -522,17 +522,17 @@
 </div>
 </div>
 <!-- MODULO 5.5 -->
-<div class="bg-dark-800 rounded-xl border border-dark-600 mb-6" data-inema-module="5-5" data-inema-track="5" id="modulo-5-5">
+<div class="bg-dark-800 rounded-xl border border-dark-600 mb-6" data-ARCKHÉ-module="5-5" data-ARCKHÉ-track="5" id="modulo-5-5">
 <div class="p-6 border-b border-dark-600">
 <div class="flex items-center justify-between mb-2"><span class="text-teal-400 font-bold">5.5</span><span class="text-xs text-neutral-500">~50 min</span></div>
-<h3 class="text-2xl font-bold mb-2">🐳 Deployment and Infrastructure</h3>
+<h3 class="text-2xl font-bold mb-2">ðŸ³ Deployment and Infrastructure</h3>
 <p class="text-neutral-400 text-sm">Docker, cloud deployment, environment management, and monitoring.</p>
 </div>
 <div class="divide-y divide-dark-600">
 <div class="topic-item">
 <button aria-expanded="false" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
 <span class="w-6 h-6 rounded-full bg-teal-500/20 text-teal-400 text-sm font-bold flex items-center justify-center flex-shrink-0">1</span>
-<span class="text-lg">📦</span><div><span class="font-medium">Docker basics</span><span class="text-neutral-500 text-sm ml-2">- Containerize everything</span></div>
+<span class="text-lg">ðŸ“¦</span><div><span class="font-medium">Docker basics</span><span class="text-neutral-500 text-sm ml-2">- Containerize everything</span></div>
 </button>
 <div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
 <div><span class="text-teal-400 font-semibold">What is:</span><p class="text-neutral-300 text-sm">Package your Python app in a Docker container.</p></div>
@@ -543,7 +543,7 @@
 <div class="topic-item">
 <button aria-expanded="false" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
 <span class="w-6 h-6 rounded-full bg-teal-500/20 text-teal-400 text-sm font-bold flex items-center justify-center flex-shrink-0">2</span>
-<span class="text-lg">🎼</span><div><span class="font-medium">Docker Compose</span><span class="text-neutral-500 text-sm ml-2">- Multi-Service</span></div>
+<span class="text-lg">ðŸŽ¼</span><div><span class="font-medium">Docker Compose</span><span class="text-neutral-500 text-sm ml-2">- Multi-Service</span></div>
 </button>
 <div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
 <div><span class="text-teal-400 font-semibold">What is:</span><p class="text-neutral-300 text-sm">Orchestrate multiple containers (app + DB + redis) with a YAML file.</p></div>
@@ -554,7 +554,7 @@
 <div class="topic-item">
 <button aria-expanded="false" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
 <span class="w-6 h-6 rounded-full bg-teal-500/20 text-teal-400 text-sm font-bold flex items-center justify-center flex-shrink-0">3</span>
-<span class="text-lg">☁️</span><div><span class="font-medium">Cloud deploy (Railway/Fly.io)</span><span class="text-neutral-500 text-sm ml-2">- Live in Minutes</span></div>
+<span class="text-lg">â˜ï¸</span><div><span class="font-medium">Cloud deploy (Railway/Fly.io)</span><span class="text-neutral-500 text-sm ml-2">- Live in Minutes</span></div>
 </button>
 <div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
 <div><span class="text-teal-400 font-semibold">What is:</span><p class="text-neutral-300 text-sm">Deploy with one command on platforms like Railway or Fly.io.</p></div>
@@ -565,7 +565,7 @@
 <div class="topic-item">
 <button aria-expanded="false" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
 <span class="w-6 h-6 rounded-full bg-teal-500/20 text-teal-400 text-sm font-bold flex items-center justify-center flex-shrink-0">4</span>
-<span class="text-lg">🔐</span><div><span class="font-medium">Environment management</span><span class="text-neutral-500 text-sm ml-2">- Secrets and configs</span></div>
+<span class="text-lg">ðŸ”</span><div><span class="font-medium">Environment management</span><span class="text-neutral-500 text-sm ml-2">- Secrets and configs</span></div>
 </button>
 <div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
 <div><span class="text-teal-400 font-semibold">What is:</span><p class="text-neutral-300 text-sm">Manage .env, secrets, and configs by environment (dev/staging/prod).</p></div>
@@ -576,7 +576,7 @@
 <div class="topic-item">
 <button aria-expanded="false" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
 <span class="w-6 h-6 rounded-full bg-teal-500/20 text-teal-400 text-sm font-bold flex items-center justify-center flex-shrink-0">5</span>
-<span class="text-lg">📈</span><div><span class="font-medium">Monitoring and logs</span><span class="text-neutral-500 text-sm ml-2">- Know what’s happening</span></div>
+<span class="text-lg">ðŸ“ˆ</span><div><span class="font-medium">Monitoring and logs</span><span class="text-neutral-500 text-sm ml-2">- Know whatâ€™s happening</span></div>
 </button>
 <div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
 <div><span class="text-teal-400 font-semibold">What is:</span><p class="text-neutral-300 text-sm">Structured logging, health checks, and basic alerts.</p></div>
@@ -587,7 +587,7 @@
 <div class="topic-item">
 <button aria-expanded="false" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
 <span class="w-6 h-6 rounded-full bg-teal-500/20 text-teal-400 text-sm font-bold flex items-center justify-center flex-shrink-0">6</span>
-<span class="text-lg">📏</span><div><span class="font-medium">Scaling basics</span><span class="text-neutral-500 text-sm ml-2">- As it grows</span></div>
+<span class="text-lg">ðŸ“</span><div><span class="font-medium">Scaling basics</span><span class="text-neutral-500 text-sm ml-2">- As it grows</span></div>
 </button>
 <div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
 <div><span class="text-teal-400 font-semibold">What is:</span><p class="text-neutral-300 text-sm">Horizontal vs. vertical scaling, caching, and when to consider them.</p></div>
@@ -601,28 +601,28 @@
 </div>
 </div>
 <!-- MODULO 5.6 -->
-<div class="bg-dark-800 rounded-xl border border-dark-600 mb-6" data-inema-module="5-6" data-inema-track="5" id="modulo-5-6">
+<div class="bg-dark-800 rounded-xl border border-dark-600 mb-6" data-ARCKHÉ-module="5-6" data-ARCKHÉ-track="5" id="modulo-5-6">
 <div class="p-6 border-b border-dark-600">
 <div class="flex items-center justify-between mb-2"><span class="text-teal-400 font-bold">5.6</span><span class="text-xs text-neutral-500">~35 min</span></div>
-<h3 class="text-2xl font-bold mb-2">🚢 Ship Your Product</h3>
+<h3 class="text-2xl font-bold mb-2">ðŸš¢ Ship Your Product</h3>
 <p class="text-neutral-400 text-sm">MVP mindset, launch checklist, and the post-launch iteration cycle.</p>
 </div>
 <div class="divide-y divide-dark-600">
 <div class="topic-item">
 <button aria-expanded="false" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
 <span class="w-6 h-6 rounded-full bg-teal-500/20 text-teal-400 text-sm font-bold flex items-center justify-center flex-shrink-0">1</span>
-<span class="text-lg">🎯</span><div><span class="font-medium">MVP mindset</span><span class="text-neutral-500 text-sm ml-2">- The minimum that gets the job done</span></div>
+<span class="text-lg">ðŸŽ¯</span><div><span class="font-medium">MVP mindset</span><span class="text-neutral-500 text-sm ml-2">- The minimum that gets the job done</span></div>
 </button>
 <div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
 <div><span class="text-teal-400 font-semibold">What is:</span><p class="text-neutral-300 text-sm">Build the minimum viable solution that delivers real value.</p></div>
 <div><span class="text-teal-400 font-semibold">Why learn:</span><p class="text-neutral-300 text-sm">Perfectionism kills projects; MVPs launch projects.</p></div>
-<div><span class="text-teal-400 font-semibold">Key concepts:</span><p class="text-neutral-300 text-sm">MVP, scope cutting, “good enough,” time-boxed.</p></div>
+<div><span class="text-teal-400 font-semibold">Key concepts:</span><p class="text-neutral-300 text-sm">MVP, scope cutting, â€œgood enough,â€ time-boxed.</p></div>
 </div></div>
 </div>
 <div class="topic-item">
 <button aria-expanded="false" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
 <span class="w-6 h-6 rounded-full bg-teal-500/20 text-teal-400 text-sm font-bold flex items-center justify-center flex-shrink-0">2</span>
-<span class="text-lg">🗡️</span><div><span class="font-medium">Ruthless prioritization</span><span class="text-neutral-500 text-sm ml-2">- Cut without mercy</span></div>
+<span class="text-lg">ðŸ—¡ï¸</span><div><span class="font-medium">Ruthless prioritization</span><span class="text-neutral-500 text-sm ml-2">- Cut without mercy</span></div>
 </button>
 <div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
 <div><span class="text-teal-400 font-semibold">What is:</span><p class="text-neutral-300 text-sm">Deciding what NOT to do is just as important as deciding what to do.</p></div>
@@ -633,7 +633,7 @@
 <div class="topic-item">
 <button aria-expanded="false" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
 <span class="w-6 h-6 rounded-full bg-teal-500/20 text-teal-400 text-sm font-bold flex items-center justify-center flex-shrink-0">3</span>
-<span class="text-lg">📋</span><div><span class="font-medium">Launch checklist</span><span class="text-neutral-500 text-sm ml-2">- Don't Forget Anything</span></div>
+<span class="text-lg">ðŸ“‹</span><div><span class="font-medium">Launch checklist</span><span class="text-neutral-500 text-sm ml-2">- Don't Forget Anything</span></div>
 </button>
 <div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
 <div><span class="text-teal-400 font-semibold">What is:</span><p class="text-neutral-300 text-sm">Pre-release checklist: tests, docs, monitoring, rollback.</p></div>
@@ -644,7 +644,7 @@
 <div class="topic-item">
 <button aria-expanded="false" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
 <span class="w-6 h-6 rounded-full bg-teal-500/20 text-teal-400 text-sm font-bold flex items-center justify-center flex-shrink-0">4</span>
-<span class="text-lg">🔄</span><div><span class="font-medium">Feedback loop</span><span class="text-neutral-500 text-sm ml-2">- Listen and act</span></div>
+<span class="text-lg">ðŸ”„</span><div><span class="font-medium">Feedback loop</span><span class="text-neutral-500 text-sm ml-2">- Listen and act</span></div>
 </button>
 <div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
 <div><span class="text-teal-400 font-semibold">What is:</span><p class="text-neutral-300 text-sm">Collect real feedback and turn it into improvements.</p></div>
@@ -655,7 +655,7 @@
 <div class="topic-item">
 <button aria-expanded="false" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
 <span class="w-6 h-6 rounded-full bg-teal-500/20 text-teal-400 text-sm font-bold flex items-center justify-center flex-shrink-0">5</span>
-<span class="text-lg">🔁</span><div><span class="font-medium">Post-launch iteration</span><span class="text-neutral-500 text-sm ml-2">- Improving Continuously</span></div>
+<span class="text-lg">ðŸ”</span><div><span class="font-medium">Post-launch iteration</span><span class="text-neutral-500 text-sm ml-2">- Improving Continuously</span></div>
 </button>
 <div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
 <div><span class="text-teal-400 font-semibold">What is:</span><p class="text-neutral-300 text-sm">Short build-measure-learn cycles after launch.</p></div>
@@ -666,7 +666,7 @@
 <div class="topic-item">
 <button aria-expanded="false" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
 <span class="w-6 h-6 rounded-full bg-teal-500/20 text-teal-400 text-sm font-bold flex items-center justify-center flex-shrink-0">6</span>
-<span class="text-lg">🌟</span><div><span class="font-medium">What comes next</span><span class="text-neutral-500 text-sm ml-2">- Next level</span></div>
+<span class="text-lg">ðŸŒŸ</span><div><span class="font-medium">What comes next</span><span class="text-neutral-500 text-sm ml-2">- Next level</span></div>
 </button>
 <div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
 <div><span class="text-teal-400 font-semibold">What is:</span><p class="text-neutral-300 text-sm">Paths after mastering Python + Claude Code: SaaS, open source, consulting.</p></div>
@@ -680,15 +680,15 @@
 </div>
 </div>
 </main>
-<footer class="border-t border-dark-600 py-8 mt-16"><div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-neutral-500 text-sm"><p>Transition to Claude Code · <a class="text-sky-400 hover:text-sky-300" href="https://inema.club" target="_blank">INEMA.CLUB</a></p></div></footer>
+<footer class="border-t border-dark-600 py-8 mt-16"><div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-neutral-500 text-sm"><p>Transition to Claude Code Â· <a class="text-sky-400 hover:text-sky-300" href="https://ARCKHÉ AI" target="_blank">ARCKHÉ AI</a></p></div></footer>
 <script>
     function toggleTopic(button){ const ti=button.closest('.topic-item'); if(!ti)return; const e=ti.querySelector('.topic-explanation'); if(e){e.classList.toggle('active'); button.setAttribute('aria-expanded', e.classList.contains('active'));} }
-    (function(){ const tt=document.getElementById('theme-toggle'),di=document.getElementById('theme-toggle-dark-icon'),li=document.getElementById('theme-toggle-light-icon'),h=document.documentElement; function s(){ if(h.classList.contains('dark')){li.classList.remove('hidden');di.classList.add('hidden');}else{di.classList.remove('hidden');li.classList.add('hidden');} } s(); tt&&tt.addEventListener('click',function(){h.classList.toggle('dark');var d=h.classList.contains('dark');h.style.colorScheme=d?'dark':'light';try{var p=JSON.parse(localStorage.getItem('inema.prefs')||'{}');p.theme=d?'inema-dark':'claro';localStorage.setItem('inema.prefs',JSON.stringify(p));localStorage.setItem('theme',d?'dark':'light');}catch(e){}s();}); })();
+    (function(){ const tt=document.getElementById('theme-toggle'),di=document.getElementById('theme-toggle-dark-icon'),li=document.getElementById('theme-toggle-light-icon'),h=document.documentElement; function s(){ if(h.classList.contains('dark')){li.classList.remove('hidden');di.classList.add('hidden');}else{di.classList.remove('hidden');li.classList.add('hidden');} } s(); tt&&tt.addEventListener('click',function(){h.classList.toggle('dark');var d=h.classList.contains('dark');h.style.colorScheme=d?'dark':'light';try{var p=JSON.parse(localStorage.getItem('ARCKHÉ.prefs')||'{}');p.theme=d?'ARCKHÉ-dark':'claro';localStorage.setItem('ARCKHÉ.prefs',JSON.stringify(p));localStorage.setItem('theme',d?'dark':'light');}catch(e){}s();}); })();
   </script>
 <script src="../../../assets/learn.js"></script>
 <script>
     document.addEventListener('DOMContentLoaded', function () {
-      if (window.INEMA && typeof INEMA.init === 'function') INEMA.init();
+      if (window.ARCKHÉ && typeof ARCKHÉ.init === 'function') ARCKHÉ.init();
     });
   </script>
 </body>

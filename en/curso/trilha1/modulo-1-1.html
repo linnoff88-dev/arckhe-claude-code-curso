@@ -4,28 +4,28 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<meta content="claude-code" name="inema-course"/>
+<meta content="claude-code" name="ARCKHÉ-course"/>
 <title>1.1 Installation and First Command | Claude Code</title>
 <script>
   (function () {
     try {
       var html = document.documentElement;
-      var DEF = { theme: 'inema-dark', font: 'inter', fontScale: 100, lineWidth: 68, leading: 1.7, accent: 'emerald' };
+      var DEF = { theme: 'ARCKHÉ-dark', font: 'inter', fontScale: 100, lineWidth: 68, leading: 1.7, accent: 'emerald' };
       function clone(o){var r={};for(var x in o)r[x]=o[x];return r;}
       var p = clone(DEF);
       try {
-        var raw = localStorage.getItem('inema.prefs');
+        var raw = localStorage.getItem('ARCKHÉ.prefs');
         if (raw) { var parsed = JSON.parse(raw); if (parsed && typeof parsed==='object'){ for (var k in DEF) if (parsed[k]!=null) p[k]=parsed[k]; } }
-        else { var legacy = localStorage.getItem('theme'); if (legacy==='light') p.theme='claro'; else if (legacy==='dark') p.theme='inema-dark'; }
+        else { var legacy = localStorage.getItem('theme'); if (legacy==='light') p.theme='claro'; else if (legacy==='dark') p.theme='ARCKHÉ-dark'; }
       } catch (e) { p = clone(DEF); }
-      var THEMES = { 'inema-dark':{dark:true,attr:null,cs:'dark'},'claro':{dark:false,attr:null,cs:'light'},'sepia':{dark:false,attr:'sepia',cs:'light'},'foco':{dark:null,attr:'foco',cs:null},'contraste':{dark:true,attr:'contraste',cs:'dark'} };
-      var t = THEMES[p.theme] || THEMES['inema-dark'];
+      var THEMES = { 'ARCKHÉ-dark':{dark:true,attr:null,cs:'dark'},'claro':{dark:false,attr:null,cs:'light'},'sepia':{dark:false,attr:'sepia',cs:'light'},'foco':{dark:null,attr:'foco',cs:null},'contraste':{dark:true,attr:'contraste',cs:'dark'} };
+      var t = THEMES[p.theme] || THEMES['ARCKHÉ-dark'];
       if (t.dark===true) html.classList.add('dark'); else if (t.dark===false) html.classList.remove('dark');
       if (t.attr) html.setAttribute('data-theme', t.attr); else html.removeAttribute('data-theme');
       html.style.colorScheme = (t.cs ? t.cs : (html.classList.contains('dark')?'dark':'light'));
       html.setAttribute('data-font', p.font||'inter'); html.setAttribute('data-accent', p.accent||'emerald');
       var s = html.style, scale=(+p.fontScale||100);
-      s.setProperty('--inema-font-scale',(scale/100).toString()); s.setProperty('font-size',scale+'%');
+      s.setProperty('--ARCKHÉ-font-scale',(scale/100).toString()); s.setProperty('font-size',scale+'%');
       s.setProperty('--measure',(+p.lineWidth||68)+'ch'); s.setProperty('--lh-body',(+p.leading||1.7).toString());
     } catch (err) { try { document.documentElement.classList.add('dark'); document.documentElement.style.colorScheme='dark'; } catch(e){} }
   })();
@@ -36,8 +36,8 @@
   </script>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
 <link href="../../../assets/learn.css" rel="stylesheet"/>
-<script data-inema-manifest="" type="application/json">
-{"course":"claude-code","tracks":[{"n":"1","title":"CLI e Configuração","modules":[{"id":"1-1","title":"Instalação e Primeiro Comando","topics":6,"href":"curso/trilha1/modulo-1-1.html"},{"id":"1-2","title":"Navegando o CLI como um Pro","topics":6,"href":"curso/trilha1/modulo-1-2.html"},{"id":"1-3","title":"CLAUDE.md — O Cérebro do Projeto","topics":6,"href":"curso/trilha1/modulo-1-3.html"},{"id":"1-4","title":"Configuração Avançada","topics":6,"href":"curso/trilha1/modulo-1-4.html"},{"id":"1-5","title":"Memory e Contexto Persistente","topics":6,"href":"curso/trilha1/modulo-1-5.html"},{"id":"1-6","title":"Seu Workflow Pessoal","topics":6,"href":"curso/trilha1/modulo-1-6.html"}]},{"n":"2","title":"Plan e Loop Modes","modules":[{"id":"2-1","title":"Plan Mode — Pense Antes de Codar","topics":6,"href":"curso/trilha2/modulo-2-1.html"},{"id":"2-2","title":"Planos que Funcionam","topics":6,"href":"curso/trilha2/modulo-2-2.html"},{"id":"2-3","title":"Loop Mode — Automação Iterativa","topics":6,"href":"curso/trilha2/modulo-2-3.html"},{"id":"2-4","title":"Patterns de Loop na Prática","topics":6,"href":"curso/trilha2/modulo-2-4.html"},{"id":"2-5","title":"Combinando Plan + Loop","topics":6,"href":"curso/trilha2/modulo-2-5.html"},{"id":"2-6","title":"Agentic Coding — O Novo Normal","topics":6,"href":"curso/trilha2/modulo-2-6.html"}]},{"n":"3","title":"MCP Servers","modules":[{"id":"3-1","title":"O que são MCP Servers","topics":6,"href":"curso/trilha3/modulo-3-1.html"},{"id":"3-2","title":"Seus Primeiros MCPs","topics":6,"href":"curso/trilha3/modulo-3-2.html"},{"id":"3-3","title":"MCPs de Produtividade","topics":6,"href":"curso/trilha3/modulo-3-3.html"},{"id":"3-4","title":"MCPs de Database e APIs","topics":6,"href":"curso/trilha3/modulo-3-4.html"},{"id":"3-5","title":"Criando seu Próprio MCP Server","topics":6,"href":"curso/trilha3/modulo-3-5.html"},{"id":"3-6","title":"Ecossistema e Marketplace","topics":6,"href":"curso/trilha3/modulo-3-6.html"}]},{"n":"4","title":"Subagentes e Git","modules":[{"id":"4-1","title":"Subagentes — Conceitos","topics":6,"href":"curso/trilha4/modulo-4-1.html"},{"id":"4-2","title":"Paralelismo Real","topics":6,"href":"curso/trilha4/modulo-4-2.html"},{"id":"4-3","title":"Patterns de Multi-Agent","topics":6,"href":"curso/trilha4/modulo-4-3.html"},{"id":"4-4","title":"Git com IA — Versionamento","topics":6,"href":"curso/trilha4/modulo-4-4.html"},{"id":"4-5","title":"Pull Requests e Code Review","topics":6,"href":"curso/trilha4/modulo-4-5.html"},{"id":"4-6","title":"CI/CD e GitHub Actions","topics":6,"href":"curso/trilha4/modulo-4-6.html"}]},{"n":"5","title":"Python e Ship","modules":[{"id":"5-1","title":"Python + Claude Code","topics":6,"href":"curso/trilha5/modulo-5-1.html"},{"id":"5-2","title":"Automação de Scripts","topics":6,"href":"curso/trilha5/modulo-5-2.html"},{"id":"5-3","title":"FastAPI e Web Services","topics":6,"href":"curso/trilha5/modulo-5-3.html"},{"id":"5-4","title":"Testing Automatizado","topics":6,"href":"curso/trilha5/modulo-5-4.html"},{"id":"5-5","title":"Deploy e Infraestrutura","topics":6,"href":"curso/trilha5/modulo-5-5.html"},{"id":"5-6","title":"Ship Your Product","topics":6,"href":"curso/trilha5/modulo-5-6.html"}]}]}
+<script data-ARCKHÉ-manifest="" type="application/json">
+{"course":"claude-code","tracks":[{"n":"1","title":"CLI e ConfiguraÃ§Ã£o","modules":[{"id":"1-1","title":"InstalaÃ§Ã£o e Primeiro Comando","topics":6,"href":"curso/trilha1/modulo-1-1.html"},{"id":"1-2","title":"Navegando o CLI como um Pro","topics":6,"href":"curso/trilha1/modulo-1-2.html"},{"id":"1-3","title":"CLAUDE.md â€” O CÃ©rebro do Projeto","topics":6,"href":"curso/trilha1/modulo-1-3.html"},{"id":"1-4","title":"ConfiguraÃ§Ã£o AvanÃ§ada","topics":6,"href":"curso/trilha1/modulo-1-4.html"},{"id":"1-5","title":"Memory e Contexto Persistente","topics":6,"href":"curso/trilha1/modulo-1-5.html"},{"id":"1-6","title":"Seu Workflow Pessoal","topics":6,"href":"curso/trilha1/modulo-1-6.html"}]},{"n":"2","title":"Plan e Loop Modes","modules":[{"id":"2-1","title":"Plan Mode â€” Pense Antes de Codar","topics":6,"href":"curso/trilha2/modulo-2-1.html"},{"id":"2-2","title":"Planos que Funcionam","topics":6,"href":"curso/trilha2/modulo-2-2.html"},{"id":"2-3","title":"Loop Mode â€” AutomaÃ§Ã£o Iterativa","topics":6,"href":"curso/trilha2/modulo-2-3.html"},{"id":"2-4","title":"Patterns de Loop na PrÃ¡tica","topics":6,"href":"curso/trilha2/modulo-2-4.html"},{"id":"2-5","title":"Combinando Plan + Loop","topics":6,"href":"curso/trilha2/modulo-2-5.html"},{"id":"2-6","title":"Agentic Coding â€” O Novo Normal","topics":6,"href":"curso/trilha2/modulo-2-6.html"}]},{"n":"3","title":"MCP Servers","modules":[{"id":"3-1","title":"O que sÃ£o MCP Servers","topics":6,"href":"curso/trilha3/modulo-3-1.html"},{"id":"3-2","title":"Seus Primeiros MCPs","topics":6,"href":"curso/trilha3/modulo-3-2.html"},{"id":"3-3","title":"MCPs de Produtividade","topics":6,"href":"curso/trilha3/modulo-3-3.html"},{"id":"3-4","title":"MCPs de Database e APIs","topics":6,"href":"curso/trilha3/modulo-3-4.html"},{"id":"3-5","title":"Criando seu PrÃ³prio MCP Server","topics":6,"href":"curso/trilha3/modulo-3-5.html"},{"id":"3-6","title":"Ecossistema e Marketplace","topics":6,"href":"curso/trilha3/modulo-3-6.html"}]},{"n":"4","title":"Subagentes e Git","modules":[{"id":"4-1","title":"Subagentes â€” Conceitos","topics":6,"href":"curso/trilha4/modulo-4-1.html"},{"id":"4-2","title":"Paralelismo Real","topics":6,"href":"curso/trilha4/modulo-4-2.html"},{"id":"4-3","title":"Patterns de Multi-Agent","topics":6,"href":"curso/trilha4/modulo-4-3.html"},{"id":"4-4","title":"Git com IA â€” Versionamento","topics":6,"href":"curso/trilha4/modulo-4-4.html"},{"id":"4-5","title":"Pull Requests e Code Review","topics":6,"href":"curso/trilha4/modulo-4-5.html"},{"id":"4-6","title":"CI/CD e GitHub Actions","topics":6,"href":"curso/trilha4/modulo-4-6.html"}]},{"n":"5","title":"Python e Ship","modules":[{"id":"5-1","title":"Python + Claude Code","topics":6,"href":"curso/trilha5/modulo-5-1.html"},{"id":"5-2","title":"AutomaÃ§Ã£o de Scripts","topics":6,"href":"curso/trilha5/modulo-5-2.html"},{"id":"5-3","title":"FastAPI e Web Services","topics":6,"href":"curso/trilha5/modulo-5-3.html"},{"id":"5-4","title":"Testing Automatizado","topics":6,"href":"curso/trilha5/modulo-5-4.html"},{"id":"5-5","title":"Deploy e Infraestrutura","topics":6,"href":"curso/trilha5/modulo-5-5.html"},{"id":"5-6","title":"Ship Your Product","topics":6,"href":"curso/trilha5/modulo-5-6.html"}]}]}
 </script>
 <style>
     body { font-family: 'Inter', sans-serif; }
@@ -82,16 +82,16 @@
     .dark .divide-dark-600 > :not([hidden]) ~ :not([hidden]) { border-color: #374151; }
     html:not(.dark) svg[role="img"] { filter: saturate(0.82) brightness(0.96); }
   </style>
-<link href="https://inematds.github.io/claude-code-curso/curso/trilha1/modulo-1-1.html" hreflang="pt-BR" rel="alternate"/><link href="https://inematds.github.io/claude-code-curso/en/curso/trilha1/modulo-1-1.html" hreflang="en" rel="alternate"/><link href="https://inematds.github.io/claude-code-curso/es/curso/trilha1/modulo-1-1.html" hreflang="es" rel="alternate"/></head>
-<body class="bg-dark-900 text-neutral-100 min-h-screen"><div class="inema-lang" style="position:fixed;right:14px;bottom:14px;z-index:9999;display:flex;gap:2px;padding:4px;border-radius:10px;background:rgba(12,12,16,.82);border:1px solid rgba(226,162,59,.45);font:600 12px/1 Sora,Inter,system-ui,sans-serif;backdrop-filter:blur(8px)" translate="no"><a href="../../../curso/trilha1/modulo-1-1.html" hreflang="pt-BR" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">PT</a><a href="modulo-1-1.html" hreflang="en" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#1a1206;background:#E2A23B">EN</a><a href="../../../es/curso/trilha1/modulo-1-1.html" hreflang="es" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">ES</a></div>
+<link href="https://linnoff88-dev.github.io/ hreflang="pt-BR" rel="alternate"/><link href="https://linnoff88-dev.github.io/ hreflang="en" rel="alternate"/><link href="https://linnoff88-dev.github.io/ hreflang="es" rel="alternate"/></head>
+<body class="bg-dark-900 text-neutral-100 min-h-screen"><div class="ARCKHÉ-lang" style="position:fixed;right:14px;bottom:14px;z-index:9999;display:flex;gap:2px;padding:4px;border-radius:10px;background:rgba(12,12,16,.82);border:1px solid rgba(226,162,59,.45);font:600 12px/1 Sora,Inter,system-ui,sans-serif;backdrop-filter:blur(8px)" translate="no"><a href="../../../curso/trilha1/modulo-1-1.html" hreflang="pt-BR" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">PT</a><a href="modulo-1-1.html" hreflang="en" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#1a1206;background:#E2A23B">EN</a><a href="../../../es/curso/trilha1/modulo-1-1.html" hreflang="es" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">ES</a></div>
 <a class="sr-only focus:not-sr-only focus:absolute focus:z-50 focus:top-2 focus:left-2 focus:px-4 focus:py-2 focus:bg-dark-800 focus:text-emerald-400 focus:rounded-lg" href="#conteudo">Skip to content</a>
 <nav class="sticky top-0 z-50 bg-dark-900/95 backdrop-blur-sm border-b border-dark-600">
 <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
 <div class="flex justify-between items-center h-14">
 <div class="flex items-center space-x-4">
-<a class="flex items-center space-x-2 text-yellow-400 hover:text-yellow-300" href="../../index.html"><span class="text-2xl">🤖</span><span class="font-bold text-lg hidden sm:inline">Claude Code</span></a>
+<a class="flex items-center space-x-2 text-yellow-400 hover:text-yellow-300" href="../../index.html"><span class="text-2xl">ðŸ¤–</span><span class="font-bold text-lg hidden sm:inline">Claude Code</span></a>
 <span class="text-neutral-600">|</span>
-<a class="text-sky-400 hover:text-sky-300 text-sm font-medium" href="https://inema.club" target="_blank">INEMA.CLUB</a>
+<a class="text-sky-400 hover:text-sky-300 text-sm font-medium" href="https://ARCKHÉ AI" target="_blank">ARCKHÉ AI</a>
 </div>
 <div class="flex items-center space-x-1 sm:space-x-2">
 <a class="px-3 py-1.5 rounded-lg text-sm font-semibold text-emerald-400 bg-emerald-500/10" href="index.html"><span class="sm:hidden">T1</span><span class="hidden sm:inline">CLI</span></a>
@@ -99,7 +99,7 @@
 <a class="px-3 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-purple-400 hover:bg-purple-500/10 transition-colors" href="../trilha3/index.html"><span class="sm:hidden">T3</span><span class="hidden sm:inline">MCP</span></a>
 <a class="px-3 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-amber-400 hover:bg-amber-500/10 transition-colors" href="../trilha4/index.html"><span class="sm:hidden">T4</span><span class="hidden sm:inline">Agents</span></a>
 <a class="px-3 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-teal-400 hover:bg-teal-500/10 transition-colors" href="../trilha5/index.html"><span class="sm:hidden">T5</span><span class="hidden sm:inline">Python</span></a>
-<button class="hidden sm:inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-sm text-neutral-300 hover:text-neutral-100 hover:bg-dark-700 transition-colors ml-1" data-inema-journey-open="" type="button"><span aria-hidden="true">◷</span><span>My journey</span><span aria-hidden="true" class="inema-journey-badge hidden"></span></button>
+<button class="hidden sm:inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-sm text-neutral-300 hover:text-neutral-100 hover:bg-dark-700 transition-colors ml-1" data-ARCKHÉ-journey-open="" type="button"><span aria-hidden="true">â—·</span><span>My journey</span><span aria-hidden="true" class="ARCKHÉ-journey-badge hidden"></span></button>
 <button aria-label="Switch theme" class="p-2 rounded-lg bg-dark-700 hover:bg-dark-600 transition-colors ml-1" id="theme-toggle">
 <svg class="hidden w-5 h-5 text-neutral-300" fill="currentColor" id="theme-toggle-dark-icon" viewbox="0 0 20 20"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg>
 <svg class="hidden w-5 h-5 text-neutral-300" fill="currentColor" id="theme-toggle-light-icon" viewbox="0 0 20 20"><path clip-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" fill-rule="evenodd"></path></svg>
@@ -118,7 +118,7 @@
 <header class="bg-gradient-to-br from-emerald-900/30 via-dark-800 to-dark-800 py-12 border-b border-dark-600">
 <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
 <span class="inline-block px-3 py-1 bg-emerald-500/20 text-emerald-400 text-xs font-semibold rounded-full mb-4">MODULE 1.1</span>
-<h1 class="text-3xl sm:text-4xl font-bold mb-4">📦 Installation and First Command</h1>
+<h1 class="text-3xl sm:text-4xl font-bold mb-4">ðŸ“¦ Installation and First Command</h1>
 <p class="text-lg text-neutral-400 max-w-3xl">From absolute zero to your first working command. Installation on any system, authentication, interactive vs. one-shot mode, essential flags, and troubleshooting the most common errors.</p>
 <div class="grid grid-cols-4 gap-4 mt-8 max-w-2xl">
 <div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-emerald-400">6</div><div class="text-xs text-neutral-400">Topics</div></div>
@@ -127,39 +127,39 @@
 <div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-emerald-400">Practical</div><div class="text-xs text-neutral-400">Type</div></div>
 </div>
 <div class="mt-6 max-w-2xl">
-<div aria-label="Module 1.1 progress" aria-valuemax="100" aria-valuemin="0" class="inema-meter flex items-center gap-3" data-inema-meter="modulo:1-1" role="progressbar">
+<div aria-label="Module 1.1 progress" aria-valuemax="100" aria-valuemin="0" class="ARCKHÉ-meter flex items-center gap-3" data-ARCKHÉ-meter="modulo:1-1" role="progressbar">
 <span class="text-sm text-neutral-400">Progress:</span>
-<span class="inema-meter-pct text-emerald-400 font-bold text-sm">0%</span>
-<span class="inema-meter-count text-xs text-neutral-500">0 of 6</span>
+<span class="ARCKHÉ-meter-pct text-emerald-400 font-bold text-sm">0%</span>
+<span class="ARCKHÉ-meter-count text-xs text-neutral-500">0 of 6</span>
 </div>
 </div>
 </div>
 </header>
 <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
 <div class="lg:grid lg:grid-cols-[230px_1fr] lg:gap-10">
-<nav aria-label="Page index" class="hidden lg:block sticky top-24 self-start" data-inema-toc="">
-<p class="text-sm text-neutral-400 mb-3">Section <span class="inema-toc-pos">1</span> of <span class="inema-toc-total">6</span></p>
+<nav aria-label="Page index" class="hidden lg:block sticky top-24 self-start" data-ARCKHÉ-toc="">
+<p class="text-sm text-neutral-400 mb-3">Section <span class="ARCKHÉ-toc-pos">1</span> of <span class="ARCKHÉ-toc-total">6</span></p>
 <ul class="space-y-1 text-sm">
-<li><a class="inema-toc-link block px-3 py-1.5 rounded-lg text-neutral-400 hover:text-emerald-400 hover:bg-emerald-500/10" href="#topico-1">1. Requirements and installation</a></li>
-<li><a class="inema-toc-link block px-3 py-1.5 rounded-lg text-neutral-400 hover:text-emerald-400 hover:bg-emerald-500/10" href="#topico-2">2. First Claude in the terminal</a></li>
-<li><a class="inema-toc-link block px-3 py-1.5 rounded-lg text-neutral-400 hover:text-emerald-400 hover:bg-emerald-500/10" href="#topico-3">3. Interactive vs one-shot</a></li>
-<li><a class="inema-toc-link block px-3 py-1.5 rounded-lg text-neutral-400 hover:text-emerald-400 hover:bg-emerald-500/10" href="#topico-4">4. --help and essential flags</a></li>
-<li><a class="inema-toc-link block px-3 py-1.5 rounded-lg text-neutral-400 hover:text-emerald-400 hover:bg-emerald-500/10" href="#topico-5">5. Updating and Versioning</a></li>
-<li><a class="inema-toc-link block px-3 py-1.5 rounded-lg text-neutral-400 hover:text-emerald-400 hover:bg-emerald-500/10" href="#topico-6">6. Troubleshooting</a></li>
+<li><a class="ARCKHÉ-toc-link block px-3 py-1.5 rounded-lg text-neutral-400 hover:text-emerald-400 hover:bg-emerald-500/10" href="#topico-1">1. Requirements and installation</a></li>
+<li><a class="ARCKHÉ-toc-link block px-3 py-1.5 rounded-lg text-neutral-400 hover:text-emerald-400 hover:bg-emerald-500/10" href="#topico-2">2. First Claude in the terminal</a></li>
+<li><a class="ARCKHÉ-toc-link block px-3 py-1.5 rounded-lg text-neutral-400 hover:text-emerald-400 hover:bg-emerald-500/10" href="#topico-3">3. Interactive vs one-shot</a></li>
+<li><a class="ARCKHÉ-toc-link block px-3 py-1.5 rounded-lg text-neutral-400 hover:text-emerald-400 hover:bg-emerald-500/10" href="#topico-4">4. --help and essential flags</a></li>
+<li><a class="ARCKHÉ-toc-link block px-3 py-1.5 rounded-lg text-neutral-400 hover:text-emerald-400 hover:bg-emerald-500/10" href="#topico-5">5. Updating and Versioning</a></li>
+<li><a class="ARCKHÉ-toc-link block px-3 py-1.5 rounded-lg text-neutral-400 hover:text-emerald-400 hover:bg-emerald-500/10" href="#topico-6">6. Troubleshooting</a></li>
 </ul>
 </nav>
-<main class="inema-prose min-w-0" id="conteudo">
+<main class="ARCKHÉ-prose min-w-0" id="conteudo">
 <!-- TOPICO 1 -->
-<section class="mb-16" data-inema-topic="modulo-1-1#topico-1" id="topico-1">
+<section class="mb-16" data-ARCKHÉ-topic="modulo-1-1#topico-1" id="topico-1">
 <div class="flex items-center justify-between gap-4 mb-6">
-<div class="flex items-center space-x-4"><span class="flex items-center justify-center w-12 h-12 rounded-full bg-emerald-500/20 text-emerald-400 font-bold text-xl flex-shrink-0">1</span><h2 class="text-2xl font-bold">📋 Requirements and Installation</h2></div>
-<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm flex-shrink-0" data-inema-doubt-toggle="" title="Mark this topic as a question" type="button"><span aria-hidden="true">?</span><span class="hidden sm:inline">I have a question</span></button>
+<div class="flex items-center space-x-4"><span class="flex items-center justify-center w-12 h-12 rounded-full bg-emerald-500/20 text-emerald-400 font-bold text-xl flex-shrink-0">1</span><h2 class="text-2xl font-bold">ðŸ“‹ Requirements and Installation</h2></div>
+<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm flex-shrink-0" data-ARCKHÉ-doubt-toggle="" title="Mark this topic as a question" type="button"><span aria-hidden="true">?</span><span class="hidden sm:inline">I have a question</span></button>
 </div>
 <div class="bg-primary/10 border border-primary/30 rounded-xl p-5 mb-6">
-<p class="text-neutral-200"><strong class="text-primary">🧠 Imagine It This Way:</strong> Installing Claude Code is like installing Git for the first time. One command, one authentication, and from then on you have a new superpower in the terminal that you'll never give up.</p>
+<p class="text-neutral-200"><strong class="text-primary">ðŸ§  Imagine It This Way:</strong> Installing Claude Code is like installing Git for the first time. One command, one authentication, and from then on you have a new superpower in the terminal that you'll never give up.</p>
 </div>
-<p class="text-neutral-300 mb-4 leading-relaxed" data-inema-block="m1-1-t1-p1">O <span class="termo" title="Anthropic's official CLI for interacting directly with Claude in the terminal">Claude Code</span> is a command-line tool (CLI) from Anthropic that puts Claude directly in your terminal. Unlike web chat, here Claude has access to your <span class="termo" title="Your project files">codebase</span>, it can read and edit files, run commands, and act as a full-fledged development agent.</p>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-inema-block="m1-1-t1-p2">To install, you need <strong class="text-emerald-400">Node.js 18+</strong> (the JavaScript runtime). If you already have Node, installation is a single command. There are three options, depending on your operating system:</p>
+<p class="text-neutral-300 mb-4 leading-relaxed" data-ARCKHÉ-block="m1-1-t1-p1">O <span class="termo" title="Anthropic's official CLI for interacting directly with Claude in the terminal">Claude Code</span> is a command-line tool (CLI) from Anthropic that puts Claude directly in your terminal. Unlike web chat, here Claude has access to your <span class="termo" title="Your project files">codebase</span>, it can read and edit files, run commands, and act as a full-fledged development agent.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m1-1-t1-p2">To install, you need <strong class="text-emerald-400">Node.js 18+</strong> (the JavaScript runtime). If you already have Node, installation is a single command. There are three options, depending on your operating system:</p>
 <div class="copybox bg-dark-900 border border-emerald-500/30 rounded-xl overflow-hidden mb-6">
 <div class="flex items-center justify-between px-4 py-2 bg-dark-800 border-b border-dark-600">
 <span class="text-xs text-emerald-400 font-mono">installation via npm (any OS)</span>
@@ -204,26 +204,26 @@
 </svg>
 </div>
 <div class="bg-blue-900/20 border border-blue-500/30 rounded-xl p-5 mb-6">
-<h3 class="font-semibold text-blue-400 mb-2">💡 Tip: Authentication</h3>
+<h3 class="font-semibold text-blue-400 mb-2">ðŸ’¡ Tip: Authentication</h3>
 <p class="text-neutral-300 text-sm">The first time you run Claude Code, it will ask you to authenticate. You can log in through a browser (recommended) or set the variable <code>ANTHROPIC_API_KEY</code> in your environment. Browser login links your Anthropic account and enables use with Pro/Max/Team plans.</p>
 </div>
 <div class="bg-dark-800/60 border-l-4 border-emerald-500 rounded-r-lg p-4 mb-6">
 <p class="text-sm text-neutral-300"><strong class="text-emerald-400">In one sentence:</strong> Node.js 18+ and an npm install -g, and you have Claude Code up and running.</p>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-emerald-500/20 border border-emerald-500/30 text-emerald-400 hover:bg-emerald-500/30 transition-colors" data-inema-read-toggle="" type="button"><span aria-hidden="true" class="inema-read-icon">○</span><span class="inema-read-label">Mark as read</span></button>
+<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-emerald-500/20 border border-emerald-500/30 text-emerald-400 hover:bg-emerald-500/30 transition-colors" data-ARCKHÉ-read-toggle="" type="button"><span aria-hidden="true" class="ARCKHÉ-read-icon">â—‹</span><span class="ARCKHÉ-read-label">Mark as read</span></button>
 </div>
 </section>
 <!-- TOPICO 2 -->
-<section class="mb-16" data-inema-topic="modulo-1-1#topico-2" id="topico-2">
+<section class="mb-16" data-ARCKHÉ-topic="modulo-1-1#topico-2" id="topico-2">
 <div class="flex items-center justify-between gap-4 mb-6">
-<div class="flex items-center space-x-4"><span class="flex items-center justify-center w-12 h-12 rounded-full bg-emerald-500/20 text-emerald-400 font-bold text-xl flex-shrink-0">2</span><h2 class="text-2xl font-bold">▶️ First claude in the terminal</h2></div>
-<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm flex-shrink-0" data-inema-doubt-toggle="" title="Mark this topic as a question" type="button"><span aria-hidden="true">?</span><span class="hidden sm:inline">I have a question</span></button>
+<div class="flex items-center space-x-4"><span class="flex items-center justify-center w-12 h-12 rounded-full bg-emerald-500/20 text-emerald-400 font-bold text-xl flex-shrink-0">2</span><h2 class="text-2xl font-bold">â–¶ï¸ First claude in the terminal</h2></div>
+<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm flex-shrink-0" data-ARCKHÉ-doubt-toggle="" title="Mark this topic as a question" type="button"><span aria-hidden="true">?</span><span class="hidden sm:inline">I have a question</span></button>
 </div>
 <div class="bg-primary/10 border border-primary/30 rounded-xl p-5 mb-6">
-<p class="text-neutral-200"><strong class="text-primary">🧠 Imagine It This Way:</strong> opening Claude Code for the first time is like turning the ignition on a new car. The engine purrs, the dashboard lights up, and you realize you have an intelligent copilot in the passenger seat.</p>
+<p class="text-neutral-200"><strong class="text-primary">ðŸ§  Imagine It This Way:</strong> opening Claude Code for the first time is like turning the ignition on a new car. The engine purrs, the dashboard lights up, and you realize you have an intelligent copilot in the passenger seat.</p>
 </div>
-<p class="text-neutral-300 mb-4 leading-relaxed" data-inema-block="m1-1-t2-p1">Open the terminal, navigate to any project folder, and type <code class="text-emerald-400">claude</code>. Done. The interactive interface will appear, showing which model is running and waiting for your prompt. You’re talking directly to Claude, but now it has access to the files in the current directory.</p>
+<p class="text-neutral-300 mb-4 leading-relaxed" data-ARCKHÉ-block="m1-1-t2-p1">Open the terminal, navigate to any project folder, and type <code class="text-emerald-400">claude</code>. Done. The interactive interface will appear, showing which model is running and waiting for your prompt. Youâ€™re talking directly to Claude, but now it has access to the files in the current directory.</p>
 <div class="copybox bg-dark-900 border border-emerald-500/30 rounded-xl overflow-hidden mb-6">
 <div class="flex items-center justify-between px-4 py-2 bg-dark-800 border-b border-dark-600">
 <span class="text-xs text-emerald-400 font-mono">first command</span>
@@ -232,7 +232,7 @@
 <pre class="p-4 text-sm text-neutral-200 font-mono leading-relaxed">cd ~/meu-projeto
 claude</pre>
 </div>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-inema-block="m1-1-t2-p2">When you start, try asking for something simple: <em>"explain what this project does"</em> or <em>"list the main files"</em>. Claude will read the files in the directory and respond with real context. That’s already different from any web chatbot, because it’s <strong>within</strong> of your project.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m1-1-t2-p2">When you start, try asking for something simple: <em>"explain what this project does"</em> or <em>"list the main files"</em>. Claude will read the files in the directory and respond with real context. Thatâ€™s already different from any web chatbot, because itâ€™s <strong>within</strong> of your project.</p>
 <div class="copybox bg-dark-900 border border-emerald-500/30 rounded-xl overflow-hidden mb-6">
 <div class="flex items-center justify-between px-4 py-2 bg-dark-800 border-b border-dark-600">
 <span class="text-xs text-emerald-400 font-mono">one-shot mode (no session)</span>
@@ -244,37 +244,37 @@ claude</pre>
 <p class="text-sm text-neutral-300"><strong class="text-emerald-400">In one sentence:</strong> <code>claude</code> in the terminal opens an interactive session with full access to your project.</p>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-emerald-500/20 border border-emerald-500/30 text-emerald-400 hover:bg-emerald-500/30 transition-colors" data-inema-read-toggle="" type="button"><span aria-hidden="true" class="inema-read-icon">○</span><span class="inema-read-label">Mark as read</span></button>
+<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-emerald-500/20 border border-emerald-500/30 text-emerald-400 hover:bg-emerald-500/30 transition-colors" data-ARCKHÉ-read-toggle="" type="button"><span aria-hidden="true" class="ARCKHÉ-read-icon">â—‹</span><span class="ARCKHÉ-read-label">Mark as read</span></button>
 </div>
 </section>
 <!-- TOPICO 3 -->
-<section class="mb-16" data-inema-topic="modulo-1-1#topico-3" id="topico-3">
+<section class="mb-16" data-ARCKHÉ-topic="modulo-1-1#topico-3" id="topico-3">
 <div class="flex items-center justify-between gap-4 mb-6">
-<div class="flex items-center space-x-4"><span class="flex items-center justify-center w-12 h-12 rounded-full bg-emerald-500/20 text-emerald-400 font-bold text-xl flex-shrink-0">3</span><h2 class="text-2xl font-bold">🔀 Interactive vs. One-Shot Mode</h2></div>
-<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm flex-shrink-0" data-inema-doubt-toggle="" title="Mark this topic as a question" type="button"><span aria-hidden="true">?</span><span class="hidden sm:inline">I have a question</span></button>
+<div class="flex items-center space-x-4"><span class="flex items-center justify-center w-12 h-12 rounded-full bg-emerald-500/20 text-emerald-400 font-bold text-xl flex-shrink-0">3</span><h2 class="text-2xl font-bold">ðŸ”€ Interactive vs. One-Shot Mode</h2></div>
+<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm flex-shrink-0" data-ARCKHÉ-doubt-toggle="" title="Mark this topic as a question" type="button"><span aria-hidden="true">?</span><span class="hidden sm:inline">I have a question</span></button>
 </div>
 <div class="bg-primary/10 border border-primary/30 rounded-xl p-5 mb-6">
-<p class="text-neutral-200"><strong class="text-primary">🧠 Imagine It This Way:</strong> interactive mode is like sitting at a table with Claude to work together for hours. One-shot mode is like sending a quick note through the window and getting a reply back.</p>
+<p class="text-neutral-200"><strong class="text-primary">ðŸ§  Imagine It This Way:</strong> interactive mode is like sitting at a table with Claude to work together for hours. One-shot mode is like sending a quick note through the window and getting a reply back.</p>
 </div>
-<p class="text-neutral-300 mb-4 leading-relaxed" data-inema-block="m1-1-t3-p1">Claude Code has two fundamental modes of use. In <strong class="text-emerald-400">interactive mode</strong> (just type <code>claude</code>), you open an ongoing conversation. Each message keeps the context of the previous ones, Claude can ask for confirmation before editing files, and you control the flow step by step. It’s the default mode for development.</p>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-inema-block="m1-1-t3-p2">No <strong class="text-emerald-400">one-shot mode</strong> (using the flag <code>-p</code>), you send a single prompt, get a response, and the process ends. Ideal for automation, scripts, and quick questions. The flag <code>-p</code> (of "print") field says: <em>run this and return the result to me on stdout</em>.</p>
+<p class="text-neutral-300 mb-4 leading-relaxed" data-ARCKHÉ-block="m1-1-t3-p1">Claude Code has two fundamental modes of use. In <strong class="text-emerald-400">interactive mode</strong> (just type <code>claude</code>), you open an ongoing conversation. Each message keeps the context of the previous ones, Claude can ask for confirmation before editing files, and you control the flow step by step. Itâ€™s the default mode for development.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m1-1-t3-p2">No <strong class="text-emerald-400">one-shot mode</strong> (using the flag <code>-p</code>), you send a single prompt, get a response, and the process ends. Ideal for automation, scripts, and quick questions. The flag <code>-p</code> (of "print") field says: <em>run this and return the result to me on stdout</em>.</p>
 <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
 <div class="bg-emerald-900/20 rounded-xl border border-emerald-500/30 p-6">
-<h4 class="font-bold text-emerald-400 mb-4">✓ Interactive Mode</h4>
+<h4 class="font-bold text-emerald-400 mb-4">âœ“ Interactive Mode</h4>
 <ul class="space-y-2 text-neutral-300 text-sm">
-<li>• Conversation continues with context</li>
-<li>• Asks for confirmation before edits</li>
-<li>• Ideal for development</li>
-<li>• Command: <code>claude</code></li>
+<li>â€¢ Conversation continues with context</li>
+<li>â€¢ Asks for confirmation before edits</li>
+<li>â€¢ Ideal for development</li>
+<li>â€¢ Command: <code>claude</code></li>
 </ul>
 </div>
 <div class="bg-dark-800 rounded-xl border border-dark-600 p-6">
-<h4 class="font-bold text-neutral-300 mb-4">→ One-shot mode</h4>
+<h4 class="font-bold text-neutral-300 mb-4">â†’ One-shot mode</h4>
 <ul class="space-y-2 text-neutral-300 text-sm">
-<li>• One question, one answer</li>
-<li>• Output goes to stdout</li>
-<li>• Ideal for scripts and pipes</li>
-<li>• Command: <code>claude -p "..."</code></li>
+<li>â€¢ One question, one answer</li>
+<li>â€¢ Output goes to stdout</li>
+<li>â€¢ Ideal for scripts and pipes</li>
+<li>â€¢ Command: <code>claude -p "..."</code></li>
 </ul>
 </div>
 </div>
@@ -308,28 +308,28 @@ claude</pre>
 <p class="text-sm text-neutral-300"><strong class="text-emerald-400">In one sentence:</strong> <code>claude</code> to chat, <code>claude -p</code> to ask and exit.</p>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-emerald-500/20 border border-emerald-500/30 text-emerald-400 hover:bg-emerald-500/30 transition-colors" data-inema-read-toggle="" type="button"><span aria-hidden="true" class="inema-read-icon">○</span><span class="inema-read-label">Mark as read</span></button>
+<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-emerald-500/20 border border-emerald-500/30 text-emerald-400 hover:bg-emerald-500/30 transition-colors" data-ARCKHÉ-read-toggle="" type="button"><span aria-hidden="true" class="ARCKHÉ-read-icon">â—‹</span><span class="ARCKHÉ-read-label">Mark as read</span></button>
 </div>
 </section>
 <!-- TOPICO 4 -->
-<section class="mb-16" data-inema-topic="modulo-1-1#topico-4" id="topico-4">
+<section class="mb-16" data-ARCKHÉ-topic="modulo-1-1#topico-4" id="topico-4">
 <div class="flex items-center justify-between gap-4 mb-6">
-<div class="flex items-center space-x-4"><span class="flex items-center justify-center w-12 h-12 rounded-full bg-emerald-500/20 text-emerald-400 font-bold text-xl flex-shrink-0">4</span><h2 class="text-2xl font-bold">📖 Navigating --help and Essential Flags</h2></div>
-<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm flex-shrink-0" data-inema-doubt-toggle="" title="Mark this topic as a question" type="button"><span aria-hidden="true">?</span><span class="hidden sm:inline">I have a question</span></button>
+<div class="flex items-center space-x-4"><span class="flex items-center justify-center w-12 h-12 rounded-full bg-emerald-500/20 text-emerald-400 font-bold text-xl flex-shrink-0">4</span><h2 class="text-2xl font-bold">ðŸ“– Navigating --help and Essential Flags</h2></div>
+<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm flex-shrink-0" data-ARCKHÉ-doubt-toggle="" title="Mark this topic as a question" type="button"><span aria-hidden="true">?</span><span class="hidden sm:inline">I have a question</span></button>
 </div>
 <div class="bg-primary/10 border border-primary/30 rounded-xl p-5 mb-6">
-<p class="text-neutral-200"><strong class="text-primary">🧠 Imagine It This Way:</strong> Claude Code flags are like the buttons on an airplane dashboard. You don’t need to know them all on day one, but the essentials keep you in the air.</p>
+<p class="text-neutral-200"><strong class="text-primary">ðŸ§  Imagine It This Way:</strong> Claude Code flags are like the buttons on an airplane dashboard. You donâ€™t need to know them all on day one, but the essentials keep you in the air.</p>
 </div>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-inema-block="m1-1-t4-p1">The starting point is always <code class="text-emerald-400">claude --help</code>. It lists all available flags with a short explanation. You’ll use only a few in your day-to-day work:</p>
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m1-1-t4-p1">The starting point is always <code class="text-emerald-400">claude --help</code>. It lists all available flags with a short explanation. Youâ€™ll use only a few in your day-to-day work:</p>
 <div class="copybox bg-dark-900 border border-emerald-500/30 rounded-xl overflow-hidden mb-6">
 <div class="flex items-center justify-between px-4 py-2 bg-dark-800 border-b border-dark-600">
 <span class="text-xs text-emerald-400 font-mono">essential flags</span>
 <button class="text-xs px-2 py-1 rounded bg-emerald-500/20 text-emerald-400 hover:bg-emerald-500/30 transition-colors" onclick="copyBox(this)" type="button">copy</button>
 </div>
-<pre class="p-4 text-sm text-neutral-200 font-mono leading-relaxed">claude --help          # ver todas as opções
-claude --version       # versão instalada
+<pre class="p-4 text-sm text-neutral-200 font-mono leading-relaxed">claude --help          # ver todas as opÃ§Ãµes
+claude --version       # versÃ£o instalada
 claude -p "..."        # modo one-shot (print)
-claude --resume        # retomar sessão anterior
+claude --resume        # retomar sessÃ£o anterior
 claude --model opus    # escolher o modelo
 claude --verbose       # modo verboso (debug)</pre>
 </div>
@@ -361,66 +361,66 @@ claude --verbose       # modo verboso (debug)</pre>
 <p class="text-sm text-neutral-300"><strong class="text-emerald-400">In one sentence:</strong> <code>--help</code> is your pocket guide; <code>-p</code>, <code>--resume</code> e <code>--model</code> are the everyday flags.</p>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-emerald-500/20 border border-emerald-500/30 text-emerald-400 hover:bg-emerald-500/30 transition-colors" data-inema-read-toggle="" type="button"><span aria-hidden="true" class="inema-read-icon">○</span><span class="inema-read-label">Mark as read</span></button>
+<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-emerald-500/20 border border-emerald-500/30 text-emerald-400 hover:bg-emerald-500/30 transition-colors" data-ARCKHÉ-read-toggle="" type="button"><span aria-hidden="true" class="ARCKHÉ-read-icon">â—‹</span><span class="ARCKHÉ-read-label">Mark as read</span></button>
 </div>
 </section>
 <!-- TOPICO 5 -->
-<section class="mb-16" data-inema-topic="modulo-1-1#topico-5" id="topico-5">
+<section class="mb-16" data-ARCKHÉ-topic="modulo-1-1#topico-5" id="topico-5">
 <div class="flex items-center justify-between gap-4 mb-6">
-<div class="flex items-center space-x-4"><span class="flex items-center justify-center w-12 h-12 rounded-full bg-emerald-500/20 text-emerald-400 font-bold text-xl flex-shrink-0">5</span><h2 class="text-2xl font-bold">🔄 Updating and Versioning</h2></div>
-<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm flex-shrink-0" data-inema-doubt-toggle="" title="Mark this topic as a question" type="button"><span aria-hidden="true">?</span><span class="hidden sm:inline">I have a question</span></button>
+<div class="flex items-center space-x-4"><span class="flex items-center justify-center w-12 h-12 rounded-full bg-emerald-500/20 text-emerald-400 font-bold text-xl flex-shrink-0">5</span><h2 class="text-2xl font-bold">ðŸ”„ Updating and Versioning</h2></div>
+<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm flex-shrink-0" data-ARCKHÉ-doubt-toggle="" title="Mark this topic as a question" type="button"><span aria-hidden="true">?</span><span class="hidden sm:inline">I have a question</span></button>
 </div>
 <div class="bg-primary/10 border border-primary/30 rounded-xl p-5 mb-6">
-<p class="text-neutral-200"><strong class="text-primary">🧠 Imagine It This Way:</strong> Claude Code evolves quickly. Each new version brings features, improvements, and fixes. Keeping it updated is like keeping your toolbox sharp.</p>
+<p class="text-neutral-200"><strong class="text-primary">ðŸ§  Imagine It This Way:</strong> Claude Code evolves quickly. Each new version brings features, improvements, and fixes. Keeping it updated is like keeping your toolbox sharp.</p>
 </div>
-<p class="text-neutral-300 mb-4 leading-relaxed" data-inema-block="m1-1-t5-p1">Claude Code gets frequent updates. Checking your version and updating are simple operations:</p>
+<p class="text-neutral-300 mb-4 leading-relaxed" data-ARCKHÉ-block="m1-1-t5-p1">Claude Code gets frequent updates. Checking your version and updating are simple operations:</p>
 <div class="copybox bg-dark-900 border border-emerald-500/30 rounded-xl overflow-hidden mb-6">
 <div class="flex items-center justify-between px-4 py-2 bg-dark-800 border-b border-dark-600">
 <span class="text-xs text-emerald-400 font-mono">check and update</span>
 <button class="text-xs px-2 py-1 rounded bg-emerald-500/20 text-emerald-400 hover:bg-emerald-500/30 transition-colors" onclick="copyBox(this)" type="button">copy</button>
 </div>
-<pre class="p-4 text-sm text-neutral-200 font-mono leading-relaxed">claude --version                              # ver versão atual
+<pre class="p-4 text-sm text-neutral-200 font-mono leading-relaxed">claude --version                              # ver versÃ£o atual
 npm update -g @anthropic-ai/claude-code       # atualizar via npm</pre>
 </div>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-inema-block="m1-1-t5-p2">Claude Code also notifies you when an update is available at the start of a session. The recommendation is to always keep the latest version, since new features (such as MCP servers, better permissions, and new slash commands) appear frequently. See the <strong>changelog</strong> official source to find out what changed between versions.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m1-1-t5-p2">Claude Code also notifies you when an update is available at the start of a session. The recommendation is to always keep the latest version, since new features (such as MCP servers, better permissions, and new slash commands) appear frequently. See the <strong>changelog</strong> official source to find out what changed between versions.</p>
 <div class="bg-blue-900/20 border border-blue-500/30 rounded-xl p-5 mb-6">
-<h3 class="font-semibold text-blue-400 mb-2">💡 About Breaking Changes</h3>
+<h3 class="font-semibold text-blue-400 mb-2">ðŸ’¡ About Breaking Changes</h3>
 <p class="text-neutral-300 text-sm">Major changes are rare, but they happen. If you have scripts that depend on Claude Code, test them after updating. The command <code>claude --version</code> at the beginning of scripts helps ensure compatibility.</p>
 </div>
 <div class="bg-dark-800/60 border-l-4 border-emerald-500 rounded-r-lg p-4 mb-6">
 <p class="text-sm text-neutral-300"><strong class="text-emerald-400">In one sentence:</strong> <code>npm update -g</code> to update; <code>--version</code> to check.</p>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-emerald-500/20 border border-emerald-500/30 text-emerald-400 hover:bg-emerald-500/30 transition-colors" data-inema-read-toggle="" type="button"><span aria-hidden="true" class="inema-read-icon">○</span><span class="inema-read-label">Mark as read</span></button>
+<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-emerald-500/20 border border-emerald-500/30 text-emerald-400 hover:bg-emerald-500/30 transition-colors" data-ARCKHÉ-read-toggle="" type="button"><span aria-hidden="true" class="ARCKHÉ-read-icon">â—‹</span><span class="ARCKHÉ-read-label">Mark as read</span></button>
 </div>
 </section>
 <!-- TOPICO 6 -->
-<section class="mb-16" data-inema-topic="modulo-1-1#topico-6" id="topico-6">
+<section class="mb-16" data-ARCKHÉ-topic="modulo-1-1#topico-6" id="topico-6">
 <div class="flex items-center justify-between gap-4 mb-6">
-<div class="flex items-center space-x-4"><span class="flex items-center justify-center w-12 h-12 rounded-full bg-emerald-500/20 text-emerald-400 font-bold text-xl flex-shrink-0">6</span><h2 class="text-2xl font-bold">🔧 Diagnosing Common Issues</h2></div>
-<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm flex-shrink-0" data-inema-doubt-toggle="" title="Mark this topic as a question" type="button"><span aria-hidden="true">?</span><span class="hidden sm:inline">I have a question</span></button>
+<div class="flex items-center space-x-4"><span class="flex items-center justify-center w-12 h-12 rounded-full bg-emerald-500/20 text-emerald-400 font-bold text-xl flex-shrink-0">6</span><h2 class="text-2xl font-bold">ðŸ”§ Diagnosing Common Issues</h2></div>
+<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm flex-shrink-0" data-ARCKHÉ-doubt-toggle="" title="Mark this topic as a question" type="button"><span aria-hidden="true">?</span><span class="hidden sm:inline">I have a question</span></button>
 </div>
 <div class="bg-primary/10 border border-primary/30 rounded-xl p-5 mb-6">
-<p class="text-neutral-200"><strong class="text-primary">🧠 Imagine It This Way:</strong> like all software, Claude Code can run into installation problems. The good news is that the most common errors have one-line fixes.</p>
+<p class="text-neutral-200"><strong class="text-primary">ðŸ§  Imagine It This Way:</strong> like all software, Claude Code can run into installation problems. The good news is that the most common errors have one-line fixes.</p>
 </div>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-inema-block="m1-1-t6-p1">If something went wrong during installation or the first run, go through this checklist. It covers 90% of the problems beginners encounter:</p>
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m1-1-t6-p1">If something went wrong during installation or the first run, go through this checklist. It covers 90% of the problems beginners encounter:</p>
 <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
 <div class="bg-red-900/20 rounded-xl border border-red-500/30 p-6">
-<h4 class="font-bold text-red-400 mb-4">✗ Common Errors</h4>
+<h4 class="font-bold text-red-400 mb-4">âœ— Common Errors</h4>
 <ul class="space-y-2 text-neutral-300 text-sm">
-<li>• <strong>EACCES permission denied</strong> with npm install -g</li>
-<li>• <strong>Node version mismatch</strong> (18+ required)</li>
-<li>• <strong>Authentication failed</strong> on the first run</li>
-<li>• <strong>command not found: claude</strong> after install</li>
+<li>â€¢ <strong>EACCES permission denied</strong> with npm install -g</li>
+<li>â€¢ <strong>Node version mismatch</strong> (18+ required)</li>
+<li>â€¢ <strong>Authentication failed</strong> on the first run</li>
+<li>â€¢ <strong>command not found: claude</strong> after install</li>
 </ul>
 </div>
 <div class="bg-emerald-900/20 rounded-xl border border-emerald-500/30 p-6">
-<h4 class="font-bold text-emerald-400 mb-4">✓ Solutions</h4>
+<h4 class="font-bold text-emerald-400 mb-4">âœ“ Solutions</h4>
 <ul class="space-y-2 text-neutral-300 text-sm">
-<li>• Use <code>sudo npm install -g</code> or configure npm prefix</li>
-<li>• Update Node: <code>nvm install 20</code></li>
-<li>• Run <code>claude</code> and follow the login flow in the browser</li>
-<li>• Check whether npm/bin is in PATH</li>
+<li>â€¢ Use <code>sudo npm install -g</code> or configure npm prefix</li>
+<li>â€¢ Update Node: <code>nvm install 20</code></li>
+<li>â€¢ Run <code>claude</code> and follow the login flow in the browser</li>
+<li>â€¢ Check whether npm/bin is in PATH</li>
 </ul>
 </div>
 </div>
@@ -429,12 +429,12 @@ npm update -g @anthropic-ai/claude-code       # atualizar via npm</pre>
 <span class="text-xs text-emerald-400 font-mono">checklist-diagnostico.txt</span>
 <button class="text-xs px-2 py-1 rounded bg-emerald-500/20 text-emerald-400 hover:bg-emerald-500/30 transition-colors" onclick="copyBox(this)" type="button">copy</button>
 </div>
-<pre class="p-4 text-sm text-neutral-200 font-mono leading-relaxed">Claude Code não funciona? Checklist rápido:
-[ ] Node.js 18+ instalado?  → node --version
-[ ] npm global acessível?   → npm list -g --depth=0
-[ ] claude no PATH?         → which claude
-[ ] Autenticação ok?        → claude (e siga o login)
-[ ] Versão atualizada?      → claude --version
+<pre class="p-4 text-sm text-neutral-200 font-mono leading-relaxed">Claude Code nÃ£o funciona? Checklist rÃ¡pido:
+[ ] Node.js 18+ instalado?  â†’ node --version
+[ ] npm global acessÃ­vel?   â†’ npm list -g --depth=0
+[ ] claude no PATH?         â†’ which claude
+[ ] AutenticaÃ§Ã£o ok?        â†’ claude (e siga o login)
+[ ] VersÃ£o atualizada?      â†’ claude --version
 Se 3+ falharam, reinstale: npm uninstall -g @anthropic-ai/claude-code &amp;&amp; npm install -g @anthropic-ai/claude-code</pre>
 </div>
 <div class="rounded-2xl border border-emerald-500/30 bg-dark-900/40 p-3 sm:p-4 mb-6 overflow-hidden">
@@ -463,7 +463,7 @@ Se 3+ falharam, reinstale: npm uninstall -g @anthropic-ai/claude-code &amp;&amp;
 <text fill="#9ad6ff" font-size="10" font-weight="400" text-anchor="middle" x="635" y="100">login via browser</text>
 <path d="M700,85 L760,85" fill="none" marker-end="url(#m11f-ah)" opacity="0.55" stroke="#34d399" stroke-width="1.8"></path>
 <g filter="url(#m11f-glow)"><rect fill="#0e2018" height="60" rx="12" stroke="#34d399" stroke-width="2.5" width="190" x="760" y="55"></rect></g>
-<text fill="#34d399" font-size="15" text-anchor="middle" x="855" y="82">$ claude ✓</text>
+<text fill="#34d399" font-size="15" text-anchor="middle" x="855" y="82">$ claude âœ“</text>
 <text fill="#9fe7c8" font-size="10" font-weight="400" text-anchor="middle" x="855" y="100">working</text>
 </g>
 </svg>
@@ -472,39 +472,39 @@ Se 3+ falharam, reinstale: npm uninstall -g @anthropic-ai/claude-code &amp;&amp;
 <p class="text-sm text-neutral-300"><strong class="text-emerald-400">In one sentence:</strong> Node, npm, PATH, and auth: resolve these four and Claude Code works.</p>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-emerald-500/20 border border-emerald-500/30 text-emerald-400 hover:bg-emerald-500/30 transition-colors" data-inema-read-toggle="" type="button"><span aria-hidden="true" class="inema-read-icon">○</span><span class="inema-read-label">Mark as read</span></button>
+<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-emerald-500/20 border border-emerald-500/30 text-emerald-400 hover:bg-emerald-500/30 transition-colors" data-ARCKHÉ-read-toggle="" type="button"><span aria-hidden="true" class="ARCKHÉ-read-icon">â—‹</span><span class="ARCKHÉ-read-label">Mark as read</span></button>
 </div>
 </section>
 <!-- RESUMO -->
 <section class="mb-12">
 <div class="bg-gradient-to-br from-emerald-900/40 via-dark-800 to-dark-800 rounded-xl border border-emerald-500/30 p-8">
-<h2 class="text-2xl font-bold mb-6 flex items-center"><span class="mr-3">🧾</span> Module Summary</h2>
+<h2 class="text-2xl font-bold mb-6 flex items-center"><span class="mr-3">ðŸ§¾</span> Module Summary</h2>
 <div class="space-y-4 mb-8">
-<div class="flex items-start space-x-3"><span class="text-emerald-400 mt-1">✓</span><div><strong class="text-white">Install with 1 command</strong><span class="text-neutral-400"> — npm install -g @anthropic-ai/claude-code (requires Node 18+).</span></div></div>
-<div class="flex items-start space-x-3"><span class="text-emerald-400 mt-1">✓</span><div><strong class="text-white">Two modes of use</strong><span class="text-neutral-400"> — interactive (claude) for development, one-shot (claude -p) for scripts.</span></div></div>
-<div class="flex items-start space-x-3"><span class="text-emerald-400 mt-1">✓</span><div><strong class="text-white">Essential flags</strong><span class="text-neutral-400"> — --help, -p, --resume, --model, and --version cover day-to-day use.</span></div></div>
-<div class="flex items-start space-x-3"><span class="text-emerald-400 mt-1">✓</span><div><strong class="text-white">Troubleshooting</strong><span class="text-neutral-400"> — Node + npm + PATH + auth = the 4 diagnostic checkpoints.</span></div></div>
+<div class="flex items-start space-x-3"><span class="text-emerald-400 mt-1">âœ“</span><div><strong class="text-white">Install with 1 command</strong><span class="text-neutral-400"> â€” npm install -g @anthropic-ai/claude-code (requires Node 18+).</span></div></div>
+<div class="flex items-start space-x-3"><span class="text-emerald-400 mt-1">âœ“</span><div><strong class="text-white">Two modes of use</strong><span class="text-neutral-400"> â€” interactive (claude) for development, one-shot (claude -p) for scripts.</span></div></div>
+<div class="flex items-start space-x-3"><span class="text-emerald-400 mt-1">âœ“</span><div><strong class="text-white">Essential flags</strong><span class="text-neutral-400"> â€” --help, -p, --resume, --model, and --version cover day-to-day use.</span></div></div>
+<div class="flex items-start space-x-3"><span class="text-emerald-400 mt-1">âœ“</span><div><strong class="text-white">Troubleshooting</strong><span class="text-neutral-400"> â€” Node + npm + PATH + auth = the 4 diagnostic checkpoints.</span></div></div>
 </div>
-<div class="bg-dark-800/50 rounded-lg p-4 mb-8"><h3 class="font-semibold text-emerald-400 mb-2">Next module:</h3><p class="text-neutral-300">1.2 — Navigating the CLI Like a Pro: shortcuts, slash commands, sessions, and pipes.</p></div>
-<div class="flex flex-col sm:flex-row gap-4"><a class="flex-1 text-center px-6 py-3 bg-dark-700 text-neutral-300 rounded-lg font-semibold hover:bg-dark-600 transition-colors" href="index.html">← Back to Track</a><a class="flex-1 text-center px-6 py-3 bg-emerald-600 text-white rounded-lg font-semibold hover:bg-emerald-500 transition-colors" href="modulo-1-2.html">Next Module →</a></div>
+<div class="bg-dark-800/50 rounded-lg p-4 mb-8"><h3 class="font-semibold text-emerald-400 mb-2">Next module:</h3><p class="text-neutral-300">1.2 â€” Navigating the CLI Like a Pro: shortcuts, slash commands, sessions, and pipes.</p></div>
+<div class="flex flex-col sm:flex-row gap-4"><a class="flex-1 text-center px-6 py-3 bg-dark-700 text-neutral-300 rounded-lg font-semibold hover:bg-dark-600 transition-colors" href="index.html">â† Back to Track</a><a class="flex-1 text-center px-6 py-3 bg-emerald-600 text-white rounded-lg font-semibold hover:bg-emerald-500 transition-colors" href="modulo-1-2.html">Next Module â†’</a></div>
 </div>
 </section>
 </main>
 </div>
 </div>
-<footer class="border-t border-dark-600 py-8 mt-16"><div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-neutral-500 text-sm"><p>Transition to Claude Code · <a class="text-sky-400 hover:text-sky-300" href="https://inema.club" target="_blank">INEMA.CLUB</a></p></div></footer>
+<footer class="border-t border-dark-600 py-8 mt-16"><div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-neutral-500 text-sm"><p>Transition to Claude Code Â· <a class="text-sky-400 hover:text-sky-300" href="https://ARCKHÉ AI" target="_blank">ARCKHÉ AI</a></p></div></footer>
 <script>
     function toggleTopic(button){ const ti=button.closest('.topic-item'); if(!ti)return; const e=ti.querySelector('.topic-explanation'); if(e){e.classList.toggle('active'); button.setAttribute('aria-expanded', e.classList.contains('active'));} }
-    (function(){ const tt=document.getElementById('theme-toggle'),di=document.getElementById('theme-toggle-dark-icon'),li=document.getElementById('theme-toggle-light-icon'),h=document.documentElement; function s(){ if(h.classList.contains('dark')){li.classList.remove('hidden');di.classList.add('hidden');}else{di.classList.remove('hidden');li.classList.add('hidden');} } s(); tt&&tt.addEventListener('click',function(){h.classList.toggle('dark');var d=h.classList.contains('dark');h.style.colorScheme=d?'dark':'light';try{var p=JSON.parse(localStorage.getItem('inema.prefs')||'{}');p.theme=d?'inema-dark':'claro';localStorage.setItem('inema.prefs',JSON.stringify(p));localStorage.setItem('theme',d?'dark':'light');}catch(e){}s();}); })();
+    (function(){ const tt=document.getElementById('theme-toggle'),di=document.getElementById('theme-toggle-dark-icon'),li=document.getElementById('theme-toggle-light-icon'),h=document.documentElement; function s(){ if(h.classList.contains('dark')){li.classList.remove('hidden');di.classList.add('hidden');}else{di.classList.remove('hidden');li.classList.add('hidden');} } s(); tt&&tt.addEventListener('click',function(){h.classList.toggle('dark');var d=h.classList.contains('dark');h.style.colorScheme=d?'dark':'light';try{var p=JSON.parse(localStorage.getItem('ARCKHÉ.prefs')||'{}');p.theme=d?'ARCKHÉ-dark':'claro';localStorage.setItem('ARCKHÉ.prefs',JSON.stringify(p));localStorage.setItem('theme',d?'dark':'light');}catch(e){}s();}); })();
     function openModal(id){var m=document.getElementById(id);if(m){m.classList.remove('hidden');document.body.style.overflow='hidden';}}
     function closeModal(){document.querySelectorAll('.modal').forEach(function(m){m.classList.add('hidden');});document.body.style.overflow='auto';}
     document.addEventListener('keydown',function(e){if(e.key==='Escape')closeModal();});
-    function copyBox(btn){ try{ var pre=btn.closest('.copybox').querySelector('pre'); navigator.clipboard.writeText(pre.textContent); var o=btn.textContent; btn.textContent='copiado ✓'; setTimeout(function(){btn.textContent=o;},1500);}catch(e){} }
+    function copyBox(btn){ try{ var pre=btn.closest('.copybox').querySelector('pre'); navigator.clipboard.writeText(pre.textContent); var o=btn.textContent; btn.textContent='copiado âœ“'; setTimeout(function(){btn.textContent=o;},1500);}catch(e){} }
   </script>
 <script src="../../../assets/learn.js"></script>
 <script>
     document.addEventListener('DOMContentLoaded', function () {
-      if (window.INEMA && typeof INEMA.init === 'function') INEMA.init();
+      if (window.ARCKHÉ && typeof ARCKHÉ.init === 'function') ARCKHÉ.init();
     });
   </script>
 </body>

@@ -4,28 +4,28 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<meta content="claude-code" name="inema-course"/>
+<meta content="claude-code" name="ARCKHÉ-course"/>
 <title>3.1 What MCP Servers Are | Claude Code</title>
 <script>
   (function () {
     try {
       var html = document.documentElement;
-      var DEF = { theme: 'inema-dark', font: 'inter', fontScale: 100, lineWidth: 68, leading: 1.7, accent: 'purple' };
+      var DEF = { theme: 'ARCKHÉ-dark', font: 'inter', fontScale: 100, lineWidth: 68, leading: 1.7, accent: 'purple' };
       function clone(o){var r={};for(var x in o)r[x]=o[x];return r;}
       var p = clone(DEF);
       try {
-        var raw = localStorage.getItem('inema.prefs');
+        var raw = localStorage.getItem('ARCKHÉ.prefs');
         if (raw) { var parsed = JSON.parse(raw); if (parsed && typeof parsed==='object'){ for (var k in DEF) if (parsed[k]!=null) p[k]=parsed[k]; } }
-        else { var legacy = localStorage.getItem('theme'); if (legacy==='light') p.theme='claro'; else if (legacy==='dark') p.theme='inema-dark'; }
+        else { var legacy = localStorage.getItem('theme'); if (legacy==='light') p.theme='claro'; else if (legacy==='dark') p.theme='ARCKHÉ-dark'; }
       } catch (e) { p = clone(DEF); }
-      var THEMES = { 'inema-dark':{dark:true,attr:null,cs:'dark'},'claro':{dark:false,attr:null,cs:'light'},'sepia':{dark:false,attr:'sepia',cs:'light'},'foco':{dark:null,attr:'foco',cs:null},'contraste':{dark:true,attr:'contraste',cs:'dark'} };
-      var t = THEMES[p.theme] || THEMES['inema-dark'];
+      var THEMES = { 'ARCKHÉ-dark':{dark:true,attr:null,cs:'dark'},'claro':{dark:false,attr:null,cs:'light'},'sepia':{dark:false,attr:'sepia',cs:'light'},'foco':{dark:null,attr:'foco',cs:null},'contraste':{dark:true,attr:'contraste',cs:'dark'} };
+      var t = THEMES[p.theme] || THEMES['ARCKHÉ-dark'];
       if (t.dark===true) html.classList.add('dark'); else if (t.dark===false) html.classList.remove('dark');
       if (t.attr) html.setAttribute('data-theme', t.attr); else html.removeAttribute('data-theme');
       html.style.colorScheme = (t.cs ? t.cs : (html.classList.contains('dark')?'dark':'light'));
       html.setAttribute('data-font', p.font||'inter'); html.setAttribute('data-accent', p.accent||'purple');
       var s = html.style, scale=(+p.fontScale||100);
-      s.setProperty('--inema-font-scale',(scale/100).toString()); s.setProperty('font-size',scale+'%');
+      s.setProperty('--ARCKHÉ-font-scale',(scale/100).toString()); s.setProperty('font-size',scale+'%');
       s.setProperty('--measure',(+p.lineWidth||68)+'ch'); s.setProperty('--lh-body',(+p.leading||1.7).toString());
     } catch (err) { try { document.documentElement.classList.add('dark'); document.documentElement.style.colorScheme='dark'; } catch(e){} }
   })();
@@ -36,7 +36,7 @@
   </script>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
 <link href="../../../assets/learn.css" rel="stylesheet"/>
-<script data-inema-manifest="" type="application/json">
+<script data-ARCKHÉ-manifest="" type="application/json">
 {"course":"claude-code","tracks":[{"n":"1","title":"CLI e Configura\u00e7\u00e3o","modules":[{"id":"1-1","title":"Instala\u00e7\u00e3o e Primeiro Comando","topics":6,"href":"curso/trilha1/modulo-1-1.html"},{"id":"1-2","title":"Navegando o CLI como um Pro","topics":6,"href":"curso/trilha1/modulo-1-2.html"},{"id":"1-3","title":"CLAUDE.md \u2014 O C\u00e9rebro do Projeto","topics":6,"href":"curso/trilha1/modulo-1-3.html"},{"id":"1-4","title":"Configura\u00e7\u00e3o Avan\u00e7ada","topics":6,"href":"curso/trilha1/modulo-1-4.html"},{"id":"1-5","title":"Memory e Contexto Persistente","topics":6,"href":"curso/trilha1/modulo-1-5.html"},{"id":"1-6","title":"Seu Workflow Pessoal","topics":6,"href":"curso/trilha1/modulo-1-6.html"}]},{"n":"2","title":"Plan e Loop Modes","modules":[{"id":"2-1","title":"Plan Mode \u2014 Pense Antes de Codar","topics":6,"href":"curso/trilha2/modulo-2-1.html"},{"id":"2-2","title":"Planos que Funcionam","topics":6,"href":"curso/trilha2/modulo-2-2.html"},{"id":"2-3","title":"Loop Mode \u2014 Automa\u00e7\u00e3o Iterativa","topics":6,"href":"curso/trilha2/modulo-2-3.html"},{"id":"2-4","title":"Patterns de Loop na Pr\u00e1tica","topics":6,"href":"curso/trilha2/modulo-2-4.html"},{"id":"2-5","title":"Combinando Plan + Loop","topics":6,"href":"curso/trilha2/modulo-2-5.html"},{"id":"2-6","title":"Agentic Coding \u2014 O Novo Normal","topics":6,"href":"curso/trilha2/modulo-2-6.html"}]},{"n":"3","title":"MCP Servers","modules":[{"id":"3-1","title":"O que s\u00e3o MCP Servers","topics":6,"href":"curso/trilha3/modulo-3-1.html"},{"id":"3-2","title":"Seus Primeiros MCPs","topics":6,"href":"curso/trilha3/modulo-3-2.html"},{"id":"3-3","title":"MCPs de Produtividade","topics":6,"href":"curso/trilha3/modulo-3-3.html"},{"id":"3-4","title":"MCPs de Database e APIs","topics":6,"href":"curso/trilha3/modulo-3-4.html"},{"id":"3-5","title":"Criando seu Pr\u00f3prio MCP Server","topics":6,"href":"curso/trilha3/modulo-3-5.html"},{"id":"3-6","title":"Ecossistema e Marketplace","topics":6,"href":"curso/trilha3/modulo-3-6.html"}]},{"n":"4","title":"Subagentes e Git","modules":[{"id":"4-1","title":"Subagentes \u2014 Conceitos","topics":6,"href":"curso/trilha4/modulo-4-1.html"},{"id":"4-2","title":"Paralelismo Real","topics":6,"href":"curso/trilha4/modulo-4-2.html"},{"id":"4-3","title":"Patterns de Multi-Agent","topics":6,"href":"curso/trilha4/modulo-4-3.html"},{"id":"4-4","title":"Git com IA \u2014 Versionamento","topics":6,"href":"curso/trilha4/modulo-4-4.html"},{"id":"4-5","title":"Pull Requests e Code Review","topics":6,"href":"curso/trilha4/modulo-4-5.html"},{"id":"4-6","title":"CI/CD e GitHub Actions","topics":6,"href":"curso/trilha4/modulo-4-6.html"}]},{"n":"5","title":"Python e Ship","modules":[{"id":"5-1","title":"Python + Claude Code","topics":6,"href":"curso/trilha5/modulo-5-1.html"},{"id":"5-2","title":"Automa\u00e7\u00e3o de Scripts","topics":6,"href":"curso/trilha5/modulo-5-2.html"},{"id":"5-3","title":"FastAPI e Web Services","topics":6,"href":"curso/trilha5/modulo-5-3.html"},{"id":"5-4","title":"Testing Automatizado","topics":6,"href":"curso/trilha5/modulo-5-4.html"},{"id":"5-5","title":"Deploy e Infraestrutura","topics":6,"href":"curso/trilha5/modulo-5-5.html"},{"id":"5-6","title":"Ship Your Product","topics":6,"href":"curso/trilha5/modulo-5-6.html"}]}]}
 </script>
 <style>
@@ -84,16 +84,16 @@
     .dark .divide-dark-600 > :not([hidden]) ~ :not([hidden]) { border-color: #374151; }
     html:not(.dark) svg[role="img"] { filter: saturate(0.82) brightness(0.96); }
   </style>
-<link href="https://inematds.github.io/claude-code-curso/curso/trilha3/modulo-3-1.html" hreflang="pt-BR" rel="alternate"/><link href="https://inematds.github.io/claude-code-curso/en/curso/trilha3/modulo-3-1.html" hreflang="en" rel="alternate"/><link href="https://inematds.github.io/claude-code-curso/es/curso/trilha3/modulo-3-1.html" hreflang="es" rel="alternate"/></head>
-<body class="bg-dark-900 text-neutral-100 min-h-screen"><div class="inema-lang" style="position:fixed;right:14px;bottom:14px;z-index:9999;display:flex;gap:2px;padding:4px;border-radius:10px;background:rgba(12,12,16,.82);border:1px solid rgba(226,162,59,.45);font:600 12px/1 Sora,Inter,system-ui,sans-serif;backdrop-filter:blur(8px)" translate="no"><a href="../../../curso/trilha3/modulo-3-1.html" hreflang="pt-BR" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">PT</a><a href="modulo-3-1.html" hreflang="en" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#1a1206;background:#E2A23B">EN</a><a href="../../../es/curso/trilha3/modulo-3-1.html" hreflang="es" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">ES</a></div>
+<link href="https://linnoff88-dev.github.io/ hreflang="pt-BR" rel="alternate"/><link href="https://linnoff88-dev.github.io/ hreflang="en" rel="alternate"/><link href="https://linnoff88-dev.github.io/ hreflang="es" rel="alternate"/></head>
+<body class="bg-dark-900 text-neutral-100 min-h-screen"><div class="ARCKHÉ-lang" style="position:fixed;right:14px;bottom:14px;z-index:9999;display:flex;gap:2px;padding:4px;border-radius:10px;background:rgba(12,12,16,.82);border:1px solid rgba(226,162,59,.45);font:600 12px/1 Sora,Inter,system-ui,sans-serif;backdrop-filter:blur(8px)" translate="no"><a href="../../../curso/trilha3/modulo-3-1.html" hreflang="pt-BR" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">PT</a><a href="modulo-3-1.html" hreflang="en" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#1a1206;background:#E2A23B">EN</a><a href="../../../es/curso/trilha3/modulo-3-1.html" hreflang="es" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">ES</a></div>
 <a class="sr-only focus:not-sr-only focus:absolute focus:z-50 focus:top-2 focus:left-2 focus:px-4 focus:py-2 focus:bg-dark-800 focus:text-purple-400 focus:rounded-lg" href="#conteudo">Skip to content</a>
 <nav class="sticky top-0 z-50 bg-dark-900/95 backdrop-blur-sm border-b border-dark-600">
 <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
 <div class="flex justify-between items-center h-14">
 <div class="flex items-center space-x-4">
-<a class="flex items-center space-x-2 text-yellow-400 hover:text-yellow-300" href="../../index.html"><span class="text-2xl">🤖</span><span class="font-bold text-lg hidden sm:inline">Claude Code</span></a>
+<a class="flex items-center space-x-2 text-yellow-400 hover:text-yellow-300" href="../../index.html"><span class="text-2xl">ðŸ¤–</span><span class="font-bold text-lg hidden sm:inline">Claude Code</span></a>
 <span class="text-neutral-600">|</span>
-<a class="text-sky-400 hover:text-sky-300 text-sm font-medium" href="https://inema.club" target="_blank">INEMA.CLUB</a>
+<a class="text-sky-400 hover:text-sky-300 text-sm font-medium" href="https://ARCKHÉ AI" target="_blank">ARCKHÉ AI</a>
 </div>
 <div class="flex items-center space-x-1 sm:space-x-2">
 <a class="px-3 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-emerald-400 hover:bg-emerald-500/10 transition-colors" href="../trilha1/index.html"><span class="sm:hidden">T1</span><span class="hidden sm:inline">CLI</span></a>
@@ -101,7 +101,7 @@
 <a class="px-3 py-1.5 rounded-lg text-sm font-semibold text-purple-400 bg-purple-500/10" href="index.html"><span class="sm:hidden">T3</span><span class="hidden sm:inline">MCP</span></a>
 <a class="px-3 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-amber-400 hover:bg-amber-500/10 transition-colors" href="../trilha4/index.html"><span class="sm:hidden">T4</span><span class="hidden sm:inline">Agents</span></a>
 <a class="px-3 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-teal-400 hover:bg-teal-500/10 transition-colors" href="../trilha5/index.html"><span class="sm:hidden">T5</span><span class="hidden sm:inline">Python</span></a>
-<button class="hidden sm:inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-sm text-neutral-300 hover:text-neutral-100 hover:bg-dark-700 transition-colors ml-1" data-inema-journey-open="" type="button"><span aria-hidden="true">◷</span><span>My journey</span><span aria-hidden="true" class="inema-journey-badge hidden"></span></button>
+<button class="hidden sm:inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-sm text-neutral-300 hover:text-neutral-100 hover:bg-dark-700 transition-colors ml-1" data-ARCKHÉ-journey-open="" type="button"><span aria-hidden="true">â—·</span><span>My journey</span><span aria-hidden="true" class="ARCKHÉ-journey-badge hidden"></span></button>
 <button aria-label="Switch theme" class="p-2 rounded-lg bg-dark-700 hover:bg-dark-600 transition-colors ml-1" id="theme-toggle">
 <svg class="hidden w-5 h-5 text-neutral-300" fill="currentColor" id="theme-toggle-dark-icon" viewbox="0 0 20 20"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg>
 <svg class="hidden w-5 h-5 text-neutral-300" fill="currentColor" id="theme-toggle-light-icon" viewbox="0 0 20 20"><path clip-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" fill-rule="evenodd"></path></svg>
@@ -120,7 +120,7 @@
 <header class="bg-gradient-to-br from-purple-900/30 via-dark-800 to-dark-800 py-12 border-b border-dark-600">
 <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
 <span class="inline-block px-3 py-1 bg-purple-500/20 text-purple-400 text-xs font-semibold rounded-full mb-4">MODULE 3.1</span>
-<h1 class="text-3xl sm:text-4xl font-bold mb-4">🔌 What MCP Servers Are</h1>
+<h1 class="text-3xl sm:text-4xl font-bold mb-4">ðŸ”Œ What MCP Servers Are</h1>
 <p class="text-lg text-neutral-400 max-w-3xl">MCP is the protocol that turns Claude Code from a "file reader" into a "systems operator." Here you'll understand the architecture, the tools schema, and why MCP is the standard that connects agents to the real world. Each new term is explained as it comes up.</p>
 <div class="grid grid-cols-4 gap-4 mt-8 max-w-2xl">
 <div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-purple-400">6</div><div class="text-xs text-neutral-400">Topics</div></div>
@@ -129,52 +129,52 @@
 <div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-purple-400">Theory</div><div class="text-xs text-neutral-400">Type</div></div>
 </div>
 <div class="mt-6 max-w-2xl">
-<div aria-label="Module 3.1 progress" aria-valuemax="100" aria-valuemin="0" class="inema-meter flex items-center gap-3" data-inema-meter="modulo:3-1" role="progressbar">
+<div aria-label="Module 3.1 progress" aria-valuemax="100" aria-valuemin="0" class="ARCKHÉ-meter flex items-center gap-3" data-ARCKHÉ-meter="modulo:3-1" role="progressbar">
 <span class="text-sm text-neutral-400">Progress:</span>
-<span class="inema-meter-pct text-purple-400 font-bold text-sm">0%</span>
-<span class="inema-meter-count text-xs text-neutral-500">0 of 6</span>
+<span class="ARCKHÉ-meter-pct text-purple-400 font-bold text-sm">0%</span>
+<span class="ARCKHÉ-meter-count text-xs text-neutral-500">0 of 6</span>
 </div>
 </div>
 </div>
 </header>
 <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
 <div class="lg:grid lg:grid-cols-[230px_1fr] lg:gap-10">
-<nav aria-label="Page index" class="hidden lg:block sticky top-24 self-start" data-inema-toc="">
-<p class="text-sm text-neutral-400 mb-3">Section <span class="inema-toc-pos">1</span> of <span class="inema-toc-total">6</span></p>
+<nav aria-label="Page index" class="hidden lg:block sticky top-24 self-start" data-ARCKHÉ-toc="">
+<p class="text-sm text-neutral-400 mb-3">Section <span class="ARCKHÉ-toc-pos">1</span> of <span class="ARCKHÉ-toc-total">6</span></p>
 <ul class="space-y-1 text-sm">
-<li><a class="inema-toc-link block px-3 py-1.5 rounded-lg text-neutral-400 hover:text-purple-400 hover:bg-purple-500/10" href="#topico-1">1. The MCP protocol</a></li>
-<li><a class="inema-toc-link block px-3 py-1.5 rounded-lg text-neutral-400 hover:text-purple-400 hover:bg-purple-500/10" href="#topico-2">2. Client-server architecture</a></li>
-<li><a class="inema-toc-link block px-3 py-1.5 rounded-lg text-neutral-400 hover:text-purple-400 hover:bg-purple-500/10" href="#topico-3">3. Tool discovery and schemas</a></li>
-<li><a class="inema-toc-link block px-3 py-1.5 rounded-lg text-neutral-400 hover:text-purple-400 hover:bg-purple-500/10" href="#topico-4">4. Why MCP Matters</a></li>
-<li><a class="inema-toc-link block px-3 py-1.5 rounded-lg text-neutral-400 hover:text-purple-400 hover:bg-purple-500/10" href="#topico-5">5. Current Ecosystem</a></li>
-<li><a class="inema-toc-link block px-3 py-1.5 rounded-lg text-neutral-400 hover:text-purple-400 hover:bg-purple-500/10" href="#topico-6">6. Analogy with REST APIs</a></li>
+<li><a class="ARCKHÉ-toc-link block px-3 py-1.5 rounded-lg text-neutral-400 hover:text-purple-400 hover:bg-purple-500/10" href="#topico-1">1. The MCP protocol</a></li>
+<li><a class="ARCKHÉ-toc-link block px-3 py-1.5 rounded-lg text-neutral-400 hover:text-purple-400 hover:bg-purple-500/10" href="#topico-2">2. Client-server architecture</a></li>
+<li><a class="ARCKHÉ-toc-link block px-3 py-1.5 rounded-lg text-neutral-400 hover:text-purple-400 hover:bg-purple-500/10" href="#topico-3">3. Tool discovery and schemas</a></li>
+<li><a class="ARCKHÉ-toc-link block px-3 py-1.5 rounded-lg text-neutral-400 hover:text-purple-400 hover:bg-purple-500/10" href="#topico-4">4. Why MCP Matters</a></li>
+<li><a class="ARCKHÉ-toc-link block px-3 py-1.5 rounded-lg text-neutral-400 hover:text-purple-400 hover:bg-purple-500/10" href="#topico-5">5. Current Ecosystem</a></li>
+<li><a class="ARCKHÉ-toc-link block px-3 py-1.5 rounded-lg text-neutral-400 hover:text-purple-400 hover:bg-purple-500/10" href="#topico-6">6. Analogy with REST APIs</a></li>
 </ul>
 </nav>
-<main class="inema-prose min-w-0" id="conteudo">
+<main class="ARCKHÉ-prose min-w-0" id="conteudo">
 <!-- GLOSSARIO VIVO -->
 <div class="bg-dark-800 border border-purple-500/30 rounded-xl p-6 mb-12">
-<h2 class="text-lg font-bold text-purple-400 mb-2 flex items-center"><span class="mr-2">📖</span> Living glossary</h2>
+<h2 class="text-lg font-bold text-purple-400 mb-2 flex items-center"><span class="mr-2">ðŸ“–</span> Living glossary</h2>
 <p class="text-sm text-neutral-400 mb-4">Key terms in this track. Come back here whenever you need to.</p>
 <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm">
-<div class="bg-dark-700/50 rounded-lg p-3"><strong class="text-purple-400">MCP (Model Context Protocol)</strong> — an open protocol that lets AI agents (such as Claude Code) discover and use external tools in a standardized way via JSON-RPC.</div>
-<div class="bg-dark-700/50 rounded-lg p-3"><strong class="text-purple-400">Tool</strong> — a function that the MCP server exposes to the agent. It has a name, description, and input schema. E.g.: <code>read_file</code>, <code>query_db</code>.</div>
-<div class="bg-dark-700/50 rounded-lg p-3"><strong class="text-purple-400">Schema (inputSchema)</strong> — the JSON Schema description of the parameters a tool accepts. The agent uses it to know what to send.</div>
-<div class="bg-dark-700/50 rounded-lg p-3"><strong class="text-purple-400">Protocol</strong> — a set of rules that defines how two programs communicate. MCP uses JSON-RPC over stdio or HTTP.</div>
-<div class="bg-dark-700/50 rounded-lg p-3"><strong class="text-purple-400">Server</strong> — the process that exposes tools via MCP. It can be a Node.js script, a binary, or a Docker container.</div>
-<div class="bg-dark-700/50 rounded-lg p-3"><strong class="text-purple-400">Client</strong> — whoever consumes the server's tools. In our case, Claude Code is the MCP client.</div>
+<div class="bg-dark-700/50 rounded-lg p-3"><strong class="text-purple-400">MCP (Model Context Protocol)</strong> â€” an open protocol that lets AI agents (such as Claude Code) discover and use external tools in a standardized way via JSON-RPC.</div>
+<div class="bg-dark-700/50 rounded-lg p-3"><strong class="text-purple-400">Tool</strong> â€” a function that the MCP server exposes to the agent. It has a name, description, and input schema. E.g.: <code>read_file</code>, <code>query_db</code>.</div>
+<div class="bg-dark-700/50 rounded-lg p-3"><strong class="text-purple-400">Schema (inputSchema)</strong> â€” the JSON Schema description of the parameters a tool accepts. The agent uses it to know what to send.</div>
+<div class="bg-dark-700/50 rounded-lg p-3"><strong class="text-purple-400">Protocol</strong> â€” a set of rules that defines how two programs communicate. MCP uses JSON-RPC over stdio or HTTP.</div>
+<div class="bg-dark-700/50 rounded-lg p-3"><strong class="text-purple-400">Server</strong> â€” the process that exposes tools via MCP. It can be a Node.js script, a binary, or a Docker container.</div>
+<div class="bg-dark-700/50 rounded-lg p-3"><strong class="text-purple-400">Client</strong> â€” whoever consumes the server's tools. In our case, Claude Code is the MCP client.</div>
 </div>
 </div>
 <!-- TOPICO 1 -->
-<section class="mb-16" data-inema-topic="modulo-3-1#topico-1" id="topico-1">
+<section class="mb-16" data-ARCKHÉ-topic="modulo-3-1#topico-1" id="topico-1">
 <div class="flex items-center justify-between gap-4 mb-6">
-<div class="flex items-center space-x-4"><span class="flex items-center justify-center w-12 h-12 rounded-full bg-purple-500/20 text-purple-400 font-bold text-xl flex-shrink-0">1</span><h2 class="text-2xl font-bold">📡 The MCP Protocol Explained</h2></div>
-<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm flex-shrink-0" data-inema-doubt-toggle="" title="Mark this topic as a question" type="button"><span aria-hidden="true">?</span><span class="hidden sm:inline">I have a question</span></button>
+<div class="flex items-center space-x-4"><span class="flex items-center justify-center w-12 h-12 rounded-full bg-purple-500/20 text-purple-400 font-bold text-xl flex-shrink-0">1</span><h2 class="text-2xl font-bold">ðŸ“¡ The MCP Protocol Explained</h2></div>
+<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm flex-shrink-0" data-ARCKHÉ-doubt-toggle="" title="Mark this topic as a question" type="button"><span aria-hidden="true">?</span><span class="hidden sm:inline">I have a question</span></button>
 </div>
 <div class="bg-primary/10 border border-primary/30 rounded-xl p-5 mb-6">
 <p class="text-neutral-200"><strong class="text-primary">Imagine it this way:</strong> You hire an assistant who speaks 10 languages. But if every vendor invents its own language, the assistant has to learn 10 grammars. MCP is the "universal language" all vendors use to communicate with AI agents.</p>
 </div>
-<p class="text-neutral-300 mb-4 leading-relaxed" data-inema-block="m3-1-t1-p1"><span class="termo" title="Model Context Protocol — an open protocol for connecting LLMs to external tools.">MCP</span> means <strong>Model Context Protocol</strong>. It’s a <span class="termo" title="A set of rules that defines how two programs communicate.">protocol</span> open, created by Anthropic and released to the entire community, which standardizes how AI agents discover and use external tools. Before MCP, each tool had its own integration. Now a single protocol connects the agent to <em>any</em> service that implements the pattern.</p>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-inema-block="m3-1-t1-p2">In practice, MCP uses <strong>JSON-RPC 2.0</strong> about a communication channel (usually <code>stdio</code> for local processes, or HTTP with SSE for remote servers). The agent sends a JSON message saying "I want to call tool X with these parameters," and the server responds with the result, also in JSON. Simple, predictable, and extensible.</p>
+<p class="text-neutral-300 mb-4 leading-relaxed" data-ARCKHÉ-block="m3-1-t1-p1"><span class="termo" title="Model Context Protocol â€” an open protocol for connecting LLMs to external tools.">MCP</span> means <strong>Model Context Protocol</strong>. Itâ€™s a <span class="termo" title="A set of rules that defines how two programs communicate.">protocol</span> open, created by Anthropic and released to the entire community, which standardizes how AI agents discover and use external tools. Before MCP, each tool had its own integration. Now a single protocol connects the agent to <em>any</em> service that implements the pattern.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m3-1-t1-p2">In practice, MCP uses <strong>JSON-RPC 2.0</strong> about a communication channel (usually <code>stdio</code> for local processes, or HTTP with SSE for remote servers). The agent sends a JSON message saying "I want to call tool X with these parameters," and the server responds with the result, also in JSON. Simple, predictable, and extensible.</p>
 <div class="rounded-2xl border border-purple-500/30 bg-dark-900/40 p-3 sm:p-4 mb-6 overflow-hidden">
 <svg aria-label="MCP flow: Client sends a JSON-RPC request, Server responds with a result" class="w-full h-auto" role="img" viewbox="0 0 1000 200">
 <defs>
@@ -203,20 +203,20 @@
 <p class="text-sm text-neutral-300"><strong class="text-purple-400">In one sentence:</strong> MCP is the standardized JSON-RPC that lets the agent call any external tool with a single protocol.</p>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-purple-500/20 border border-purple-500/30 text-purple-400 hover:bg-purple-500/30 transition-colors" data-inema-read-toggle="" type="button"><span aria-hidden="true" class="inema-read-icon">○</span><span class="inema-read-label">Mark as read</span></button>
+<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-purple-500/20 border border-purple-500/30 text-purple-400 hover:bg-purple-500/30 transition-colors" data-ARCKHÉ-read-toggle="" type="button"><span aria-hidden="true" class="ARCKHÉ-read-icon">â—‹</span><span class="ARCKHÉ-read-label">Mark as read</span></button>
 </div>
 </section>
 <!-- TOPICO 2 -->
-<section class="mb-16" data-inema-topic="modulo-3-1#topico-2" id="topico-2">
+<section class="mb-16" data-ARCKHÉ-topic="modulo-3-1#topico-2" id="topico-2">
 <div class="flex items-center justify-between gap-4 mb-6">
-<div class="flex items-center space-x-4"><span class="flex items-center justify-center w-12 h-12 rounded-full bg-purple-500/20 text-purple-400 font-bold text-xl flex-shrink-0">2</span><h2 class="text-2xl font-bold">🏗️ Client-Server Architecture</h2></div>
-<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm flex-shrink-0" data-inema-doubt-toggle="" title="Mark this topic as a question" type="button"><span aria-hidden="true">?</span><span class="hidden sm:inline">I have a question</span></button>
+<div class="flex items-center space-x-4"><span class="flex items-center justify-center w-12 h-12 rounded-full bg-purple-500/20 text-purple-400 font-bold text-xl flex-shrink-0">2</span><h2 class="text-2xl font-bold">ðŸ—ï¸ Client-Server Architecture</h2></div>
+<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm flex-shrink-0" data-ARCKHÉ-doubt-toggle="" title="Mark this topic as a question" type="button"><span aria-hidden="true">?</span><span class="hidden sm:inline">I have a question</span></button>
 </div>
 <div class="bg-primary/10 border border-primary/30 rounded-xl p-5 mb-6">
 <p class="text-neutral-200"><strong class="text-primary">Imagine it this way:</strong> A restaurant. The waiter (client) takes the order and brings it to the kitchen (server). The kitchen prepares the dish and sends it back. The waiter doesn't need to know how to cook; the kitchen doesn't need to know how to serve. Each does its part.</p>
 </div>
-<p class="text-neutral-300 mb-4 leading-relaxed" data-inema-block="m3-1-t2-p1">In the MCP, the <span class="termo" title="Who consumes the server’s tools. In our case, Claude Code.">client</span> and Claude Code. It knows how to talk to the user, plan tasks, and decide when it needs a tool. The <span class="termo" title="Process that exposes tools via MCP.">server</span> is a separate process that knows how to do something specific: read files, query a database, send an email. The client <strong>finds out</strong> what the server offers (via <code>tools/list</code>), and then <strong>calls</strong> the tool you need (via <code>tools/call</code>).</p>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-inema-block="m3-1-t2-p2">The channel between them can be <strong>stdio</strong> (the client starts the server as a child process and communicates via stdin/stdout) or <strong>HTTP + SSE</strong> (the server runs remotely and accepts connections). In day-to-day use with Claude Code, you almost always use stdio: the agent spawns the MCP process, communicates with it, and kills it when the session ends.</p>
+<p class="text-neutral-300 mb-4 leading-relaxed" data-ARCKHÉ-block="m3-1-t2-p1">In the MCP, the <span class="termo" title="Who consumes the serverâ€™s tools. In our case, Claude Code.">client</span> and Claude Code. It knows how to talk to the user, plan tasks, and decide when it needs a tool. The <span class="termo" title="Process that exposes tools via MCP.">server</span> is a separate process that knows how to do something specific: read files, query a database, send an email. The client <strong>finds out</strong> what the server offers (via <code>tools/list</code>), and then <strong>calls</strong> the tool you need (via <code>tools/call</code>).</p>
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m3-1-t2-p2">The channel between them can be <strong>stdio</strong> (the client starts the server as a child process and communicates via stdin/stdout) or <strong>HTTP + SSE</strong> (the server runs remotely and accepts connections). In day-to-day use with Claude Code, you almost always use stdio: the agent spawns the MCP process, communicates with it, and kills it when the session ends.</p>
 <div class="rounded-2xl border border-purple-500/30 bg-dark-900/40 p-3 sm:p-4 mb-6 overflow-hidden">
 <svg aria-label="MCP lifecycle: initialize, tools/list, tools/call in a loop, shutdown" class="w-full h-auto" role="img" viewbox="0 0 1000 260">
 <defs>
@@ -245,28 +245,28 @@
 </g>
 </svg>
 </div>
-<div class="inema-check mb-6 bg-dark-800 border border-dark-600 rounded-xl p-6" data-inema-check="modulo-3-1#q1">
-<p class="font-medium mb-4">Who is the “client” in Claude Code’s MCP ecosystem?</p>
-<div class="inema-check-options space-y-2">
-<button class="block w-full text-left px-4 py-2 rounded-lg bg-dark-700 border border-dark-600 hover:bg-dark-600 transition-colors text-sm" data-inema-check-option="0" type="button">The server that exposes tools (e.g., MCP Filesystem).</button>
-<button class="block w-full text-left px-4 py-2 rounded-lg bg-dark-700 border border-dark-600 hover:bg-dark-600 transition-colors text-sm" data-inema-check-option="1" type="button">Claude Code, which discovers and calls the servers' tools.</button>
-<button class="block w-full text-left px-4 py-2 rounded-lg bg-dark-700 border border-dark-600 hover:bg-dark-600 transition-colors text-sm" data-inema-check-option="2" type="button">The settings.json file that configures everything.</button>
+<div class="ARCKHÉ-check mb-6 bg-dark-800 border border-dark-600 rounded-xl p-6" data-ARCKHÉ-check="modulo-3-1#q1">
+<p class="font-medium mb-4">Who is the â€œclientâ€ in Claude Codeâ€™s MCP ecosystem?</p>
+<div class="ARCKHÉ-check-options space-y-2">
+<button class="block w-full text-left px-4 py-2 rounded-lg bg-dark-700 border border-dark-600 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-check-option="0" type="button">The server that exposes tools (e.g., MCP Filesystem).</button>
+<button class="block w-full text-left px-4 py-2 rounded-lg bg-dark-700 border border-dark-600 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-check-option="1" type="button">Claude Code, which discovers and calls the servers' tools.</button>
+<button class="block w-full text-left px-4 py-2 rounded-lg bg-dark-700 border border-dark-600 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-check-option="2" type="button">The settings.json file that configures everything.</button>
 </div>
-<div aria-live="polite" class="mt-4 text-sm" data-inema-check-feedback="" role="status"></div>
+<div aria-live="polite" class="mt-4 text-sm" data-ARCKHÉ-check-feedback="" role="status"></div>
 </div>
 <div class="bg-dark-800/60 border-l-4 border-purple-500 rounded-r-lg p-4 mb-6"><p class="text-sm text-neutral-300"><strong class="text-purple-400">In one sentence:</strong> Claude Code (client) starts the MCP server, discovers the tools, calls what it needs, and shuts down.</p></div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-purple-500/20 border border-purple-500/30 text-purple-400 hover:bg-purple-500/30 transition-colors" data-inema-read-toggle="" type="button"><span aria-hidden="true" class="inema-read-icon">○</span><span class="inema-read-label">Mark as read</span></button>
+<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-purple-500/20 border border-purple-500/30 text-purple-400 hover:bg-purple-500/30 transition-colors" data-ARCKHÉ-read-toggle="" type="button"><span aria-hidden="true" class="ARCKHÉ-read-icon">â—‹</span><span class="ARCKHÉ-read-label">Mark as read</span></button>
 </div>
 </section>
 <!-- TOPICO 3 -->
-<section class="mb-16" data-inema-topic="modulo-3-1#topico-3" id="topico-3">
+<section class="mb-16" data-ARCKHÉ-topic="modulo-3-1#topico-3" id="topico-3">
 <div class="flex items-center justify-between gap-4 mb-6">
-<div class="flex items-center space-x-4"><span class="flex items-center justify-center w-12 h-12 rounded-full bg-purple-500/20 text-purple-400 font-bold text-xl flex-shrink-0">3</span><h2 class="text-2xl font-bold">📋 Tool Discovery and Schemas</h2></div>
-<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm flex-shrink-0" data-inema-doubt-toggle="" title="Mark this topic as a question" type="button"><span aria-hidden="true">?</span><span class="hidden sm:inline">I have a question</span></button>
+<div class="flex items-center space-x-4"><span class="flex items-center justify-center w-12 h-12 rounded-full bg-purple-500/20 text-purple-400 font-bold text-xl flex-shrink-0">3</span><h2 class="text-2xl font-bold">ðŸ“‹ Tool Discovery and Schemas</h2></div>
+<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm flex-shrink-0" data-ARCKHÉ-doubt-toggle="" title="Mark this topic as a question" type="button"><span aria-hidden="true">?</span><span class="hidden sm:inline">I have a question</span></button>
 </div>
-<p class="text-neutral-300 mb-4 leading-relaxed" data-inema-block="m3-1-t3-p1">When the client connects to an MCP server, the first thing it does (after the handshake) is request the list of <span class="termo" title="Function the MCP server exposes to the agent.">tools</span> available via <code>tools/list</code>. Each tool comes with three things: a <strong>name</strong> (e.g., <code>read_query</code>), you <strong>description</strong> (text that explains what it does), and a <strong><span class="termo" title="JSON Schema description of the parameters a tool accepts.">inputSchema</span></strong> (JSON Schema saying which parameters it accepts).</p>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-inema-block="m3-1-t3-p2">The agent reads the schema and "understands" which parameters it needs to provide. It's as if each tool came with a built-in manual. The better the description and schema, the more often the agent gets it right the first time. A bad schema is like giving it a form without labels: the agent will guess.</p>
+<p class="text-neutral-300 mb-4 leading-relaxed" data-ARCKHÉ-block="m3-1-t3-p1">When the client connects to an MCP server, the first thing it does (after the handshake) is request the list of <span class="termo" title="Function the MCP server exposes to the agent.">tools</span> available via <code>tools/list</code>. Each tool comes with three things: a <strong>name</strong> (e.g., <code>read_query</code>), you <strong>description</strong> (text that explains what it does), and a <strong><span class="termo" title="JSON Schema description of the parameters a tool accepts.">inputSchema</span></strong> (JSON Schema saying which parameters it accepts).</p>
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m3-1-t3-p2">The agent reads the schema and "understands" which parameters it needs to provide. It's as if each tool came with a built-in manual. The better the description and schema, the more often the agent gets it right the first time. A bad schema is like giving it a form without labels: the agent will guess.</p>
 <div class="copybox bg-dark-900 border border-purple-500/30 rounded-xl overflow-hidden mb-6">
 <div class="flex items-center justify-between px-4 py-2 bg-dark-800 border-b border-dark-600">
 <span class="text-xs text-purple-400 font-mono">exemplo-tool-schema.json</span>
@@ -293,61 +293,61 @@
 </div>
 <div class="bg-dark-800/60 border-l-4 border-purple-500 rounded-r-lg p-4 mb-6"><p class="text-sm text-neutral-300"><strong class="text-purple-400">In one sentence:</strong> each tool has a JSON schema that the agent reads to know exactly what to send.</p></div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-purple-500/20 border border-purple-500/30 text-purple-400 hover:bg-purple-500/30 transition-colors" data-inema-read-toggle="" type="button"><span aria-hidden="true" class="inema-read-icon">○</span><span class="inema-read-label">Mark as read</span></button>
+<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-purple-500/20 border border-purple-500/30 text-purple-400 hover:bg-purple-500/30 transition-colors" data-ARCKHÉ-read-toggle="" type="button"><span aria-hidden="true" class="ARCKHÉ-read-icon">â—‹</span><span class="ARCKHÉ-read-label">Mark as read</span></button>
 </div>
 </section>
 <!-- TOPICO 4 -->
-<section class="mb-16" data-inema-topic="modulo-3-1#topico-4" id="topico-4">
+<section class="mb-16" data-ARCKHÉ-topic="modulo-3-1#topico-4" id="topico-4">
 <div class="flex items-center justify-between gap-4 mb-6">
-<div class="flex items-center space-x-4"><span class="flex items-center justify-center w-12 h-12 rounded-full bg-purple-500/20 text-purple-400 font-bold text-xl flex-shrink-0">4</span><h2 class="text-2xl font-bold">💡 Why MCP Matters</h2></div>
-<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm flex-shrink-0" data-inema-doubt-toggle="" title="Mark this topic as a question" type="button"><span aria-hidden="true">?</span><span class="hidden sm:inline">I have a question</span></button>
+<div class="flex items-center space-x-4"><span class="flex items-center justify-center w-12 h-12 rounded-full bg-purple-500/20 text-purple-400 font-bold text-xl flex-shrink-0">4</span><h2 class="text-2xl font-bold">ðŸ’¡ Why MCP Matters</h2></div>
+<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm flex-shrink-0" data-ARCKHÉ-doubt-toggle="" title="Mark this topic as a question" type="button"><span aria-hidden="true">?</span><span class="hidden sm:inline">I have a question</span></button>
 </div>
 <div class="bg-primary/10 border border-primary/30 rounded-xl p-5 mb-6">
 <p class="text-neutral-200"><strong class="text-primary">Imagine it this way:</strong> before USB, every device had a different connector. USB standardized the connection, and the peripheral ecosystem exploded. MCP is the "USB for AI agents."</p>
 </div>
-<p class="text-neutral-300 mb-4 leading-relaxed" data-inema-block="m3-1-t4-p1">Without MCP, Claude Code only has its built-in tools: reading/writing files, running bash, and searching the web. It works, but it’s like a computer without USB ports: it handles the basics and stops there. With MCP, you can plug in as many “peripherals” as you want: a database, Slack, email, calendar, any API.</p>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-inema-block="m3-1-t4-p2">The practical impact is huge. Instead of writing glue scripts for each integration, you configure an MCP server and the agent <strong>figures it out on its own</strong> what it can do. Standardization means any MCP server built by anyone works with any MCP client. Unlimited composition.</p>
+<p class="text-neutral-300 mb-4 leading-relaxed" data-ARCKHÉ-block="m3-1-t4-p1">Without MCP, Claude Code only has its built-in tools: reading/writing files, running bash, and searching the web. It works, but itâ€™s like a computer without USB ports: it handles the basics and stops there. With MCP, you can plug in as many â€œperipheralsâ€ as you want: a database, Slack, email, calendar, any API.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m3-1-t4-p2">The practical impact is huge. Instead of writing glue scripts for each integration, you configure an MCP server and the agent <strong>figures it out on its own</strong> what it can do. Standardization means any MCP server built by anyone works with any MCP client. Unlimited composition.</p>
 <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-<div class="bg-red-900/20 rounded-xl border border-red-500/30 p-6"><h4 class="font-bold text-red-400 mb-4">Without MCP</h4><ul class="space-y-2 text-neutral-300 text-sm"><li>* Built-in tools only (file, bash, web)</li><li>* Each integration = custom script</li><li>* Doesn’t scale: 5 integrations = 5 scripts</li><li>* Agent limited to the filesystem</li></ul></div>
+<div class="bg-red-900/20 rounded-xl border border-red-500/30 p-6"><h4 class="font-bold text-red-400 mb-4">Without MCP</h4><ul class="space-y-2 text-neutral-300 text-sm"><li>* Built-in tools only (file, bash, web)</li><li>* Each integration = custom script</li><li>* Doesnâ€™t scale: 5 integrations = 5 scripts</li><li>* Agent limited to the filesystem</li></ul></div>
 <div class="bg-purple-900/20 rounded-xl border border-purple-500/30 p-6"><h4 class="font-bold text-purple-400 mb-4">With MCP</h4><ul class="space-y-2 text-neutral-300 text-sm"><li>* Hundreds of tools via a standard protocol</li><li>* Single config in settings.json</li><li>* Scales: 50 tools = same pattern</li><li>* Agent operates DBs, APIs, SaaS, everything</li></ul></div>
 </div>
 <div class="bg-dark-800/60 border-l-4 border-purple-500 rounded-r-lg p-4 mb-6"><p class="text-sm text-neutral-300"><strong class="text-purple-400">In one sentence:</strong> MCP turns Claude Code from a "file editor" into a "systems operator connected to everything."</p></div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-purple-500/20 border border-purple-500/30 text-purple-400 hover:bg-purple-500/30 transition-colors" data-inema-read-toggle="" type="button"><span aria-hidden="true" class="inema-read-icon">○</span><span class="inema-read-label">Mark as read</span></button>
+<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-purple-500/20 border border-purple-500/30 text-purple-400 hover:bg-purple-500/30 transition-colors" data-ARCKHÉ-read-toggle="" type="button"><span aria-hidden="true" class="ARCKHÉ-read-icon">â—‹</span><span class="ARCKHÉ-read-label">Mark as read</span></button>
 </div>
 </section>
 <!-- TOPICO 5 -->
-<section class="mb-16" data-inema-topic="modulo-3-1#topico-5" id="topico-5">
+<section class="mb-16" data-ARCKHÉ-topic="modulo-3-1#topico-5" id="topico-5">
 <div class="flex items-center justify-between gap-4 mb-6">
-<div class="flex items-center space-x-4"><span class="flex items-center justify-center w-12 h-12 rounded-full bg-purple-500/20 text-purple-400 font-bold text-xl flex-shrink-0">5</span><h2 class="text-2xl font-bold">🌍 Current Ecosystem</h2></div>
-<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm flex-shrink-0" data-inema-doubt-toggle="" title="Mark this topic as a question" type="button"><span aria-hidden="true">?</span><span class="hidden sm:inline">I have a question</span></button>
+<div class="flex items-center space-x-4"><span class="flex items-center justify-center w-12 h-12 rounded-full bg-purple-500/20 text-purple-400 font-bold text-xl flex-shrink-0">5</span><h2 class="text-2xl font-bold">ðŸŒ Current Ecosystem</h2></div>
+<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm flex-shrink-0" data-ARCKHÉ-doubt-toggle="" title="Mark this topic as a question" type="button"><span aria-hidden="true">?</span><span class="hidden sm:inline">I have a question</span></button>
 </div>
-<p class="text-neutral-300 mb-4 leading-relaxed" data-inema-block="m3-1-t5-p1">The MCP ecosystem is already vast. There are more than 200 open source servers covering categories such as: <strong>DevOps</strong> (Git, Docker, Kubernetes), <strong>Database</strong> (Postgres, SQLite, Redis, MongoDB), <strong>SaaS</strong> (Slack, Notion, Linear, Gmail, Calendar), <strong>Cloud</strong> (AWS, GCP, Cloudflare), and <strong>Utilities</strong> (browser automation, web search, file conversion).</p>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-inema-block="m3-1-t5-p2">Anthropic's official servers cover the basics: filesystem, git, SQLite, Postgres, puppeteer, brave-search. The community contributes the rest. Repositories such as <strong>awesome-mcp-servers</strong> on GitHub is the marketplace <strong>Smithery.ai</strong> are the best starting points for discovering what's available.</p>
+<p class="text-neutral-300 mb-4 leading-relaxed" data-ARCKHÉ-block="m3-1-t5-p1">The MCP ecosystem is already vast. There are more than 200 open source servers covering categories such as: <strong>DevOps</strong> (Git, Docker, Kubernetes), <strong>Database</strong> (Postgres, SQLite, Redis, MongoDB), <strong>SaaS</strong> (Slack, Notion, Linear, Gmail, Calendar), <strong>Cloud</strong> (AWS, GCP, Cloudflare), and <strong>Utilities</strong> (browser automation, web search, file conversion).</p>
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m3-1-t5-p2">Anthropic's official servers cover the basics: filesystem, git, SQLite, Postgres, puppeteer, brave-search. The community contributes the rest. Repositories such as <strong>awesome-mcp-servers</strong> on GitHub is the marketplace <strong>Smithery.ai</strong> are the best starting points for discovering what's available.</p>
 <div class="bg-dark-800 border border-purple-500/30 rounded-xl p-6 mb-6">
 <h3 class="font-semibold text-purple-400 mb-4">Main ecosystem categories</h3>
 <div class="grid grid-cols-2 sm:grid-cols-3 gap-3 text-sm">
-<div class="bg-dark-700/50 rounded-lg p-3 text-center"><div class="text-2xl mb-1">📁</div><strong class="text-purple-400">DevOps</strong><p class="text-neutral-400 text-xs mt-1">Git, Docker, K8s, CI/CD</p></div>
-<div class="bg-dark-700/50 rounded-lg p-3 text-center"><div class="text-2xl mb-1">🗄️</div><strong class="text-purple-400">Database</strong><p class="text-neutral-400 text-xs mt-1">Postgres, SQLite, Redis, Mongo</p></div>
-<div class="bg-dark-700/50 rounded-lg p-3 text-center"><div class="text-2xl mb-1">💬</div><strong class="text-purple-400">SaaS</strong><p class="text-neutral-400 text-xs mt-1">Slack, Notion, Linear, Gmail</p></div>
-<div class="bg-dark-700/50 rounded-lg p-3 text-center"><div class="text-2xl mb-1">☁️</div><strong class="text-purple-400">Cloud</strong><p class="text-neutral-400 text-xs mt-1">AWS, GCP, Cloudflare</p></div>
-<div class="bg-dark-700/50 rounded-lg p-3 text-center"><div class="text-2xl mb-1">🌐</div><strong class="text-purple-400">Web</strong><p class="text-neutral-400 text-xs mt-1">Browser, search, scraping</p></div>
-<div class="bg-dark-700/50 rounded-lg p-3 text-center"><div class="text-2xl mb-1">🛠️</div><strong class="text-purple-400">Useful</strong><p class="text-neutral-400 text-xs mt-1">PDF, image, email, calendar</p></div>
+<div class="bg-dark-700/50 rounded-lg p-3 text-center"><div class="text-2xl mb-1">ðŸ“</div><strong class="text-purple-400">DevOps</strong><p class="text-neutral-400 text-xs mt-1">Git, Docker, K8s, CI/CD</p></div>
+<div class="bg-dark-700/50 rounded-lg p-3 text-center"><div class="text-2xl mb-1">ðŸ—„ï¸</div><strong class="text-purple-400">Database</strong><p class="text-neutral-400 text-xs mt-1">Postgres, SQLite, Redis, Mongo</p></div>
+<div class="bg-dark-700/50 rounded-lg p-3 text-center"><div class="text-2xl mb-1">ðŸ’¬</div><strong class="text-purple-400">SaaS</strong><p class="text-neutral-400 text-xs mt-1">Slack, Notion, Linear, Gmail</p></div>
+<div class="bg-dark-700/50 rounded-lg p-3 text-center"><div class="text-2xl mb-1">â˜ï¸</div><strong class="text-purple-400">Cloud</strong><p class="text-neutral-400 text-xs mt-1">AWS, GCP, Cloudflare</p></div>
+<div class="bg-dark-700/50 rounded-lg p-3 text-center"><div class="text-2xl mb-1">ðŸŒ</div><strong class="text-purple-400">Web</strong><p class="text-neutral-400 text-xs mt-1">Browser, search, scraping</p></div>
+<div class="bg-dark-700/50 rounded-lg p-3 text-center"><div class="text-2xl mb-1">ðŸ› ï¸</div><strong class="text-purple-400">Useful</strong><p class="text-neutral-400 text-xs mt-1">PDF, image, email, calendar</p></div>
 </div>
 </div>
 <div class="bg-dark-800/60 border-l-4 border-purple-500 rounded-r-lg p-4 mb-6"><p class="text-sm text-neutral-300"><strong class="text-purple-400">In one sentence:</strong> 200+ open-source servers, from Git to Slack, ready to plug into Claude Code.</p></div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-purple-500/20 border border-purple-500/30 text-purple-400 hover:bg-purple-500/30 transition-colors" data-inema-read-toggle="" type="button"><span aria-hidden="true" class="inema-read-icon">○</span><span class="inema-read-label">Mark as read</span></button>
+<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-purple-500/20 border border-purple-500/30 text-purple-400 hover:bg-purple-500/30 transition-colors" data-ARCKHÉ-read-toggle="" type="button"><span aria-hidden="true" class="ARCKHÉ-read-icon">â—‹</span><span class="ARCKHÉ-read-label">Mark as read</span></button>
 </div>
 </section>
 <!-- TOPICO 6 -->
-<section class="mb-16" data-inema-topic="modulo-3-1#topico-6" id="topico-6">
+<section class="mb-16" data-ARCKHÉ-topic="modulo-3-1#topico-6" id="topico-6">
 <div class="flex items-center justify-between gap-4 mb-6">
-<div class="flex items-center space-x-4"><span class="flex items-center justify-center w-12 h-12 rounded-full bg-purple-500/20 text-purple-400 font-bold text-xl flex-shrink-0">6</span><h2 class="text-2xl font-bold">🔄 Analogy with REST APIs</h2></div>
-<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm flex-shrink-0" data-inema-doubt-toggle="" title="Mark this topic as a question" type="button"><span aria-hidden="true">?</span><span class="hidden sm:inline">I have a question</span></button>
+<div class="flex items-center space-x-4"><span class="flex items-center justify-center w-12 h-12 rounded-full bg-purple-500/20 text-purple-400 font-bold text-xl flex-shrink-0">6</span><h2 class="text-2xl font-bold">ðŸ”„ Analogy with REST APIs</h2></div>
+<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm flex-shrink-0" data-ARCKHÉ-doubt-toggle="" title="Mark this topic as a question" type="button"><span aria-hidden="true">?</span><span class="hidden sm:inline">I have a question</span></button>
 </div>
-<p class="text-neutral-300 mb-4 leading-relaxed" data-inema-block="m3-1-t6-p1">If you've worked with REST APIs, MCP will feel familiar. In REST, you have <strong>endpoints</strong> (<code>GET /users</code>, <code>POST /orders</code>). With MCP, you have <strong>tools</strong> (<code>list_users</code>, <code>create_order</code>). With REST, the documentation comes in an OpenAPI spec. With MCP, it comes in the <span class="termo" title="JSON Schema description of the parameters a tool accepts.">inputSchema</span>.</p>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-inema-block="m3-1-t6-p2">The fundamental difference: REST was made for human developers to call via code. MCP was made for <strong>AI agents</strong> call automatically. That's why the schema is more descriptive (the agent needs to "understand" what the tool does just by reading its description) and discovery is automatic (the agent lists the tools at runtime, without reading documentation).</p>
+<p class="text-neutral-300 mb-4 leading-relaxed" data-ARCKHÉ-block="m3-1-t6-p1">If you've worked with REST APIs, MCP will feel familiar. In REST, you have <strong>endpoints</strong> (<code>GET /users</code>, <code>POST /orders</code>). With MCP, you have <strong>tools</strong> (<code>list_users</code>, <code>create_order</code>). With REST, the documentation comes in an OpenAPI spec. With MCP, it comes in the <span class="termo" title="JSON Schema description of the parameters a tool accepts.">inputSchema</span>.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m3-1-t6-p2">The fundamental difference: REST was made for human developers to call via code. MCP was made for <strong>AI agents</strong> call automatically. That's why the schema is more descriptive (the agent needs to "understand" what the tool does just by reading its description) and discovery is automatic (the agent lists the tools at runtime, without reading documentation).</p>
 <div class="overflow-x-auto mb-6">
 <table class="w-full text-sm border border-dark-600 rounded-lg overflow-hidden">
 <thead class="bg-dark-800"><tr><th class="px-4 py-3 text-left text-purple-400 font-semibold">Aspect</th><th class="px-4 py-3 text-left text-neutral-300">REST API</th><th class="px-4 py-3 text-left text-neutral-300">MCP</th></tr></thead>
@@ -362,38 +362,38 @@
 </div>
 <div class="bg-dark-800/60 border-l-4 border-purple-500 rounded-r-lg p-4 mb-6"><p class="text-sm text-neutral-300"><strong class="text-purple-400">In one sentence:</strong> MCP is like a REST API, but with automatic discovery and optimized for agents (not humans).</p></div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-purple-500/20 border border-purple-500/30 text-purple-400 hover:bg-purple-500/30 transition-colors" data-inema-read-toggle="" type="button"><span aria-hidden="true" class="inema-read-icon">○</span><span class="inema-read-label">Mark as read</span></button>
+<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-purple-500/20 border border-purple-500/30 text-purple-400 hover:bg-purple-500/30 transition-colors" data-ARCKHÉ-read-toggle="" type="button"><span aria-hidden="true" class="ARCKHÉ-read-icon">â—‹</span><span class="ARCKHÉ-read-label">Mark as read</span></button>
 </div>
 </section>
 <!-- RESUMO -->
 <section class="mb-12">
 <div class="bg-gradient-to-br from-purple-900/40 via-dark-800 to-dark-800 rounded-xl border border-purple-500/30 p-8">
-<h2 class="text-2xl font-bold mb-6 flex items-center"><span class="mr-3">🧾</span> Module Summary</h2>
+<h2 class="text-2xl font-bold mb-6 flex items-center"><span class="mr-3">ðŸ§¾</span> Module Summary</h2>
 <div class="space-y-4 mb-8">
-<div class="flex items-start space-x-3"><span class="text-purple-400 mt-1">✓</span><div><strong class="text-white">MCP = standard protocol</strong><span class="text-neutral-400"> — JSON-RPC that connects agents to external tools.</span></div></div>
-<div class="flex items-start space-x-3"><span class="text-purple-400 mt-1">✓</span><div><strong class="text-white">Client-Server</strong><span class="text-neutral-400"> — Claude Code (client) discovers and calls tools from each server.</span></div></div>
-<div class="flex items-start space-x-3"><span class="text-purple-400 mt-1">✓</span><div><strong class="text-white">Schema = contract</strong><span class="text-neutral-400"> — each tool declares what it accepts via JSON Schema.</span></div></div>
-<div class="flex items-start space-x-3"><span class="text-purple-400 mt-1">✓</span><div><strong class="text-white">Vast ecosystem</strong><span class="text-neutral-400"> — 200+ open-source servers, from Git to Slack.</span></div></div>
+<div class="flex items-start space-x-3"><span class="text-purple-400 mt-1">âœ“</span><div><strong class="text-white">MCP = standard protocol</strong><span class="text-neutral-400"> â€” JSON-RPC that connects agents to external tools.</span></div></div>
+<div class="flex items-start space-x-3"><span class="text-purple-400 mt-1">âœ“</span><div><strong class="text-white">Client-Server</strong><span class="text-neutral-400"> â€” Claude Code (client) discovers and calls tools from each server.</span></div></div>
+<div class="flex items-start space-x-3"><span class="text-purple-400 mt-1">âœ“</span><div><strong class="text-white">Schema = contract</strong><span class="text-neutral-400"> â€” each tool declares what it accepts via JSON Schema.</span></div></div>
+<div class="flex items-start space-x-3"><span class="text-purple-400 mt-1">âœ“</span><div><strong class="text-white">Vast ecosystem</strong><span class="text-neutral-400"> â€” 200+ open-source servers, from Git to Slack.</span></div></div>
 </div>
-<div class="bg-dark-800/50 rounded-lg p-4 mb-8"><h3 class="font-semibold text-purple-400 mb-2">Next module:</h3><p class="text-neutral-300">3.2 — Your First MCPs: hands-on with Filesystem, Git, and SQLite.</p></div>
-<div class="flex flex-col sm:flex-row gap-4"><a class="flex-1 text-center px-6 py-3 bg-dark-700 text-neutral-300 rounded-lg font-semibold hover:bg-dark-600 transition-colors" href="index.html">← Back to Track</a><a class="flex-1 text-center px-6 py-3 bg-purple-600 text-white rounded-lg font-semibold hover:bg-purple-500 transition-colors" href="modulo-3-2.html">Next Module →</a></div>
+<div class="bg-dark-800/50 rounded-lg p-4 mb-8"><h3 class="font-semibold text-purple-400 mb-2">Next module:</h3><p class="text-neutral-300">3.2 â€” Your First MCPs: hands-on with Filesystem, Git, and SQLite.</p></div>
+<div class="flex flex-col sm:flex-row gap-4"><a class="flex-1 text-center px-6 py-3 bg-dark-700 text-neutral-300 rounded-lg font-semibold hover:bg-dark-600 transition-colors" href="index.html">â† Back to Track</a><a class="flex-1 text-center px-6 py-3 bg-purple-600 text-white rounded-lg font-semibold hover:bg-purple-500 transition-colors" href="modulo-3-2.html">Next Module â†’</a></div>
 </div>
 </section>
 </main>
 </div>
 </div>
-<footer class="border-t border-dark-600 py-8 mt-16"><div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-neutral-500 text-sm"><p>Transition to Claude Code · <a class="text-sky-400 hover:text-sky-300" href="https://inema.club" target="_blank">INEMA.CLUB</a></p></div></footer>
+<footer class="border-t border-dark-600 py-8 mt-16"><div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-neutral-500 text-sm"><p>Transition to Claude Code Â· <a class="text-sky-400 hover:text-sky-300" href="https://ARCKHÉ AI" target="_blank">ARCKHÉ AI</a></p></div></footer>
 <script>
     function toggleTopic(button){ const ti=button.closest('.topic-item'); if(!ti)return; const e=ti.querySelector('.topic-explanation'); if(e){e.classList.toggle('active'); button.setAttribute('aria-expanded', e.classList.contains('active'));} }
-    (function(){ const tt=document.getElementById('theme-toggle'),di=document.getElementById('theme-toggle-dark-icon'),li=document.getElementById('theme-toggle-light-icon'),h=document.documentElement; function s(){ if(h.classList.contains('dark')){li.classList.remove('hidden');di.classList.add('hidden');}else{di.classList.remove('hidden');li.classList.add('hidden');} } s(); tt&&tt.addEventListener('click',function(){h.classList.toggle('dark');var d=h.classList.contains('dark');h.style.colorScheme=d?'dark':'light';try{var p=JSON.parse(localStorage.getItem('inema.prefs')||'{}');p.theme=d?'inema-dark':'claro';localStorage.setItem('inema.prefs',JSON.stringify(p));localStorage.setItem('theme',d?'dark':'light');}catch(e){}s();}); })();
-    function copyBox(btn){ try{ var pre=btn.closest('.copybox').querySelector('pre'); navigator.clipboard.writeText(pre.textContent); var o=btn.textContent; btn.textContent='copiado ✓'; setTimeout(function(){btn.textContent=o;},1500);}catch(e){} }
+    (function(){ const tt=document.getElementById('theme-toggle'),di=document.getElementById('theme-toggle-dark-icon'),li=document.getElementById('theme-toggle-light-icon'),h=document.documentElement; function s(){ if(h.classList.contains('dark')){li.classList.remove('hidden');di.classList.add('hidden');}else{di.classList.remove('hidden');li.classList.add('hidden');} } s(); tt&&tt.addEventListener('click',function(){h.classList.toggle('dark');var d=h.classList.contains('dark');h.style.colorScheme=d?'dark':'light';try{var p=JSON.parse(localStorage.getItem('ARCKHÉ.prefs')||'{}');p.theme=d?'ARCKHÉ-dark':'claro';localStorage.setItem('ARCKHÉ.prefs',JSON.stringify(p));localStorage.setItem('theme',d?'dark':'light');}catch(e){}s();}); })();
+    function copyBox(btn){ try{ var pre=btn.closest('.copybox').querySelector('pre'); navigator.clipboard.writeText(pre.textContent); var o=btn.textContent; btn.textContent='copiado âœ“'; setTimeout(function(){btn.textContent=o;},1500);}catch(e){} }
   </script>
 <script src="../../../assets/learn.js"></script>
 <script>
     document.addEventListener('DOMContentLoaded', function () {
-      if (window.INEMA && typeof INEMA.init === 'function') INEMA.init();
-      if (window.INEMA && INEMA.registerCheck) {
-        INEMA.registerCheck('modulo-3-1#q1', { answer: 1, explain: { 0: 'Esse e o server, nao o client. O server expoe tools.', 1: 'Correto! O Claude Code e o client MCP que descobre e invoca tools.', 2: 'O settings.json e um arquivo de configuracao, nao um participante do protocolo.' } });
+      if (window.ARCKHÉ && typeof ARCKHÉ.init === 'function') ARCKHÉ.init();
+      if (window.ARCKHÉ && ARCKHÉ.registerCheck) {
+        ARCKHÉ.registerCheck('modulo-3-1#q1', { answer: 1, explain: { 0: 'Esse e o server, nao o client. O server expoe tools.', 1: 'Correto! O Claude Code e o client MCP que descobre e invoca tools.', 2: 'O settings.json e um arquivo de configuracao, nao um participante do protocolo.' } });
       }
     });
   </script>
