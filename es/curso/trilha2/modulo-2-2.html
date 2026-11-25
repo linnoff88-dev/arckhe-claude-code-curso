@@ -4,28 +4,28 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<meta content="claude-code" name="ARCKHÉ-course"/>
+<meta content="claude-code" name="ARCKHê-course"/>
 <title>2. Planes que funcionan | Claude Code</title>
 <script>
   (function () {
     try {
       var html = document.documentElement;
-      var DEF = { theme: 'ARCKHÉ-dark', font: 'inter', fontScale: 100, lineWidth: 68, leading: 1.7, accent: 'blue' };
+      var DEF = { theme: 'ARCKHê-dark', font: 'inter', fontScale: 100, lineWidth: 68, leading: 1.7, accent: 'blue' };
       function clone(o){var r={};for(var x in o)r[x]=o[x];return r;}
       var p = clone(DEF);
       try {
-        var raw = localStorage.getItem('ARCKHÉ.prefs');
+        var raw = localStorage.getItem('ARCKHê.prefs');
         if (raw) { var parsed = JSON.parse(raw); if (parsed && typeof parsed==='object'){ for (var k in DEF) if (parsed[k]!=null) p[k]=parsed[k]; } }
-        else { var legacy = localStorage.getItem('theme'); if (legacy==='light') p.theme='claro'; else if (legacy==='dark') p.theme='ARCKHÉ-dark'; }
+        else { var legacy = localStorage.getItem('theme'); if (legacy==='light') p.theme='claro'; else if (legacy==='dark') p.theme='ARCKHê-dark'; }
       } catch (e) { p = clone(DEF); }
-      var THEMES = { 'ARCKHÉ-dark':{dark:true,attr:null,cs:'dark'},'claro':{dark:false,attr:null,cs:'light'},'sepia':{dark:false,attr:'sepia',cs:'light'},'foco':{dark:null,attr:'foco',cs:null},'contraste':{dark:true,attr:'contraste',cs:'dark'} };
-      var t = THEMES[p.theme] || THEMES['ARCKHÉ-dark'];
+      var THEMES = { 'ARCKHê-dark':{dark:true,attr:null,cs:'dark'},'claro':{dark:false,attr:null,cs:'light'},'sepia':{dark:false,attr:'sepia',cs:'light'},'foco':{dark:null,attr:'foco',cs:null},'contraste':{dark:true,attr:'contraste',cs:'dark'} };
+      var t = THEMES[p.theme] || THEMES['ARCKHê-dark'];
       if (t.dark===true) html.classList.add('dark'); else if (t.dark===false) html.classList.remove('dark');
       if (t.attr) html.setAttribute('data-theme', t.attr); else html.removeAttribute('data-theme');
       html.style.colorScheme = (t.cs ? t.cs : (html.classList.contains('dark')?'dark':'light'));
       html.setAttribute('data-font', p.font||'inter'); html.setAttribute('data-accent', p.accent||'blue');
       var s = html.style, scale=(+p.fontScale||100);
-      s.setProperty('--ARCKHÉ-font-scale',(scale/100).toString()); s.setProperty('font-size',scale+'%');
+      s.setProperty('--ARCKHê-font-scale',(scale/100).toString()); s.setProperty('font-size',scale+'%');
       s.setProperty('--measure',(+p.lineWidth||68)+'ch'); s.setProperty('--lh-body',(+p.leading||1.7).toString());
     } catch (err) { try { document.documentElement.classList.add('dark'); document.documentElement.style.colorScheme='dark'; } catch(e){} }
   })();
@@ -36,8 +36,8 @@
   </script>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
 <link href="../../../assets/learn.css" rel="stylesheet"/>
-<script data-ARCKHÉ-manifest="" type="application/json">
-{"course":"claude-code","tracks":[{"n":"1","title":"CLI e ConfiguraÃ§Ã£o","modules":[{"id":"1-1","title":"InstalaÃ§Ã£o e Primeiro Comando","topics":6,"href":"curso/trilha1/modulo-1-1.html"},{"id":"1-2","title":"Navegando o CLI como um Pro","topics":6,"href":"curso/trilha1/modulo-1-2.html"},{"id":"1-3","title":"CLAUDE.md â€” O CÃ©rebro do Projeto","topics":6,"href":"curso/trilha1/modulo-1-3.html"},{"id":"1-4","title":"ConfiguraÃ§Ã£o AvanÃ§ada","topics":6,"href":"curso/trilha1/modulo-1-4.html"},{"id":"1-5","title":"Memory e Contexto Persistente","topics":6,"href":"curso/trilha1/modulo-1-5.html"},{"id":"1-6","title":"Seu Workflow Pessoal","topics":6,"href":"curso/trilha1/modulo-1-6.html"}]},{"n":"2","title":"Plan e Loop Modes","modules":[{"id":"2-1","title":"Plan Mode â€” Pense Antes de Codar","topics":6,"href":"curso/trilha2/modulo-2-1.html"},{"id":"2-2","title":"Planos que Funcionam","topics":6,"href":"curso/trilha2/modulo-2-2.html"},{"id":"2-3","title":"Loop Mode â€” AutomaÃ§Ã£o Iterativa","topics":6,"href":"curso/trilha2/modulo-2-3.html"},{"id":"2-4","title":"Patterns de Loop na PrÃ¡tica","topics":6,"href":"curso/trilha2/modulo-2-4.html"},{"id":"2-5","title":"Combinando Plan + Loop","topics":6,"href":"curso/trilha2/modulo-2-5.html"},{"id":"2-6","title":"Agentic Coding â€” O Novo Normal","topics":6,"href":"curso/trilha2/modulo-2-6.html"}]},{"n":"3","title":"MCP Servers","modules":[{"id":"3-1","title":"O que sÃ£o MCP Servers","topics":6,"href":"curso/trilha3/modulo-3-1.html"},{"id":"3-2","title":"Seus Primeiros MCPs","topics":6,"href":"curso/trilha3/modulo-3-2.html"},{"id":"3-3","title":"MCPs de Produtividade","topics":6,"href":"curso/trilha3/modulo-3-3.html"},{"id":"3-4","title":"MCPs de Database e APIs","topics":6,"href":"curso/trilha3/modulo-3-4.html"},{"id":"3-5","title":"Criando seu PrÃ³prio MCP Server","topics":6,"href":"curso/trilha3/modulo-3-5.html"},{"id":"3-6","title":"Ecossistema e Marketplace","topics":6,"href":"curso/trilha3/modulo-3-6.html"}]},{"n":"4","title":"Subagentes e Git","modules":[{"id":"4-1","title":"Subagentes â€” Conceitos","topics":6,"href":"curso/trilha4/modulo-4-1.html"},{"id":"4-2","title":"Paralelismo Real","topics":6,"href":"curso/trilha4/modulo-4-2.html"},{"id":"4-3","title":"Patterns de Multi-Agent","topics":6,"href":"curso/trilha4/modulo-4-3.html"},{"id":"4-4","title":"Git com IA â€” Versionamento","topics":6,"href":"curso/trilha4/modulo-4-4.html"},{"id":"4-5","title":"Pull Requests e Code Review","topics":6,"href":"curso/trilha4/modulo-4-5.html"},{"id":"4-6","title":"CI/CD e GitHub Actions","topics":6,"href":"curso/trilha4/modulo-4-6.html"}]},{"n":"5","title":"Python e Ship","modules":[{"id":"5-1","title":"Python + Claude Code","topics":6,"href":"curso/trilha5/modulo-5-1.html"},{"id":"5-2","title":"AutomaÃ§Ã£o de Scripts","topics":6,"href":"curso/trilha5/modulo-5-2.html"},{"id":"5-3","title":"FastAPI e Web Services","topics":6,"href":"curso/trilha5/modulo-5-3.html"},{"id":"5-4","title":"Testing Automatizado","topics":6,"href":"curso/trilha5/modulo-5-4.html"},{"id":"5-5","title":"Deploy e Infraestrutura","topics":6,"href":"curso/trilha5/modulo-5-5.html"},{"id":"5-6","title":"Ship Your Product","topics":6,"href":"curso/trilha5/modulo-5-6.html"}]}]}
+<script data-ARCKHê-manifest="" type="application/json">
+{"course":"claude-code","tracks":[{"n":"1","title":"CLI e ConfiguraêÂ§êÂ£o","modules":[{"id":"1-1","title":"InstalaêÂ§êÂ£o e Primeiro Comando","topics":6,"href":"curso/trilha1/modulo-1-1.html"},{"id":"1-2","title":"Navegando o CLI como um Pro","topics":6,"href":"curso/trilha1/modulo-1-2.html"},{"id":"1-3","title":"CLAUDE.md ê¢â¬â O CêÂ©rebro do Projeto","topics":6,"href":"curso/trilha1/modulo-1-3.html"},{"id":"1-4","title":"ConfiguraêÂ§êÂ£o AvanêÂ§ada","topics":6,"href":"curso/trilha1/modulo-1-4.html"},{"id":"1-5","title":"Memory e Contexto Persistente","topics":6,"href":"curso/trilha1/modulo-1-5.html"},{"id":"1-6","title":"Seu Workflow Pessoal","topics":6,"href":"curso/trilha1/modulo-1-6.html"}]},{"n":"2","title":"Plan e Loop Modes","modules":[{"id":"2-1","title":"Plan Mode ê¢â¬â Pense Antes de Codar","topics":6,"href":"curso/trilha2/modulo-2-1.html"},{"id":"2-2","title":"Planos que Funcionam","topics":6,"href":"curso/trilha2/modulo-2-2.html"},{"id":"2-3","title":"Loop Mode ê¢â¬â AutomaêÂ§êÂ£o Iterativa","topics":6,"href":"curso/trilha2/modulo-2-3.html"},{"id":"2-4","title":"Patterns de Loop na PrêÂ¡tica","topics":6,"href":"curso/trilha2/modulo-2-4.html"},{"id":"2-5","title":"Combinando Plan + Loop","topics":6,"href":"curso/trilha2/modulo-2-5.html"},{"id":"2-6","title":"Agentic Coding ê¢â¬â O Novo Normal","topics":6,"href":"curso/trilha2/modulo-2-6.html"}]},{"n":"3","title":"MCP Servers","modules":[{"id":"3-1","title":"O que sêÂ£o MCP Servers","topics":6,"href":"curso/trilha3/modulo-3-1.html"},{"id":"3-2","title":"Seus Primeiros MCPs","topics":6,"href":"curso/trilha3/modulo-3-2.html"},{"id":"3-3","title":"MCPs de Produtividade","topics":6,"href":"curso/trilha3/modulo-3-3.html"},{"id":"3-4","title":"MCPs de Database e APIs","topics":6,"href":"curso/trilha3/modulo-3-4.html"},{"id":"3-5","title":"Criando seu PrêÂ³prio MCP Server","topics":6,"href":"curso/trilha3/modulo-3-5.html"},{"id":"3-6","title":"Ecossistema e Marketplace","topics":6,"href":"curso/trilha3/modulo-3-6.html"}]},{"n":"4","title":"Subagentes e Git","modules":[{"id":"4-1","title":"Subagentes ê¢â¬â Conceitos","topics":6,"href":"curso/trilha4/modulo-4-1.html"},{"id":"4-2","title":"Paralelismo Real","topics":6,"href":"curso/trilha4/modulo-4-2.html"},{"id":"4-3","title":"Patterns de Multi-Agent","topics":6,"href":"curso/trilha4/modulo-4-3.html"},{"id":"4-4","title":"Git com IA ê¢â¬â Versionamento","topics":6,"href":"curso/trilha4/modulo-4-4.html"},{"id":"4-5","title":"Pull Requests e Code Review","topics":6,"href":"curso/trilha4/modulo-4-5.html"},{"id":"4-6","title":"CI/CD e GitHub Actions","topics":6,"href":"curso/trilha4/modulo-4-6.html"}]},{"n":"5","title":"Python e Ship","modules":[{"id":"5-1","title":"Python + Claude Code","topics":6,"href":"curso/trilha5/modulo-5-1.html"},{"id":"5-2","title":"AutomaêÂ§êÂ£o de Scripts","topics":6,"href":"curso/trilha5/modulo-5-2.html"},{"id":"5-3","title":"FastAPI e Web Services","topics":6,"href":"curso/trilha5/modulo-5-3.html"},{"id":"5-4","title":"Testing Automatizado","topics":6,"href":"curso/trilha5/modulo-5-4.html"},{"id":"5-5","title":"Deploy e Infraestrutura","topics":6,"href":"curso/trilha5/modulo-5-5.html"},{"id":"5-6","title":"Ship Your Product","topics":6,"href":"curso/trilha5/modulo-5-6.html"}]}]}
 </script>
 <style>
     body { font-family: 'Inter', sans-serif; }
@@ -82,15 +82,15 @@
     html:not(.dark) svg[role="img"] { filter: saturate(0.82) brightness(0.96); }
   </style>
 <link href="https://linnoff88-dev.github.io/ hreflang="pt-BR" rel="alternate"/><link href="https://linnoff88-dev.github.io/ hreflang="en" rel="alternate"/><link href="https://linnoff88-dev.github.io/ hreflang="es" rel="alternate"/></head>
-<body class="bg-dark-900 text-neutral-100 min-h-screen"><div class="ARCKHÉ-lang" style="position:fixed;right:14px;bottom:14px;z-index:9999;display:flex;gap:2px;padding:4px;border-radius:10px;background:rgba(12,12,16,.82);border:1px solid rgba(226,162,59,.45);font:600 12px/1 Sora,Inter,system-ui,sans-serif;backdrop-filter:blur(8px)" translate="no"><a href="../../../curso/trilha2/modulo-2-2.html" hreflang="pt-BR" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">PT</a><a href="../../../en/curso/trilha2/modulo-2-2.html" hreflang="en" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">EN</a><a href="modulo-2-2.html" hreflang="es" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#1a1206;background:#E2A23B">ES</a></div>
+<body class="bg-dark-900 text-neutral-100 min-h-screen"><div class="ARCKHê-lang" style="position:fixed;right:14px;bottom:14px;z-index:9999;display:flex;gap:2px;padding:4px;border-radius:10px;background:rgba(12,12,16,.82);border:1px solid rgba(226,162,59,.45);font:600 12px/1 Sora,Inter,system-ui,sans-serif;backdrop-filter:blur(8px)" translate="no"><a href="../../../curso/trilha2/modulo-2-2.html" hreflang="pt-BR" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">PT</a><a href="../../../en/curso/trilha2/modulo-2-2.html" hreflang="en" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">EN</a><a href="modulo-2-2.html" hreflang="es" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#1a1206;background:#E2A23B">ES</a></div>
 <a class="sr-only focus:not-sr-only focus:absolute focus:z-50 focus:top-2 focus:left-2 focus:px-4 focus:py-2 focus:bg-dark-800 focus:text-blue-400 focus:rounded-lg" href="#conteudo">Saltar al contenido</a>
 <nav class="sticky top-0 z-50 bg-dark-900/95 backdrop-blur-sm border-b border-dark-600">
 <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
 <div class="flex justify-between items-center h-14">
 <div class="flex items-center space-x-4">
-<a class="flex items-center space-x-2 text-yellow-400 hover:text-yellow-300" href="../../index.html"><span class="text-2xl">ðŸ¤–</span><span class="font-bold text-lg hidden sm:inline">Claude Code</span></a>
+<a class="flex items-center space-x-2 text-yellow-400 hover:text-yellow-300" href="../../index.html"><span class="text-2xl">ê°Å¸Â¤â</span><span class="font-bold text-lg hidden sm:inline">Claude Code</span></a>
 <span class="text-neutral-600">|</span>
-<a class="text-sky-400 hover:text-sky-300 text-sm font-medium" href="https://ARCKHÉ AI" target="_blank">ARCKHÉ AI</a>
+<a class="text-sky-400 hover:text-sky-300 text-sm font-medium" href="https://ARCKHê AI" target="_blank">ARCKHê AI</a>
 </div>
 <div class="flex items-center space-x-1 sm:space-x-2">
 <a class="px-3 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-emerald-400 hover:bg-emerald-500/10 transition-colors" href="../trilha1/index.html"><span class="sm:hidden">T1</span><span class="hidden sm:inline">CLI</span></a>
@@ -98,7 +98,7 @@
 <a class="px-3 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-purple-400 hover:bg-purple-500/10 transition-colors" href="../trilha3/index.html"><span class="sm:hidden">T3</span><span class="hidden sm:inline">MCP</span></a>
 <a class="px-3 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-amber-400 hover:bg-amber-500/10 transition-colors" href="../trilha4/index.html"><span class="sm:hidden">T4</span><span class="hidden sm:inline">Agentes</span></a>
 <a class="px-3 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-teal-400 hover:bg-teal-500/10 transition-colors" href="../trilha5/index.html"><span class="sm:hidden">T5</span><span class="hidden sm:inline">Python</span></a>
-<button class="hidden sm:inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-sm text-neutral-300 hover:text-neutral-100 hover:bg-dark-700 transition-colors ml-1" data-ARCKHÉ-journey-open="" type="button"><span aria-hidden="true">â—·</span><span>Mi recorrido</span><span aria-hidden="true" class="ARCKHÉ-journey-badge hidden"></span></button>
+<button class="hidden sm:inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-sm text-neutral-300 hover:text-neutral-100 hover:bg-dark-700 transition-colors ml-1" data-ARCKHê-journey-open="" type="button"><span aria-hidden="true">ê¢âÂ·</span><span>Mi recorrido</span><span aria-hidden="true" class="ARCKHê-journey-badge hidden"></span></button>
 <button aria-label="Cambiar tema" class="p-2 rounded-lg bg-dark-700 hover:bg-dark-600 transition-colors ml-1" id="theme-toggle">
 <svg class="hidden w-5 h-5 text-neutral-300" fill="currentColor" id="theme-toggle-dark-icon" viewbox="0 0 20 20"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg>
 <svg class="hidden w-5 h-5 text-neutral-300" fill="currentColor" id="theme-toggle-light-icon" viewbox="0 0 20 20"><path clip-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" fill-rule="evenodd"></path></svg>
@@ -107,99 +107,99 @@
 </div>
 </div>
 </nav>
-<nav aria-label="Ruta de navegaciÃ³n" class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+<nav aria-label="Ruta de navegaciêÂ³n" class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
 <div class="flex items-center space-x-2 text-sm text-neutral-400">
 <a class="hover:text-blue-400" href="../../index.html">Inicio</a><span>/</span>
 <a class="hover:text-blue-400" href="index.html">Ruta 2</a><span>/</span>
-<span class="text-blue-400">MÃ³dulo 2.2</span>
+<span class="text-blue-400">MêÂ³dulo 2.2</span>
 </div>
 </nav>
 <header class="bg-gradient-to-br from-blue-900/30 via-dark-800 to-dark-800 py-12 border-b border-dark-600">
 <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-<span class="inline-block px-3 py-1 bg-blue-500/20 text-blue-400 text-xs font-semibold rounded-full mb-4">MÃ“DULO 2.2</span>
-<h1 class="text-3xl sm:text-4xl font-bold mb-4">ðŸ¤– Planes que funcionan</h1>
-<p class="text-lg text-neutral-400 max-w-3xl">En la prÃ¡ctica: prompts que generan planes eficaces para features, refactors y correcciones de bugs. Con ejemplos para copiar y ejecutar.</p>
+<span class="inline-block px-3 py-1 bg-blue-500/20 text-blue-400 text-xs font-semibold rounded-full mb-4">MêâDULO 2.2</span>
+<h1 class="text-3xl sm:text-4xl font-bold mb-4">ê°Å¸Â¤â Planes que funcionan</h1>
+<p class="text-lg text-neutral-400 max-w-3xl">En la prêÂ¡ctica: prompts que generan planes eficaces para features, refactors y correcciones de bugs. Con ejemplos para copiar y ejecutar.</p>
 <div class="grid grid-cols-4 gap-4 mt-8 max-w-2xl">
 <div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-blue-400">6</div><div class="text-xs text-neutral-400">Temas</div></div>
 <div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-blue-400">~45</div><div class="text-xs text-neutral-400">Minutos</div></div>
 <div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-blue-400">2.1</div><div class="text-xs text-neutral-400">Requisito previo</div></div>
-<div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-blue-400">PrÃ¡ctico</div><div class="text-xs text-neutral-400">Tipo</div></div>
+<div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-blue-400">PrêÂ¡ctico</div><div class="text-xs text-neutral-400">Tipo</div></div>
 </div>
 <div class="mt-6 max-w-2xl">
-<div aria-label="Progreso del mÃ³dulo 2.2" aria-valuemax="100" aria-valuemin="0" class="ARCKHÉ-meter flex items-center gap-3" data-ARCKHÉ-meter="modulo:2-2" role="progressbar">
+<div aria-label="Progreso del mêÂ³dulo 2.2" aria-valuemax="100" aria-valuemin="0" class="ARCKHê-meter flex items-center gap-3" data-ARCKHê-meter="modulo:2-2" role="progressbar">
 <span class="text-sm text-neutral-400">Progreso:</span>
-<span class="ARCKHÉ-meter-pct text-blue-400 font-bold text-sm">0%</span>
-<span class="ARCKHÉ-meter-count text-xs text-neutral-500">0 de 6</span>
+<span class="ARCKHê-meter-pct text-blue-400 font-bold text-sm">0%</span>
+<span class="ARCKHê-meter-count text-xs text-neutral-500">0 de 6</span>
 </div>
 </div>
 </div>
 </header>
 <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
 <div class="lg:grid lg:grid-cols-[230px_1fr] lg:gap-10">
-<nav aria-label="Ãndice de la pÃ¡gina" class="hidden lg:block sticky top-24 self-start" data-ARCKHÉ-toc="">
-<p class="text-sm text-neutral-400 mb-3">SecciÃ³n <span class="ARCKHÉ-toc-pos">1</span> de <span class="ARCKHÉ-toc-total">6</span></p>
+<nav aria-label="êÂndice de la pêÂ¡gina" class="hidden lg:block sticky top-24 self-start" data-ARCKHê-toc="">
+<p class="text-sm text-neutral-400 mb-3">SecciêÂ³n <span class="ARCKHê-toc-pos">1</span> de <span class="ARCKHê-toc-total">6</span></p>
 <ul class="space-y-1 text-sm">
-<li><a class="ARCKHÉ-toc-link block px-3 py-1.5 rounded-lg text-neutral-400 hover:text-blue-400 hover:bg-blue-500/10" href="#topico-1">1. Plan de una nueva funcionalidad</a></li>
-<li><a class="ARCKHÉ-toc-link block px-3 py-1.5 rounded-lg text-neutral-400 hover:text-blue-400 hover:bg-blue-500/10" href="#topico-2">2. Plan de refactorizaciÃ³n</a></li>
-<li><a class="ARCKHÉ-toc-link block px-3 py-1.5 rounded-lg text-neutral-400 hover:text-blue-400 hover:bg-blue-500/10" href="#topico-3">3. Plan para corregir un error</a></li>
-<li><a class="ARCKHÉ-toc-link block px-3 py-1.5 rounded-lg text-neutral-400 hover:text-blue-400 hover:bg-blue-500/10" href="#topico-4">4. DescomposiciÃ³n de tareas</a></li>
-<li><a class="ARCKHÉ-toc-link block px-3 py-1.5 rounded-lg text-neutral-400 hover:text-blue-400 hover:bg-blue-500/10" href="#topico-5">5. Mapeo de dependencias</a></li>
-<li><a class="ARCKHÉ-toc-link block px-3 py-1.5 rounded-lg text-neutral-400 hover:text-blue-400 hover:bg-blue-500/10" href="#topico-6">6. EstimaciÃ³n del esfuerzo</a></li>
+<li><a class="ARCKHê-toc-link block px-3 py-1.5 rounded-lg text-neutral-400 hover:text-blue-400 hover:bg-blue-500/10" href="#topico-1">1. Plan de una nueva funcionalidad</a></li>
+<li><a class="ARCKHê-toc-link block px-3 py-1.5 rounded-lg text-neutral-400 hover:text-blue-400 hover:bg-blue-500/10" href="#topico-2">2. Plan de refactorizaciêÂ³n</a></li>
+<li><a class="ARCKHê-toc-link block px-3 py-1.5 rounded-lg text-neutral-400 hover:text-blue-400 hover:bg-blue-500/10" href="#topico-3">3. Plan para corregir un error</a></li>
+<li><a class="ARCKHê-toc-link block px-3 py-1.5 rounded-lg text-neutral-400 hover:text-blue-400 hover:bg-blue-500/10" href="#topico-4">4. DescomposiciêÂ³n de tareas</a></li>
+<li><a class="ARCKHê-toc-link block px-3 py-1.5 rounded-lg text-neutral-400 hover:text-blue-400 hover:bg-blue-500/10" href="#topico-5">5. Mapeo de dependencias</a></li>
+<li><a class="ARCKHê-toc-link block px-3 py-1.5 rounded-lg text-neutral-400 hover:text-blue-400 hover:bg-blue-500/10" href="#topico-6">6. EstimaciêÂ³n del esfuerzo</a></li>
 </ul>
 </nav>
-<main class="ARCKHÉ-prose min-w-0" id="conteudo">
+<main class="ARCKHê-prose min-w-0" id="conteudo">
 <!-- TOPICO 1 -->
-<section class="mb-16" data-ARCKHÉ-topic="modulo-2-2#topico-1" id="topico-1">
+<section class="mb-16" data-ARCKHê-topic="modulo-2-2#topico-1" id="topico-1">
 <div class="flex items-center justify-between gap-4 mb-6">
 <div class="flex items-center space-x-4"><span class="flex items-center justify-center w-12 h-12 rounded-full bg-blue-500/20 text-blue-400 font-bold text-xl flex-shrink-0">1</span><h2 class="text-2xl font-bold">Plan para una nueva funcionalidad</h2></div>
-<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm flex-shrink-0" data-ARCKHÉ-doubt-toggle="" title="Marcar este tema como duda" type="button"><span aria-hidden="true">?</span><span class="hidden sm:inline">Tengo una duda</span></button>
+<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm flex-shrink-0" data-ARCKHê-doubt-toggle="" title="Marcar este tema como duda" type="button"><span aria-hidden="true">?</span><span class="hidden sm:inline">Tengo una duda</span></button>
 </div>
 <div class="bg-primary/10 border border-primary/30 rounded-xl p-5 mb-6">
-<p class="text-neutral-200"><strong class="text-primary">ImagÃ­nalo asÃ­:</strong> Vas a construir una habitaciÃ³n nueva en la casa. Sin un plano, es posible que las tuberÃ­as no lleguen hasta allÃ­. Con un plano, todo se conecta. Para las nuevas funciones, el plan garantiza que la nueva funcionalidad encaje en la arquitectura existente.</p>
+<p class="text-neutral-200"><strong class="text-primary">ImagêÂ­nalo asêÂ­:</strong> Vas a construir una habitaciêÂ³n nueva en la casa. Sin un plano, es posible que las tuberêÂ­as no lleguen hasta allêÂ­. Con un plano, todo se conecta. Para las nuevas funciones, el plan garantiza que la nueva funcionalidad encaje en la arquitectura existente.</p>
 </div>
-<p class="text-neutral-300 mb-4 leading-relaxed" data-ARCKHÉ-block="m22-t1-p1">Una nueva feature es donde mÃ¡s destaca el plan mode. El prompt ideal incluye: quÃ© hace la feature, quÃ© componentes toca, quÃ© patrones sigue el proyecto y cÃ³mo validar que funciona. Cuanto mÃ¡s contexto le des, mÃ¡s preciso serÃ¡ el plan.</p>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m22-t1-p2">El secreto estÃ¡ en especificar las restricciones: "sigue el patrÃ³n del middleware de autenticaciÃ³n existente", "usa el mismo estilo de pruebas que user.test.ts", "no crees nuevos archivos de configuraciÃ³n". Las restricciones claras generan planes que encajan en el proyecto en lugar de inventar una arquitectura nueva.</p>
+<p class="text-neutral-300 mb-4 leading-relaxed" data-ARCKHê-block="m22-t1-p1">Una nueva feature es donde mêÂ¡s destaca el plan mode. El prompt ideal incluye: quêÂ© hace la feature, quêÂ© componentes toca, quêÂ© patrones sigue el proyecto y cêÂ³mo validar que funciona. Cuanto mêÂ¡s contexto le des, mêÂ¡s preciso serêÂ¡ el plan.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHê-block="m22-t1-p2">El secreto estêÂ¡ en especificar las restricciones: "sigue el patrêÂ³n del middleware de autenticaciêÂ³n existente", "usa el mismo estilo de pruebas que user.test.ts", "no crees nuevos archivos de configuraciêÂ³n". Las restricciones claras generan planes que encajan en el proyecto en lugar de inventar una arquitectura nueva.</p>
 <div class="bg-dark-800/60 border-l-4 border-blue-500 rounded-r-lg p-4 mb-6">
-<p class="text-sm text-neutral-300"><strong class="text-blue-400">En 1 frase:</strong> para funciones nuevas, con contexto de las restricciones y estÃ¡ndares existentes; el plan encaja por sÃ­ solo.</p>
+<p class="text-sm text-neutral-300"><strong class="text-blue-400">En 1 frase:</strong> para funciones nuevas, con contexto de las restricciones y estêÂ¡ndares existentes; el plan encaja por sêÂ­ solo.</p>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-blue-500/20 border border-blue-500/30 text-blue-400 hover:bg-blue-500/30 transition-colors" data-ARCKHÉ-read-toggle="" type="button"><span aria-hidden="true" class="ARCKHÉ-read-icon">â—‹</span><span class="ARCKHÉ-read-label">Marcar como leÃ­do</span></button>
+<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-blue-500/20 border border-blue-500/30 text-blue-400 hover:bg-blue-500/30 transition-colors" data-ARCKHê-read-toggle="" type="button"><span aria-hidden="true" class="ARCKHê-read-icon">ê¢ââ¹</span><span class="ARCKHê-read-label">Marcar como leêÂ­do</span></button>
 </div>
 </section>
 <!-- TOPICO 2 -->
-<section class="mb-16" data-ARCKHÉ-topic="modulo-2-2#topico-2" id="topico-2">
+<section class="mb-16" data-ARCKHê-topic="modulo-2-2#topico-2" id="topico-2">
 <div class="flex items-center justify-between gap-4 mb-6">
 <div class="flex items-center space-x-4"><span class="flex items-center justify-center w-12 h-12 rounded-full bg-blue-500/20 text-blue-400 font-bold text-xl flex-shrink-0">2</span><h2 class="text-2xl font-bold">Plan para refactorizar</h2></div>
-<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm flex-shrink-0" data-ARCKHÉ-doubt-toggle="" title="Marcar este tema como duda" type="button"><span aria-hidden="true">?</span><span class="hidden sm:inline">Tengo una duda</span></button>
+<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm flex-shrink-0" data-ARCKHê-doubt-toggle="" title="Marcar este tema como duda" type="button"><span aria-hidden="true">?</span><span class="hidden sm:inline">Tengo una duda</span></button>
 </div>
 <div class="bg-primary/10 border border-primary/30 rounded-xl p-5 mb-6">
-<p class="text-neutral-200"><strong class="text-primary">ImagÃ­nalo asÃ­:</strong> Quieres cambiar el piso de la casa sin derribar las paredes. Necesitas saber el orden: quita los muebles, retira el piso viejo, coloca el nuevo, vuelve a poner los muebles. Con la refactorizaciÃ³n es igual: el orden de los pasos lo es todo.</p>
+<p class="text-neutral-200"><strong class="text-primary">ImagêÂ­nalo asêÂ­:</strong> Quieres cambiar el piso de la casa sin derribar las paredes. Necesitas saber el orden: quita los muebles, retira el piso viejo, coloca el nuevo, vuelve a poner los muebles. Con la refactorizaciêÂ³n es igual: el orden de los pasos lo es todo.</p>
 </div>
-<p class="text-neutral-300 mb-4 leading-relaxed" data-ARCKHÉ-block="m22-t2-p1">Las refactorizaciones son peligrosas sin un plan porque afectan cÃ³digo existente que funciona. El prompt ideal le pide a Claude que primero mapee todas las dependencias del cÃ³digo que se refactorizarÃ¡. Â¿QuiÃ©n llama a esta funciÃ³n? Â¿QuiÃ©n importa este mÃ³dulo? Â¿QuÃ© pruebas lo cubren?</p>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m22-t2-p2">La tÃ©cnica mÃ¡s segura es la refactorizaciÃ³n incremental: pedir un plan que cambie una cosa a la vez y ejecutar pruebas entre cada paso. Si un paso rompe algo, sabes exactamente a dÃ³nde volver. El plan debe incluir un "paso cero" para hacer una instantÃ¡nea (commit o stash) antes de empezar.</p>
+<p class="text-neutral-300 mb-4 leading-relaxed" data-ARCKHê-block="m22-t2-p1">Las refactorizaciones son peligrosas sin un plan porque afectan cêÂ³digo existente que funciona. El prompt ideal le pide a Claude que primero mapee todas las dependencias del cêÂ³digo que se refactorizarêÂ¡. êÂ¿QuiêÂ©n llama a esta funciêÂ³n? êÂ¿QuiêÂ©n importa este mêÂ³dulo? êÂ¿QuêÂ© pruebas lo cubren?</p>
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHê-block="m22-t2-p2">La têÂ©cnica mêÂ¡s segura es la refactorizaciêÂ³n incremental: pedir un plan que cambie una cosa a la vez y ejecutar pruebas entre cada paso. Si un paso rompe algo, sabes exactamente a dêÂ³nde volver. El plan debe incluir un "paso cero" para hacer una instantêÂ¡nea (commit o stash) antes de empezar.</p>
 <div class="bg-dark-800/60 border-l-4 border-blue-500 rounded-r-lg p-4 mb-6">
 <p class="text-sm text-neutral-300"><strong class="text-blue-400">En 1 frase:</strong> los refactors requieren un plan incremental con pruebas entre cada paso y un snapshot antes de empezar.</p>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-blue-500/20 border border-blue-500/30 text-blue-400 hover:bg-blue-500/30 transition-colors" data-ARCKHÉ-read-toggle="" type="button"><span aria-hidden="true" class="ARCKHÉ-read-icon">â—‹</span><span class="ARCKHÉ-read-label">Marcar como leÃ­do</span></button>
+<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-blue-500/20 border border-blue-500/30 text-blue-400 hover:bg-blue-500/30 transition-colors" data-ARCKHê-read-toggle="" type="button"><span aria-hidden="true" class="ARCKHê-read-icon">ê¢ââ¹</span><span class="ARCKHê-read-label">Marcar como leêÂ­do</span></button>
 </div>
 </section>
 <!-- TOPICO 3 -->
-<section class="mb-16" data-ARCKHÉ-topic="modulo-2-2#topico-3" id="topico-3">
+<section class="mb-16" data-ARCKHê-topic="modulo-2-2#topico-3" id="topico-3">
 <div class="flex items-center justify-between gap-4 mb-6">
 <div class="flex items-center space-x-4"><span class="flex items-center justify-center w-12 h-12 rounded-full bg-blue-500/20 text-blue-400 font-bold text-xl flex-shrink-0">3</span><h2 class="text-2xl font-bold">Plan para corregir un bug</h2></div>
-<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm flex-shrink-0" data-ARCKHÉ-doubt-toggle="" title="Marcar este tema como duda" type="button"><span aria-hidden="true">?</span><span class="hidden sm:inline">Tengo una duda</span></button>
+<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm flex-shrink-0" data-ARCKHê-doubt-toggle="" title="Marcar este tema como duda" type="button"><span aria-hidden="true">?</span><span class="hidden sm:inline">Tengo una duda</span></button>
 </div>
 <div class="bg-primary/10 border border-primary/30 rounded-xl p-5 mb-6">
-<p class="text-neutral-200"><strong class="text-primary">ImagÃ­nalo asÃ­:</strong> Un detective no empieza arrestando sospechosos. Investiga, recopila pruebas, arma la teorÃ­a y solo despuÃ©s actÃºa. Corregir un bug es investigar: reproducir, diagnosticar, corregir y validar.</p>
+<p class="text-neutral-200"><strong class="text-primary">ImagêÂ­nalo asêÂ­:</strong> Un detective no empieza arrestando sospechosos. Investiga, recopila pruebas, arma la teorêÂ­a y solo despuêÂ©s actêÂºa. Corregir un bug es investigar: reproducir, diagnosticar, corregir y validar.</p>
 </div>
-<p class="text-neutral-300 mb-4 leading-relaxed" data-ARCKHÉ-block="m22-t3-p1">El error mÃ¡s comÃºn al corregir un bug es pasar directamente a la soluciÃ³n sin entender la causa raÃ­z. El plan ideal empieza con: (1) reproducir el bug, (2) identificar la causa, (3) proponer la soluciÃ³n, (4) agregar una prueba de regresiÃ³n. Pedirlo explÃ­citamente en el prompt garantiza que Claude no se salte pasos.</p>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m22-t3-p2">Consejo: incluye en el prompt el mensaje de error exacto, el comportamiento esperado y el real, y las hipÃ³tesis que ya descartaste. AsÃ­ ahorras rondas de ida y vuelta y el plan parte del punto adecuado.</p>
+<p class="text-neutral-300 mb-4 leading-relaxed" data-ARCKHê-block="m22-t3-p1">El error mêÂ¡s comêÂºn al corregir un bug es pasar directamente a la soluciêÂ³n sin entender la causa raêÂ­z. El plan ideal empieza con: (1) reproducir el bug, (2) identificar la causa, (3) proponer la soluciêÂ³n, (4) agregar una prueba de regresiêÂ³n. Pedirlo explêÂ­citamente en el prompt garantiza que Claude no se salte pasos.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHê-block="m22-t3-p2">Consejo: incluye en el prompt el mensaje de error exacto, el comportamiento esperado y el real, y las hipêÂ³tesis que ya descartaste. AsêÂ­ ahorras rondas de ida y vuelta y el plan parte del punto adecuado.</p>
 <div class="bg-dark-800/60 border-l-4 border-blue-500 rounded-r-lg p-4 mb-6">
 <p class="text-sm text-neutral-300"><strong class="text-blue-400">En 1 frase:</strong> bug fix = reproducir, diagnosticar, corregir, probar. En ese orden, siempre.</p>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-blue-500/20 border border-blue-500/30 text-blue-400 hover:bg-blue-500/30 transition-colors" data-ARCKHÉ-read-toggle="" type="button"><span aria-hidden="true" class="ARCKHÉ-read-icon">â—‹</span><span class="ARCKHÉ-read-label">Marcar como leÃ­do</span></button>
+<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-blue-500/20 border border-blue-500/30 text-blue-400 hover:bg-blue-500/30 transition-colors" data-ARCKHê-read-toggle="" type="button"><span aria-hidden="true" class="ARCKHê-read-icon">ê¢ââ¹</span><span class="ARCKHê-read-label">Marcar como leêÂ­do</span></button>
 </div>
 </section>
 <div class="rounded-2xl border border-blue-500/30 bg-dark-900/40 p-3 sm:p-4 mb-6 overflow-hidden">
@@ -213,8 +213,8 @@
 <rect fill="url(#v22a-grid)" height="240" width="1000" x="0" y="0"></rect>
 <g font-family="Inter,sans-serif" font-size="13" font-weight="600">
 <rect fill="#0e1622" height="55" rx="12" stroke="#60a5fa" stroke-width="2" width="220" x="40" y="30"></rect><text fill="#60a5fa" font-size="14" text-anchor="middle" x="150" y="55">Nueva feature</text><text fill="#93c5fd" font-size="11" text-anchor="middle" x="150" y="73">scoping + interface first</text>
-<rect fill="#0e1622" height="55" rx="12" stroke="#60a5fa" stroke-width="2" width="220" x="40" y="95"></rect><text fill="#60a5fa" font-size="14" text-anchor="middle" x="150" y="120">RefactorizaciÃ³n</text><text fill="#93c5fd" font-size="11" text-anchor="middle" x="150" y="138">incremental + test-first</text>
-<rect fill="#0e1622" height="55" rx="12" stroke="#60a5fa" stroke-width="2" width="220" x="40" y="160"></rect><text fill="#60a5fa" font-size="14" text-anchor="middle" x="150" y="185">Bug Fix</text><text fill="#93c5fd" font-size="11" text-anchor="middle" x="150" y="203">reproduce + causa raÃ­z</text>
+<rect fill="#0e1622" height="55" rx="12" stroke="#60a5fa" stroke-width="2" width="220" x="40" y="95"></rect><text fill="#60a5fa" font-size="14" text-anchor="middle" x="150" y="120">RefactorizaciêÂ³n</text><text fill="#93c5fd" font-size="11" text-anchor="middle" x="150" y="138">incremental + test-first</text>
+<rect fill="#0e1622" height="55" rx="12" stroke="#60a5fa" stroke-width="2" width="220" x="40" y="160"></rect><text fill="#60a5fa" font-size="14" text-anchor="middle" x="150" y="185">Bug Fix</text><text fill="#93c5fd" font-size="11" text-anchor="middle" x="150" y="203">reproduce + causa raêÂ­z</text>
 </g>
 <g fill="none" opacity="0.5" stroke="#60a5fa" stroke-width="1.8">
 <path d="M260,57 C380,57 420,120 520,120" marker-end="url(#v22a-ah)"></path>
@@ -226,76 +226,76 @@
 <text fill="#93c5fd" font-family="Inter,sans-serif" font-size="12" text-anchor="middle" x="630" y="138">contexto + restricciones + pasos</text>
 <path d="M740,120 L840,120" fill="none" marker-end="url(#v22a-ah)" stroke="#60a5fa" stroke-width="2"></path>
 <rect fill="#1f2937" height="52" rx="12" stroke="#9ca3af" stroke-width="2" width="120" x="840" y="94"></rect>
-<text fill="#e5e7eb" font-family="Inter,sans-serif" font-size="14" font-weight="600" text-anchor="middle" x="900" y="125">EjecuciÃ³n</text>
+<text fill="#e5e7eb" font-family="Inter,sans-serif" font-size="14" font-weight="600" text-anchor="middle" x="900" y="125">EjecuciêÂ³n</text>
 </svg>
-<p class="text-xs text-neutral-500 mt-2 text-center">Cada tipo de plan tiene su estructura, pero todos convergen en el mismo patrÃ³n: contexto, constraints y pasos.</p>
+<p class="text-xs text-neutral-500 mt-2 text-center">Cada tipo de plan tiene su estructura, pero todos convergen en el mismo patrêÂ³n: contexto, constraints y pasos.</p>
 </div>
 <div class="bg-blue-900/20 border border-blue-500/30 rounded-xl p-6 mb-6">
-<h3 class="font-semibold text-blue-400 mb-3">Ejemplo resuelto: plan de correcciÃ³n de errores</h3>
-<p class="text-neutral-300 text-sm mb-3">Bug: "la pÃ¡gina de checkout se bloquea cuando el usuario tiene un cupÃ³n vencido".</p>
+<h3 class="font-semibold text-blue-400 mb-3">Ejemplo resuelto: plan de correcciêÂ³n de errores</h3>
+<p class="text-neutral-300 text-sm mb-3">Bug: "la pêÂ¡gina de checkout se bloquea cuando el usuario tiene un cupêÂ³n vencido".</p>
 <div class="bg-dark-700/50 rounded-lg p-4 text-sm text-neutral-300 space-y-2">
-<p><strong class="text-blue-400">Paso 1:</strong> Reproducir: abrir el checkout con un cupÃ³n vencido y confirmar que se bloquea.</p>
-<p><strong class="text-blue-400">Paso 2:</strong> Diagnosticar â€” el error estÃ¡ en coupon.validate(), que devuelve undefined en vez de error.</p>
+<p><strong class="text-blue-400">Paso 1:</strong> Reproducir: abrir el checkout con un cupêÂ³n vencido y confirmar que se bloquea.</p>
+<p><strong class="text-blue-400">Paso 2:</strong> Diagnosticar ê¢â¬â el error estêÂ¡ en coupon.validate(), que devuelve undefined en vez de error.</p>
 <p><strong class="text-blue-400">Paso 3:</strong> Corregir: agregar una guard clause en coupon.validate() para cupones vencidos.</p>
-<p><strong class="text-blue-400">Paso 4:</strong> Probar â€” agregar un caso de prueba para un cupÃ³n vencido en checkout.test.ts.</p>
+<p><strong class="text-blue-400">Paso 4:</strong> Probar ê¢â¬â agregar un caso de prueba para un cupêÂ³n vencido en checkout.test.ts.</p>
 </div>
 </div>
 <details class="mb-6 bg-dark-800 border border-dark-600 rounded-lg p-4">
-<summary class="cursor-pointer font-medium text-blue-400">Profundicemos (opcional): Â¿cuÃ¡ndo descomponer y cuÃ¡ndo mantenerlo monolÃ­tico?</summary>
-<p class="text-sm text-neutral-300 mt-3">Si la tarea tiene dependencias lineales (A antes de B antes de C), mantÃ©n todo en un Ãºnico plan secuencial. Si tiene partes independientes que pueden ejecutarse en paralelo, divÃ­dela en subplanes. La regla: divÃ­dela cuando las partes puedan fallar de forma independiente.</p>
+<summary class="cursor-pointer font-medium text-blue-400">Profundicemos (opcional): êÂ¿cuêÂ¡ndo descomponer y cuêÂ¡ndo mantenerlo monolêÂ­tico?</summary>
+<p class="text-sm text-neutral-300 mt-3">Si la tarea tiene dependencias lineales (A antes de B antes de C), mantêÂ©n todo en un êÂºnico plan secuencial. Si tiene partes independientes que pueden ejecutarse en paralelo, divêÂ­dela en subplanes. La regla: divêÂ­dela cuando las partes puedan fallar de forma independiente.</p>
 </details>
 <!-- TOPICO 4 -->
-<section class="mb-16" data-ARCKHÉ-topic="modulo-2-2#topico-4" id="topico-4">
+<section class="mb-16" data-ARCKHê-topic="modulo-2-2#topico-4" id="topico-4">
 <div class="flex items-center justify-between gap-4 mb-6">
-<div class="flex items-center space-x-4"><span class="flex items-center justify-center w-12 h-12 rounded-full bg-blue-500/20 text-blue-400 font-bold text-xl flex-shrink-0">4</span><h2 class="text-2xl font-bold">DescomposiciÃ³n de tareas</h2></div>
-<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm flex-shrink-0" data-ARCKHÉ-doubt-toggle="" title="Marcar este tema como duda" type="button"><span aria-hidden="true">?</span><span class="hidden sm:inline">Tengo una duda</span></button>
+<div class="flex items-center space-x-4"><span class="flex items-center justify-center w-12 h-12 rounded-full bg-blue-500/20 text-blue-400 font-bold text-xl flex-shrink-0">4</span><h2 class="text-2xl font-bold">DescomposiciêÂ³n de tareas</h2></div>
+<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm flex-shrink-0" data-ARCKHê-doubt-toggle="" title="Marcar este tema como duda" type="button"><span aria-hidden="true">?</span><span class="hidden sm:inline">Tengo una duda</span></button>
 </div>
 <div class="bg-primary/10 border border-primary/30 rounded-xl p-5 mb-6">
-<p class="text-neutral-200"><strong class="text-primary">ImagÃ­nalo asÃ­:</strong> Comerse un buey entero es imposible. Cortarlo en bistecs es fÃ¡cil. Descomponer es dividir la tarea grande en partes que quepan en un bocado.</p>
+<p class="text-neutral-200"><strong class="text-primary">ImagêÂ­nalo asêÂ­:</strong> Comerse un buey entero es imposible. Cortarlo en bistecs es fêÂ¡cil. Descomponer es dividir la tarea grande en partes que quepan en un bocado.</p>
 </div>
-<p class="text-neutral-300 mb-4 leading-relaxed" data-ARCKHÉ-block="m22-t4-p1">Cuando la tarea es demasiado grande para un solo plan, divÃ­dela en subtareas independientes. Cada subtarea debe ser verificable: puedes decir Â«esto funcionaÂ» o Â«esto no funcionaÂ» sin depender de las demÃ¡s.</p>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m22-t4-p2">La regla prÃ¡ctica: si un paso del plan tiene mÃ¡s de 3 subpasos, probablemente haya que descomponerlo. PÃ­dele a Claude: "divide el paso 3 en subtareas atÃ³micas". AtÃ³mico = un Ãºnico cambio con un Ãºnico criterio de Ã©xito.</p>
+<p class="text-neutral-300 mb-4 leading-relaxed" data-ARCKHê-block="m22-t4-p1">Cuando la tarea es demasiado grande para un solo plan, divêÂ­dela en subtareas independientes. Cada subtarea debe ser verificable: puedes decir êÂ«esto funcionaêÂ» o êÂ«esto no funcionaêÂ» sin depender de las demêÂ¡s.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHê-block="m22-t4-p2">La regla prêÂ¡ctica: si un paso del plan tiene mêÂ¡s de 3 subpasos, probablemente haya que descomponerlo. PêÂ­dele a Claude: "divide el paso 3 en subtareas atêÂ³micas". AtêÂ³mico = un êÂºnico cambio con un êÂºnico criterio de êÂ©xito.</p>
 <div class="bg-dark-800/60 border-l-4 border-blue-500 rounded-r-lg p-4 mb-6">
-<p class="text-sm text-neutral-300"><strong class="text-blue-400">En 1 frase:</strong> descompÃ³n hasta que cada paso tenga un Ãºnico criterio de Ã©xito verificable.</p>
+<p class="text-sm text-neutral-300"><strong class="text-blue-400">En 1 frase:</strong> descompêÂ³n hasta que cada paso tenga un êÂºnico criterio de êÂ©xito verificable.</p>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-blue-500/20 border border-blue-500/30 text-blue-400 hover:bg-blue-500/30 transition-colors" data-ARCKHÉ-read-toggle="" type="button"><span aria-hidden="true" class="ARCKHÉ-read-icon">â—‹</span><span class="ARCKHÉ-read-label">Marcar como leÃ­do</span></button>
+<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-blue-500/20 border border-blue-500/30 text-blue-400 hover:bg-blue-500/30 transition-colors" data-ARCKHê-read-toggle="" type="button"><span aria-hidden="true" class="ARCKHê-read-icon">ê¢ââ¹</span><span class="ARCKHê-read-label">Marcar como leêÂ­do</span></button>
 </div>
 </section>
 <!-- TOPICO 5 -->
-<section class="mb-16" data-ARCKHÉ-topic="modulo-2-2#topico-5" id="topico-5">
+<section class="mb-16" data-ARCKHê-topic="modulo-2-2#topico-5" id="topico-5">
 <div class="flex items-center justify-between gap-4 mb-6">
 <div class="flex items-center space-x-4"><span class="flex items-center justify-center w-12 h-12 rounded-full bg-blue-500/20 text-blue-400 font-bold text-xl flex-shrink-0">5</span><h2 class="text-2xl font-bold">Mapeo de dependencias</h2></div>
-<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm flex-shrink-0" data-ARCKHÉ-doubt-toggle="" title="Marcar este tema como duda" type="button"><span aria-hidden="true">?</span><span class="hidden sm:inline">Tengo una duda</span></button>
+<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm flex-shrink-0" data-ARCKHê-doubt-toggle="" title="Marcar este tema como duda" type="button"><span aria-hidden="true">?</span><span class="hidden sm:inline">Tengo una duda</span></button>
 </div>
 <div class="bg-primary/10 border border-primary/30 rounded-xl p-5 mb-6">
-<p class="text-neutral-200"><strong class="text-primary">ImagÃ­nalo asÃ­:</strong> No puedes poner el techo antes que las paredes. Las dependencias marcan el orden natural de las cosas: quÃ© debe existir antes que quÃ©.</p>
+<p class="text-neutral-200"><strong class="text-primary">ImagêÂ­nalo asêÂ­:</strong> No puedes poner el techo antes que las paredes. Las dependencias marcan el orden natural de las cosas: quêÂ© debe existir antes que quêÂ©.</p>
 </div>
-<p class="text-neutral-300 mb-4 leading-relaxed" data-ARCKHÉ-block="m22-t5-p1">Un plan sin dependencias mapeadas es una lista de compras, no un plan. Claude necesita saber quÃ© pasos dependen de otros, cuÃ¡les pueden ejecutarse en paralelo y cuÃ¡les son bloqueantes. Pide explÃ­citamente: "mapea las dependencias entre los pasos".</p>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m22-t5-p2">VisualÃ­zalo como un grafo: si el paso C depende de A y B, entonces A y B pueden hacerse en cualquier orden (o en paralelo), pero C solo comienza despuÃ©s de ambos. Esto es especialmente Ãºtil cuando vas a combinar el modo plan con el modo loop en el mÃ³dulo 2.5.</p>
+<p class="text-neutral-300 mb-4 leading-relaxed" data-ARCKHê-block="m22-t5-p1">Un plan sin dependencias mapeadas es una lista de compras, no un plan. Claude necesita saber quêÂ© pasos dependen de otros, cuêÂ¡les pueden ejecutarse en paralelo y cuêÂ¡les son bloqueantes. Pide explêÂ­citamente: "mapea las dependencias entre los pasos".</p>
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHê-block="m22-t5-p2">VisualêÂ­zalo como un grafo: si el paso C depende de A y B, entonces A y B pueden hacerse en cualquier orden (o en paralelo), pero C solo comienza despuêÂ©s de ambos. Esto es especialmente êÂºtil cuando vas a combinar el modo plan con el modo loop en el mêÂ³dulo 2.5.</p>
 <div class="bg-dark-800/60 border-l-4 border-blue-500 rounded-r-lg p-4 mb-6">
-<p class="text-sm text-neutral-300"><strong class="text-blue-400">En 1 frase:</strong> sin dependencias mapeadas, el plan es solo una lista; con ellas, es una ruta crÃ­tica.</p>
+<p class="text-sm text-neutral-300"><strong class="text-blue-400">En 1 frase:</strong> sin dependencias mapeadas, el plan es solo una lista; con ellas, es una ruta crêÂ­tica.</p>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-blue-500/20 border border-blue-500/30 text-blue-400 hover:bg-blue-500/30 transition-colors" data-ARCKHÉ-read-toggle="" type="button"><span aria-hidden="true" class="ARCKHÉ-read-icon">â—‹</span><span class="ARCKHÉ-read-label">Marcar como leÃ­do</span></button>
+<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-blue-500/20 border border-blue-500/30 text-blue-400 hover:bg-blue-500/30 transition-colors" data-ARCKHê-read-toggle="" type="button"><span aria-hidden="true" class="ARCKHê-read-icon">ê¢ââ¹</span><span class="ARCKHê-read-label">Marcar como leêÂ­do</span></button>
 </div>
 </section>
 <!-- TOPICO 6 -->
-<section class="mb-16" data-ARCKHÉ-topic="modulo-2-2#topico-6" id="topico-6">
+<section class="mb-16" data-ARCKHê-topic="modulo-2-2#topico-6" id="topico-6">
 <div class="flex items-center justify-between gap-4 mb-6">
-<div class="flex items-center space-x-4"><span class="flex items-center justify-center w-12 h-12 rounded-full bg-blue-500/20 text-blue-400 font-bold text-xl flex-shrink-0">6</span><h2 class="text-2xl font-bold">EstimaciÃ³n del esfuerzo</h2></div>
-<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm flex-shrink-0" data-ARCKHÉ-doubt-toggle="" title="Marcar este tema como duda" type="button"><span aria-hidden="true">?</span><span class="hidden sm:inline">Tengo una duda</span></button>
+<div class="flex items-center space-x-4"><span class="flex items-center justify-center w-12 h-12 rounded-full bg-blue-500/20 text-blue-400 font-bold text-xl flex-shrink-0">6</span><h2 class="text-2xl font-bold">EstimaciêÂ³n del esfuerzo</h2></div>
+<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm flex-shrink-0" data-ARCKHê-doubt-toggle="" title="Marcar este tema como duda" type="button"><span aria-hidden="true">?</span><span class="hidden sm:inline">Tengo una duda</span></button>
 </div>
 <div class="bg-primary/10 border border-primary/30 rounded-xl p-5 mb-6">
-<p class="text-neutral-200"><strong class="text-primary">ImagÃ­nalo asÃ­:</strong> Un presupuesto de obra no tiene que ser exacto, pero tiene que existir. Si el albaÃ±il dice "unos 3 dÃ­as" y ya van 10 dÃ­as, algo saliÃ³ mal. Con los tokens y el tiempo pasa lo mismo.</p>
+<p class="text-neutral-200"><strong class="text-primary">ImagêÂ­nalo asêÂ­:</strong> Un presupuesto de obra no tiene que ser exacto, pero tiene que existir. Si el albaêÂ±il dice "unos 3 dêÂ­as" y ya van 10 dêÂ­as, algo saliêÂ³ mal. Con los tokens y el tiempo pasa lo mismo.</p>
 </div>
-<p class="text-neutral-300 mb-4 leading-relaxed" data-ARCKHÉ-block="m22-t6-p1">Antes de aprobar el plan, estima: cuÃ¡ntos tokens consumirÃ¡, cuÃ¡nto tiempo llevarÃ¡ y cuÃ¡ntas iteraciones probablemente serÃ¡n necesarias. No hace falta ser preciso. El orden de magnitud ya ayuda: "Â¿esto lleva 5 minutos o 2 horas?".</p>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m22-t6-p2">HeurÃ­sticas Ãºtiles: cada archivo editado consume ~2-5k tokens de contexto. Un loop de pruebas normalmente necesita 3-7 iteraciones. Si el plan tiene mÃ¡s de 10 pasos, considera dividirlo en dos planes. Si la estimaciÃ³n te preocupa, simplifica el plan.</p>
+<p class="text-neutral-300 mb-4 leading-relaxed" data-ARCKHê-block="m22-t6-p1">Antes de aprobar el plan, estima: cuêÂ¡ntos tokens consumirêÂ¡, cuêÂ¡nto tiempo llevarêÂ¡ y cuêÂ¡ntas iteraciones probablemente serêÂ¡n necesarias. No hace falta ser preciso. El orden de magnitud ya ayuda: "êÂ¿esto lleva 5 minutos o 2 horas?".</p>
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHê-block="m22-t6-p2">HeurêÂ­sticas êÂºtiles: cada archivo editado consume ~2-5k tokens de contexto. Un loop de pruebas normalmente necesita 3-7 iteraciones. Si el plan tiene mêÂ¡s de 10 pasos, considera dividirlo en dos planes. Si la estimaciêÂ³n te preocupa, simplifica el plan.</p>
 <div class="bg-dark-800/60 border-l-4 border-blue-500 rounded-r-lg p-4 mb-6">
-<p class="text-sm text-neutral-300"><strong class="text-blue-400">En 1 frase:</strong> estima los tokens, el tiempo y las iteraciones antes de aprobar. Si te asusta, simplifÃ­calo.</p>
+<p class="text-sm text-neutral-300"><strong class="text-blue-400">En 1 frase:</strong> estima los tokens, el tiempo y las iteraciones antes de aprobar. Si te asusta, simplifêÂ­calo.</p>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-blue-500/20 border border-blue-500/30 text-blue-400 hover:bg-blue-500/30 transition-colors" data-ARCKHÉ-read-toggle="" type="button"><span aria-hidden="true" class="ARCKHÉ-read-icon">â—‹</span><span class="ARCKHÉ-read-label">Marcar como leÃ­do</span></button>
+<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-blue-500/20 border border-blue-500/30 text-blue-400 hover:bg-blue-500/30 transition-colors" data-ARCKHê-read-toggle="" type="button"><span aria-hidden="true" class="ARCKHê-read-icon">ê¢ââ¹</span><span class="ARCKHê-read-label">Marcar como leêÂ­do</span></button>
 </div>
 </section>
 <div class="copybox bg-dark-900 border border-blue-500/30 rounded-xl overflow-hidden mb-6">
@@ -319,45 +319,45 @@ Erro: 'PayloadTooLargeError'. Reproduza,
 identifique a causa, corrija e adicione
 teste de regressao."</pre>
 </div>
-<div class="ARCKHÉ-check mb-6 bg-dark-800 border border-dark-600 rounded-xl p-6" data-ARCKHÉ-check="modulo-2-2#q1">
-<p class="font-medium mb-4">Â¿CuÃ¡l es la tÃ©cnica mÃ¡s segura para planificar una refactorizaciÃ³n?</p>
-<div class="ARCKHÉ-check-options space-y-2">
-<button class="block w-full text-left px-4 py-2 rounded-lg bg-dark-700 border border-dark-600 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-check-option="0" type="button">Cambiar todo de una vez y ejecutar las pruebas al final.</button>
-<button class="block w-full text-left px-4 py-2 rounded-lg bg-dark-700 border border-dark-600 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-check-option="1" type="button">Haz un snapshot antes, cambia de forma incremental y prueba entre cada paso.</button>
-<button class="block w-full text-left px-4 py-2 rounded-lg bg-dark-700 border border-dark-600 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-check-option="2" type="button">Cambiar de forma incremental sin snapshot (git reflog es suficiente).</button>
+<div class="ARCKHê-check mb-6 bg-dark-800 border border-dark-600 rounded-xl p-6" data-ARCKHê-check="modulo-2-2#q1">
+<p class="font-medium mb-4">êÂ¿CuêÂ¡l es la têÂ©cnica mêÂ¡s segura para planificar una refactorizaciêÂ³n?</p>
+<div class="ARCKHê-check-options space-y-2">
+<button class="block w-full text-left px-4 py-2 rounded-lg bg-dark-700 border border-dark-600 hover:bg-dark-600 transition-colors text-sm" data-ARCKHê-check-option="0" type="button">Cambiar todo de una vez y ejecutar las pruebas al final.</button>
+<button class="block w-full text-left px-4 py-2 rounded-lg bg-dark-700 border border-dark-600 hover:bg-dark-600 transition-colors text-sm" data-ARCKHê-check-option="1" type="button">Haz un snapshot antes, cambia de forma incremental y prueba entre cada paso.</button>
+<button class="block w-full text-left px-4 py-2 rounded-lg bg-dark-700 border border-dark-600 hover:bg-dark-600 transition-colors text-sm" data-ARCKHê-check-option="2" type="button">Cambiar de forma incremental sin snapshot (git reflog es suficiente).</button>
 </div>
-<div aria-live="polite" class="mt-4 text-sm" data-ARCKHÉ-check-feedback="" role="status"></div>
+<div aria-live="polite" class="mt-4 text-sm" data-ARCKHê-check-feedback="" role="status"></div>
 </div>
 <!-- RESUMO -->
 <section class="mb-12">
 <div class="bg-gradient-to-br from-blue-900/40 via-dark-800 to-dark-800 rounded-xl border border-blue-500/30 p-8">
-<h2 class="text-2xl font-bold mb-6">Resumen del mÃ³dulo</h2>
+<h2 class="text-2xl font-bold mb-6">Resumen del mêÂ³dulo</h2>
 <div class="space-y-4 mb-8">
-<div class="flex items-start space-x-3"><span class="text-blue-400 mt-1">âœ“</span><div><strong class="text-white">Plan para una nueva funcionalidad</strong><span class="text-neutral-400"> â€” para funciones nuevas, da contexto sobre las constraints y los patrones existentes; el plan s.</span></div></div>
-<div class="flex items-start space-x-3"><span class="text-blue-400 mt-1">âœ“</span><div><strong class="text-white">Plan para refactorizar</strong><span class="text-neutral-400"> â€” los refactors requieren un plan incremental con pruebas entre cada paso y una snapshot antes de d.</span></div></div>
-<div class="flex items-start space-x-3"><span class="text-blue-400 mt-1">âœ“</span><div><strong class="text-white">Plan para corregir un bug</strong><span class="text-neutral-400"> â€” bug fix = reproducir, diagnosticar, corregir, probar. En ese orden, siempre..</span></div></div>
-<div class="flex items-start space-x-3"><span class="text-blue-400 mt-1">âœ“</span><div><strong class="text-white">DescomposiciÃ³n de tareas</strong><span class="text-neutral-400"> â€” descompÃ³n hasta que cada paso tenga un Ãºnico criterio de Ã©xito verificable..</span></div></div>
+<div class="flex items-start space-x-3"><span class="text-blue-400 mt-1">ê¢Åâ</span><div><strong class="text-white">Plan para una nueva funcionalidad</strong><span class="text-neutral-400"> ê¢â¬â para funciones nuevas, da contexto sobre las constraints y los patrones existentes; el plan s.</span></div></div>
+<div class="flex items-start space-x-3"><span class="text-blue-400 mt-1">ê¢Åâ</span><div><strong class="text-white">Plan para refactorizar</strong><span class="text-neutral-400"> ê¢â¬â los refactors requieren un plan incremental con pruebas entre cada paso y una snapshot antes de d.</span></div></div>
+<div class="flex items-start space-x-3"><span class="text-blue-400 mt-1">ê¢Åâ</span><div><strong class="text-white">Plan para corregir un bug</strong><span class="text-neutral-400"> ê¢â¬â bug fix = reproducir, diagnosticar, corregir, probar. En ese orden, siempre..</span></div></div>
+<div class="flex items-start space-x-3"><span class="text-blue-400 mt-1">ê¢Åâ</span><div><strong class="text-white">DescomposiciêÂ³n de tareas</strong><span class="text-neutral-400"> ê¢â¬â descompêÂ³n hasta que cada paso tenga un êÂºnico criterio de êÂ©xito verificable..</span></div></div>
 </div>
-<div class="bg-dark-800/50 rounded-lg p-4 mb-8"><h3 class="font-semibold text-blue-400 mb-2">Siguiente mÃ³dulo:</h3><p class="text-neutral-300">2-3 â€” Loop Mode â€” AutomatizaciÃ³n iterativa: cÃ³mo Claude ejecuta en un bucle autÃ³nomo.</p></div>
-<div class="flex flex-col sm:flex-row gap-4"><a class="flex-1 text-center px-6 py-3 bg-dark-700 text-neutral-300 rounded-lg font-semibold hover:bg-dark-600 transition-colors" href="index.html">Volver a la ruta</a><a class="flex-1 text-center px-6 py-3 bg-blue-600 text-white rounded-lg font-semibold hover:bg-blue-500 transition-colors" href="modulo-2-3.html">Siguiente mÃ³dulo</a></div>
+<div class="bg-dark-800/50 rounded-lg p-4 mb-8"><h3 class="font-semibold text-blue-400 mb-2">Siguiente mêÂ³dulo:</h3><p class="text-neutral-300">2-3 ê¢â¬â Loop Mode ê¢â¬â AutomatizaciêÂ³n iterativa: cêÂ³mo Claude ejecuta en un bucle autêÂ³nomo.</p></div>
+<div class="flex flex-col sm:flex-row gap-4"><a class="flex-1 text-center px-6 py-3 bg-dark-700 text-neutral-300 rounded-lg font-semibold hover:bg-dark-600 transition-colors" href="index.html">Volver a la ruta</a><a class="flex-1 text-center px-6 py-3 bg-blue-600 text-white rounded-lg font-semibold hover:bg-blue-500 transition-colors" href="modulo-2-3.html">Siguiente mêÂ³dulo</a></div>
 </div>
 </section>
 </main>
 </div>
 </div>
-<footer class="border-t border-dark-600 py-8 mt-16"><div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-neutral-500 text-sm"><p>Claude Code â€” TransiciÃ³n a Claude Code Â· <a class="text-sky-400 hover:text-sky-300" href="https://ARCKHÉ AI" target="_blank">ARCKHÉ AI</a></p></div></footer>
+<footer class="border-t border-dark-600 py-8 mt-16"><div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-neutral-500 text-sm"><p>Claude Code ê¢â¬â TransiciêÂ³n a Claude Code êÂ· <a class="text-sky-400 hover:text-sky-300" href="https://ARCKHê AI" target="_blank">ARCKHê AI</a></p></div></footer>
 <script>
     function toggleTopic(button){ const ti=button.closest('.topic-item'); if(!ti)return; const e=ti.querySelector('.topic-explanation'); if(e){e.classList.toggle('active'); button.setAttribute('aria-expanded', e.classList.contains('active'));} }
-    (function(){ const tt=document.getElementById('theme-toggle'),di=document.getElementById('theme-toggle-dark-icon'),li=document.getElementById('theme-toggle-light-icon'),h=document.documentElement; function s(){ if(h.classList.contains('dark')){li.classList.remove('hidden');di.classList.add('hidden');}else{di.classList.remove('hidden');li.classList.add('hidden');} } s(); tt&&tt.addEventListener('click',function(){h.classList.toggle('dark');var d=h.classList.contains('dark');h.style.colorScheme=d?'dark':'light';try{var p=JSON.parse(localStorage.getItem('ARCKHÉ.prefs')||'{}');p.theme=d?'ARCKHÉ-dark':'claro';localStorage.setItem('ARCKHÉ.prefs',JSON.stringify(p));localStorage.setItem('theme',d?'dark':'light');}catch(e){}s();}); })();
+    (function(){ const tt=document.getElementById('theme-toggle'),di=document.getElementById('theme-toggle-dark-icon'),li=document.getElementById('theme-toggle-light-icon'),h=document.documentElement; function s(){ if(h.classList.contains('dark')){li.classList.remove('hidden');di.classList.add('hidden');}else{di.classList.remove('hidden');li.classList.add('hidden');} } s(); tt&&tt.addEventListener('click',function(){h.classList.toggle('dark');var d=h.classList.contains('dark');h.style.colorScheme=d?'dark':'light';try{var p=JSON.parse(localStorage.getItem('ARCKHê.prefs')||'{}');p.theme=d?'ARCKHê-dark':'claro';localStorage.setItem('ARCKHê.prefs',JSON.stringify(p));localStorage.setItem('theme',d?'dark':'light');}catch(e){}s();}); })();
     function copyBox(btn){ try{ var pre=btn.closest('.copybox').querySelector('pre'); navigator.clipboard.writeText(pre.textContent); var o=btn.textContent; btn.textContent='copiado'; setTimeout(function(){btn.textContent=o;},1500);}catch(e){} }
   </script>
 <script src="../../../assets/learn.js"></script>
 <script>
     document.addEventListener('DOMContentLoaded', function () {
-      if (window.ARCKHÉ && typeof ARCKHÉ.init === 'function') ARCKHÉ.init();
+      if (window.ARCKHê && typeof ARCKHê.init === 'function') ARCKHê.init();
 
-      if (window.ARCKHÉ && ARCKHÉ.registerCheck) {
-        ARCKHÉ.registerCheck('modulo-2-2#q1', { answer: 1, explain: { 0: 'Sem snapshot, voce nao tem como voltar se algo quebrar.', 1: 'Correto! Snapshot antes de comecar e testes entre passos.', 2: 'Testes so no final nao pegam qual passo introduziu o bug.' } });
+      if (window.ARCKHê && ARCKHê.registerCheck) {
+        ARCKHê.registerCheck('modulo-2-2#q1', { answer: 1, explain: { 0: 'Sem snapshot, voce nao tem como voltar se algo quebrar.', 1: 'Correto! Snapshot antes de comecar e testes entre passos.', 2: 'Testes so no final nao pegam qual passo introduziu o bug.' } });
       }
 
     });

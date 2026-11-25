@@ -4,28 +4,28 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<meta content="claude-code" name="ARCKHÉ-course"/>
-<title>2. Patterns de Loop en la prÃ¡ctica | Claude Code</title>
+<meta content="claude-code" name="ARCKHê-course"/>
+<title>2. Patterns de Loop en la prêÂ¡ctica | Claude Code</title>
 <script>
   (function () {
     try {
       var html = document.documentElement;
-      var DEF = { theme: 'ARCKHÉ-dark', font: 'inter', fontScale: 100, lineWidth: 68, leading: 1.7, accent: 'blue' };
+      var DEF = { theme: 'ARCKHê-dark', font: 'inter', fontScale: 100, lineWidth: 68, leading: 1.7, accent: 'blue' };
       function clone(o){var r={};for(var x in o)r[x]=o[x];return r;}
       var p = clone(DEF);
       try {
-        var raw = localStorage.getItem('ARCKHÉ.prefs');
+        var raw = localStorage.getItem('ARCKHê.prefs');
         if (raw) { var parsed = JSON.parse(raw); if (parsed && typeof parsed==='object'){ for (var k in DEF) if (parsed[k]!=null) p[k]=parsed[k]; } }
-        else { var legacy = localStorage.getItem('theme'); if (legacy==='light') p.theme='claro'; else if (legacy==='dark') p.theme='ARCKHÉ-dark'; }
+        else { var legacy = localStorage.getItem('theme'); if (legacy==='light') p.theme='claro'; else if (legacy==='dark') p.theme='ARCKHê-dark'; }
       } catch (e) { p = clone(DEF); }
-      var THEMES = { 'ARCKHÉ-dark':{dark:true,attr:null,cs:'dark'},'claro':{dark:false,attr:null,cs:'light'},'sepia':{dark:false,attr:'sepia',cs:'light'},'foco':{dark:null,attr:'foco',cs:null},'contraste':{dark:true,attr:'contraste',cs:'dark'} };
-      var t = THEMES[p.theme] || THEMES['ARCKHÉ-dark'];
+      var THEMES = { 'ARCKHê-dark':{dark:true,attr:null,cs:'dark'},'claro':{dark:false,attr:null,cs:'light'},'sepia':{dark:false,attr:'sepia',cs:'light'},'foco':{dark:null,attr:'foco',cs:null},'contraste':{dark:true,attr:'contraste',cs:'dark'} };
+      var t = THEMES[p.theme] || THEMES['ARCKHê-dark'];
       if (t.dark===true) html.classList.add('dark'); else if (t.dark===false) html.classList.remove('dark');
       if (t.attr) html.setAttribute('data-theme', t.attr); else html.removeAttribute('data-theme');
       html.style.colorScheme = (t.cs ? t.cs : (html.classList.contains('dark')?'dark':'light'));
       html.setAttribute('data-font', p.font||'inter'); html.setAttribute('data-accent', p.accent||'blue');
       var s = html.style, scale=(+p.fontScale||100);
-      s.setProperty('--ARCKHÉ-font-scale',(scale/100).toString()); s.setProperty('font-size',scale+'%');
+      s.setProperty('--ARCKHê-font-scale',(scale/100).toString()); s.setProperty('font-size',scale+'%');
       s.setProperty('--measure',(+p.lineWidth||68)+'ch'); s.setProperty('--lh-body',(+p.leading||1.7).toString());
     } catch (err) { try { document.documentElement.classList.add('dark'); document.documentElement.style.colorScheme='dark'; } catch(e){} }
   })();
@@ -36,8 +36,8 @@
   </script>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
 <link href="../../../assets/learn.css" rel="stylesheet"/>
-<script data-ARCKHÉ-manifest="" type="application/json">
-{"course":"claude-code","tracks":[{"n":"1","title":"CLI e ConfiguraÃ§Ã£o","modules":[{"id":"1-1","title":"InstalaÃ§Ã£o e Primeiro Comando","topics":6,"href":"curso/trilha1/modulo-1-1.html"},{"id":"1-2","title":"Navegando o CLI como um Pro","topics":6,"href":"curso/trilha1/modulo-1-2.html"},{"id":"1-3","title":"CLAUDE.md â€” O CÃ©rebro do Projeto","topics":6,"href":"curso/trilha1/modulo-1-3.html"},{"id":"1-4","title":"ConfiguraÃ§Ã£o AvanÃ§ada","topics":6,"href":"curso/trilha1/modulo-1-4.html"},{"id":"1-5","title":"Memory e Contexto Persistente","topics":6,"href":"curso/trilha1/modulo-1-5.html"},{"id":"1-6","title":"Seu Workflow Pessoal","topics":6,"href":"curso/trilha1/modulo-1-6.html"}]},{"n":"2","title":"Plan e Loop Modes","modules":[{"id":"2-1","title":"Plan Mode â€” Pense Antes de Codar","topics":6,"href":"curso/trilha2/modulo-2-1.html"},{"id":"2-2","title":"Planos que Funcionam","topics":6,"href":"curso/trilha2/modulo-2-2.html"},{"id":"2-3","title":"Loop Mode â€” AutomaÃ§Ã£o Iterativa","topics":6,"href":"curso/trilha2/modulo-2-3.html"},{"id":"2-4","title":"Patterns de Loop na PrÃ¡tica","topics":6,"href":"curso/trilha2/modulo-2-4.html"},{"id":"2-5","title":"Combinando Plan + Loop","topics":6,"href":"curso/trilha2/modulo-2-5.html"},{"id":"2-6","title":"Agentic Coding â€” O Novo Normal","topics":6,"href":"curso/trilha2/modulo-2-6.html"}]},{"n":"3","title":"MCP Servers","modules":[{"id":"3-1","title":"O que sÃ£o MCP Servers","topics":6,"href":"curso/trilha3/modulo-3-1.html"},{"id":"3-2","title":"Seus Primeiros MCPs","topics":6,"href":"curso/trilha3/modulo-3-2.html"},{"id":"3-3","title":"MCPs de Produtividade","topics":6,"href":"curso/trilha3/modulo-3-3.html"},{"id":"3-4","title":"MCPs de Database e APIs","topics":6,"href":"curso/trilha3/modulo-3-4.html"},{"id":"3-5","title":"Criando seu PrÃ³prio MCP Server","topics":6,"href":"curso/trilha3/modulo-3-5.html"},{"id":"3-6","title":"Ecossistema e Marketplace","topics":6,"href":"curso/trilha3/modulo-3-6.html"}]},{"n":"4","title":"Subagentes e Git","modules":[{"id":"4-1","title":"Subagentes â€” Conceitos","topics":6,"href":"curso/trilha4/modulo-4-1.html"},{"id":"4-2","title":"Paralelismo Real","topics":6,"href":"curso/trilha4/modulo-4-2.html"},{"id":"4-3","title":"Patterns de Multi-Agent","topics":6,"href":"curso/trilha4/modulo-4-3.html"},{"id":"4-4","title":"Git com IA â€” Versionamento","topics":6,"href":"curso/trilha4/modulo-4-4.html"},{"id":"4-5","title":"Pull Requests e Code Review","topics":6,"href":"curso/trilha4/modulo-4-5.html"},{"id":"4-6","title":"CI/CD e GitHub Actions","topics":6,"href":"curso/trilha4/modulo-4-6.html"}]},{"n":"5","title":"Python e Ship","modules":[{"id":"5-1","title":"Python + Claude Code","topics":6,"href":"curso/trilha5/modulo-5-1.html"},{"id":"5-2","title":"AutomaÃ§Ã£o de Scripts","topics":6,"href":"curso/trilha5/modulo-5-2.html"},{"id":"5-3","title":"FastAPI e Web Services","topics":6,"href":"curso/trilha5/modulo-5-3.html"},{"id":"5-4","title":"Testing Automatizado","topics":6,"href":"curso/trilha5/modulo-5-4.html"},{"id":"5-5","title":"Deploy e Infraestrutura","topics":6,"href":"curso/trilha5/modulo-5-5.html"},{"id":"5-6","title":"Ship Your Product","topics":6,"href":"curso/trilha5/modulo-5-6.html"}]}]}
+<script data-ARCKHê-manifest="" type="application/json">
+{"course":"claude-code","tracks":[{"n":"1","title":"CLI e ConfiguraêÂ§êÂ£o","modules":[{"id":"1-1","title":"InstalaêÂ§êÂ£o e Primeiro Comando","topics":6,"href":"curso/trilha1/modulo-1-1.html"},{"id":"1-2","title":"Navegando o CLI como um Pro","topics":6,"href":"curso/trilha1/modulo-1-2.html"},{"id":"1-3","title":"CLAUDE.md ê¢â¬â O CêÂ©rebro do Projeto","topics":6,"href":"curso/trilha1/modulo-1-3.html"},{"id":"1-4","title":"ConfiguraêÂ§êÂ£o AvanêÂ§ada","topics":6,"href":"curso/trilha1/modulo-1-4.html"},{"id":"1-5","title":"Memory e Contexto Persistente","topics":6,"href":"curso/trilha1/modulo-1-5.html"},{"id":"1-6","title":"Seu Workflow Pessoal","topics":6,"href":"curso/trilha1/modulo-1-6.html"}]},{"n":"2","title":"Plan e Loop Modes","modules":[{"id":"2-1","title":"Plan Mode ê¢â¬â Pense Antes de Codar","topics":6,"href":"curso/trilha2/modulo-2-1.html"},{"id":"2-2","title":"Planos que Funcionam","topics":6,"href":"curso/trilha2/modulo-2-2.html"},{"id":"2-3","title":"Loop Mode ê¢â¬â AutomaêÂ§êÂ£o Iterativa","topics":6,"href":"curso/trilha2/modulo-2-3.html"},{"id":"2-4","title":"Patterns de Loop na PrêÂ¡tica","topics":6,"href":"curso/trilha2/modulo-2-4.html"},{"id":"2-5","title":"Combinando Plan + Loop","topics":6,"href":"curso/trilha2/modulo-2-5.html"},{"id":"2-6","title":"Agentic Coding ê¢â¬â O Novo Normal","topics":6,"href":"curso/trilha2/modulo-2-6.html"}]},{"n":"3","title":"MCP Servers","modules":[{"id":"3-1","title":"O que sêÂ£o MCP Servers","topics":6,"href":"curso/trilha3/modulo-3-1.html"},{"id":"3-2","title":"Seus Primeiros MCPs","topics":6,"href":"curso/trilha3/modulo-3-2.html"},{"id":"3-3","title":"MCPs de Produtividade","topics":6,"href":"curso/trilha3/modulo-3-3.html"},{"id":"3-4","title":"MCPs de Database e APIs","topics":6,"href":"curso/trilha3/modulo-3-4.html"},{"id":"3-5","title":"Criando seu PrêÂ³prio MCP Server","topics":6,"href":"curso/trilha3/modulo-3-5.html"},{"id":"3-6","title":"Ecossistema e Marketplace","topics":6,"href":"curso/trilha3/modulo-3-6.html"}]},{"n":"4","title":"Subagentes e Git","modules":[{"id":"4-1","title":"Subagentes ê¢â¬â Conceitos","topics":6,"href":"curso/trilha4/modulo-4-1.html"},{"id":"4-2","title":"Paralelismo Real","topics":6,"href":"curso/trilha4/modulo-4-2.html"},{"id":"4-3","title":"Patterns de Multi-Agent","topics":6,"href":"curso/trilha4/modulo-4-3.html"},{"id":"4-4","title":"Git com IA ê¢â¬â Versionamento","topics":6,"href":"curso/trilha4/modulo-4-4.html"},{"id":"4-5","title":"Pull Requests e Code Review","topics":6,"href":"curso/trilha4/modulo-4-5.html"},{"id":"4-6","title":"CI/CD e GitHub Actions","topics":6,"href":"curso/trilha4/modulo-4-6.html"}]},{"n":"5","title":"Python e Ship","modules":[{"id":"5-1","title":"Python + Claude Code","topics":6,"href":"curso/trilha5/modulo-5-1.html"},{"id":"5-2","title":"AutomaêÂ§êÂ£o de Scripts","topics":6,"href":"curso/trilha5/modulo-5-2.html"},{"id":"5-3","title":"FastAPI e Web Services","topics":6,"href":"curso/trilha5/modulo-5-3.html"},{"id":"5-4","title":"Testing Automatizado","topics":6,"href":"curso/trilha5/modulo-5-4.html"},{"id":"5-5","title":"Deploy e Infraestrutura","topics":6,"href":"curso/trilha5/modulo-5-5.html"},{"id":"5-6","title":"Ship Your Product","topics":6,"href":"curso/trilha5/modulo-5-6.html"}]}]}
 </script>
 <style>
     body { font-family: 'Inter', sans-serif; }
@@ -82,15 +82,15 @@
     html:not(.dark) svg[role="img"] { filter: saturate(0.82) brightness(0.96); }
   </style>
 <link href="https://linnoff88-dev.github.io/ hreflang="pt-BR" rel="alternate"/><link href="https://linnoff88-dev.github.io/ hreflang="en" rel="alternate"/><link href="https://linnoff88-dev.github.io/ hreflang="es" rel="alternate"/></head>
-<body class="bg-dark-900 text-neutral-100 min-h-screen"><div class="ARCKHÉ-lang" style="position:fixed;right:14px;bottom:14px;z-index:9999;display:flex;gap:2px;padding:4px;border-radius:10px;background:rgba(12,12,16,.82);border:1px solid rgba(226,162,59,.45);font:600 12px/1 Sora,Inter,system-ui,sans-serif;backdrop-filter:blur(8px)" translate="no"><a href="../../../curso/trilha2/modulo-2-4.html" hreflang="pt-BR" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">PT</a><a href="../../../en/curso/trilha2/modulo-2-4.html" hreflang="en" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">EN</a><a href="modulo-2-4.html" hreflang="es" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#1a1206;background:#E2A23B">ES</a></div>
+<body class="bg-dark-900 text-neutral-100 min-h-screen"><div class="ARCKHê-lang" style="position:fixed;right:14px;bottom:14px;z-index:9999;display:flex;gap:2px;padding:4px;border-radius:10px;background:rgba(12,12,16,.82);border:1px solid rgba(226,162,59,.45);font:600 12px/1 Sora,Inter,system-ui,sans-serif;backdrop-filter:blur(8px)" translate="no"><a href="../../../curso/trilha2/modulo-2-4.html" hreflang="pt-BR" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">PT</a><a href="../../../en/curso/trilha2/modulo-2-4.html" hreflang="en" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">EN</a><a href="modulo-2-4.html" hreflang="es" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#1a1206;background:#E2A23B">ES</a></div>
 <a class="sr-only focus:not-sr-only focus:absolute focus:z-50 focus:top-2 focus:left-2 focus:px-4 focus:py-2 focus:bg-dark-800 focus:text-blue-400 focus:rounded-lg" href="#conteudo">Saltar al contenido</a>
 <nav class="sticky top-0 z-50 bg-dark-900/95 backdrop-blur-sm border-b border-dark-600">
 <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
 <div class="flex justify-between items-center h-14">
 <div class="flex items-center space-x-4">
-<a class="flex items-center space-x-2 text-yellow-400 hover:text-yellow-300" href="../../index.html"><span class="text-2xl">ðŸ¤–</span><span class="font-bold text-lg hidden sm:inline">Claude Code</span></a>
+<a class="flex items-center space-x-2 text-yellow-400 hover:text-yellow-300" href="../../index.html"><span class="text-2xl">ê°Å¸Â¤â</span><span class="font-bold text-lg hidden sm:inline">Claude Code</span></a>
 <span class="text-neutral-600">|</span>
-<a class="text-sky-400 hover:text-sky-300 text-sm font-medium" href="https://ARCKHÉ AI" target="_blank">ARCKHÉ AI</a>
+<a class="text-sky-400 hover:text-sky-300 text-sm font-medium" href="https://ARCKHê AI" target="_blank">ARCKHê AI</a>
 </div>
 <div class="flex items-center space-x-1 sm:space-x-2">
 <a class="px-3 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-emerald-400 hover:bg-emerald-500/10 transition-colors" href="../trilha1/index.html"><span class="sm:hidden">T1</span><span class="hidden sm:inline">CLI</span></a>
@@ -98,7 +98,7 @@
 <a class="px-3 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-purple-400 hover:bg-purple-500/10 transition-colors" href="../trilha3/index.html"><span class="sm:hidden">T3</span><span class="hidden sm:inline">MCP</span></a>
 <a class="px-3 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-amber-400 hover:bg-amber-500/10 transition-colors" href="../trilha4/index.html"><span class="sm:hidden">T4</span><span class="hidden sm:inline">Agentes</span></a>
 <a class="px-3 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-teal-400 hover:bg-teal-500/10 transition-colors" href="../trilha5/index.html"><span class="sm:hidden">T5</span><span class="hidden sm:inline">Python</span></a>
-<button class="hidden sm:inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-sm text-neutral-300 hover:text-neutral-100 hover:bg-dark-700 transition-colors ml-1" data-ARCKHÉ-journey-open="" type="button"><span aria-hidden="true">â—·</span><span>Mi recorrido</span><span aria-hidden="true" class="ARCKHÉ-journey-badge hidden"></span></button>
+<button class="hidden sm:inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-sm text-neutral-300 hover:text-neutral-100 hover:bg-dark-700 transition-colors ml-1" data-ARCKHê-journey-open="" type="button"><span aria-hidden="true">ê¢âÂ·</span><span>Mi recorrido</span><span aria-hidden="true" class="ARCKHê-journey-badge hidden"></span></button>
 <button aria-label="Cambiar tema" class="p-2 rounded-lg bg-dark-700 hover:bg-dark-600 transition-colors ml-1" id="theme-toggle">
 <svg class="hidden w-5 h-5 text-neutral-300" fill="currentColor" id="theme-toggle-dark-icon" viewbox="0 0 20 20"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg>
 <svg class="hidden w-5 h-5 text-neutral-300" fill="currentColor" id="theme-toggle-light-icon" viewbox="0 0 20 20"><path clip-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" fill-rule="evenodd"></path></svg>
@@ -107,103 +107,103 @@
 </div>
 </div>
 </nav>
-<nav aria-label="Ruta de navegaciÃ³n" class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+<nav aria-label="Ruta de navegaciêÂ³n" class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
 <div class="flex items-center space-x-2 text-sm text-neutral-400">
 <a class="hover:text-blue-400" href="../../index.html">Inicio</a><span>/</span>
 <a class="hover:text-blue-400" href="index.html">Ruta 2</a><span>/</span>
-<span class="text-blue-400">MÃ³dulo 2.4</span>
+<span class="text-blue-400">MêÂ³dulo 2.4</span>
 </div>
 </nav>
 <header class="bg-gradient-to-br from-blue-900/30 via-dark-800 to-dark-800 py-12 border-b border-dark-600">
 <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-<span class="inline-block px-3 py-1 bg-blue-500/20 text-blue-400 text-xs font-semibold rounded-full mb-4">MÃ“DULO 2.4</span>
-<h1 class="text-3xl sm:text-4xl font-bold mb-4">ðŸ¤– Patterns de Loop en la prÃ¡ctica</h1>
-<p class="text-lg text-neutral-400 max-w-3xl">Recetas reales de loops para copiar y ejecutar: pruebas, lint, migraciÃ³n, datos, documentaciÃ³n y loops compuestos.</p>
+<span class="inline-block px-3 py-1 bg-blue-500/20 text-blue-400 text-xs font-semibold rounded-full mb-4">MêâDULO 2.4</span>
+<h1 class="text-3xl sm:text-4xl font-bold mb-4">ê°Å¸Â¤â Patterns de Loop en la prêÂ¡ctica</h1>
+<p class="text-lg text-neutral-400 max-w-3xl">Recetas reales de loops para copiar y ejecutar: pruebas, lint, migraciêÂ³n, datos, documentaciêÂ³n y loops compuestos.</p>
 <div class="grid grid-cols-4 gap-4 mt-8 max-w-2xl">
 <div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-blue-400">6</div><div class="text-xs text-neutral-400">Temas</div></div>
 <div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-blue-400">~45</div><div class="text-xs text-neutral-400">Minutos</div></div>
 <div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-blue-400">2.3</div><div class="text-xs text-neutral-400">Requisito previo</div></div>
-<div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-blue-400">PrÃ¡ctico</div><div class="text-xs text-neutral-400">Tipo</div></div>
+<div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-blue-400">PrêÂ¡ctico</div><div class="text-xs text-neutral-400">Tipo</div></div>
 </div>
 <div class="mt-6 max-w-2xl">
-<div aria-label="Progreso del mÃ³dulo 2.4" aria-valuemax="100" aria-valuemin="0" class="ARCKHÉ-meter flex items-center gap-3" data-ARCKHÉ-meter="modulo:2-4" role="progressbar">
+<div aria-label="Progreso del mêÂ³dulo 2.4" aria-valuemax="100" aria-valuemin="0" class="ARCKHê-meter flex items-center gap-3" data-ARCKHê-meter="modulo:2-4" role="progressbar">
 <span class="text-sm text-neutral-400">Progreso:</span>
-<span class="ARCKHÉ-meter-pct text-blue-400 font-bold text-sm">0%</span>
-<span class="ARCKHÉ-meter-count text-xs text-neutral-500">0 de 6</span>
+<span class="ARCKHê-meter-pct text-blue-400 font-bold text-sm">0%</span>
+<span class="ARCKHê-meter-count text-xs text-neutral-500">0 de 6</span>
 </div>
 </div>
 </div>
 </header>
 <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
 <div class="lg:grid lg:grid-cols-[230px_1fr] lg:gap-10">
-<nav aria-label="Ãndice de la pÃ¡gina" class="hidden lg:block sticky top-24 self-start" data-ARCKHÉ-toc="">
-<p class="text-sm text-neutral-400 mb-3">SecciÃ³n <span class="ARCKHÉ-toc-pos">1</span> de <span class="ARCKHÉ-toc-total">6</span></p>
+<nav aria-label="êÂndice de la pêÂ¡gina" class="hidden lg:block sticky top-24 self-start" data-ARCKHê-toc="">
+<p class="text-sm text-neutral-400 mb-3">SecciêÂ³n <span class="ARCKHê-toc-pos">1</span> de <span class="ARCKHê-toc-total">6</span></p>
 <ul class="space-y-1 text-sm">
-<li><a class="ARCKHÉ-toc-link block px-3 py-1.5 rounded-lg text-neutral-400 hover:text-blue-400 hover:bg-blue-500/10" href="#topico-1">1. Bucle de pruebas (fix, test, fix)</a></li>
-<li><a class="ARCKHÉ-toc-link block px-3 py-1.5 rounded-lg text-neutral-400 hover:text-blue-400 hover:bg-blue-500/10" href="#topico-2">2. Ciclo de lint/formato</a></li>
-<li><a class="ARCKHÉ-toc-link block px-3 py-1.5 rounded-lg text-neutral-400 hover:text-blue-400 hover:bg-blue-500/10" href="#topico-3">3. Ciclo de migraciÃ³n</a></li>
-<li><a class="ARCKHÉ-toc-link block px-3 py-1.5 rounded-lg text-neutral-400 hover:text-blue-400 hover:bg-blue-500/10" href="#topico-4">4. Ciclo de datos</a></li>
-<li><a class="ARCKHÉ-toc-link block px-3 py-1.5 rounded-lg text-neutral-400 hover:text-blue-400 hover:bg-blue-500/10" href="#topico-5">5. Ciclo de documentaciÃ³n</a></li>
-<li><a class="ARCKHÉ-toc-link block px-3 py-1.5 rounded-lg text-neutral-400 hover:text-blue-400 hover:bg-blue-500/10" href="#topico-6">6. Bucle compuesto</a></li>
+<li><a class="ARCKHê-toc-link block px-3 py-1.5 rounded-lg text-neutral-400 hover:text-blue-400 hover:bg-blue-500/10" href="#topico-1">1. Bucle de pruebas (fix, test, fix)</a></li>
+<li><a class="ARCKHê-toc-link block px-3 py-1.5 rounded-lg text-neutral-400 hover:text-blue-400 hover:bg-blue-500/10" href="#topico-2">2. Ciclo de lint/formato</a></li>
+<li><a class="ARCKHê-toc-link block px-3 py-1.5 rounded-lg text-neutral-400 hover:text-blue-400 hover:bg-blue-500/10" href="#topico-3">3. Ciclo de migraciêÂ³n</a></li>
+<li><a class="ARCKHê-toc-link block px-3 py-1.5 rounded-lg text-neutral-400 hover:text-blue-400 hover:bg-blue-500/10" href="#topico-4">4. Ciclo de datos</a></li>
+<li><a class="ARCKHê-toc-link block px-3 py-1.5 rounded-lg text-neutral-400 hover:text-blue-400 hover:bg-blue-500/10" href="#topico-5">5. Ciclo de documentaciêÂ³n</a></li>
+<li><a class="ARCKHê-toc-link block px-3 py-1.5 rounded-lg text-neutral-400 hover:text-blue-400 hover:bg-blue-500/10" href="#topico-6">6. Bucle compuesto</a></li>
 </ul>
 </nav>
-<main class="ARCKHÉ-prose min-w-0" id="conteudo">
+<main class="ARCKHê-prose min-w-0" id="conteudo">
 <!-- TOPICO 1 -->
-<section class="mb-16" data-ARCKHÉ-topic="modulo-2-4#topico-1" id="topico-1">
+<section class="mb-16" data-ARCKHê-topic="modulo-2-4#topico-1" id="topico-1">
 <div class="flex items-center justify-between gap-4 mb-6">
 <div class="flex items-center space-x-4"><span class="flex items-center justify-center w-12 h-12 rounded-full bg-blue-500/20 text-blue-400 font-bold text-xl flex-shrink-0">1</span><h2 class="text-2xl font-bold">Loop de pruebas (corregir, probar, corregir)</h2></div>
-<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm flex-shrink-0" data-ARCKHÉ-doubt-toggle="" title="Marcar este tema como duda" type="button"><span aria-hidden="true">?</span><span class="hidden sm:inline">Tengo una duda</span></button>
+<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm flex-shrink-0" data-ARCKHê-doubt-toggle="" title="Marcar este tema como duda" type="button"><span aria-hidden="true">?</span><span class="hidden sm:inline">Tengo una duda</span></button>
 </div>
 <div class="bg-primary/10 border border-primary/30 rounded-xl p-5 mb-6">
-<p class="text-neutral-200"><strong class="text-primary">ImagÃ­nalo asÃ­:</strong> El ciclo natural: intÃ©ntalo, observa el resultado, corrige. Es lo que todo programador hace manualmente. La diferencia es que Claude completa decenas de ciclos en minutos.</p>
+<p class="text-neutral-200"><strong class="text-primary">ImagêÂ­nalo asêÂ­:</strong> El ciclo natural: intêÂ©ntalo, observa el resultado, corrige. Es lo que todo programador hace manualmente. La diferencia es que Claude completa decenas de ciclos en minutos.</p>
 </div>
-<p class="text-neutral-300 mb-4 leading-relaxed" data-ARCKHÉ-block="m24-t1-p1">El patrÃ³n mÃ¡s clÃ¡sico: "ejecuta pytest, corrige los errores reportados, vuelve a ejecutarlo y repite hasta que todo pase". Claude lee la salida de la prueba, identifica la causa del fallo, edita el cÃ³digo y vuelve a ejecutarlo. En proyectos con buena cobertura de pruebas, esto es devastadoramente eficiente.</p>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m24-t1-p2">Consejo: incluye el comando de prueba especÃ­fico en el prompt. "Ejecuta pytest tests/test_auth.py y corrige hasta que todas las pruebas pasen" es mucho mejor que "ejecuta las pruebas". Cuanto mÃ¡s especÃ­fico sea el comando, menos tokens gastarÃ¡s buscando quÃ© ejecutar.</p>
+<p class="text-neutral-300 mb-4 leading-relaxed" data-ARCKHê-block="m24-t1-p1">El patrêÂ³n mêÂ¡s clêÂ¡sico: "ejecuta pytest, corrige los errores reportados, vuelve a ejecutarlo y repite hasta que todo pase". Claude lee la salida de la prueba, identifica la causa del fallo, edita el cêÂ³digo y vuelve a ejecutarlo. En proyectos con buena cobertura de pruebas, esto es devastadoramente eficiente.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHê-block="m24-t1-p2">Consejo: incluye el comando de prueba especêÂ­fico en el prompt. "Ejecuta pytest tests/test_auth.py y corrige hasta que todas las pruebas pasen" es mucho mejor que "ejecuta las pruebas". Cuanto mêÂ¡s especêÂ­fico sea el comando, menos tokens gastarêÂ¡s buscando quêÂ© ejecutar.</p>
 <div class="bg-dark-800/60 border-l-4 border-blue-500 rounded-r-lg p-4 mb-6">
-<p class="text-sm text-neutral-300"><strong class="text-blue-400">En 1 frase:</strong> loop de pruebas = ejecuta, lee el error, corrige y repite. El patrÃ³n mÃ¡s Ãºtil del loop mode.</p>
+<p class="text-sm text-neutral-300"><strong class="text-blue-400">En 1 frase:</strong> loop de pruebas = ejecuta, lee el error, corrige y repite. El patrêÂ³n mêÂ¡s êÂºtil del loop mode.</p>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-blue-500/20 border border-blue-500/30 text-blue-400 hover:bg-blue-500/30 transition-colors" data-ARCKHÉ-read-toggle="" type="button"><span aria-hidden="true" class="ARCKHÉ-read-icon">â—‹</span><span class="ARCKHÉ-read-label">Marcar como leÃ­do</span></button>
+<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-blue-500/20 border border-blue-500/30 text-blue-400 hover:bg-blue-500/30 transition-colors" data-ARCKHê-read-toggle="" type="button"><span aria-hidden="true" class="ARCKHê-read-icon">ê¢ââ¹</span><span class="ARCKHê-read-label">Marcar como leêÂ­do</span></button>
 </div>
 </section>
 <!-- TOPICO 2 -->
-<section class="mb-16" data-ARCKHÉ-topic="modulo-2-4#topico-2" id="topico-2">
+<section class="mb-16" data-ARCKHê-topic="modulo-2-4#topico-2" id="topico-2">
 <div class="flex items-center justify-between gap-4 mb-6">
 <div class="flex items-center space-x-4"><span class="flex items-center justify-center w-12 h-12 rounded-full bg-blue-500/20 text-blue-400 font-bold text-xl flex-shrink-0">2</span><h2 class="text-2xl font-bold">Loop de lint/formato</h2></div>
-<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm flex-shrink-0" data-ARCKHÉ-doubt-toggle="" title="Marcar este tema como duda" type="button"><span aria-hidden="true">?</span><span class="hidden sm:inline">Tengo una duda</span></button>
+<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm flex-shrink-0" data-ARCKHê-doubt-toggle="" title="Marcar este tema como duda" type="button"><span aria-hidden="true">?</span><span class="hidden sm:inline">Tengo una duda</span></button>
 </div>
 <div class="bg-primary/10 border border-primary/30 rounded-xl p-5 mb-6">
-<p class="text-neutral-200"><strong class="text-primary">ImagÃ­nalo asÃ­:</strong> Limpiar una casa desordenada: pasas el trapeador, ves que quedÃ³ una mancha y vuelves a pasar. Con el lint es igual: lo ejecutas, corriges y vuelves a ejecutarlo hasta que no haya advertencias.</p>
+<p class="text-neutral-200"><strong class="text-primary">ImagêÂ­nalo asêÂ­:</strong> Limpiar una casa desordenada: pasas el trapeador, ves que quedêÂ³ una mancha y vuelves a pasar. Con el lint es igual: lo ejecutas, corriges y vuelves a ejecutarlo hasta que no haya advertencias.</p>
 </div>
-<p class="text-neutral-300 mb-4 leading-relaxed" data-ARCKHÉ-block="m24-t2-p1">Limpiar las advertencias de lint de una base de cÃ³digo es tedioso para las personas y perfecto para los loops. El prompt: "ejecuta eslint . y corrige todos los errores automÃ¡ticamente. No cambies la lÃ³gica de negocio, solo el formato y los problemas de estilo. Repite hasta que no haya errores". Claude irÃ¡ iterando archivo por archivo.</p>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m24-t2-p2">Ten cuidado con la autocorrecciÃ³n agresiva: configura el loop para que no cambie la lÃ³gica. Usa flags como --fix para lo que sea seguro y deja las advertencias sobre la lÃ³gica para una revisiÃ³n manual. Un filtro Ãºtil: "corrige solo errores de tipo 'formatting' y 'style', ignora 'logic' y 'security'".</p>
+<p class="text-neutral-300 mb-4 leading-relaxed" data-ARCKHê-block="m24-t2-p1">Limpiar las advertencias de lint de una base de cêÂ³digo es tedioso para las personas y perfecto para los loops. El prompt: "ejecuta eslint . y corrige todos los errores automêÂ¡ticamente. No cambies la lêÂ³gica de negocio, solo el formato y los problemas de estilo. Repite hasta que no haya errores". Claude irêÂ¡ iterando archivo por archivo.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHê-block="m24-t2-p2">Ten cuidado con la autocorrecciêÂ³n agresiva: configura el loop para que no cambie la lêÂ³gica. Usa flags como --fix para lo que sea seguro y deja las advertencias sobre la lêÂ³gica para una revisiêÂ³n manual. Un filtro êÂºtil: "corrige solo errores de tipo 'formatting' y 'style', ignora 'logic' y 'security'".</p>
 <div class="bg-dark-800/60 border-l-4 border-blue-500 rounded-r-lg p-4 mb-6">
-<p class="text-sm text-neutral-300"><strong class="text-blue-400">En 1 frase:</strong> lint loop = ejecuta, corrige los problemas de estilo y vuelve a ejecutar. No cambies la lÃ³gica, solo el formato.</p>
+<p class="text-sm text-neutral-300"><strong class="text-blue-400">En 1 frase:</strong> lint loop = ejecuta, corrige los problemas de estilo y vuelve a ejecutar. No cambies la lêÂ³gica, solo el formato.</p>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-blue-500/20 border border-blue-500/30 text-blue-400 hover:bg-blue-500/30 transition-colors" data-ARCKHÉ-read-toggle="" type="button"><span aria-hidden="true" class="ARCKHÉ-read-icon">â—‹</span><span class="ARCKHÉ-read-label">Marcar como leÃ­do</span></button>
+<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-blue-500/20 border border-blue-500/30 text-blue-400 hover:bg-blue-500/30 transition-colors" data-ARCKHê-read-toggle="" type="button"><span aria-hidden="true" class="ARCKHê-read-icon">ê¢ââ¹</span><span class="ARCKHê-read-label">Marcar como leêÂ­do</span></button>
 </div>
 </section>
 <!-- TOPICO 3 -->
-<section class="mb-16" data-ARCKHÉ-topic="modulo-2-4#topico-3" id="topico-3">
+<section class="mb-16" data-ARCKHê-topic="modulo-2-4#topico-3" id="topico-3">
 <div class="flex items-center justify-between gap-4 mb-6">
-<div class="flex items-center space-x-4"><span class="flex items-center justify-center w-12 h-12 rounded-full bg-blue-500/20 text-blue-400 font-bold text-xl flex-shrink-0">3</span><h2 class="text-2xl font-bold">Loop de migraciÃ³n</h2></div>
-<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm flex-shrink-0" data-ARCKHÉ-doubt-toggle="" title="Marcar este tema como duda" type="button"><span aria-hidden="true">?</span><span class="hidden sm:inline">Tengo una duda</span></button>
+<div class="flex items-center space-x-4"><span class="flex items-center justify-center w-12 h-12 rounded-full bg-blue-500/20 text-blue-400 font-bold text-xl flex-shrink-0">3</span><h2 class="text-2xl font-bold">Loop de migraciêÂ³n</h2></div>
+<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm flex-shrink-0" data-ARCKHê-doubt-toggle="" title="Marcar este tema como duda" type="button"><span aria-hidden="true">?</span><span class="hidden sm:inline">Tengo una duda</span></button>
 </div>
 <div class="bg-primary/10 border border-primary/30 rounded-xl p-5 mb-6">
-<p class="text-neutral-200"><strong class="text-primary">ImagÃ­nalo asÃ­:</strong> Mudarse de casa: caja por caja, habitaciÃ³n por habitaciÃ³n. No metas todo en el camiÃ³n de una vez. La migraciÃ³n de cÃ³digo es igual: archivo por archivo, con validaciÃ³n entre cada uno.</p>
+<p class="text-neutral-200"><strong class="text-primary">ImagêÂ­nalo asêÂ­:</strong> Mudarse de casa: caja por caja, habitaciêÂ³n por habitaciêÂ³n. No metas todo en el camiêÂ³n de una vez. La migraciêÂ³n de cêÂ³digo es igual: archivo por archivo, con validaciêÂ³n entre cada uno.</p>
 </div>
-<p class="text-neutral-300 mb-4 leading-relaxed" data-ARCKHÉ-block="m24-t3-p1">Las migraciones de API, de versiones de dependencias o de frameworks son tareas perfectas para un loop: repetitivas, mecÃ¡nicas y con un criterio de Ã©xito claro (compila/no compila, las pruebas pasan/no pasan). El prompt ideal: "migra cada archivo de API v2 a v3 y ejecuta el type-check despuÃ©s de cada archivo".</p>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m24-t3-p2">La clave es migrar un archivo a la vez y validar entre cada uno. Si migras 50 archivos de una vez y algo falla, no sabrÃ¡s cuÃ¡l lo causÃ³. Hacerlo uno por uno, con un commit entre cada uno, te da un rollback granular y claridad sobre quÃ© migraciÃ³n introdujo el problema.</p>
+<p class="text-neutral-300 mb-4 leading-relaxed" data-ARCKHê-block="m24-t3-p1">Las migraciones de API, de versiones de dependencias o de frameworks son tareas perfectas para un loop: repetitivas, mecêÂ¡nicas y con un criterio de êÂ©xito claro (compila/no compila, las pruebas pasan/no pasan). El prompt ideal: "migra cada archivo de API v2 a v3 y ejecuta el type-check despuêÂ©s de cada archivo".</p>
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHê-block="m24-t3-p2">La clave es migrar un archivo a la vez y validar entre cada uno. Si migras 50 archivos de una vez y algo falla, no sabrêÂ¡s cuêÂ¡l lo causêÂ³. Hacerlo uno por uno, con un commit entre cada uno, te da un rollback granular y claridad sobre quêÂ© migraciêÂ³n introdujo el problema.</p>
 <div class="bg-dark-800/60 border-l-4 border-blue-500 rounded-r-lg p-4 mb-6">
-<p class="text-sm text-neutral-300"><strong class="text-blue-400">En 1 frase:</strong> migra un archivo por vez con validaciÃ³n entre cada uno. Commit granular = rollback fÃ¡cil.</p>
+<p class="text-sm text-neutral-300"><strong class="text-blue-400">En 1 frase:</strong> migra un archivo por vez con validaciêÂ³n entre cada uno. Commit granular = rollback fêÂ¡cil.</p>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-blue-500/20 border border-blue-500/30 text-blue-400 hover:bg-blue-500/30 transition-colors" data-ARCKHÉ-read-toggle="" type="button"><span aria-hidden="true" class="ARCKHÉ-read-icon">â—‹</span><span class="ARCKHÉ-read-label">Marcar como leÃ­do</span></button>
+<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-blue-500/20 border border-blue-500/30 text-blue-400 hover:bg-blue-500/30 transition-colors" data-ARCKHê-read-toggle="" type="button"><span aria-hidden="true" class="ARCKHê-read-icon">ê¢ââ¹</span><span class="ARCKHê-read-label">Marcar como leêÂ­do</span></button>
 </div>
 </section>
 <div class="rounded-2xl border border-blue-500/30 bg-dark-900/40 p-3 sm:p-4 mb-6 overflow-hidden">
-<svg aria-label="Tipos de loop: pruebas, lint, migraciÃ³n, datos y documentaciÃ³n convergen en el loop compuesto" class="w-full h-auto" role="img" viewbox="0 0 1000 220">
+<svg aria-label="Tipos de loop: pruebas, lint, migraciêÂ³n, datos y documentaciêÂ³n convergen en el loop compuesto" class="w-full h-auto" role="img" viewbox="0 0 1000 220">
 <defs>
 <lineargradient id="v24a-grad" x1="0" x2="1" y1="0" y2="1"><stop offset="0" stop-color="#60a5fa"></stop><stop offset="1" stop-color="#3b82f6"></stop></lineargradient>
 <filter height="180%" id="v24a-glow" width="180%" x="-40%" y="-40%"><fegaussianblur result="b" stddeviation="1.8"></fegaussianblur><femerge><femergenode in="b"></femergenode><femergenode in="SourceGraphic"></femergenode></femerge></filter>
@@ -214,8 +214,8 @@
 <g font-family="Inter,sans-serif" font-size="12" font-weight="600">
 <rect fill="#0e1b26" height="40" rx="10" stroke="#38bdf8" stroke-width="2" width="140" x="40" y="20"></rect><text fill="#bfe6ff" text-anchor="middle" x="110" y="45">Pruebas</text>
 <rect fill="#0e1b26" height="40" rx="10" stroke="#38bdf8" stroke-width="2" width="140" x="40" y="70"></rect><text fill="#bfe6ff" text-anchor="middle" x="110" y="95">Lint</text>
-<rect fill="#0e1b26" height="40" rx="10" stroke="#38bdf8" stroke-width="2" width="140" x="40" y="120"></rect><text fill="#bfe6ff" text-anchor="middle" x="110" y="145">MigraciÃ³n</text>
-<rect fill="#0e1b26" height="40" rx="10" stroke="#38bdf8" stroke-width="2" width="140" x="40" y="170"></rect><text fill="#bfe6ff" text-anchor="middle" x="110" y="195">Datos + documentaciÃ³n</text>
+<rect fill="#0e1b26" height="40" rx="10" stroke="#38bdf8" stroke-width="2" width="140" x="40" y="120"></rect><text fill="#bfe6ff" text-anchor="middle" x="110" y="145">MigraciêÂ³n</text>
+<rect fill="#0e1b26" height="40" rx="10" stroke="#38bdf8" stroke-width="2" width="140" x="40" y="170"></rect><text fill="#bfe6ff" text-anchor="middle" x="110" y="195">Datos + documentaciêÂ³n</text>
 </g>
 <g fill="none" opacity="0.5" stroke="#60a5fa" stroke-width="1.8">
 <path d="M180,40 C300,40 350,110 450,110" marker-end="url(#v24a-ah)"></path>
@@ -234,57 +234,57 @@
 <p class="text-xs text-neutral-500 mt-2 text-center">Cada tipo de ciclo puede usarse de forma independiente o combinarse en el ciclo compuesto.</p>
 </div>
 <!-- TOPICO 4 -->
-<section class="mb-16" data-ARCKHÉ-topic="modulo-2-4#topico-4" id="topico-4">
+<section class="mb-16" data-ARCKHê-topic="modulo-2-4#topico-4" id="topico-4">
 <div class="flex items-center justify-between gap-4 mb-6">
 <div class="flex items-center space-x-4"><span class="flex items-center justify-center w-12 h-12 rounded-full bg-blue-500/20 text-blue-400 font-bold text-xl flex-shrink-0">4</span><h2 class="text-2xl font-bold">Loop de datos</h2></div>
-<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm flex-shrink-0" data-ARCKHÉ-doubt-toggle="" title="Marcar este tema como duda" type="button"><span aria-hidden="true">?</span><span class="hidden sm:inline">Tengo una duda</span></button>
+<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm flex-shrink-0" data-ARCKHê-doubt-toggle="" title="Marcar este tema como duda" type="button"><span aria-hidden="true">?</span><span class="hidden sm:inline">Tengo una duda</span></button>
 </div>
 <div class="bg-primary/10 border border-primary/30 rounded-xl p-5 mb-6">
-<p class="text-neutral-200"><strong class="text-primary">ImagÃ­nalo asÃ­:</strong> Tamizar oro: pasa el tamiz, observa quÃ© quedÃ³, ajusta el tamaÃ±o de la malla y vuelve a tamizar. Los datos sucios necesitan varias pasadas de limpieza.</p>
+<p class="text-neutral-200"><strong class="text-primary">ImagêÂ­nalo asêÂ­:</strong> Tamizar oro: pasa el tamiz, observa quêÂ© quedêÂ³, ajusta el tamaêÂ±o de la malla y vuelve a tamizar. Los datos sucios necesitan varias pasadas de limpieza.</p>
 </div>
-<p class="text-neutral-300 mb-4 leading-relaxed" data-ARCKHÉ-block="m24-t4-p1">Procesar datasets es iterativo por naturaleza: analizar, validar el schema, corregir inconsistencias y volver a validar. Claude puede ejecutar scripts de validaciÃ³n, leer los errores y ajustar los datos o el script de transformaciÃ³n. Es especialmente Ãºtil para CSV malformados, JSON inconsistentes o migraciones de bases de datos.</p>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m24-t4-p2">Define assertions claras: "ningÃºn campo email puede ser null", "todos los timestamps deben estar en ISO 8601", "ninguna fila duplicada por ID". El loop ejecuta la validaciÃ³n, identifica las infracciones y las corrige hasta que se cumplan las assertions.</p>
+<p class="text-neutral-300 mb-4 leading-relaxed" data-ARCKHê-block="m24-t4-p1">Procesar datasets es iterativo por naturaleza: analizar, validar el schema, corregir inconsistencias y volver a validar. Claude puede ejecutar scripts de validaciêÂ³n, leer los errores y ajustar los datos o el script de transformaciêÂ³n. Es especialmente êÂºtil para CSV malformados, JSON inconsistentes o migraciones de bases de datos.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHê-block="m24-t4-p2">Define assertions claras: "ningêÂºn campo email puede ser null", "todos los timestamps deben estar en ISO 8601", "ninguna fila duplicada por ID". El loop ejecuta la validaciêÂ³n, identifica las infracciones y las corrige hasta que se cumplan las assertions.</p>
 <div class="bg-dark-800/60 border-l-4 border-blue-500 rounded-r-lg p-4 mb-6">
 <p class="text-sm text-neutral-300"><strong class="text-blue-400">En 1 frase:</strong> loop de datos = analiza, valida, corrige y vuelve a validar. Las assertions claras son el criterio de parada.</p>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-blue-500/20 border border-blue-500/30 text-blue-400 hover:bg-blue-500/30 transition-colors" data-ARCKHÉ-read-toggle="" type="button"><span aria-hidden="true" class="ARCKHÉ-read-icon">â—‹</span><span class="ARCKHÉ-read-label">Marcar como leÃ­do</span></button>
+<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-blue-500/20 border border-blue-500/30 text-blue-400 hover:bg-blue-500/30 transition-colors" data-ARCKHê-read-toggle="" type="button"><span aria-hidden="true" class="ARCKHê-read-icon">ê¢ââ¹</span><span class="ARCKHê-read-label">Marcar como leêÂ­do</span></button>
 </div>
 </section>
 <!-- TOPICO 5 -->
-<section class="mb-16" data-ARCKHÉ-topic="modulo-2-4#topico-5" id="topico-5">
+<section class="mb-16" data-ARCKHê-topic="modulo-2-4#topico-5" id="topico-5">
 <div class="flex items-center justify-between gap-4 mb-6">
-<div class="flex items-center space-x-4"><span class="flex items-center justify-center w-12 h-12 rounded-full bg-blue-500/20 text-blue-400 font-bold text-xl flex-shrink-0">5</span><h2 class="text-2xl font-bold">Loop de documentaciÃ³n</h2></div>
-<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm flex-shrink-0" data-ARCKHÉ-doubt-toggle="" title="Marcar este tema como duda" type="button"><span aria-hidden="true">?</span><span class="hidden sm:inline">Tengo una duda</span></button>
+<div class="flex items-center space-x-4"><span class="flex items-center justify-center w-12 h-12 rounded-full bg-blue-500/20 text-blue-400 font-bold text-xl flex-shrink-0">5</span><h2 class="text-2xl font-bold">Loop de documentaciêÂ³n</h2></div>
+<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm flex-shrink-0" data-ARCKHê-doubt-toggle="" title="Marcar este tema como duda" type="button"><span aria-hidden="true">?</span><span class="hidden sm:inline">Tengo una duda</span></button>
 </div>
 <div class="bg-primary/10 border border-primary/30 rounded-xl p-5 mb-6">
-<p class="text-neutral-200"><strong class="text-primary">ImagÃ­nalo asÃ­:</strong> La documentaciÃ³n es como pintar: si pintas la mitad de la pared, queda peor que si no pintas nada. El loop de documentaciÃ³n garantiza que todo sea coherente.</p>
+<p class="text-neutral-200"><strong class="text-primary">ImagêÂ­nalo asêÂ­:</strong> La documentaciêÂ³n es como pintar: si pintas la mitad de la pared, queda peor que si no pintas nada. El loop de documentaciêÂ³n garantiza que todo sea coherente.</p>
 </div>
-<p class="text-neutral-300 mb-4 leading-relaxed" data-ARCKHÉ-block="m24-t5-p1">Generar y actualizar la documentaciÃ³n es una tarea que los humanos posponen eternamente. El loop ideal: "actualiza los docstrings de todas las funciones pÃºblicas en src/, valida que los ejemplos compilen y que los enlaces internos no estÃ©n rotos. Repite hasta que todo sea coherente".</p>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m24-t5-p2">Combina herramientas de validaciÃ³n: verificadores de enlaces, generadores de documentaciÃ³n (pydoc, typedoc) y ejecutores de ejemplos. Claude puede ejecutar estos validadores como criterio para detenerse: "detente cuando el verificador de enlaces devuelva cero enlaces rotos".</p>
+<p class="text-neutral-300 mb-4 leading-relaxed" data-ARCKHê-block="m24-t5-p1">Generar y actualizar la documentaciêÂ³n es una tarea que los humanos posponen eternamente. El loop ideal: "actualiza los docstrings de todas las funciones pêÂºblicas en src/, valida que los ejemplos compilen y que los enlaces internos no estêÂ©n rotos. Repite hasta que todo sea coherente".</p>
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHê-block="m24-t5-p2">Combina herramientas de validaciêÂ³n: verificadores de enlaces, generadores de documentaciêÂ³n (pydoc, typedoc) y ejecutores de ejemplos. Claude puede ejecutar estos validadores como criterio para detenerse: "detente cuando el verificador de enlaces devuelva cero enlaces rotos".</p>
 <div class="bg-dark-800/60 border-l-4 border-blue-500 rounded-r-lg p-4 mb-6">
-<p class="text-sm text-neutral-300"><strong class="text-blue-400">En 1 frase:</strong> loop de documentaciÃ³n = genera, valida los enlaces y ejemplos, corrige y repite. DocumentaciÃ³n viva.</p>
+<p class="text-sm text-neutral-300"><strong class="text-blue-400">En 1 frase:</strong> loop de documentaciêÂ³n = genera, valida los enlaces y ejemplos, corrige y repite. DocumentaciêÂ³n viva.</p>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-blue-500/20 border border-blue-500/30 text-blue-400 hover:bg-blue-500/30 transition-colors" data-ARCKHÉ-read-toggle="" type="button"><span aria-hidden="true" class="ARCKHÉ-read-icon">â—‹</span><span class="ARCKHÉ-read-label">Marcar como leÃ­do</span></button>
+<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-blue-500/20 border border-blue-500/30 text-blue-400 hover:bg-blue-500/30 transition-colors" data-ARCKHê-read-toggle="" type="button"><span aria-hidden="true" class="ARCKHê-read-icon">ê¢ââ¹</span><span class="ARCKHê-read-label">Marcar como leêÂ­do</span></button>
 </div>
 </section>
 <!-- TOPICO 6 -->
-<section class="mb-16" data-ARCKHÉ-topic="modulo-2-4#topico-6" id="topico-6">
+<section class="mb-16" data-ARCKHê-topic="modulo-2-4#topico-6" id="topico-6">
 <div class="flex items-center justify-between gap-4 mb-6">
 <div class="flex items-center space-x-4"><span class="flex items-center justify-center w-12 h-12 rounded-full bg-blue-500/20 text-blue-400 font-bold text-xl flex-shrink-0">6</span><h2 class="text-2xl font-bold">Loop compuesto</h2></div>
-<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm flex-shrink-0" data-ARCKHÉ-doubt-toggle="" title="Marcar este tema como duda" type="button"><span aria-hidden="true">?</span><span class="hidden sm:inline">Tengo una duda</span></button>
+<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm flex-shrink-0" data-ARCKHê-doubt-toggle="" title="Marcar este tema como duda" type="button"><span aria-hidden="true">?</span><span class="hidden sm:inline">Tengo una duda</span></button>
 </div>
 <div class="bg-primary/10 border border-primary/30 rounded-xl p-5 mb-6">
-<p class="text-neutral-200"><strong class="text-primary">ImagÃ­nalo asÃ­:</strong> El gran final: no solo pasan las pruebas, sino que tambiÃ©n el lint estÃ¡ limpio, los types son correctos Y el build funciona. Cuatro puertas de salida, todas en verde.</p>
+<p class="text-neutral-200"><strong class="text-primary">ImagêÂ­nalo asêÂ­:</strong> El gran final: no solo pasan las pruebas, sino que tambiêÂ©n el lint estêÂ¡ limpio, los types son correctos Y el build funciona. Cuatro puertas de salida, todas en verde.</p>
 </div>
-<p class="text-neutral-300 mb-4 leading-relaxed" data-ARCKHÉ-block="m24-t6-p1">El loop compuesto combina varios criterios: "repite hasta que (1) pytest pase, (2) eslint devuelva cero errores, (3) tsc --noEmit pase y (4) npm run build termine correctamente". Es lo mÃ¡s parecido a ejecutar un pipeline de CI localmente.</p>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m24-t6-p2">El orden de los criterios importa: empieza por los mÃ¡s rÃ¡pidos (lint) y termina por los mÃ¡s lentos (build). Esto ahorra tokens porque los errores rÃ¡pidos se corrigen primero, sin perder tiempo ejecutando todo el build para descubrir un error de formato.</p>
+<p class="text-neutral-300 mb-4 leading-relaxed" data-ARCKHê-block="m24-t6-p1">El loop compuesto combina varios criterios: "repite hasta que (1) pytest pase, (2) eslint devuelva cero errores, (3) tsc --noEmit pase y (4) npm run build termine correctamente". Es lo mêÂ¡s parecido a ejecutar un pipeline de CI localmente.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHê-block="m24-t6-p2">El orden de los criterios importa: empieza por los mêÂ¡s rêÂ¡pidos (lint) y termina por los mêÂ¡s lentos (build). Esto ahorra tokens porque los errores rêÂ¡pidos se corrigen primero, sin perder tiempo ejecutando todo el build para descubrir un error de formato.</p>
 <div class="bg-dark-800/60 border-l-4 border-blue-500 rounded-r-lg p-4 mb-6">
-<p class="text-sm text-neutral-300"><strong class="text-blue-400">En 1 frase:</strong> loop compuesto = varios criterios combinados. Empieza por el mÃ¡s rÃ¡pido y termina por el mÃ¡s lento.</p>
+<p class="text-sm text-neutral-300"><strong class="text-blue-400">En 1 frase:</strong> loop compuesto = varios criterios combinados. Empieza por el mêÂ¡s rêÂ¡pido y termina por el mêÂ¡s lento.</p>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-blue-500/20 border border-blue-500/30 text-blue-400 hover:bg-blue-500/30 transition-colors" data-ARCKHÉ-read-toggle="" type="button"><span aria-hidden="true" class="ARCKHÉ-read-icon">â—‹</span><span class="ARCKHÉ-read-label">Marcar como leÃ­do</span></button>
+<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-blue-500/20 border border-blue-500/30 text-blue-400 hover:bg-blue-500/30 transition-colors" data-ARCKHê-read-toggle="" type="button"><span aria-hidden="true" class="ARCKHê-read-icon">ê¢ââ¹</span><span class="ARCKHê-read-label">Marcar como leêÂ­do</span></button>
 </div>
 </section>
 <div class="copybox bg-dark-900 border border-blue-500/30 rounded-xl overflow-hidden mb-6">
@@ -309,30 +309,30 @@ Rode tsc apos cada arquivo." --allowedTools Edit,Bash,Read</pre>
 <!-- RESUMO -->
 <section class="mb-12">
 <div class="bg-gradient-to-br from-blue-900/40 via-dark-800 to-dark-800 rounded-xl border border-blue-500/30 p-8">
-<h2 class="text-2xl font-bold mb-6">Resumen del mÃ³dulo</h2>
+<h2 class="text-2xl font-bold mb-6">Resumen del mêÂ³dulo</h2>
 <div class="space-y-4 mb-8">
-<div class="flex items-start space-x-3"><span class="text-blue-400 mt-1">âœ“</span><div><strong class="text-white">Loop de pruebas (corregir, probar, corregir)</strong><span class="text-neutral-400"> â€” loop de pruebas = ejecuta, lee el error, corrige y repite. El pattern mÃ¡s Ãºtil del loop.</span></div></div>
-<div class="flex items-start space-x-3"><span class="text-blue-400 mt-1">âœ“</span><div><strong class="text-white">Loop de lint/formato</strong><span class="text-neutral-400"> â€” lint loop = ejecuta, corrige style issues y vuelve a ejecutar. No cambies la lÃ³gica, solo el formato.</span></div></div>
-<div class="flex items-start space-x-3"><span class="text-blue-400 mt-1">âœ“</span><div><strong class="text-white">Loop de migraciÃ³n</strong><span class="text-neutral-400"> â€” migra un archivo a la vez y valida entre cada uno. Un commit granular facilita el rollback.</span></div></div>
-<div class="flex items-start space-x-3"><span class="text-blue-400 mt-1">âœ“</span><div><strong class="text-white">Loop de datos</strong><span class="text-neutral-400"> â€” loop de datos = parsea, valida, corrige y vuelve a validar. Las assertions claras son el crite.</span></div></div>
+<div class="flex items-start space-x-3"><span class="text-blue-400 mt-1">ê¢Åâ</span><div><strong class="text-white">Loop de pruebas (corregir, probar, corregir)</strong><span class="text-neutral-400"> ê¢â¬â loop de pruebas = ejecuta, lee el error, corrige y repite. El pattern mêÂ¡s êÂºtil del loop.</span></div></div>
+<div class="flex items-start space-x-3"><span class="text-blue-400 mt-1">ê¢Åâ</span><div><strong class="text-white">Loop de lint/formato</strong><span class="text-neutral-400"> ê¢â¬â lint loop = ejecuta, corrige style issues y vuelve a ejecutar. No cambies la lêÂ³gica, solo el formato.</span></div></div>
+<div class="flex items-start space-x-3"><span class="text-blue-400 mt-1">ê¢Åâ</span><div><strong class="text-white">Loop de migraciêÂ³n</strong><span class="text-neutral-400"> ê¢â¬â migra un archivo a la vez y valida entre cada uno. Un commit granular facilita el rollback.</span></div></div>
+<div class="flex items-start space-x-3"><span class="text-blue-400 mt-1">ê¢Åâ</span><div><strong class="text-white">Loop de datos</strong><span class="text-neutral-400"> ê¢â¬â loop de datos = parsea, valida, corrige y vuelve a validar. Las assertions claras son el crite.</span></div></div>
 </div>
-<div class="bg-dark-800/50 rounded-lg p-4 mb-8"><h3 class="font-semibold text-blue-400 mb-2">Siguiente mÃ³dulo:</h3><p class="text-neutral-300">2-5 â€” Combinando Plan + Loop: el pipeline completo para tareas complejas.</p></div>
-<div class="flex flex-col sm:flex-row gap-4"><a class="flex-1 text-center px-6 py-3 bg-dark-700 text-neutral-300 rounded-lg font-semibold hover:bg-dark-600 transition-colors" href="index.html">Volver a la ruta</a><a class="flex-1 text-center px-6 py-3 bg-blue-600 text-white rounded-lg font-semibold hover:bg-blue-500 transition-colors" href="modulo-2-5.html">Siguiente mÃ³dulo</a></div>
+<div class="bg-dark-800/50 rounded-lg p-4 mb-8"><h3 class="font-semibold text-blue-400 mb-2">Siguiente mêÂ³dulo:</h3><p class="text-neutral-300">2-5 ê¢â¬â Combinando Plan + Loop: el pipeline completo para tareas complejas.</p></div>
+<div class="flex flex-col sm:flex-row gap-4"><a class="flex-1 text-center px-6 py-3 bg-dark-700 text-neutral-300 rounded-lg font-semibold hover:bg-dark-600 transition-colors" href="index.html">Volver a la ruta</a><a class="flex-1 text-center px-6 py-3 bg-blue-600 text-white rounded-lg font-semibold hover:bg-blue-500 transition-colors" href="modulo-2-5.html">Siguiente mêÂ³dulo</a></div>
 </div>
 </section>
 </main>
 </div>
 </div>
-<footer class="border-t border-dark-600 py-8 mt-16"><div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-neutral-500 text-sm"><p>Claude Code â€” TransiciÃ³n a Claude Code Â· <a class="text-sky-400 hover:text-sky-300" href="https://ARCKHÉ AI" target="_blank">ARCKHÉ AI</a></p></div></footer>
+<footer class="border-t border-dark-600 py-8 mt-16"><div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-neutral-500 text-sm"><p>Claude Code ê¢â¬â TransiciêÂ³n a Claude Code êÂ· <a class="text-sky-400 hover:text-sky-300" href="https://ARCKHê AI" target="_blank">ARCKHê AI</a></p></div></footer>
 <script>
     function toggleTopic(button){ const ti=button.closest('.topic-item'); if(!ti)return; const e=ti.querySelector('.topic-explanation'); if(e){e.classList.toggle('active'); button.setAttribute('aria-expanded', e.classList.contains('active'));} }
-    (function(){ const tt=document.getElementById('theme-toggle'),di=document.getElementById('theme-toggle-dark-icon'),li=document.getElementById('theme-toggle-light-icon'),h=document.documentElement; function s(){ if(h.classList.contains('dark')){li.classList.remove('hidden');di.classList.add('hidden');}else{di.classList.remove('hidden');li.classList.add('hidden');} } s(); tt&&tt.addEventListener('click',function(){h.classList.toggle('dark');var d=h.classList.contains('dark');h.style.colorScheme=d?'dark':'light';try{var p=JSON.parse(localStorage.getItem('ARCKHÉ.prefs')||'{}');p.theme=d?'ARCKHÉ-dark':'claro';localStorage.setItem('ARCKHÉ.prefs',JSON.stringify(p));localStorage.setItem('theme',d?'dark':'light');}catch(e){}s();}); })();
+    (function(){ const tt=document.getElementById('theme-toggle'),di=document.getElementById('theme-toggle-dark-icon'),li=document.getElementById('theme-toggle-light-icon'),h=document.documentElement; function s(){ if(h.classList.contains('dark')){li.classList.remove('hidden');di.classList.add('hidden');}else{di.classList.remove('hidden');li.classList.add('hidden');} } s(); tt&&tt.addEventListener('click',function(){h.classList.toggle('dark');var d=h.classList.contains('dark');h.style.colorScheme=d?'dark':'light';try{var p=JSON.parse(localStorage.getItem('ARCKHê.prefs')||'{}');p.theme=d?'ARCKHê-dark':'claro';localStorage.setItem('ARCKHê.prefs',JSON.stringify(p));localStorage.setItem('theme',d?'dark':'light');}catch(e){}s();}); })();
     function copyBox(btn){ try{ var pre=btn.closest('.copybox').querySelector('pre'); navigator.clipboard.writeText(pre.textContent); var o=btn.textContent; btn.textContent='copiado'; setTimeout(function(){btn.textContent=o;},1500);}catch(e){} }
   </script>
 <script src="../../../assets/learn.js"></script>
 <script>
     document.addEventListener('DOMContentLoaded', function () {
-      if (window.ARCKHÉ && typeof ARCKHÉ.init === 'function') ARCKHÉ.init();
+      if (window.ARCKHê && typeof ARCKHê.init === 'function') ARCKHê.init();
     });
   </script>
 </body>

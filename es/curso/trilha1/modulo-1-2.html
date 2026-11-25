@@ -4,28 +4,28 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<meta content="claude-code" name="ARCKHÉ-course"/>
+<meta content="claude-code" name="ARCKHê-course"/>
 <title>1.2 Navega el CLI como un pro | Claude Code</title>
 <script>
   (function () {
     try {
       var html = document.documentElement;
-      var DEF = { theme: 'ARCKHÉ-dark', font: 'inter', fontScale: 100, lineWidth: 68, leading: 1.7, accent: 'emerald' };
+      var DEF = { theme: 'ARCKHê-dark', font: 'inter', fontScale: 100, lineWidth: 68, leading: 1.7, accent: 'emerald' };
       function clone(o){var r={};for(var x in o)r[x]=o[x];return r;}
       var p = clone(DEF);
       try {
-        var raw = localStorage.getItem('ARCKHÉ.prefs');
+        var raw = localStorage.getItem('ARCKHê.prefs');
         if (raw) { var parsed = JSON.parse(raw); if (parsed && typeof parsed==='object'){ for (var k in DEF) if (parsed[k]!=null) p[k]=parsed[k]; } }
-        else { var legacy = localStorage.getItem('theme'); if (legacy==='light') p.theme='claro'; else if (legacy==='dark') p.theme='ARCKHÉ-dark'; }
+        else { var legacy = localStorage.getItem('theme'); if (legacy==='light') p.theme='claro'; else if (legacy==='dark') p.theme='ARCKHê-dark'; }
       } catch (e) { p = clone(DEF); }
-      var THEMES = { 'ARCKHÉ-dark':{dark:true,attr:null,cs:'dark'},'claro':{dark:false,attr:null,cs:'light'},'sepia':{dark:false,attr:'sepia',cs:'light'},'foco':{dark:null,attr:'foco',cs:null},'contraste':{dark:true,attr:'contraste',cs:'dark'} };
-      var t = THEMES[p.theme] || THEMES['ARCKHÉ-dark'];
+      var THEMES = { 'ARCKHê-dark':{dark:true,attr:null,cs:'dark'},'claro':{dark:false,attr:null,cs:'light'},'sepia':{dark:false,attr:'sepia',cs:'light'},'foco':{dark:null,attr:'foco',cs:null},'contraste':{dark:true,attr:'contraste',cs:'dark'} };
+      var t = THEMES[p.theme] || THEMES['ARCKHê-dark'];
       if (t.dark===true) html.classList.add('dark'); else if (t.dark===false) html.classList.remove('dark');
       if (t.attr) html.setAttribute('data-theme', t.attr); else html.removeAttribute('data-theme');
       html.style.colorScheme = (t.cs ? t.cs : (html.classList.contains('dark')?'dark':'light'));
       html.setAttribute('data-font', p.font||'inter'); html.setAttribute('data-accent', p.accent||'emerald');
       var s = html.style, scale=(+p.fontScale||100);
-      s.setProperty('--ARCKHÉ-font-scale',(scale/100).toString()); s.setProperty('font-size',scale+'%');
+      s.setProperty('--ARCKHê-font-scale',(scale/100).toString()); s.setProperty('font-size',scale+'%');
       s.setProperty('--measure',(+p.lineWidth||68)+'ch'); s.setProperty('--lh-body',(+p.leading||1.7).toString());
     } catch (err) { try { document.documentElement.classList.add('dark'); document.documentElement.style.colorScheme='dark'; } catch(e){} }
   })();
@@ -36,8 +36,8 @@
   </script>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
 <link href="../../../assets/learn.css" rel="stylesheet"/>
-<script data-ARCKHÉ-manifest="" type="application/json">
-{"course":"claude-code","tracks":[{"n":"1","title":"CLI e ConfiguraÃ§Ã£o","modules":[{"id":"1-1","title":"InstalaÃ§Ã£o e Primeiro Comando","topics":6,"href":"curso/trilha1/modulo-1-1.html"},{"id":"1-2","title":"Navegando o CLI como um Pro","topics":6,"href":"curso/trilha1/modulo-1-2.html"},{"id":"1-3","title":"CLAUDE.md â€” O CÃ©rebro do Projeto","topics":6,"href":"curso/trilha1/modulo-1-3.html"},{"id":"1-4","title":"ConfiguraÃ§Ã£o AvanÃ§ada","topics":6,"href":"curso/trilha1/modulo-1-4.html"},{"id":"1-5","title":"Memory e Contexto Persistente","topics":6,"href":"curso/trilha1/modulo-1-5.html"},{"id":"1-6","title":"Seu Workflow Pessoal","topics":6,"href":"curso/trilha1/modulo-1-6.html"}]},{"n":"2","title":"Plan e Loop Modes","modules":[{"id":"2-1","title":"Plan Mode â€” Pense Antes de Codar","topics":6,"href":"curso/trilha2/modulo-2-1.html"},{"id":"2-2","title":"Planos que Funcionam","topics":6,"href":"curso/trilha2/modulo-2-2.html"},{"id":"2-3","title":"Loop Mode â€” AutomaÃ§Ã£o Iterativa","topics":6,"href":"curso/trilha2/modulo-2-3.html"},{"id":"2-4","title":"Patterns de Loop na PrÃ¡tica","topics":6,"href":"curso/trilha2/modulo-2-4.html"},{"id":"2-5","title":"Combinando Plan + Loop","topics":6,"href":"curso/trilha2/modulo-2-5.html"},{"id":"2-6","title":"Agentic Coding â€” O Novo Normal","topics":6,"href":"curso/trilha2/modulo-2-6.html"}]},{"n":"3","title":"MCP Servers","modules":[{"id":"3-1","title":"O que sÃ£o MCP Servers","topics":6,"href":"curso/trilha3/modulo-3-1.html"},{"id":"3-2","title":"Seus Primeiros MCPs","topics":6,"href":"curso/trilha3/modulo-3-2.html"},{"id":"3-3","title":"MCPs de Produtividade","topics":6,"href":"curso/trilha3/modulo-3-3.html"},{"id":"3-4","title":"MCPs de Database e APIs","topics":6,"href":"curso/trilha3/modulo-3-4.html"},{"id":"3-5","title":"Criando seu PrÃ³prio MCP Server","topics":6,"href":"curso/trilha3/modulo-3-5.html"},{"id":"3-6","title":"Ecossistema e Marketplace","topics":6,"href":"curso/trilha3/modulo-3-6.html"}]},{"n":"4","title":"Subagentes e Git","modules":[{"id":"4-1","title":"Subagentes â€” Conceitos","topics":6,"href":"curso/trilha4/modulo-4-1.html"},{"id":"4-2","title":"Paralelismo Real","topics":6,"href":"curso/trilha4/modulo-4-2.html"},{"id":"4-3","title":"Patterns de Multi-Agent","topics":6,"href":"curso/trilha4/modulo-4-3.html"},{"id":"4-4","title":"Git com IA â€” Versionamento","topics":6,"href":"curso/trilha4/modulo-4-4.html"},{"id":"4-5","title":"Pull Requests e Code Review","topics":6,"href":"curso/trilha4/modulo-4-5.html"},{"id":"4-6","title":"CI/CD e GitHub Actions","topics":6,"href":"curso/trilha4/modulo-4-6.html"}]},{"n":"5","title":"Python e Ship","modules":[{"id":"5-1","title":"Python + Claude Code","topics":6,"href":"curso/trilha5/modulo-5-1.html"},{"id":"5-2","title":"AutomaÃ§Ã£o de Scripts","topics":6,"href":"curso/trilha5/modulo-5-2.html"},{"id":"5-3","title":"FastAPI e Web Services","topics":6,"href":"curso/trilha5/modulo-5-3.html"},{"id":"5-4","title":"Testing Automatizado","topics":6,"href":"curso/trilha5/modulo-5-4.html"},{"id":"5-5","title":"Deploy e Infraestrutura","topics":6,"href":"curso/trilha5/modulo-5-5.html"},{"id":"5-6","title":"Ship Your Product","topics":6,"href":"curso/trilha5/modulo-5-6.html"}]}]}
+<script data-ARCKHê-manifest="" type="application/json">
+{"course":"claude-code","tracks":[{"n":"1","title":"CLI e ConfiguraêÂ§êÂ£o","modules":[{"id":"1-1","title":"InstalaêÂ§êÂ£o e Primeiro Comando","topics":6,"href":"curso/trilha1/modulo-1-1.html"},{"id":"1-2","title":"Navegando o CLI como um Pro","topics":6,"href":"curso/trilha1/modulo-1-2.html"},{"id":"1-3","title":"CLAUDE.md ê¢â¬â O CêÂ©rebro do Projeto","topics":6,"href":"curso/trilha1/modulo-1-3.html"},{"id":"1-4","title":"ConfiguraêÂ§êÂ£o AvanêÂ§ada","topics":6,"href":"curso/trilha1/modulo-1-4.html"},{"id":"1-5","title":"Memory e Contexto Persistente","topics":6,"href":"curso/trilha1/modulo-1-5.html"},{"id":"1-6","title":"Seu Workflow Pessoal","topics":6,"href":"curso/trilha1/modulo-1-6.html"}]},{"n":"2","title":"Plan e Loop Modes","modules":[{"id":"2-1","title":"Plan Mode ê¢â¬â Pense Antes de Codar","topics":6,"href":"curso/trilha2/modulo-2-1.html"},{"id":"2-2","title":"Planos que Funcionam","topics":6,"href":"curso/trilha2/modulo-2-2.html"},{"id":"2-3","title":"Loop Mode ê¢â¬â AutomaêÂ§êÂ£o Iterativa","topics":6,"href":"curso/trilha2/modulo-2-3.html"},{"id":"2-4","title":"Patterns de Loop na PrêÂ¡tica","topics":6,"href":"curso/trilha2/modulo-2-4.html"},{"id":"2-5","title":"Combinando Plan + Loop","topics":6,"href":"curso/trilha2/modulo-2-5.html"},{"id":"2-6","title":"Agentic Coding ê¢â¬â O Novo Normal","topics":6,"href":"curso/trilha2/modulo-2-6.html"}]},{"n":"3","title":"MCP Servers","modules":[{"id":"3-1","title":"O que sêÂ£o MCP Servers","topics":6,"href":"curso/trilha3/modulo-3-1.html"},{"id":"3-2","title":"Seus Primeiros MCPs","topics":6,"href":"curso/trilha3/modulo-3-2.html"},{"id":"3-3","title":"MCPs de Produtividade","topics":6,"href":"curso/trilha3/modulo-3-3.html"},{"id":"3-4","title":"MCPs de Database e APIs","topics":6,"href":"curso/trilha3/modulo-3-4.html"},{"id":"3-5","title":"Criando seu PrêÂ³prio MCP Server","topics":6,"href":"curso/trilha3/modulo-3-5.html"},{"id":"3-6","title":"Ecossistema e Marketplace","topics":6,"href":"curso/trilha3/modulo-3-6.html"}]},{"n":"4","title":"Subagentes e Git","modules":[{"id":"4-1","title":"Subagentes ê¢â¬â Conceitos","topics":6,"href":"curso/trilha4/modulo-4-1.html"},{"id":"4-2","title":"Paralelismo Real","topics":6,"href":"curso/trilha4/modulo-4-2.html"},{"id":"4-3","title":"Patterns de Multi-Agent","topics":6,"href":"curso/trilha4/modulo-4-3.html"},{"id":"4-4","title":"Git com IA ê¢â¬â Versionamento","topics":6,"href":"curso/trilha4/modulo-4-4.html"},{"id":"4-5","title":"Pull Requests e Code Review","topics":6,"href":"curso/trilha4/modulo-4-5.html"},{"id":"4-6","title":"CI/CD e GitHub Actions","topics":6,"href":"curso/trilha4/modulo-4-6.html"}]},{"n":"5","title":"Python e Ship","modules":[{"id":"5-1","title":"Python + Claude Code","topics":6,"href":"curso/trilha5/modulo-5-1.html"},{"id":"5-2","title":"AutomaêÂ§êÂ£o de Scripts","topics":6,"href":"curso/trilha5/modulo-5-2.html"},{"id":"5-3","title":"FastAPI e Web Services","topics":6,"href":"curso/trilha5/modulo-5-3.html"},{"id":"5-4","title":"Testing Automatizado","topics":6,"href":"curso/trilha5/modulo-5-4.html"},{"id":"5-5","title":"Deploy e Infraestrutura","topics":6,"href":"curso/trilha5/modulo-5-5.html"},{"id":"5-6","title":"Ship Your Product","topics":6,"href":"curso/trilha5/modulo-5-6.html"}]}]}
 </script>
 <style>
     body { font-family: 'Inter', sans-serif; }
@@ -83,15 +83,15 @@
     html:not(.dark) svg[role="img"] { filter: saturate(0.82) brightness(0.96); }
   </style>
 <link href="https://linnoff88-dev.github.io/ hreflang="pt-BR" rel="alternate"/><link href="https://linnoff88-dev.github.io/ hreflang="en" rel="alternate"/><link href="https://linnoff88-dev.github.io/ hreflang="es" rel="alternate"/></head>
-<body class="bg-dark-900 text-neutral-100 min-h-screen"><div class="ARCKHÉ-lang" style="position:fixed;right:14px;bottom:14px;z-index:9999;display:flex;gap:2px;padding:4px;border-radius:10px;background:rgba(12,12,16,.82);border:1px solid rgba(226,162,59,.45);font:600 12px/1 Sora,Inter,system-ui,sans-serif;backdrop-filter:blur(8px)" translate="no"><a href="../../../curso/trilha1/modulo-1-2.html" hreflang="pt-BR" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">PT</a><a href="../../../en/curso/trilha1/modulo-1-2.html" hreflang="en" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">EN</a><a href="modulo-1-2.html" hreflang="es" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#1a1206;background:#E2A23B">ES</a></div>
+<body class="bg-dark-900 text-neutral-100 min-h-screen"><div class="ARCKHê-lang" style="position:fixed;right:14px;bottom:14px;z-index:9999;display:flex;gap:2px;padding:4px;border-radius:10px;background:rgba(12,12,16,.82);border:1px solid rgba(226,162,59,.45);font:600 12px/1 Sora,Inter,system-ui,sans-serif;backdrop-filter:blur(8px)" translate="no"><a href="../../../curso/trilha1/modulo-1-2.html" hreflang="pt-BR" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">PT</a><a href="../../../en/curso/trilha1/modulo-1-2.html" hreflang="en" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">EN</a><a href="modulo-1-2.html" hreflang="es" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#1a1206;background:#E2A23B">ES</a></div>
 <a class="sr-only focus:not-sr-only focus:absolute focus:z-50 focus:top-2 focus:left-2 focus:px-4 focus:py-2 focus:bg-dark-800 focus:text-emerald-400 focus:rounded-lg" href="#conteudo">Saltar al contenido</a>
 <nav class="sticky top-0 z-50 bg-dark-900/95 backdrop-blur-sm border-b border-dark-600">
 <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
 <div class="flex justify-between items-center h-14">
 <div class="flex items-center space-x-4">
-<a class="flex items-center space-x-2 text-yellow-400 hover:text-yellow-300" href="../../index.html"><span class="text-2xl">ðŸ¤–</span><span class="font-bold text-lg hidden sm:inline">Claude Code</span></a>
+<a class="flex items-center space-x-2 text-yellow-400 hover:text-yellow-300" href="../../index.html"><span class="text-2xl">ê°Å¸Â¤â</span><span class="font-bold text-lg hidden sm:inline">Claude Code</span></a>
 <span class="text-neutral-600">|</span>
-<a class="text-sky-400 hover:text-sky-300 text-sm font-medium" href="https://ARCKHÉ AI" target="_blank">ARCKHÉ AI</a>
+<a class="text-sky-400 hover:text-sky-300 text-sm font-medium" href="https://ARCKHê AI" target="_blank">ARCKHê AI</a>
 </div>
 <div class="flex items-center space-x-1 sm:space-x-2">
 <a class="px-3 py-1.5 rounded-lg text-sm font-semibold text-emerald-400 bg-emerald-500/10" href="index.html"><span class="sm:hidden">T1</span><span class="hidden sm:inline">CLI</span></a>
@@ -99,7 +99,7 @@
 <a class="px-3 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-purple-400 hover:bg-purple-500/10 transition-colors" href="../trilha3/index.html"><span class="sm:hidden">T3</span><span class="hidden sm:inline">MCP</span></a>
 <a class="px-3 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-amber-400 hover:bg-amber-500/10 transition-colors" href="../trilha4/index.html"><span class="sm:hidden">T4</span><span class="hidden sm:inline">Agentes</span></a>
 <a class="px-3 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-teal-400 hover:bg-teal-500/10 transition-colors" href="../trilha5/index.html"><span class="sm:hidden">T5</span><span class="hidden sm:inline">Python</span></a>
-<button class="hidden sm:inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-sm text-neutral-300 hover:text-neutral-100 hover:bg-dark-700 transition-colors ml-1" data-ARCKHÉ-journey-open="" type="button"><span aria-hidden="true">â—·</span><span>Mi recorrido</span><span aria-hidden="true" class="ARCKHÉ-journey-badge hidden"></span></button>
+<button class="hidden sm:inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-sm text-neutral-300 hover:text-neutral-100 hover:bg-dark-700 transition-colors ml-1" data-ARCKHê-journey-open="" type="button"><span aria-hidden="true">ê¢âÂ·</span><span>Mi recorrido</span><span aria-hidden="true" class="ARCKHê-journey-badge hidden"></span></button>
 <button aria-label="Cambiar tema" class="p-2 rounded-lg bg-dark-700 hover:bg-dark-600 transition-colors ml-1" id="theme-toggle">
 <svg class="hidden w-5 h-5 text-neutral-300" fill="currentColor" id="theme-toggle-dark-icon" viewbox="0 0 20 20"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg>
 <svg class="hidden w-5 h-5 text-neutral-300" fill="currentColor" id="theme-toggle-light-icon" viewbox="0 0 20 20"><path clip-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" fill-rule="evenodd"></path></svg>
@@ -108,82 +108,82 @@
 </div>
 </div>
 </nav>
-<nav aria-label="Ruta de navegaciÃ³n" class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+<nav aria-label="Ruta de navegaciêÂ³n" class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
 <div class="flex items-center space-x-2 text-sm text-neutral-400">
 <a class="hover:text-emerald-400" href="../../index.html">Inicio</a><span>/</span>
 <a class="hover:text-emerald-400" href="index.html">Ruta 1</a><span>/</span>
-<span class="text-emerald-400">MÃ³dulo 1.2</span>
+<span class="text-emerald-400">MêÂ³dulo 1.2</span>
 </div>
 </nav>
 <header class="bg-gradient-to-br from-emerald-900/30 via-dark-800 to-dark-800 py-12 border-b border-dark-600">
 <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-<span class="inline-block px-3 py-1 bg-emerald-500/20 text-emerald-400 text-xs font-semibold rounded-full mb-4">MÃ“DULO 1.2</span>
-<h1 class="text-3xl sm:text-4xl font-bold mb-4">âŒ¨ï¸ Navegando el CLI como un pro</h1>
-<p class="text-lg text-neutral-400 max-w-3xl">Atajos de teclado, slash commands, modelo y contexto, sesiones, imÃ¡genes y pipes de Unix. Todo lo que distingue a un usuario bÃ¡sico de un power user de Claude Code.</p>
+<span class="inline-block px-3 py-1 bg-emerald-500/20 text-emerald-400 text-xs font-semibold rounded-full mb-4">MêâDULO 1.2</span>
+<h1 class="text-3xl sm:text-4xl font-bold mb-4">ê¢ÅÂ¨ê¯Â¸Â Navegando el CLI como un pro</h1>
+<p class="text-lg text-neutral-400 max-w-3xl">Atajos de teclado, slash commands, modelo y contexto, sesiones, imêÂ¡genes y pipes de Unix. Todo lo que distingue a un usuario bêÂ¡sico de un power user de Claude Code.</p>
 <div class="grid grid-cols-4 gap-4 mt-8 max-w-2xl">
 <div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-emerald-400">6</div><div class="text-xs text-neutral-400">Temas</div></div>
 <div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-emerald-400">~40</div><div class="text-xs text-neutral-400">Minutos</div></div>
 <div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-emerald-400">1.1</div><div class="text-xs text-neutral-400">Requisito previo</div></div>
-<div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-emerald-400">PrÃ¡ctico</div><div class="text-xs text-neutral-400">Tipo</div></div>
+<div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-emerald-400">PrêÂ¡ctico</div><div class="text-xs text-neutral-400">Tipo</div></div>
 </div>
 <div class="mt-6 max-w-2xl">
-<div aria-label="Progreso del mÃ³dulo 1.2" aria-valuemax="100" aria-valuemin="0" class="ARCKHÉ-meter flex items-center gap-3" data-ARCKHÉ-meter="modulo:1-2" role="progressbar">
+<div aria-label="Progreso del mêÂ³dulo 1.2" aria-valuemax="100" aria-valuemin="0" class="ARCKHê-meter flex items-center gap-3" data-ARCKHê-meter="modulo:1-2" role="progressbar">
 <span class="text-sm text-neutral-400">Progreso:</span>
-<span class="ARCKHÉ-meter-pct text-emerald-400 font-bold text-sm">0%</span>
-<span class="ARCKHÉ-meter-count text-xs text-neutral-500">0 de 6</span>
+<span class="ARCKHê-meter-pct text-emerald-400 font-bold text-sm">0%</span>
+<span class="ARCKHê-meter-count text-xs text-neutral-500">0 de 6</span>
 </div>
 </div>
 </div>
 </header>
 <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
 <div class="lg:grid lg:grid-cols-[230px_1fr] lg:gap-10">
-<nav aria-label="Ãndice de la pÃ¡gina" class="hidden lg:block sticky top-24 self-start" data-ARCKHÉ-toc="">
-<p class="text-sm text-neutral-400 mb-3">SecciÃ³n <span class="ARCKHÉ-toc-pos">1</span> de <span class="ARCKHÉ-toc-total">6</span></p>
+<nav aria-label="êÂndice de la pêÂ¡gina" class="hidden lg:block sticky top-24 self-start" data-ARCKHê-toc="">
+<p class="text-sm text-neutral-400 mb-3">SecciêÂ³n <span class="ARCKHê-toc-pos">1</span> de <span class="ARCKHê-toc-total">6</span></p>
 <ul class="space-y-1 text-sm">
-<li><a class="ARCKHÉ-toc-link block px-3 py-1.5 rounded-lg text-neutral-400 hover:text-emerald-400 hover:bg-emerald-500/10" href="#topico-1">1. Atajos de teclado</a></li>
-<li><a class="ARCKHÉ-toc-link block px-3 py-1.5 rounded-lg text-neutral-400 hover:text-emerald-400 hover:bg-emerald-500/10" href="#topico-2">2. Slash commands</a></li>
-<li><a class="ARCKHÉ-toc-link block px-3 py-1.5 rounded-lg text-neutral-400 hover:text-emerald-400 hover:bg-emerald-500/10" href="#topico-3">3. Modelo y contexto</a></li>
-<li><a class="ARCKHÉ-toc-link block px-3 py-1.5 rounded-lg text-neutral-400 hover:text-emerald-400 hover:bg-emerald-500/10" href="#topico-4">4. Sesiones y /resume</a></li>
-<li><a class="ARCKHÉ-toc-link block px-3 py-1.5 rounded-lg text-neutral-400 hover:text-emerald-400 hover:bg-emerald-500/10" href="#topico-5">5. ImÃ¡genes y capturas de pantalla</a></li>
-<li><a class="ARCKHÉ-toc-link block px-3 py-1.5 rounded-lg text-neutral-400 hover:text-emerald-400 hover:bg-emerald-500/10" href="#topico-6">6. Salida y pipes</a></li>
+<li><a class="ARCKHê-toc-link block px-3 py-1.5 rounded-lg text-neutral-400 hover:text-emerald-400 hover:bg-emerald-500/10" href="#topico-1">1. Atajos de teclado</a></li>
+<li><a class="ARCKHê-toc-link block px-3 py-1.5 rounded-lg text-neutral-400 hover:text-emerald-400 hover:bg-emerald-500/10" href="#topico-2">2. Slash commands</a></li>
+<li><a class="ARCKHê-toc-link block px-3 py-1.5 rounded-lg text-neutral-400 hover:text-emerald-400 hover:bg-emerald-500/10" href="#topico-3">3. Modelo y contexto</a></li>
+<li><a class="ARCKHê-toc-link block px-3 py-1.5 rounded-lg text-neutral-400 hover:text-emerald-400 hover:bg-emerald-500/10" href="#topico-4">4. Sesiones y /resume</a></li>
+<li><a class="ARCKHê-toc-link block px-3 py-1.5 rounded-lg text-neutral-400 hover:text-emerald-400 hover:bg-emerald-500/10" href="#topico-5">5. ImêÂ¡genes y capturas de pantalla</a></li>
+<li><a class="ARCKHê-toc-link block px-3 py-1.5 rounded-lg text-neutral-400 hover:text-emerald-400 hover:bg-emerald-500/10" href="#topico-6">6. Salida y pipes</a></li>
 </ul>
 </nav>
-<main class="ARCKHÉ-prose min-w-0" id="conteudo">
+<main class="ARCKHê-prose min-w-0" id="conteudo">
 <!-- TOPICO 1 -->
-<section class="mb-16" data-ARCKHÉ-topic="modulo-1-2#topico-1" id="topico-1">
+<section class="mb-16" data-ARCKHê-topic="modulo-1-2#topico-1" id="topico-1">
 <div class="flex items-center justify-between gap-4 mb-6">
-<div class="flex items-center space-x-4"><span class="flex items-center justify-center w-12 h-12 rounded-full bg-emerald-500/20 text-emerald-400 font-bold text-xl flex-shrink-0">1</span><h2 class="text-2xl font-bold">âš¡ Atajos de teclado esenciales</h2></div>
-<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm flex-shrink-0" data-ARCKHÉ-doubt-toggle="" title="Marcar este tema como duda" type="button"><span aria-hidden="true">?</span><span class="hidden sm:inline">Tengo una duda</span></button>
+<div class="flex items-center space-x-4"><span class="flex items-center justify-center w-12 h-12 rounded-full bg-emerald-500/20 text-emerald-400 font-bold text-xl flex-shrink-0">1</span><h2 class="text-2xl font-bold">ê¢Å¡Â¡ Atajos de teclado esenciales</h2></div>
+<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm flex-shrink-0" data-ARCKHê-doubt-toggle="" title="Marcar este tema como duda" type="button"><span aria-hidden="true">?</span><span class="hidden sm:inline">Tengo una duda</span></button>
 </div>
 <div class="bg-primary/10 border border-primary/30 rounded-xl p-5 mb-6">
-<p class="text-neutral-200"><strong class="text-primary">ðŸ§  ImagÃ­nalo asÃ­:</strong> los atajos de teclado en Claude Code son como los atajos en Vim. Al principio los ignoras; despuÃ©s de aprenderlos, no puedes vivir sin ellos. La diferencia es que aquÃ­ solo son 5-6 teclas que cubren todo.</p>
+<p class="text-neutral-200"><strong class="text-primary">ê°Å¸Â§Â  ImagêÂ­nalo asêÂ­:</strong> los atajos de teclado en Claude Code son como los atajos en Vim. Al principio los ignoras; despuêÂ©s de aprenderlos, no puedes vivir sin ellos. La diferencia es que aquêÂ­ solo son 5-6 teclas que cubren todo.</p>
 </div>
-<p class="text-neutral-300 mb-4 leading-relaxed" data-ARCKHÉ-block="m1-2-t1-p1">Dentro de la sesiÃ³n interactiva de Claude Code, algunas teclas tienen un comportamiento especial que acelera drÃ¡sticamente tu workflow. El secreto es que son <strong>pocas</strong>: cinco atajos cubren el 95% de la interacciÃ³n. Conocer estas cinco teclas transforma la experiencia de Â«escribir y esperarÂ» a Â«controlar el flujo con precisiÃ³nÂ». Es la diferencia entre conducir un auto automÃ¡tico y uno manual: en el automÃ¡tico quedas a merced de la IA; en el manual decides cuÃ¡ndo frenar, cuÃ¡ndo acelerar y cuÃ¡ndo retroceder.</p>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m1-2-t1-p2">El mÃ¡s importante de todos es el <strong class="text-emerald-400">Escape</strong>: cancela la operaciÃ³n actual y te devuelve al prompt limpio. Cuando Claude estÃ¡ editando un archivo y notas que va por el camino equivocado, Escape detiene todo. DespuÃ©s viene el <strong class="text-emerald-400">Tab</strong> para aceptar sugerencias del autocompletado, <strong class="text-emerald-400">Ctrl+C</strong> para interrumpir una generaciÃ³n larga que ya dio lo que tenÃ­a que dar, <strong class="text-emerald-400">Shift+Tab</strong> para rechazar una sugerencia, y <strong class="text-emerald-400">Enter doble</strong> para enviar mensajes de varias lÃ­neas. Con estos cinco, puedes navegar por cualquier sesiÃ³n.</p>
+<p class="text-neutral-300 mb-4 leading-relaxed" data-ARCKHê-block="m1-2-t1-p1">Dentro de la sesiêÂ³n interactiva de Claude Code, algunas teclas tienen un comportamiento especial que acelera drêÂ¡sticamente tu workflow. El secreto es que son <strong>pocas</strong>: cinco atajos cubren el 95% de la interacciêÂ³n. Conocer estas cinco teclas transforma la experiencia de êÂ«escribir y esperarêÂ» a êÂ«controlar el flujo con precisiêÂ³nêÂ». Es la diferencia entre conducir un auto automêÂ¡tico y uno manual: en el automêÂ¡tico quedas a merced de la IA; en el manual decides cuêÂ¡ndo frenar, cuêÂ¡ndo acelerar y cuêÂ¡ndo retroceder.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHê-block="m1-2-t1-p2">El mêÂ¡s importante de todos es el <strong class="text-emerald-400">Escape</strong>: cancela la operaciêÂ³n actual y te devuelve al prompt limpio. Cuando Claude estêÂ¡ editando un archivo y notas que va por el camino equivocado, Escape detiene todo. DespuêÂ©s viene el <strong class="text-emerald-400">Tab</strong> para aceptar sugerencias del autocompletado, <strong class="text-emerald-400">Ctrl+C</strong> para interrumpir una generaciêÂ³n larga que ya dio lo que tenêÂ­a que dar, <strong class="text-emerald-400">Shift+Tab</strong> para rechazar una sugerencia, y <strong class="text-emerald-400">Enter doble</strong> para enviar mensajes de varias lêÂ­neas. Con estos cinco, puedes navegar por cualquier sesiêÂ³n.</p>
 <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
 <div class="bg-emerald-900/20 rounded-xl border border-emerald-500/30 p-5">
-<h4 class="font-bold text-emerald-400 mb-3">âœ“ Atajos esenciales</h4>
+<h4 class="font-bold text-emerald-400 mb-3">ê¢Åâ Atajos esenciales</h4>
 <ul class="space-y-2 text-neutral-300 text-sm">
-<li>â€¢ <strong>Escape</strong> â€” cancela la acciÃ³n actual / vuelve al prompt</li>
-<li>â€¢ <strong>Tab</strong> â€” acepta sugerencia / autocompletado</li>
-<li>â€¢ <strong>Ctrl+C</strong> â€” interrumpe la generaciÃ³n en curso</li>
-<li>â€¢ <strong>Shift+Tab</strong> â€” rechaza la sugerencia</li>
-<li>â€¢ <strong>Enter</strong> doble â€” envÃ­a un mensaje de varias lÃ­neas</li>
+<li>ê¢â¬Â¢ <strong>Escape</strong> ê¢â¬â cancela la acciêÂ³n actual / vuelve al prompt</li>
+<li>ê¢â¬Â¢ <strong>Tab</strong> ê¢â¬â acepta sugerencia / autocompletado</li>
+<li>ê¢â¬Â¢ <strong>Ctrl+C</strong> ê¢â¬â interrumpe la generaciêÂ³n en curso</li>
+<li>ê¢â¬Â¢ <strong>Shift+Tab</strong> ê¢â¬â rechaza la sugerencia</li>
+<li>ê¢â¬Â¢ <strong>Enter</strong> doble ê¢â¬â envêÂ­a un mensaje de varias lêÂ­neas</li>
 </ul>
 </div>
 <div class="bg-dark-800 rounded-xl border border-dark-600 p-5">
-<h4 class="font-bold text-neutral-300 mb-3">â†’ Consejos de navegaciÃ³n</h4>
+<h4 class="font-bold text-neutral-300 mb-3">ê¢â â Consejos de navegaciêÂ³n</h4>
 <ul class="space-y-2 text-neutral-300 text-sm">
-<li>â€¢ <strong>Flecha hacia arriba</strong> â€” editar el Ãºltimo mensaje</li>
-<li>â€¢ <strong>Ctrl+L</strong> â€” limpiar la pantalla (sin perder el contexto)</li>
-<li>â€¢ <strong>/</strong> al inicio: abre slash commands</li>
-<li>â€¢ <strong>@</strong> â€” referenciar un archivo por nombre</li>
-<li>â€¢ Pega una imagen â€” anÃ¡lisis visual automÃ¡tico</li>
+<li>ê¢â¬Â¢ <strong>Flecha hacia arriba</strong> ê¢â¬â editar el êÂºltimo mensaje</li>
+<li>ê¢â¬Â¢ <strong>Ctrl+L</strong> ê¢â¬â limpiar la pantalla (sin perder el contexto)</li>
+<li>ê¢â¬Â¢ <strong>/</strong> al inicio: abre slash commands</li>
+<li>ê¢â¬Â¢ <strong>@</strong> ê¢â¬â referenciar un archivo por nombre</li>
+<li>ê¢â¬Â¢ Pega una imagen ê¢â¬â anêÂ¡lisis visual automêÂ¡tico</li>
 </ul>
 </div>
 </div>
 <div class="rounded-2xl border border-emerald-500/30 bg-dark-900/40 p-3 sm:p-4 mb-6 overflow-hidden">
-<svg aria-label="Mapa de teclas: Escape, Tab, Ctrl+C y Enter convergen en el control total de la sesiÃ³n" class="w-full h-auto" role="img" viewbox="0 0 1000 180">
+<svg aria-label="Mapa de teclas: Escape, Tab, Ctrl+C y Enter convergen en el control total de la sesiêÂ³n" class="w-full h-auto" role="img" viewbox="0 0 1000 180">
 <defs>
 <pattern height="32" id="m12a-grid" patternunits="userSpaceOnUse" width="32"><circle cx="1.3" cy="1.3" fill="#10b981" opacity="0.12" r="1.3"></circle></pattern>
 <filter height="180%" id="m12a-glow" width="180%" x="-40%" y="-40%"><fegaussianblur result="b" stddeviation="1.8"></fegaussianblur><femerge><femergenode in="b"></femergenode><femergenode in="SourceGraphic"></femergenode></femerge></filter>
@@ -205,67 +205,67 @@
 <path d="M350,125 C500,125 550,90 620,90" marker-end="url(#m12a-ah)"></path>
 </g>
 <g filter="url(#m12a-glow)"><rect fill="#0e2018" height="70" rx="16" stroke="#34d399" stroke-width="2.5" width="320" x="620" y="55"></rect></g>
-<text fill="#34d399" font-family="Inter,sans-serif" font-size="17" font-weight="600" text-anchor="middle" x="780" y="85">Control total de la sesiÃ³n</text>
+<text fill="#34d399" font-family="Inter,sans-serif" font-size="17" font-weight="600" text-anchor="middle" x="780" y="85">Control total de la sesiêÂ³n</text>
 <text fill="#9fe7c8" font-family="Inter,sans-serif" font-size="11" text-anchor="middle" x="780" y="108">5 teclas = usuario avanzado</text>
 </svg>
 </div>
 <div class="bg-blue-900/20 border border-blue-500/30 rounded-xl p-5 mb-6">
-<h3 class="font-semibold text-blue-400 mb-2">ðŸ’¡ Consejo: practica los atajos</h3>
-<p class="text-neutral-300 text-sm">En tu prÃ³xima sesiÃ³n con Claude Code, oblÃ­gate a usar solo atajos durante 10 minutos. Pide algo, cancela con Escape, vuelve a pedirlo, acepta con Tab, interrumpe con Ctrl+C. En menos de una hora ya estarÃ¡s en piloto automÃ¡tico y nunca volverÃ¡s al modo lento.</p>
+<h3 class="font-semibold text-blue-400 mb-2">ê°Å¸âÂ¡ Consejo: practica los atajos</h3>
+<p class="text-neutral-300 text-sm">En tu prêÂ³xima sesiêÂ³n con Claude Code, oblêÂ­gate a usar solo atajos durante 10 minutos. Pide algo, cancela con Escape, vuelve a pedirlo, acepta con Tab, interrumpe con Ctrl+C. En menos de una hora ya estarêÂ¡s en piloto automêÂ¡tico y nunca volverêÂ¡s al modo lento.</p>
 </div>
 <div class="bg-dark-800/60 border-l-4 border-emerald-500 rounded-r-lg p-4 mb-6">
-<p class="text-sm text-neutral-300"><strong class="text-emerald-400">En 1 frase:</strong> Escape, Tab, Ctrl+C, Shift+Tab y Enter doble cubren el 95% de la interacciÃ³n.</p>
+<p class="text-sm text-neutral-300"><strong class="text-emerald-400">En 1 frase:</strong> Escape, Tab, Ctrl+C, Shift+Tab y Enter doble cubren el 95% de la interacciêÂ³n.</p>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-emerald-500/20 border border-emerald-500/30 text-emerald-400 hover:bg-emerald-500/30 transition-colors" data-ARCKHÉ-read-toggle="" type="button"><span aria-hidden="true" class="ARCKHÉ-read-icon">â—‹</span><span class="ARCKHÉ-read-label">Marcar como leÃ­do</span></button>
+<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-emerald-500/20 border border-emerald-500/30 text-emerald-400 hover:bg-emerald-500/30 transition-colors" data-ARCKHê-read-toggle="" type="button"><span aria-hidden="true" class="ARCKHê-read-icon">ê¢ââ¹</span><span class="ARCKHê-read-label">Marcar como leêÂ­do</span></button>
 </div>
 </section>
 <!-- TOPICO 2 -->
-<section class="mb-16" data-ARCKHÉ-topic="modulo-1-2#topico-2" id="topico-2">
+<section class="mb-16" data-ARCKHê-topic="modulo-1-2#topico-2" id="topico-2">
 <div class="flex items-center justify-between gap-4 mb-6">
-<div class="flex items-center space-x-4"><span class="flex items-center justify-center w-12 h-12 rounded-full bg-emerald-500/20 text-emerald-400 font-bold text-xl flex-shrink-0">2</span><h2 class="text-2xl font-bold">ðŸ”§ Slash commands: el panel de control</h2></div>
-<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm flex-shrink-0" data-ARCKHÉ-doubt-toggle="" title="Marcar este tema como duda" type="button"><span aria-hidden="true">?</span><span class="hidden sm:inline">Tengo una duda</span></button>
+<div class="flex items-center space-x-4"><span class="flex items-center justify-center w-12 h-12 rounded-full bg-emerald-500/20 text-emerald-400 font-bold text-xl flex-shrink-0">2</span><h2 class="text-2xl font-bold">ê°Å¸âÂ§ Slash commands: el panel de control</h2></div>
+<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm flex-shrink-0" data-ARCKHê-doubt-toggle="" title="Marcar este tema como duda" type="button"><span aria-hidden="true">?</span><span class="hidden sm:inline">Tengo una duda</span></button>
 </div>
 <div class="bg-primary/10 border border-primary/30 rounded-xl p-5 mb-6">
-<p class="text-neutral-200"><strong class="text-primary">ðŸ§  ImagÃ­nalo asÃ­:</strong> los slash commands son el panel de control oculto de Claude Code. Escribes <code>/</code>, apareciÃ³ un menÃº. Es como el command palette de VS Code, pero dentro de la conversaciÃ³n con la IA.</p>
+<p class="text-neutral-200"><strong class="text-primary">ê°Å¸Â§Â  ImagêÂ­nalo asêÂ­:</strong> los slash commands son el panel de control oculto de Claude Code. Escribes <code>/</code>, apareciêÂ³ un menêÂº. Es como el command palette de VS Code, pero dentro de la conversaciêÂ³n con la IA.</p>
 </div>
-<p class="text-neutral-300 mb-4 leading-relaxed" data-ARCKHÉ-block="m1-2-t2-p1">Dentro de una sesiÃ³n interactiva, escribe <code class="text-emerald-400">/</code> al inicio del mensaje activa los <span class="termo" title="Comandos internos de Claude Code que se activan con una barra">slash commands</span>. Controlan la sesiÃ³n sin gastar tokens de conversaciÃ³n. Mientras que un mensaje normal se envÃ­a al modelo (y consume contexto), un slash command se ejecuta localmente: no cuesta nada, actÃºa de inmediato.</p>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m1-2-t2-p2">Los mÃ¡s usados forman un kit bÃ¡sico que todo usuario deberÃ­a memorizar. <code>/help</code> enumera todo lo que estÃ¡ disponible. <code>/clear</code> reinicia el contexto de la conversaciÃ³n (Ãºtil cuando el contexto quedÃ³ contaminado). <code>/compact</code> comprime la conversaciÃ³n en un resumen mÃ¡s corto para liberar espacio. <code>/model</code> muestra o cambia el modelo. <code>/memory</code> guarda preferencias que persisten entre sesiones. <code>/cost</code> muestra cuÃ¡nto gastaste en la sesiÃ³n. Y <code>/resume</code> retoma una sesiÃ³n anterior.</p>
+<p class="text-neutral-300 mb-4 leading-relaxed" data-ARCKHê-block="m1-2-t2-p1">Dentro de una sesiêÂ³n interactiva, escribe <code class="text-emerald-400">/</code> al inicio del mensaje activa los <span class="termo" title="Comandos internos de Claude Code que se activan con una barra">slash commands</span>. Controlan la sesiêÂ³n sin gastar tokens de conversaciêÂ³n. Mientras que un mensaje normal se envêÂ­a al modelo (y consume contexto), un slash command se ejecuta localmente: no cuesta nada, actêÂºa de inmediato.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHê-block="m1-2-t2-p2">Los mêÂ¡s usados forman un kit bêÂ¡sico que todo usuario deberêÂ­a memorizar. <code>/help</code> enumera todo lo que estêÂ¡ disponible. <code>/clear</code> reinicia el contexto de la conversaciêÂ³n (êÂºtil cuando el contexto quedêÂ³ contaminado). <code>/compact</code> comprime la conversaciêÂ³n en un resumen mêÂ¡s corto para liberar espacio. <code>/model</code> muestra o cambia el modelo. <code>/memory</code> guarda preferencias que persisten entre sesiones. <code>/cost</code> muestra cuêÂ¡nto gastaste en la sesiêÂ³n. Y <code>/resume</code> retoma una sesiêÂ³n anterior.</p>
 <div class="copybox bg-dark-900 border border-emerald-500/30 rounded-xl overflow-hidden mb-6">
 <div class="flex items-center justify-between px-4 py-2 bg-dark-800 border-b border-dark-600">
 <span class="text-xs text-emerald-400 font-mono">slash commands esenciales</span>
 <button class="text-xs px-2 py-1 rounded bg-emerald-500/20 text-emerald-400 hover:bg-emerald-500/30 transition-colors" onclick="copyBox(this)" type="button">copiar</button>
 </div>
-<pre class="p-4 text-sm text-neutral-200 font-mono leading-relaxed">/help       â€” lista todos os comandos disponÃ­veis
-/clear      â€” limpa o contexto da conversa atual
-/compact    â€” comprime o contexto para liberar espaÃ§o
-/model      â€” ver ou trocar o modelo em uso
-/memory     â€” salvar uma nota persistente
-/resume     â€” retomar sessÃ£o anterior
-/cost       â€” ver quanto gastou na sessÃ£o atual
-/config     â€” abrir configuraÃ§Ãµes</pre>
+<pre class="p-4 text-sm text-neutral-200 font-mono leading-relaxed">/help       ê¢â¬â lista todos os comandos disponêÂ­veis
+/clear      ê¢â¬â limpa o contexto da conversa atual
+/compact    ê¢â¬â comprime o contexto para liberar espaêÂ§o
+/model      ê¢â¬â ver ou trocar o modelo em uso
+/memory     ê¢â¬â salvar uma nota persistente
+/resume     ê¢â¬â retomar sessêÂ£o anterior
+/cost       ê¢â¬â ver quanto gastou na sessêÂ£o atual
+/config     ê¢â¬â abrir configuraêÂ§êÂµes</pre>
 </div>
 <div class="relative pl-8 mb-6">
 <div class="absolute left-3 top-0 bottom-0 w-0.5 bg-emerald-500/30"></div>
 <div class="mb-6 relative">
 <div class="absolute left-[-1.35rem] top-1 w-3 h-3 bg-emerald-400 rounded-full"></div>
 <h4 class="font-semibold text-emerald-400">/help</h4>
-<p class="text-neutral-300 text-sm">El punto de partida. Muestra todo lo que estÃ¡ disponible. EjecÃºtalo cuando te pierdas.</p>
+<p class="text-neutral-300 text-sm">El punto de partida. Muestra todo lo que estêÂ¡ disponible. EjecêÂºtalo cuando te pierdas.</p>
 </div>
 <div class="mb-6 relative">
 <div class="absolute left-[-1.35rem] top-1 w-3 h-3 bg-emerald-400 rounded-full"></div>
 <h4 class="font-semibold text-emerald-400">/clear</h4>
-<p class="text-neutral-300 text-sm">Borra todo el contexto. Es Ãºtil cuando quieres empezar de nuevo sin cerrar la terminal.</p>
+<p class="text-neutral-300 text-sm">Borra todo el contexto. Es êÂºtil cuando quieres empezar de nuevo sin cerrar la terminal.</p>
 </div>
 <div class="mb-6 relative">
 <div class="absolute left-[-1.35rem] top-1 w-3 h-3 bg-emerald-400 rounded-full"></div>
 <h4 class="font-semibold text-emerald-400">/compact</h4>
-<p class="text-neutral-300 text-sm">Comprime la conversaciÃ³n en un resumen para liberar contexto. Ãšsalo antes de que se llene el contexto.</p>
+<p class="text-neutral-300 text-sm">Comprime la conversaciêÂ³n en un resumen para liberar contexto. êÅ¡salo antes de que se llene el contexto.</p>
 </div>
 <div class="mb-6 relative">
 <div class="absolute left-[-1.35rem] top-1 w-3 h-3 bg-emerald-400 rounded-full"></div>
 <h4 class="font-semibold text-emerald-400">/model</h4>
-<p class="text-neutral-300 text-sm">Muestra quÃ© modelo estÃ¡ activo. Puedes cambiar entre Opus y Sonnet sin salir de la sesiÃ³n.</p>
+<p class="text-neutral-300 text-sm">Muestra quêÂ© modelo estêÂ¡ activo. Puedes cambiar entre Opus y Sonnet sin salir de la sesiêÂ³n.</p>
 </div>
 <div class="relative">
 <div class="absolute left-[-1.35rem] top-1 w-3 h-3 bg-emerald-400 rounded-full"></div>
@@ -274,40 +274,40 @@
 </div>
 </div>
 <div class="bg-dark-800/60 border-l-4 border-emerald-500 rounded-r-lg p-4 mb-6">
-<p class="text-sm text-neutral-300"><strong class="text-emerald-400">En 1 frase:</strong> escribe <code>/</code> para acceder al panel de control de Claude Code dentro de la sesiÃ³n.</p>
+<p class="text-sm text-neutral-300"><strong class="text-emerald-400">En 1 frase:</strong> escribe <code>/</code> para acceder al panel de control de Claude Code dentro de la sesiêÂ³n.</p>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-emerald-500/20 border border-emerald-500/30 text-emerald-400 hover:bg-emerald-500/30 transition-colors" data-ARCKHÉ-read-toggle="" type="button"><span aria-hidden="true" class="ARCKHÉ-read-icon">â—‹</span><span class="ARCKHÉ-read-label">Marcar como leÃ­do</span></button>
+<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-emerald-500/20 border border-emerald-500/30 text-emerald-400 hover:bg-emerald-500/30 transition-colors" data-ARCKHê-read-toggle="" type="button"><span aria-hidden="true" class="ARCKHê-read-icon">ê¢ââ¹</span><span class="ARCKHê-read-label">Marcar como leêÂ­do</span></button>
 </div>
 </section>
 <!-- TOPICO 3 -->
-<section class="mb-16" data-ARCKHÉ-topic="modulo-1-2#topico-3" id="topico-3">
+<section class="mb-16" data-ARCKHê-topic="modulo-1-2#topico-3" id="topico-3">
 <div class="flex items-center justify-between gap-4 mb-6">
-<div class="flex items-center space-x-4"><span class="flex items-center justify-center w-12 h-12 rounded-full bg-emerald-500/20 text-emerald-400 font-bold text-xl flex-shrink-0">3</span><h2 class="text-2xl font-bold">ðŸ§  Modelo y ventana de contexto</h2></div>
-<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm flex-shrink-0" data-ARCKHÉ-doubt-toggle="" title="Marcar este tema como duda" type="button"><span aria-hidden="true">?</span><span class="hidden sm:inline">Tengo una duda</span></button>
+<div class="flex items-center space-x-4"><span class="flex items-center justify-center w-12 h-12 rounded-full bg-emerald-500/20 text-emerald-400 font-bold text-xl flex-shrink-0">3</span><h2 class="text-2xl font-bold">ê°Å¸Â§Â  Modelo y ventana de contexto</h2></div>
+<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm flex-shrink-0" data-ARCKHê-doubt-toggle="" title="Marcar este tema como duda" type="button"><span aria-hidden="true">?</span><span class="hidden sm:inline">Tengo una duda</span></button>
 </div>
 <div class="bg-primary/10 border border-primary/30 rounded-xl p-5 mb-6">
-<p class="text-neutral-200"><strong class="text-primary">ðŸ§  ImagÃ­nalo asÃ­:</strong> El modelo es el cerebro; la ventana de contexto es la memoria de trabajo. Imagina que Claude tiene una mesa de trabajo con espacio limitado. Todo lo que dices y todo lo que lee va a la mesa. Cuando se llena, algo se cae.</p>
+<p class="text-neutral-200"><strong class="text-primary">ê°Å¸Â§Â  ImagêÂ­nalo asêÂ­:</strong> El modelo es el cerebro; la ventana de contexto es la memoria de trabajo. Imagina que Claude tiene una mesa de trabajo con espacio limitado. Todo lo que dices y todo lo que lee va a la mesa. Cuando se llena, algo se cae.</p>
 </div>
-<p class="text-neutral-300 mb-4 leading-relaxed" data-ARCKHÉ-block="m1-2-t3-p1">Claude Code usa modelos de la familia Claude de Anthropic. El predeterminado suele ser el <strong class="text-emerald-400">Claude Sonnet</strong> (rÃ¡pido y capaz para la mayorÃ­a de las tareas), pero puedes cambiar a <strong class="text-emerald-400">Claude Opus</strong> (mÃ¡s profundo, mejor para el razonamiento complejo y los codebases grandes) en cualquier momento con <code>/model</code> o <code>--model</code>. Entender la diferencia entre ellos y saber cuÃ¡ndo cambiar es una habilidad que distingue a los usuarios eficientes de quienes desperdician dinero o tiempo.</p>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m1-2-t3-p2">A <span class="termo" title="La cantidad mÃ¡xima de texto (en tokens) que el modelo puede procesar de una vez">ventana de contexto</span> es el lÃ­mite de lo que el modelo ve al mismo tiempo: todo lo que dijiste, todo lo que leyÃ³, todos los archivos inspeccionados y todas las respuestas generadas. La ventana de contexto de Claude es de aproximadamente <strong class="text-emerald-400">200k tokens</strong> (cerca de 150k palabras). Parece mucho, pero un codebase promedio consume eso rÃ¡pido. Cada archivo leÃ­do, cada respuesta generada, cada CLAUDE.md cargado consume tokens de esta ventana. Cuando se acaba el espacio, Claude empieza a olvidar el inicio de la conversaciÃ³n.</p>
+<p class="text-neutral-300 mb-4 leading-relaxed" data-ARCKHê-block="m1-2-t3-p1">Claude Code usa modelos de la familia Claude de Anthropic. El predeterminado suele ser el <strong class="text-emerald-400">Claude Sonnet</strong> (rêÂ¡pido y capaz para la mayorêÂ­a de las tareas), pero puedes cambiar a <strong class="text-emerald-400">Claude Opus</strong> (mêÂ¡s profundo, mejor para el razonamiento complejo y los codebases grandes) en cualquier momento con <code>/model</code> o <code>--model</code>. Entender la diferencia entre ellos y saber cuêÂ¡ndo cambiar es una habilidad que distingue a los usuarios eficientes de quienes desperdician dinero o tiempo.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHê-block="m1-2-t3-p2">A <span class="termo" title="La cantidad mêÂ¡xima de texto (en tokens) que el modelo puede procesar de una vez">ventana de contexto</span> es el lêÂ­mite de lo que el modelo ve al mismo tiempo: todo lo que dijiste, todo lo que leyêÂ³, todos los archivos inspeccionados y todas las respuestas generadas. La ventana de contexto de Claude es de aproximadamente <strong class="text-emerald-400">200k tokens</strong> (cerca de 150k palabras). Parece mucho, pero un codebase promedio consume eso rêÂ¡pido. Cada archivo leêÂ­do, cada respuesta generada, cada CLAUDE.md cargado consume tokens de esta ventana. Cuando se acaba el espacio, Claude empieza a olvidar el inicio de la conversaciêÂ³n.</p>
 <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
 <div class="bg-emerald-900/20 rounded-xl border border-emerald-500/30 p-6">
-<h4 class="font-bold text-emerald-400 mb-4">âœ“ Claude Sonnet</h4>
+<h4 class="font-bold text-emerald-400 mb-4">ê¢Åâ Claude Sonnet</h4>
 <ul class="space-y-2 text-neutral-300 text-sm">
-<li>â€¢ RÃ¡pido y responsivo</li>
-<li>â€¢ Bueno para tareas comunes</li>
-<li>â€¢ MÃ¡s barato por token</li>
-<li>â€¢ Ideal para ediciones rÃ¡pidas y preguntas</li>
+<li>ê¢â¬Â¢ RêÂ¡pido y responsivo</li>
+<li>ê¢â¬Â¢ Bueno para tareas comunes</li>
+<li>ê¢â¬Â¢ MêÂ¡s barato por token</li>
+<li>ê¢â¬Â¢ Ideal para ediciones rêÂ¡pidas y preguntas</li>
 </ul>
 </div>
 <div class="bg-dark-800 rounded-xl border border-dark-600 p-6">
-<h4 class="font-bold text-neutral-300 mb-4">â†’ Claude Opus</h4>
+<h4 class="font-bold text-neutral-300 mb-4">ê¢â â Claude Opus</h4>
 <ul class="space-y-2 text-neutral-300 text-sm">
-<li>â€¢ MÃ¡s profundo y preciso</li>
-<li>â€¢ Mejor en razonamiento complejo</li>
-<li>â€¢ MÃ¡s caro por token</li>
-<li>â€¢ Ideal para refactorizaciÃ³n y arquitectura</li>
+<li>ê¢â¬Â¢ MêÂ¡s profundo y preciso</li>
+<li>ê¢â¬Â¢ Mejor en razonamiento complejo</li>
+<li>ê¢â¬Â¢ MêÂ¡s caro por token</li>
+<li>ê¢â¬Â¢ Ideal para refactorizaciêÂ³n y arquitectura</li>
 </ul>
 </div>
 </div>
@@ -327,83 +327,83 @@
 <text fill="#bfe6ff" font-family="Inter,sans-serif" font-size="12" font-weight="600" text-anchor="middle" x="340" y="107">Tus mensajes</text>
 <text fill="#9ad6ff" font-family="Inter,sans-serif" font-size="10" text-anchor="middle" x="340" y="125">prompts + historial</text>
 <rect fill="#0e1b26" height="60" rx="10" stroke="#38bdf8" stroke-width="2" width="160" x="440" y="80"></rect>
-<text fill="#bfe6ff" font-family="Inter,sans-serif" font-size="12" font-weight="600" text-anchor="middle" x="520" y="107">Archivos leÃ­dos</text>
-<text fill="#9ad6ff" font-family="Inter,sans-serif" font-size="10" text-anchor="middle" x="520" y="125">cÃ³digo + configs</text>
+<text fill="#bfe6ff" font-family="Inter,sans-serif" font-size="12" font-weight="600" text-anchor="middle" x="520" y="107">Archivos leêÂ­dos</text>
+<text fill="#9ad6ff" font-family="Inter,sans-serif" font-size="10" text-anchor="middle" x="520" y="125">cêÂ³digo + configs</text>
 <rect fill="#0e1b26" height="60" rx="10" stroke="#38bdf8" stroke-width="2" width="160" x="620" y="80"></rect>
 <text fill="#bfe6ff" font-family="Inter,sans-serif" font-size="12" font-weight="600" text-anchor="middle" x="700" y="107">Respuestas</text>
 <text fill="#9ad6ff" font-family="Inter,sans-serif" font-size="10" text-anchor="middle" x="700" y="125">output del modelo</text>
 <rect fill="#1a0a0a" height="60" rx="10" stroke="#ef4444" stroke-dasharray="4,3" stroke-width="2" width="120" x="800" y="80"></rect>
-<text fill="#f87171" font-family="Inter,sans-serif" font-size="11" font-weight="600" text-anchor="middle" x="860" y="107">Â¡LÃ­mite!</text>
-<text fill="#fca5a5" font-family="Inter,sans-serif" font-size="10" text-anchor="middle" x="860" y="125">olvÃ­dalo aquÃ­</text>
+<text fill="#f87171" font-family="Inter,sans-serif" font-size="11" font-weight="600" text-anchor="middle" x="860" y="107">êÂ¡LêÂ­mite!</text>
+<text fill="#fca5a5" font-family="Inter,sans-serif" font-size="10" text-anchor="middle" x="860" y="125">olvêÂ­dalo aquêÂ­</text>
 </svg>
 </div>
 <div class="bg-red-900/20 border border-red-500/30 rounded-xl p-5 mb-6">
-<h3 class="font-semibold text-red-400 mb-2">âš ï¸ SeÃ±ales de contexto lleno</h3>
-<p class="text-neutral-300 text-sm">Claude empieza a olvidar instrucciones del principio, repite preguntas que ya respondiÃ³, ignora las reglas de CLAUDE.md o simplemente deja de funcionar bien. Cuando lo notes, usa <code>/compact</code> o inicia una sesiÃ³n nueva.</p>
+<h3 class="font-semibold text-red-400 mb-2">ê¢Å¡Â ê¯Â¸Â SeêÂ±ales de contexto lleno</h3>
+<p class="text-neutral-300 text-sm">Claude empieza a olvidar instrucciones del principio, repite preguntas que ya respondiêÂ³, ignora las reglas de CLAUDE.md o simplemente deja de funcionar bien. Cuando lo notes, usa <code>/compact</code> o inicia una sesiêÂ³n nueva.</p>
 </div>
 <div class="bg-dark-800/60 border-l-4 border-emerald-500 rounded-r-lg p-4 mb-6">
-<p class="text-sm text-neutral-300"><strong class="text-emerald-400">En 1 frase:</strong> Sonnet = rÃ¡pido, Opus = profundo; 200k tokens es la mesa de trabajo y todo compite por espacio.</p>
+<p class="text-sm text-neutral-300"><strong class="text-emerald-400">En 1 frase:</strong> Sonnet = rêÂ¡pido, Opus = profundo; 200k tokens es la mesa de trabajo y todo compite por espacio.</p>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-emerald-500/20 border border-emerald-500/30 text-emerald-400 hover:bg-emerald-500/30 transition-colors" data-ARCKHÉ-read-toggle="" type="button"><span aria-hidden="true" class="ARCKHÉ-read-icon">â—‹</span><span class="ARCKHÉ-read-label">Marcar como leÃ­do</span></button>
+<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-emerald-500/20 border border-emerald-500/30 text-emerald-400 hover:bg-emerald-500/30 transition-colors" data-ARCKHê-read-toggle="" type="button"><span aria-hidden="true" class="ARCKHê-read-icon">ê¢ââ¹</span><span class="ARCKHê-read-label">Marcar como leêÂ­do</span></button>
 </div>
 </section>
 <!-- TOPICO 4 -->
-<section class="mb-16" data-ARCKHÉ-topic="modulo-1-2#topico-4" id="topico-4">
+<section class="mb-16" data-ARCKHê-topic="modulo-1-2#topico-4" id="topico-4">
 <div class="flex items-center justify-between gap-4 mb-6">
-<div class="flex items-center space-x-4"><span class="flex items-center justify-center w-12 h-12 rounded-full bg-emerald-500/20 text-emerald-400 font-bold text-xl flex-shrink-0">4</span><h2 class="text-2xl font-bold">ðŸ’¾ Sesiones y /resume</h2></div>
-<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm flex-shrink-0" data-ARCKHÉ-doubt-toggle="" title="Marcar este tema como duda" type="button"><span aria-hidden="true">?</span><span class="hidden sm:inline">Tengo una duda</span></button>
+<div class="flex items-center space-x-4"><span class="flex items-center justify-center w-12 h-12 rounded-full bg-emerald-500/20 text-emerald-400 font-bold text-xl flex-shrink-0">4</span><h2 class="text-2xl font-bold">ê°Å¸âÂ¾ Sesiones y /resume</h2></div>
+<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm flex-shrink-0" data-ARCKHê-doubt-toggle="" title="Marcar este tema como duda" type="button"><span aria-hidden="true">?</span><span class="hidden sm:inline">Tengo una duda</span></button>
 </div>
 <div class="bg-primary/10 border border-primary/30 rounded-xl p-5 mb-6">
-<p class="text-neutral-200"><strong class="text-primary">ðŸ§  ImagÃ­nalo asÃ­:</strong> cerrar la terminal no borra la conversaciÃ³n. Es como cerrar un libro con un separador. Cuando vuelves, /resume abre en la pÃ¡gina correcta.</p>
+<p class="text-neutral-200"><strong class="text-primary">ê°Å¸Â§Â  ImagêÂ­nalo asêÂ­:</strong> cerrar la terminal no borra la conversaciêÂ³n. Es como cerrar un libro con un separador. Cuando vuelves, /resume abre en la pêÂ¡gina correcta.</p>
 </div>
-<p class="text-neutral-300 mb-4 leading-relaxed" data-ARCKHÉ-block="m1-2-t4-p1">Claude Code guarda las sesiones automÃ¡ticamente en el disco local. Cada conversaciÃ³n tiene un <span class="termo" title="Identificador Ãºnico de la sesiÃ³n">session ID</span> y queda guardada en <code>~/.claude/</code>. Esto significa que cerrar la terminal, apagar la computadora o incluso cambiar de pestaÃ±a no hace que pierdas nada. La sesiÃ³n sigue ahÃ­, esperando que vuelvas.</p>
-<p class="text-neutral-300 mb-4 leading-relaxed" data-ARCKHÉ-block="m1-2-t4-p2">Para retomar, tienes dos opciones: <code class="text-emerald-400">claude --resume</code> en la lÃ­nea de comandos (antes de abrir una sesiÃ³n nueva) o <code class="text-emerald-400">/resume</code> desde dentro de una sesiÃ³n ya abierta. Ambos muestran un selector con las sesiones recientes para que elijas. TambiÃ©n es posible retomar una sesiÃ³n especÃ­fica por su ID: <code>claude --resume SESSION_ID</code>.</p>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m1-2-t4-p3">En la prÃ¡ctica, el ritmo ideal es trabajar en una sesiÃ³n durante 1-2 horas, hacer commits de los checkpoints en git y, cuando se llene el contexto, iniciar una sesiÃ³n nueva. Si necesitas retomar algo del dÃ­a anterior, <code>--resume</code> recupera. Pero recuerda: las sesiones muy largas degradan la calidad de las respuestas porque el contexto se llena. A veces es mejor empezar de cero y dejar que CLAUDE.md cargue el contexto esencial.</p>
+<p class="text-neutral-300 mb-4 leading-relaxed" data-ARCKHê-block="m1-2-t4-p1">Claude Code guarda las sesiones automêÂ¡ticamente en el disco local. Cada conversaciêÂ³n tiene un <span class="termo" title="Identificador êÂºnico de la sesiêÂ³n">session ID</span> y queda guardada en <code>~/.claude/</code>. Esto significa que cerrar la terminal, apagar la computadora o incluso cambiar de pestaêÂ±a no hace que pierdas nada. La sesiêÂ³n sigue ahêÂ­, esperando que vuelvas.</p>
+<p class="text-neutral-300 mb-4 leading-relaxed" data-ARCKHê-block="m1-2-t4-p2">Para retomar, tienes dos opciones: <code class="text-emerald-400">claude --resume</code> en la lêÂ­nea de comandos (antes de abrir una sesiêÂ³n nueva) o <code class="text-emerald-400">/resume</code> desde dentro de una sesiêÂ³n ya abierta. Ambos muestran un selector con las sesiones recientes para que elijas. TambiêÂ©n es posible retomar una sesiêÂ³n especêÂ­fica por su ID: <code>claude --resume SESSION_ID</code>.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHê-block="m1-2-t4-p3">En la prêÂ¡ctica, el ritmo ideal es trabajar en una sesiêÂ³n durante 1-2 horas, hacer commits de los checkpoints en git y, cuando se llene el contexto, iniciar una sesiêÂ³n nueva. Si necesitas retomar algo del dêÂ­a anterior, <code>--resume</code> recupera. Pero recuerda: las sesiones muy largas degradan la calidad de las respuestas porque el contexto se llena. A veces es mejor empezar de cero y dejar que CLAUDE.md cargue el contexto esencial.</p>
 <div class="copybox bg-dark-900 border border-emerald-500/30 rounded-xl overflow-hidden mb-6">
 <div class="flex items-center justify-between px-4 py-2 bg-dark-800 border-b border-dark-600">
 <span class="text-xs text-emerald-400 font-mono">retomando sesiones</span>
 <button class="text-xs px-2 py-1 rounded bg-emerald-500/20 text-emerald-400 hover:bg-emerald-500/30 transition-colors" onclick="copyBox(this)" type="button">copiar</button>
 </div>
-<pre class="p-4 text-sm text-neutral-200 font-mono leading-relaxed"># retomar a Ãºltima sessÃ£o
+<pre class="p-4 text-sm text-neutral-200 font-mono leading-relaxed"># retomar a êÂºltima sessêÂ£o
 claude --resume
 
-# dentro de uma sessÃ£o, retomar outra
+# dentro de uma sessêÂ£o, retomar outra
 /resume
 
-# continuar conversa especÃ­fica por ID
+# continuar conversa especêÂ­fica por ID
 claude --resume SESSION_ID
 
-# listar sessÃµes recentes
+# listar sessêÂµes recentes
 claude --resume  (mostra picker interativo)</pre>
 </div>
 <div class="bg-blue-900/20 border border-blue-500/30 rounded-xl p-5 mb-6">
-<h3 class="font-semibold text-blue-400 mb-2">ðŸ’¡ SesiÃ³n nueva vs. resume</h3>
-<p class="text-neutral-300 text-sm">Si estÃ¡s retomando el mismo trabajo de ayer, usa <code>--resume</code>. Si estÃ¡s empezando una tarea diferente (incluso en el mismo proyecto), inicia una sesiÃ³n nueva. Mezclar contextos de tareas distintas satura la ventana y degrada la calidad.</p>
+<h3 class="font-semibold text-blue-400 mb-2">ê°Å¸âÂ¡ SesiêÂ³n nueva vs. resume</h3>
+<p class="text-neutral-300 text-sm">Si estêÂ¡s retomando el mismo trabajo de ayer, usa <code>--resume</code>. Si estêÂ¡s empezando una tarea diferente (incluso en el mismo proyecto), inicia una sesiêÂ³n nueva. Mezclar contextos de tareas distintas satura la ventana y degrada la calidad.</p>
 </div>
 <div class="bg-dark-800/60 border-l-4 border-emerald-500 rounded-r-lg p-4 mb-6">
 <p class="text-sm text-neutral-300"><strong class="text-emerald-400">En 1 frase:</strong> las sesiones persisten en el disco; <code>--resume</code> o <code>/resume</code> retoma desde donde te quedaste.</p>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-emerald-500/20 border border-emerald-500/30 text-emerald-400 hover:bg-emerald-500/30 transition-colors" data-ARCKHÉ-read-toggle="" type="button"><span aria-hidden="true" class="ARCKHÉ-read-icon">â—‹</span><span class="ARCKHÉ-read-label">Marcar como leÃ­do</span></button>
+<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-emerald-500/20 border border-emerald-500/30 text-emerald-400 hover:bg-emerald-500/30 transition-colors" data-ARCKHê-read-toggle="" type="button"><span aria-hidden="true" class="ARCKHê-read-icon">ê¢ââ¹</span><span class="ARCKHê-read-label">Marcar como leêÂ­do</span></button>
 </div>
 </section>
 <!-- TOPICO 5 -->
-<section class="mb-16" data-ARCKHÉ-topic="modulo-1-2#topico-5" id="topico-5">
+<section class="mb-16" data-ARCKHê-topic="modulo-1-2#topico-5" id="topico-5">
 <div class="flex items-center justify-between gap-4 mb-6">
-<div class="flex items-center space-x-4"><span class="flex items-center justify-center w-12 h-12 rounded-full bg-emerald-500/20 text-emerald-400 font-bold text-xl flex-shrink-0">5</span><h2 class="text-2xl font-bold">ðŸ–¼ï¸ Lectura de imÃ¡genes y capturas de pantalla</h2></div>
-<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm flex-shrink-0" data-ARCKHÉ-doubt-toggle="" title="Marcar este tema como duda" type="button"><span aria-hidden="true">?</span><span class="hidden sm:inline">Tengo una duda</span></button>
+<div class="flex items-center space-x-4"><span class="flex items-center justify-center w-12 h-12 rounded-full bg-emerald-500/20 text-emerald-400 font-bold text-xl flex-shrink-0">5</span><h2 class="text-2xl font-bold">ê°Å¸âÂ¼ê¯Â¸Â Lectura de imêÂ¡genes y capturas de pantalla</h2></div>
+<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm flex-shrink-0" data-ARCKHê-doubt-toggle="" title="Marcar este tema como duda" type="button"><span aria-hidden="true">?</span><span class="hidden sm:inline">Tengo una duda</span></button>
 </div>
 <div class="bg-primary/10 border border-primary/30 rounded-xl p-5 mb-6">
-<p class="text-neutral-200"><strong class="text-primary">ðŸ§  ImagÃ­nalo asÃ­:</strong> tÃº puedes pegar una captura de pantalla de un error en la terminal y Claude Code la analizarÃ¡ visualmente, identificarÃ¡ el problema y sugerirÃ¡ la soluciÃ³n. Es como tener un par de ojos extra que lee el cÃ³digo en pantalla.</p>
+<p class="text-neutral-200"><strong class="text-primary">ê°Å¸Â§Â  ImagêÂ­nalo asêÂ­:</strong> têÂº puedes pegar una captura de pantalla de un error en la terminal y Claude Code la analizarêÂ¡ visualmente, identificarêÂ¡ el problema y sugerirêÂ¡ la soluciêÂ³n. Es como tener un par de ojos extra que lee el cêÂ³digo en pantalla.</p>
 </div>
-<p class="text-neutral-300 mb-4 leading-relaxed" data-ARCKHÉ-block="m1-2-t5-p1">Claude Code es <span class="termo" title="Capaz de procesar texto e imÃ¡genes">multimodal</span>. Puede leer imÃ¡genes de tres formas: <strong>pegar desde el portapapeles</strong> (Ctrl+V con una captura copiada), <strong>hacer referencia a un archivo</strong> de imagen en el sistema de archivos (usando <code>@path/to/image.png</code>), o <strong>arrastrar y soltar</strong> en la terminal (en terminales compatibles). Esto abre un enorme abanico de casos de uso que no existen en los chatbots web tradicionales.</p>
-<p class="text-neutral-300 mb-4 leading-relaxed" data-ARCKHÉ-block="m1-2-t5-p2">Los casos de uso mÃ¡s comunes son: <strong>depuraciÃ³n visual</strong> de UI (pega una captura de pantalla del bug, Claude identifica el problema en el CSS/HTML), <strong>reproducir un diseÃ±o</strong> a partir de un mockup (pega la exportaciÃ³n de Figma, pide que lo implemente), y <strong>leer diagramas</strong> de arquitectura (una foto de una pizarra se convierte en una descripciÃ³n estructurada). TambiÃ©n puedes pasar diagramas UML, grÃ¡ficos de mÃ©tricas o capturas de registros con formato.</p>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m1-2-t5-p3">Ten cuidado con el costo: las imÃ¡genes consumen tokens (y muchos). Una captura de pantalla completa puede usar entre 1000 y 2000 tokens. Si el problema se puede describir con texto, prefiere el texto. Reserva las imÃ¡genes para cuando la informaciÃ³n visual sea realmente necesaria: diseÃ±os, colores, posicionamiento, grÃ¡ficos, capturas de errores.</p>
+<p class="text-neutral-300 mb-4 leading-relaxed" data-ARCKHê-block="m1-2-t5-p1">Claude Code es <span class="termo" title="Capaz de procesar texto e imêÂ¡genes">multimodal</span>. Puede leer imêÂ¡genes de tres formas: <strong>pegar desde el portapapeles</strong> (Ctrl+V con una captura copiada), <strong>hacer referencia a un archivo</strong> de imagen en el sistema de archivos (usando <code>@path/to/image.png</code>), o <strong>arrastrar y soltar</strong> en la terminal (en terminales compatibles). Esto abre un enorme abanico de casos de uso que no existen en los chatbots web tradicionales.</p>
+<p class="text-neutral-300 mb-4 leading-relaxed" data-ARCKHê-block="m1-2-t5-p2">Los casos de uso mêÂ¡s comunes son: <strong>depuraciêÂ³n visual</strong> de UI (pega una captura de pantalla del bug, Claude identifica el problema en el CSS/HTML), <strong>reproducir un diseêÂ±o</strong> a partir de un mockup (pega la exportaciêÂ³n de Figma, pide que lo implemente), y <strong>leer diagramas</strong> de arquitectura (una foto de una pizarra se convierte en una descripciêÂ³n estructurada). TambiêÂ©n puedes pasar diagramas UML, grêÂ¡ficos de mêÂ©tricas o capturas de registros con formato.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHê-block="m1-2-t5-p3">Ten cuidado con el costo: las imêÂ¡genes consumen tokens (y muchos). Una captura de pantalla completa puede usar entre 1000 y 2000 tokens. Si el problema se puede describir con texto, prefiere el texto. Reserva las imêÂ¡genes para cuando la informaciêÂ³n visual sea realmente necesaria: diseêÂ±os, colores, posicionamiento, grêÂ¡ficos, capturas de errores.</p>
 <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
 <div class="bg-dark-800 rounded-xl border border-dark-600 p-4">
 <h4 class="font-bold text-emerald-400 mb-2">Ctrl+V (portapapeles)</h4>
-<p class="text-neutral-300 text-sm">Toma una captura de pantalla y pÃ©gala directamente en la sesiÃ³n. Es la forma mÃ¡s rÃ¡pida de resolver bugs visuales.</p>
+<p class="text-neutral-300 text-sm">Toma una captura de pantalla y pêÂ©gala directamente en la sesiêÂ³n. Es la forma mêÂ¡s rêÂ¡pida de resolver bugs visuales.</p>
 </div>
 <div class="bg-dark-800 rounded-xl border border-dark-600 p-4">
 <h4 class="font-bold text-emerald-400 mb-2">@archivo.png</h4>
@@ -411,31 +411,31 @@ claude --resume  (mostra picker interativo)</pre>
 </div>
 <div class="bg-dark-800 rounded-xl border border-dark-600 p-4">
 <h4 class="font-bold text-emerald-400 mb-2">Arrastrar y soltar</h4>
-<p class="text-neutral-300 text-sm">ArrÃ¡stralo desde el administrador de archivos hasta la terminal. Funciona en terminales modernos (iTerm2, etc.).</p>
+<p class="text-neutral-300 text-sm">ArrêÂ¡stralo desde el administrador de archivos hasta la terminal. Funciona en terminales modernos (iTerm2, etc.).</p>
 </div>
 </div>
 <div class="bg-red-900/20 border border-red-500/30 rounded-xl p-5 mb-6">
-<h3 class="font-semibold text-red-400 mb-2">âš ï¸ Limitaciones de la visiÃ³n</h3>
-<p class="text-neutral-300 text-sm">Claude Code no puede editar imÃ¡genes, solo analizarlas. Tampoco lee con precisiÃ³n texto muy pequeÃ±o en screenshots de alta resoluciÃ³n. Para obtener mejores resultados, enfoca el screenshot en el Ã¡rea relevante y usa zoom si es necesario.</p>
+<h3 class="font-semibold text-red-400 mb-2">ê¢Å¡Â ê¯Â¸Â Limitaciones de la visiêÂ³n</h3>
+<p class="text-neutral-300 text-sm">Claude Code no puede editar imêÂ¡genes, solo analizarlas. Tampoco lee con precisiêÂ³n texto muy pequeêÂ±o en screenshots de alta resoluciêÂ³n. Para obtener mejores resultados, enfoca el screenshot en el êÂ¡rea relevante y usa zoom si es necesario.</p>
 </div>
 <div class="bg-dark-800/60 border-l-4 border-emerald-500 rounded-r-lg p-4 mb-6">
-<p class="text-sm text-neutral-300"><strong class="text-emerald-400">En 1 frase:</strong> pega capturas de pantalla, indica rutas de imÃ¡genes o arrastra archivos y Claude los analiza visualmente.</p>
+<p class="text-sm text-neutral-300"><strong class="text-emerald-400">En 1 frase:</strong> pega capturas de pantalla, indica rutas de imêÂ¡genes o arrastra archivos y Claude los analiza visualmente.</p>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-emerald-500/20 border border-emerald-500/30 text-emerald-400 hover:bg-emerald-500/30 transition-colors" data-ARCKHÉ-read-toggle="" type="button"><span aria-hidden="true" class="ARCKHÉ-read-icon">â—‹</span><span class="ARCKHÉ-read-label">Marcar como leÃ­do</span></button>
+<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-emerald-500/20 border border-emerald-500/30 text-emerald-400 hover:bg-emerald-500/30 transition-colors" data-ARCKHê-read-toggle="" type="button"><span aria-hidden="true" class="ARCKHê-read-icon">ê¢ââ¹</span><span class="ARCKHê-read-label">Marcar como leêÂ­do</span></button>
 </div>
 </section>
 <!-- TOPICO 6 -->
-<section class="mb-16" data-ARCKHÉ-topic="modulo-1-2#topico-6" id="topico-6">
+<section class="mb-16" data-ARCKHê-topic="modulo-1-2#topico-6" id="topico-6">
 <div class="flex items-center justify-between gap-4 mb-6">
-<div class="flex items-center space-x-4"><span class="flex items-center justify-center w-12 h-12 rounded-full bg-emerald-500/20 text-emerald-400 font-bold text-xl flex-shrink-0">6</span><h2 class="text-2xl font-bold">ðŸ“¤ Salida formateada y pipes de Unix</h2></div>
-<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm flex-shrink-0" data-ARCKHÉ-doubt-toggle="" title="Marcar este tema como duda" type="button"><span aria-hidden="true">?</span><span class="hidden sm:inline">Tengo una duda</span></button>
+<div class="flex items-center space-x-4"><span class="flex items-center justify-center w-12 h-12 rounded-full bg-emerald-500/20 text-emerald-400 font-bold text-xl flex-shrink-0">6</span><h2 class="text-2xl font-bold">ê°Å¸âÂ¤ Salida formateada y pipes de Unix</h2></div>
+<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm flex-shrink-0" data-ARCKHê-doubt-toggle="" title="Marcar este tema como duda" type="button"><span aria-hidden="true">?</span><span class="hidden sm:inline">Tengo una duda</span></button>
 </div>
 <div class="bg-primary/10 border border-primary/30 rounded-xl p-5 mb-6">
-<p class="text-neutral-200"><strong class="text-primary">ðŸ§  ImagÃ­nalo asÃ­:</strong> el modo <code>-p</code> transforma Claude Code en un ciudadano Unix de primera clase. Todo lo que responde va a stdout, listo para canalizar con jq, grep o redirigir a un archivo. Se integra con la filosofÃ­a Unix: hace bien una cosa y se conecta con todo.</p>
+<p class="text-neutral-200"><strong class="text-primary">ê°Å¸Â§Â  ImagêÂ­nalo asêÂ­:</strong> el modo <code>-p</code> transforma Claude Code en un ciudadano Unix de primera clase. Todo lo que responde va a stdout, listo para canalizar con jq, grep o redirigir a un archivo. Se integra con la filosofêÂ­a Unix: hace bien una cosa y se conecta con todo.</p>
 </div>
-<p class="text-neutral-300 mb-4 leading-relaxed" data-ARCKHÉ-block="m1-2-t6-p1">La integraciÃ³n con el ecosistema Unix es uno de los superpoderes mÃ¡s subestimados de Claude Code. Con <code class="text-emerald-400">claude -p</code>, la salida va directamente a stdout, lo que permite encadenarla con cualquier herramienta Unix. Puedes recibir entrada mediante <strong>stdin</strong> (entrada por pipe), procesar con Claude y enviar la salida a otra herramienta o archivo. Esto hace que Claude Code sea componible: se convierte en un bloque mÃ¡s de tu cadena de herramientas.</p>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m1-2-t6-p2">El flag <code class="text-emerald-400">--output-format json</code> hace que Claude devuelva la respuesta en JSON estructurado, lo que es perfecto para el procesamiento automatizado. CombÃ­nalo con <code>jq</code> para extraer campos especÃ­ficos, o con scripts que consumen JSON. Para scripts mÃ¡s complejos, puedes usar <code>--output-format stream-json</code> para recibir tokens en tiempo real mientras el modelo genera.</p>
+<p class="text-neutral-300 mb-4 leading-relaxed" data-ARCKHê-block="m1-2-t6-p1">La integraciêÂ³n con el ecosistema Unix es uno de los superpoderes mêÂ¡s subestimados de Claude Code. Con <code class="text-emerald-400">claude -p</code>, la salida va directamente a stdout, lo que permite encadenarla con cualquier herramienta Unix. Puedes recibir entrada mediante <strong>stdin</strong> (entrada por pipe), procesar con Claude y enviar la salida a otra herramienta o archivo. Esto hace que Claude Code sea componible: se convierte en un bloque mêÂ¡s de tu cadena de herramientas.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHê-block="m1-2-t6-p2">El flag <code class="text-emerald-400">--output-format json</code> hace que Claude devuelva la respuesta en JSON estructurado, lo que es perfecto para el procesamiento automatizado. CombêÂ­nalo con <code>jq</code> para extraer campos especêÂ­ficos, o con scripts que consumen JSON. Para scripts mêÂ¡s complejos, puedes usar <code>--output-format stream-json</code> para recibir tokens en tiempo real mientras el modelo genera.</p>
 <div class="copybox bg-dark-900 border border-emerald-500/30 rounded-xl overflow-hidden mb-6">
 <div class="flex items-center justify-between px-4 py-2 bg-dark-800 border-b border-dark-600">
 <span class="text-xs text-emerald-400 font-mono">ejemplos de pipes</span>
@@ -445,16 +445,16 @@ claude --resume  (mostra picker interativo)</pre>
 claude -p "liste 5 tarefas em JSON" | jq '.[]'
 
 # analisar um arquivo e salvar resultado
-claude -p "revise este cÃ³digo" &lt; app.py &gt; review.md
+claude -p "revise este cêÂ³digo" &lt; app.py &gt; review.md
 
-# pipe de entrada: mandar conteÃºdo para anÃ¡lise
-git diff | claude -p "resuma estas mudanÃ§as em 3 bullets"
+# pipe de entrada: mandar conteêÂºdo para anêÂ¡lise
+git diff | claude -p "resuma estas mudanêÂ§as em 3 bullets"
 
 # output em JSON estruturado
 claude -p "..." --output-format json
 
-# encadear mÃºltiplas ferramentas
-find . -name "*.ts" | head -20 | claude -p "quais desses arquivos sÃ£o testes?"</pre>
+# encadear mêÂºltiplas ferramentas
+find . -name "*.ts" | head -20 | claude -p "quais desses arquivos sêÂ£o testes?"</pre>
 </div>
 <div class="rounded-2xl border border-emerald-500/30 bg-dark-900/40 p-3 sm:p-4 mb-6 overflow-hidden">
 <svg aria-label="Pipeline Unix: entrada mediante pipe, Claude Code procesa, salida mediante pipe a jq/grep/archivo" class="w-full h-auto" role="img" viewbox="0 0 1000 160">
@@ -481,56 +481,56 @@ find . -name "*.ts" | head -20 | claude -p "quais desses arquivos sÃ£o testes?
 </svg>
 </div>
 <div class="bg-blue-900/20 border border-blue-500/30 rounded-xl p-6 mb-6">
-<h3 class="font-semibold text-blue-400 mb-3">ðŸ”¬ Ejemplo resuelto: revisiÃ³n automatizada de PR</h3>
-<p class="text-neutral-300 text-sm mb-3">Un uso real de pipes: automatizar la revisiÃ³n de cÃ³digo con una sola lÃ­nea.</p>
+<h3 class="font-semibold text-blue-400 mb-3">ê°Å¸âÂ¬ Ejemplo resuelto: revisiêÂ³n automatizada de PR</h3>
+<p class="text-neutral-300 text-sm mb-3">Un uso real de pipes: automatizar la revisiêÂ³n de cêÂ³digo con una sola lêÂ­nea.</p>
 <div class="bg-dark-800 rounded-lg p-3">
 <code class="text-xs text-emerald-400 font-mono">git diff main...HEAD | claude -p "Revise este diff. Aponte bugs, melhorias e se segue padroes. Formato: markdown." &gt; review.md</code>
 </div>
-<p class="text-neutral-300 text-sm mt-3">Toma el diff de tu branch contra main, se lo envÃ­a a Claude para que lo analice y guarda el resultado en un archivo Markdown. Tarda 10 segundos en ejecutarse y reemplaza 30 minutos de revisiÃ³n manual en PRs simples.</p>
+<p class="text-neutral-300 text-sm mt-3">Toma el diff de tu branch contra main, se lo envêÂ­a a Claude para que lo analice y guarda el resultado en un archivo Markdown. Tarda 10 segundos en ejecutarse y reemplaza 30 minutos de revisiêÂ³n manual en PRs simples.</p>
 </div>
 <div class="bg-dark-800/60 border-l-4 border-emerald-500 rounded-r-lg p-4 mb-6">
-<p class="text-sm text-neutral-300"><strong class="text-emerald-400">En 1 frase:</strong> <code>claude -p</code> + pipes Unix = IA como herramienta de lÃ­nea de comandos componible.</p>
+<p class="text-sm text-neutral-300"><strong class="text-emerald-400">En 1 frase:</strong> <code>claude -p</code> + pipes Unix = IA como herramienta de lêÂ­nea de comandos componible.</p>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-emerald-500/20 border border-emerald-500/30 text-emerald-400 hover:bg-emerald-500/30 transition-colors" data-ARCKHÉ-read-toggle="" type="button"><span aria-hidden="true" class="ARCKHÉ-read-icon">â—‹</span><span class="ARCKHÉ-read-label">Marcar como leÃ­do</span></button>
+<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-emerald-500/20 border border-emerald-500/30 text-emerald-400 hover:bg-emerald-500/30 transition-colors" data-ARCKHê-read-toggle="" type="button"><span aria-hidden="true" class="ARCKHê-read-icon">ê¢ââ¹</span><span class="ARCKHê-read-label">Marcar como leêÂ­do</span></button>
 </div>
 </section>
 <!-- RESUMO -->
 <section class="mb-12">
 <div class="bg-gradient-to-br from-emerald-900/40 via-dark-800 to-dark-800 rounded-xl border border-emerald-500/30 p-8">
-<h2 class="text-2xl font-bold mb-6 flex items-center"><span class="mr-3">ðŸ§¾</span> Resumen del mÃ³dulo</h2>
+<h2 class="text-2xl font-bold mb-6 flex items-center"><span class="mr-3">ê°Å¸Â§Â¾</span> Resumen del mêÂ³dulo</h2>
 <div class="space-y-4 mb-8">
-<div class="flex items-start space-x-3"><span class="text-emerald-400 mt-1">âœ“</span><div><strong class="text-white">5 atajos esenciales</strong><span class="text-neutral-400"> â€” Escape, Tab, Ctrl+C, Shift+Tab y doble Enter.</span></div></div>
-<div class="flex items-start space-x-3"><span class="text-emerald-400 mt-1">âœ“</span><div><strong class="text-white">Slash commands</strong><span class="text-neutral-400"> â€” /help, /clear, /compact, /model, /memory, /resume controlan la sesiÃ³n.</span></div></div>
-<div class="flex items-start space-x-3"><span class="text-emerald-400 mt-1">âœ“</span><div><strong class="text-white">Modelo y contexto</strong><span class="text-neutral-400"> â€” Sonnet (rÃ¡pido) u Opus (profundo); 200k tokens de ventana.</span></div></div>
-<div class="flex items-start space-x-3"><span class="text-emerald-400 mt-1">âœ“</span><div><strong class="text-white">Pipes de Unix</strong><span class="text-neutral-400"> â€” claude -p convierte la IA en una herramienta componible del terminal.</span></div></div>
+<div class="flex items-start space-x-3"><span class="text-emerald-400 mt-1">ê¢Åâ</span><div><strong class="text-white">5 atajos esenciales</strong><span class="text-neutral-400"> ê¢â¬â Escape, Tab, Ctrl+C, Shift+Tab y doble Enter.</span></div></div>
+<div class="flex items-start space-x-3"><span class="text-emerald-400 mt-1">ê¢Åâ</span><div><strong class="text-white">Slash commands</strong><span class="text-neutral-400"> ê¢â¬â /help, /clear, /compact, /model, /memory, /resume controlan la sesiêÂ³n.</span></div></div>
+<div class="flex items-start space-x-3"><span class="text-emerald-400 mt-1">ê¢Åâ</span><div><strong class="text-white">Modelo y contexto</strong><span class="text-neutral-400"> ê¢â¬â Sonnet (rêÂ¡pido) u Opus (profundo); 200k tokens de ventana.</span></div></div>
+<div class="flex items-start space-x-3"><span class="text-emerald-400 mt-1">ê¢Åâ</span><div><strong class="text-white">Pipes de Unix</strong><span class="text-neutral-400"> ê¢â¬â claude -p convierte la IA en una herramienta componible del terminal.</span></div></div>
 </div>
 <div class="bg-dark-800/50 rounded-lg p-4 mb-8">
-<h3 class="font-semibold text-emerald-400 mb-2">Siguiente mÃ³dulo:</h3>
-<p class="text-neutral-300">1.3 â€” CLAUDE.md: el archivo que convierte Claude Code de genÃ©rico en especialista en tu proyecto.</p>
+<h3 class="font-semibold text-emerald-400 mb-2">Siguiente mêÂ³dulo:</h3>
+<p class="text-neutral-300">1.3 ê¢â¬â CLAUDE.md: el archivo que convierte Claude Code de genêÂ©rico en especialista en tu proyecto.</p>
 </div>
 <div class="flex flex-col sm:flex-row gap-4">
-<a class="flex-1 text-center px-6 py-3 bg-dark-700 text-neutral-300 rounded-lg font-semibold hover:bg-dark-600 transition-colors" href="modulo-1-1.html">â† MÃ³dulo anterior</a>
-<a class="flex-1 text-center px-6 py-3 bg-emerald-600 text-white rounded-lg font-semibold hover:bg-emerald-500 transition-colors" href="modulo-1-3.html">Siguiente mÃ³dulo â†’</a>
+<a class="flex-1 text-center px-6 py-3 bg-dark-700 text-neutral-300 rounded-lg font-semibold hover:bg-dark-600 transition-colors" href="modulo-1-1.html">ê¢â Â MêÂ³dulo anterior</a>
+<a class="flex-1 text-center px-6 py-3 bg-emerald-600 text-white rounded-lg font-semibold hover:bg-emerald-500 transition-colors" href="modulo-1-3.html">Siguiente mêÂ³dulo ê¢â â</a>
 </div>
 </div>
 </section>
 </main>
 </div>
 </div>
-<footer class="border-t border-dark-600 py-8 mt-16"><div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-neutral-500 text-sm"><p>TransiciÃ³n a Claude Code Â· <a class="text-sky-400 hover:text-sky-300" href="https://ARCKHÉ AI" target="_blank">ARCKHÉ AI</a></p></div></footer>
+<footer class="border-t border-dark-600 py-8 mt-16"><div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-neutral-500 text-sm"><p>TransiciêÂ³n a Claude Code êÂ· <a class="text-sky-400 hover:text-sky-300" href="https://ARCKHê AI" target="_blank">ARCKHê AI</a></p></div></footer>
 <script>
     function toggleTopic(button){ const ti=button.closest('.topic-item'); if(!ti)return; const e=ti.querySelector('.topic-explanation'); if(e){e.classList.toggle('active'); button.setAttribute('aria-expanded', e.classList.contains('active'));} }
-    (function(){ const tt=document.getElementById('theme-toggle'),di=document.getElementById('theme-toggle-dark-icon'),li=document.getElementById('theme-toggle-light-icon'),h=document.documentElement; function s(){ if(h.classList.contains('dark')){li.classList.remove('hidden');di.classList.add('hidden');}else{di.classList.remove('hidden');li.classList.add('hidden');} } s(); tt&&tt.addEventListener('click',function(){h.classList.toggle('dark');var d=h.classList.contains('dark');h.style.colorScheme=d?'dark':'light';try{var p=JSON.parse(localStorage.getItem('ARCKHÉ.prefs')||'{}');p.theme=d?'ARCKHÉ-dark':'claro';localStorage.setItem('ARCKHÉ.prefs',JSON.stringify(p));localStorage.setItem('theme',d?'dark':'light');}catch(e){}s();}); })();
+    (function(){ const tt=document.getElementById('theme-toggle'),di=document.getElementById('theme-toggle-dark-icon'),li=document.getElementById('theme-toggle-light-icon'),h=document.documentElement; function s(){ if(h.classList.contains('dark')){li.classList.remove('hidden');di.classList.add('hidden');}else{di.classList.remove('hidden');li.classList.add('hidden');} } s(); tt&&tt.addEventListener('click',function(){h.classList.toggle('dark');var d=h.classList.contains('dark');h.style.colorScheme=d?'dark':'light';try{var p=JSON.parse(localStorage.getItem('ARCKHê.prefs')||'{}');p.theme=d?'ARCKHê-dark':'claro';localStorage.setItem('ARCKHê.prefs',JSON.stringify(p));localStorage.setItem('theme',d?'dark':'light');}catch(e){}s();}); })();
     function openModal(id){var m=document.getElementById(id);if(m){m.classList.remove('hidden');document.body.style.overflow='hidden';}}
     function closeModal(){document.querySelectorAll('.modal').forEach(function(m){m.classList.add('hidden');});document.body.style.overflow='auto';}
     document.addEventListener('keydown',function(e){if(e.key==='Escape')closeModal();});
-    function copyBox(btn){ try{ var pre=btn.closest('.copybox').querySelector('pre'); navigator.clipboard.writeText(pre.textContent); var o=btn.textContent; btn.textContent='copiado âœ“'; setTimeout(function(){btn.textContent=o;},1500);}catch(e){} }
+    function copyBox(btn){ try{ var pre=btn.closest('.copybox').querySelector('pre'); navigator.clipboard.writeText(pre.textContent); var o=btn.textContent; btn.textContent='copiado ê¢Åâ'; setTimeout(function(){btn.textContent=o;},1500);}catch(e){} }
   </script>
 <script src="../../../assets/learn.js"></script>
 <script>
     document.addEventListener('DOMContentLoaded', function () {
-      if (window.ARCKHÉ && typeof ARCKHÉ.init === 'function') ARCKHÉ.init();
+      if (window.ARCKHê && typeof ARCKHê.init === 'function') ARCKHê.init();
     });
   </script>
 </body>

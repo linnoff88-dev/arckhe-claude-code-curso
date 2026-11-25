@@ -4,28 +4,28 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<meta content="claude-code" name="ARCKHÉ-course"/>
-<title>Track 1 Â· CLI and Configuration | Claude Code</title>
+<meta content="claude-code" name="ARCKHê-course"/>
+<title>Track 1 êÂ· CLI and Configuration | Claude Code</title>
 <script>
   (function () {
     try {
       var html = document.documentElement;
-      var DEF = { theme: 'ARCKHÉ-dark', font: 'inter', fontScale: 100, lineWidth: 68, leading: 1.7, accent: 'emerald' };
+      var DEF = { theme: 'ARCKHê-dark', font: 'inter', fontScale: 100, lineWidth: 68, leading: 1.7, accent: 'emerald' };
       function clone(o){var r={};for(var x in o)r[x]=o[x];return r;}
       var p = clone(DEF);
       try {
-        var raw = localStorage.getItem('ARCKHÉ.prefs');
+        var raw = localStorage.getItem('ARCKHê.prefs');
         if (raw) { var parsed = JSON.parse(raw); if (parsed && typeof parsed==='object'){ for (var k in DEF) if (parsed[k]!=null) p[k]=parsed[k]; } }
-        else { var legacy = localStorage.getItem('theme'); if (legacy==='light') p.theme='claro'; else if (legacy==='dark') p.theme='ARCKHÉ-dark'; }
+        else { var legacy = localStorage.getItem('theme'); if (legacy==='light') p.theme='claro'; else if (legacy==='dark') p.theme='ARCKHê-dark'; }
       } catch (e) { p = clone(DEF); }
-      var THEMES = { 'ARCKHÉ-dark':{dark:true,attr:null,cs:'dark'},'claro':{dark:false,attr:null,cs:'light'},'sepia':{dark:false,attr:'sepia',cs:'light'},'foco':{dark:null,attr:'foco',cs:null},'contraste':{dark:true,attr:'contraste',cs:'dark'} };
-      var t = THEMES[p.theme] || THEMES['ARCKHÉ-dark'];
+      var THEMES = { 'ARCKHê-dark':{dark:true,attr:null,cs:'dark'},'claro':{dark:false,attr:null,cs:'light'},'sepia':{dark:false,attr:'sepia',cs:'light'},'foco':{dark:null,attr:'foco',cs:null},'contraste':{dark:true,attr:'contraste',cs:'dark'} };
+      var t = THEMES[p.theme] || THEMES['ARCKHê-dark'];
       if (t.dark===true) html.classList.add('dark'); else if (t.dark===false) html.classList.remove('dark');
       if (t.attr) html.setAttribute('data-theme', t.attr); else html.removeAttribute('data-theme');
       html.style.colorScheme = (t.cs ? t.cs : (html.classList.contains('dark')?'dark':'light'));
       html.setAttribute('data-font', p.font||'inter'); html.setAttribute('data-accent', p.accent||'emerald');
       var s = html.style, scale=(+p.fontScale||100);
-      s.setProperty('--ARCKHÉ-font-scale',(scale/100).toString()); s.setProperty('font-size',scale+'%');
+      s.setProperty('--ARCKHê-font-scale',(scale/100).toString()); s.setProperty('font-size',scale+'%');
       s.setProperty('--measure',(+p.lineWidth||68)+'ch'); s.setProperty('--lh-body',(+p.leading||1.7).toString());
     } catch (err) { try { document.documentElement.classList.add('dark'); document.documentElement.style.colorScheme='dark'; } catch(e){} }
   })();
@@ -36,8 +36,8 @@
   </script>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
 <link href="../../../assets/learn.css" rel="stylesheet"/>
-<script data-ARCKHÉ-manifest="" type="application/json">
-{"course":"claude-code","tracks":[{"n":"1","title":"CLI e ConfiguraÃ§Ã£o","modules":[{"id":"1-1","title":"InstalaÃ§Ã£o e Primeiro Comando","topics":6,"href":"curso/trilha1/modulo-1-1.html"},{"id":"1-2","title":"Navegando o CLI como um Pro","topics":6,"href":"curso/trilha1/modulo-1-2.html"},{"id":"1-3","title":"CLAUDE.md â€” O CÃ©rebro do Projeto","topics":6,"href":"curso/trilha1/modulo-1-3.html"},{"id":"1-4","title":"ConfiguraÃ§Ã£o AvanÃ§ada","topics":6,"href":"curso/trilha1/modulo-1-4.html"},{"id":"1-5","title":"Memory e Contexto Persistente","topics":6,"href":"curso/trilha1/modulo-1-5.html"},{"id":"1-6","title":"Seu Workflow Pessoal","topics":6,"href":"curso/trilha1/modulo-1-6.html"}]},{"n":"2","title":"Plan e Loop Modes","modules":[{"id":"2-1","title":"Plan Mode â€” Pense Antes de Codar","topics":6,"href":"curso/trilha2/modulo-2-1.html"},{"id":"2-2","title":"Planos que Funcionam","topics":6,"href":"curso/trilha2/modulo-2-2.html"},{"id":"2-3","title":"Loop Mode â€” AutomaÃ§Ã£o Iterativa","topics":6,"href":"curso/trilha2/modulo-2-3.html"},{"id":"2-4","title":"Patterns de Loop na PrÃ¡tica","topics":6,"href":"curso/trilha2/modulo-2-4.html"},{"id":"2-5","title":"Combinando Plan + Loop","topics":6,"href":"curso/trilha2/modulo-2-5.html"},{"id":"2-6","title":"Agentic Coding â€” O Novo Normal","topics":6,"href":"curso/trilha2/modulo-2-6.html"}]},{"n":"3","title":"MCP Servers","modules":[{"id":"3-1","title":"O que sÃ£o MCP Servers","topics":6,"href":"curso/trilha3/modulo-3-1.html"},{"id":"3-2","title":"Seus Primeiros MCPs","topics":6,"href":"curso/trilha3/modulo-3-2.html"},{"id":"3-3","title":"MCPs de Produtividade","topics":6,"href":"curso/trilha3/modulo-3-3.html"},{"id":"3-4","title":"MCPs de Database e APIs","topics":6,"href":"curso/trilha3/modulo-3-4.html"},{"id":"3-5","title":"Criando seu PrÃ³prio MCP Server","topics":6,"href":"curso/trilha3/modulo-3-5.html"},{"id":"3-6","title":"Ecossistema e Marketplace","topics":6,"href":"curso/trilha3/modulo-3-6.html"}]},{"n":"4","title":"Subagentes e Git","modules":[{"id":"4-1","title":"Subagentes â€” Conceitos","topics":6,"href":"curso/trilha4/modulo-4-1.html"},{"id":"4-2","title":"Paralelismo Real","topics":6,"href":"curso/trilha4/modulo-4-2.html"},{"id":"4-3","title":"Patterns de Multi-Agent","topics":6,"href":"curso/trilha4/modulo-4-3.html"},{"id":"4-4","title":"Git com IA â€” Versionamento","topics":6,"href":"curso/trilha4/modulo-4-4.html"},{"id":"4-5","title":"Pull Requests e Code Review","topics":6,"href":"curso/trilha4/modulo-4-5.html"},{"id":"4-6","title":"CI/CD e GitHub Actions","topics":6,"href":"curso/trilha4/modulo-4-6.html"}]},{"n":"5","title":"Python e Ship","modules":[{"id":"5-1","title":"Python + Claude Code","topics":6,"href":"curso/trilha5/modulo-5-1.html"},{"id":"5-2","title":"AutomaÃ§Ã£o de Scripts","topics":6,"href":"curso/trilha5/modulo-5-2.html"},{"id":"5-3","title":"FastAPI e Web Services","topics":6,"href":"curso/trilha5/modulo-5-3.html"},{"id":"5-4","title":"Testing Automatizado","topics":6,"href":"curso/trilha5/modulo-5-4.html"},{"id":"5-5","title":"Deploy e Infraestrutura","topics":6,"href":"curso/trilha5/modulo-5-5.html"},{"id":"5-6","title":"Ship Your Product","topics":6,"href":"curso/trilha5/modulo-5-6.html"}]}]}
+<script data-ARCKHê-manifest="" type="application/json">
+{"course":"claude-code","tracks":[{"n":"1","title":"CLI e ConfiguraêÂ§êÂ£o","modules":[{"id":"1-1","title":"InstalaêÂ§êÂ£o e Primeiro Comando","topics":6,"href":"curso/trilha1/modulo-1-1.html"},{"id":"1-2","title":"Navegando o CLI como um Pro","topics":6,"href":"curso/trilha1/modulo-1-2.html"},{"id":"1-3","title":"CLAUDE.md ê¢â¬â O CêÂ©rebro do Projeto","topics":6,"href":"curso/trilha1/modulo-1-3.html"},{"id":"1-4","title":"ConfiguraêÂ§êÂ£o AvanêÂ§ada","topics":6,"href":"curso/trilha1/modulo-1-4.html"},{"id":"1-5","title":"Memory e Contexto Persistente","topics":6,"href":"curso/trilha1/modulo-1-5.html"},{"id":"1-6","title":"Seu Workflow Pessoal","topics":6,"href":"curso/trilha1/modulo-1-6.html"}]},{"n":"2","title":"Plan e Loop Modes","modules":[{"id":"2-1","title":"Plan Mode ê¢â¬â Pense Antes de Codar","topics":6,"href":"curso/trilha2/modulo-2-1.html"},{"id":"2-2","title":"Planos que Funcionam","topics":6,"href":"curso/trilha2/modulo-2-2.html"},{"id":"2-3","title":"Loop Mode ê¢â¬â AutomaêÂ§êÂ£o Iterativa","topics":6,"href":"curso/trilha2/modulo-2-3.html"},{"id":"2-4","title":"Patterns de Loop na PrêÂ¡tica","topics":6,"href":"curso/trilha2/modulo-2-4.html"},{"id":"2-5","title":"Combinando Plan + Loop","topics":6,"href":"curso/trilha2/modulo-2-5.html"},{"id":"2-6","title":"Agentic Coding ê¢â¬â O Novo Normal","topics":6,"href":"curso/trilha2/modulo-2-6.html"}]},{"n":"3","title":"MCP Servers","modules":[{"id":"3-1","title":"O que sêÂ£o MCP Servers","topics":6,"href":"curso/trilha3/modulo-3-1.html"},{"id":"3-2","title":"Seus Primeiros MCPs","topics":6,"href":"curso/trilha3/modulo-3-2.html"},{"id":"3-3","title":"MCPs de Produtividade","topics":6,"href":"curso/trilha3/modulo-3-3.html"},{"id":"3-4","title":"MCPs de Database e APIs","topics":6,"href":"curso/trilha3/modulo-3-4.html"},{"id":"3-5","title":"Criando seu PrêÂ³prio MCP Server","topics":6,"href":"curso/trilha3/modulo-3-5.html"},{"id":"3-6","title":"Ecossistema e Marketplace","topics":6,"href":"curso/trilha3/modulo-3-6.html"}]},{"n":"4","title":"Subagentes e Git","modules":[{"id":"4-1","title":"Subagentes ê¢â¬â Conceitos","topics":6,"href":"curso/trilha4/modulo-4-1.html"},{"id":"4-2","title":"Paralelismo Real","topics":6,"href":"curso/trilha4/modulo-4-2.html"},{"id":"4-3","title":"Patterns de Multi-Agent","topics":6,"href":"curso/trilha4/modulo-4-3.html"},{"id":"4-4","title":"Git com IA ê¢â¬â Versionamento","topics":6,"href":"curso/trilha4/modulo-4-4.html"},{"id":"4-5","title":"Pull Requests e Code Review","topics":6,"href":"curso/trilha4/modulo-4-5.html"},{"id":"4-6","title":"CI/CD e GitHub Actions","topics":6,"href":"curso/trilha4/modulo-4-6.html"}]},{"n":"5","title":"Python e Ship","modules":[{"id":"5-1","title":"Python + Claude Code","topics":6,"href":"curso/trilha5/modulo-5-1.html"},{"id":"5-2","title":"AutomaêÂ§êÂ£o de Scripts","topics":6,"href":"curso/trilha5/modulo-5-2.html"},{"id":"5-3","title":"FastAPI e Web Services","topics":6,"href":"curso/trilha5/modulo-5-3.html"},{"id":"5-4","title":"Testing Automatizado","topics":6,"href":"curso/trilha5/modulo-5-4.html"},{"id":"5-5","title":"Deploy e Infraestrutura","topics":6,"href":"curso/trilha5/modulo-5-5.html"},{"id":"5-6","title":"Ship Your Product","topics":6,"href":"curso/trilha5/modulo-5-6.html"}]}]}
 </script>
 <style>
     body { font-family: 'Inter', sans-serif; }
@@ -92,15 +92,15 @@
     }
   </style>
 <link href="https://linnoff88-dev.github.io/ hreflang="pt-BR" rel="alternate"/><link href="https://linnoff88-dev.github.io/ hreflang="en" rel="alternate"/><link href="https://linnoff88-dev.github.io/ hreflang="es" rel="alternate"/></head>
-<body class="bg-dark-900 text-neutral-100 min-h-screen"><div class="ARCKHÉ-lang" style="position:fixed;right:14px;bottom:14px;z-index:9999;display:flex;gap:2px;padding:4px;border-radius:10px;background:rgba(12,12,16,.82);border:1px solid rgba(226,162,59,.45);font:600 12px/1 Sora,Inter,system-ui,sans-serif;backdrop-filter:blur(8px)" translate="no"><a href="../../../curso/trilha1/" hreflang="pt-BR" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">PT</a><a href="./" hreflang="en" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#1a1206;background:#E2A23B">EN</a><a href="../../../es/curso/trilha1/" hreflang="es" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">ES</a></div>
+<body class="bg-dark-900 text-neutral-100 min-h-screen"><div class="ARCKHê-lang" style="position:fixed;right:14px;bottom:14px;z-index:9999;display:flex;gap:2px;padding:4px;border-radius:10px;background:rgba(12,12,16,.82);border:1px solid rgba(226,162,59,.45);font:600 12px/1 Sora,Inter,system-ui,sans-serif;backdrop-filter:blur(8px)" translate="no"><a href="../../../curso/trilha1/" hreflang="pt-BR" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">PT</a><a href="./" hreflang="en" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#1a1206;background:#E2A23B">EN</a><a href="../../../es/curso/trilha1/" hreflang="es" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">ES</a></div>
 <a class="sr-only focus:not-sr-only focus:absolute focus:z-50 focus:top-2 focus:left-2 focus:px-4 focus:py-2 focus:bg-dark-800 focus:text-emerald-400 focus:rounded-lg" href="#conteudo">Skip to content</a>
 <nav class="sticky top-0 z-50 bg-dark-900/95 backdrop-blur-sm border-b border-dark-600">
 <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
 <div class="flex justify-between items-center h-14">
 <div class="flex items-center space-x-4">
-<a class="flex items-center space-x-2 text-yellow-400 hover:text-yellow-300" href="../../index.html"><span class="text-2xl">ðŸ¤–</span><span class="font-bold text-lg hidden sm:inline">Claude Code</span></a>
+<a class="flex items-center space-x-2 text-yellow-400 hover:text-yellow-300" href="../../index.html"><span class="text-2xl">ê°Å¸Â¤â</span><span class="font-bold text-lg hidden sm:inline">Claude Code</span></a>
 <span class="text-neutral-600">|</span>
-<a class="text-sky-400 hover:text-sky-300 text-sm font-medium" href="https://ARCKHÉ AI" target="_blank">ARCKHÉ AI</a>
+<a class="text-sky-400 hover:text-sky-300 text-sm font-medium" href="https://ARCKHê AI" target="_blank">ARCKHê AI</a>
 </div>
 <div class="flex items-center space-x-1 sm:space-x-2">
 <a class="px-3 py-1.5 rounded-lg text-sm font-semibold text-emerald-400 bg-emerald-500/10" href="index.html"><span class="sm:hidden">T1</span><span class="hidden sm:inline">CLI</span></a>
@@ -108,7 +108,7 @@
 <a class="px-3 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-purple-400 hover:bg-purple-500/10 transition-colors" href="../trilha3/index.html"><span class="sm:hidden">T3</span><span class="hidden sm:inline">MCP</span></a>
 <a class="px-3 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-amber-400 hover:bg-amber-500/10 transition-colors" href="../trilha4/index.html"><span class="sm:hidden">T4</span><span class="hidden sm:inline">Agents</span></a>
 <a class="px-3 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-teal-400 hover:bg-teal-500/10 transition-colors" href="../trilha5/index.html"><span class="sm:hidden">T5</span><span class="hidden sm:inline">Python</span></a>
-<button class="hidden sm:inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-sm text-neutral-300 hover:text-neutral-100 hover:bg-dark-700 transition-colors ml-1" data-ARCKHÉ-journey-open="" type="button"><span aria-hidden="true">â—·</span><span>My journey</span><span aria-hidden="true" class="ARCKHÉ-journey-badge hidden"></span></button>
+<button class="hidden sm:inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-sm text-neutral-300 hover:text-neutral-100 hover:bg-dark-700 transition-colors ml-1" data-ARCKHê-journey-open="" type="button"><span aria-hidden="true">ê¢âÂ·</span><span>My journey</span><span aria-hidden="true" class="ARCKHê-journey-badge hidden"></span></button>
 <button aria-label="Switch theme" class="p-2 rounded-lg bg-dark-700 hover:bg-dark-600 transition-colors ml-1" id="theme-toggle">
 <svg class="hidden w-5 h-5 text-neutral-300" fill="currentColor" id="theme-toggle-dark-icon" viewbox="0 0 20 20"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg>
 <svg class="hidden w-5 h-5 text-neutral-300" fill="currentColor" id="theme-toggle-light-icon" viewbox="0 0 20 20"><path clip-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" fill-rule="evenodd"></path></svg>
@@ -120,7 +120,7 @@
 <header class="bg-gradient-to-br from-emerald-900/30 via-dark-800 to-dark-800 py-12 border-b border-dark-600">
 <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
 <span class="inline-block px-3 py-1 bg-emerald-500/20 text-emerald-400 text-xs font-semibold rounded-full mb-4">TRACK 1</span>
-<h1 class="text-3xl sm:text-4xl font-bold mb-4">ðŸ¤– CLI and Configuration</h1>
+<h1 class="text-3xl sm:text-4xl font-bold mb-4">ê°Å¸Â¤â CLI and Configuration</h1>
 <p class="text-lg text-neutral-400 max-w-3xl mb-6">From zero to complete mastery of Claude Code on the command line. Installation, shortcuts, CLAUDE.md, settings, memory, and your personal productivity workflow.</p>
 <div class="rounded-2xl border border-emerald-500/30 bg-dark-900/40 p-3 sm:p-4 mb-6 overflow-hidden">
 <svg aria-label="Diagram: terminal with Claude Code commands flowing into configuration, memory, and workflow" class="w-full h-auto" role="img" viewbox="0 0 1000 240">
@@ -171,10 +171,10 @@
 <div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-emerald-400">Base</div><div class="text-xs text-neutral-400">Level</div></div>
 </div>
 <div class="mt-6 max-w-2xl">
-<div aria-label="Path 1 progress" aria-valuemax="100" aria-valuemin="0" class="ARCKHÉ-meter flex items-center gap-3" data-ARCKHÉ-meter="trilha:1" role="progressbar">
+<div aria-label="Path 1 progress" aria-valuemax="100" aria-valuemin="0" class="ARCKHê-meter flex items-center gap-3" data-ARCKHê-meter="trilha:1" role="progressbar">
 <span class="text-sm text-neutral-400">Path progress:</span>
-<span class="ARCKHÉ-meter-pct text-emerald-400 font-bold text-sm">0%</span>
-<span class="ARCKHÉ-meter-count text-xs text-neutral-500">0 of 36</span>
+<span class="ARCKHê-meter-pct text-emerald-400 font-bold text-sm">0%</span>
+<span class="ARCKHê-meter-count text-xs text-neutral-500">0 of 36</span>
 </div>
 </div>
 </div>
@@ -185,49 +185,49 @@
 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
 <a class="group bg-dark-800 rounded-xl border border-dark-600 hover:border-emerald-500/30 p-5 transition-all" href="#modulo-1-1">
 <div class="flex items-center justify-between mb-2"><span class="text-emerald-400 font-bold text-sm">1.1</span><span class="text-xs text-neutral-500">~35 min</span></div>
-<h3 class="font-semibold mb-1 group-hover:text-emerald-400 transition-colors">ðŸ“¦ Installation and First Command</h3>
+<h3 class="font-semibold mb-1 group-hover:text-emerald-400 transition-colors">ê°Å¸âÂ¦ Installation and First Command</h3>
 <p class="text-xs text-neutral-400">From npm install to your first prompt</p>
 </a>
 <a class="group bg-dark-800 rounded-xl border border-dark-600 hover:border-emerald-500/30 p-5 transition-all" href="#modulo-1-2">
 <div class="flex items-center justify-between mb-2"><span class="text-emerald-400 font-bold text-sm">1.2</span><span class="text-xs text-neutral-500">~40 min</span></div>
-<h3 class="font-semibold mb-1 group-hover:text-emerald-400 transition-colors">âŒ¨ï¸ Navigating the CLI Like a Pro</h3>
+<h3 class="font-semibold mb-1 group-hover:text-emerald-400 transition-colors">ê¢ÅÂ¨ê¯Â¸Â Navigating the CLI Like a Pro</h3>
 <p class="text-xs text-neutral-400">Shortcuts, slash commands, and pipes</p>
 </a>
 <a class="group bg-dark-800 rounded-xl border border-dark-600 hover:border-emerald-500/30 p-5 transition-all" href="#modulo-1-3">
 <div class="flex items-center justify-between mb-2"><span class="text-emerald-400 font-bold text-sm">1.3</span><span class="text-xs text-neutral-500">~45 min</span></div>
-<h3 class="font-semibold mb-1 group-hover:text-emerald-400 transition-colors">ðŸ§  CLAUDE.md â€” The Project's Brain</h3>
+<h3 class="font-semibold mb-1 group-hover:text-emerald-400 transition-colors">ê°Å¸Â§Â  CLAUDE.md ê¢â¬â The Project's Brain</h3>
 <p class="text-xs text-neutral-400">The instruction hierarchy</p>
 </a>
 <a class="group bg-dark-800 rounded-xl border border-dark-600 hover:border-emerald-500/30 p-5 transition-all" href="#modulo-1-4">
 <div class="flex items-center justify-between mb-2"><span class="text-emerald-400 font-bold text-sm">1.4</span><span class="text-xs text-neutral-500">~40 min</span></div>
-<h3 class="font-semibold mb-1 group-hover:text-emerald-400 transition-colors">âš™ï¸ Advanced Configuration</h3>
+<h3 class="font-semibold mb-1 group-hover:text-emerald-400 transition-colors">ê¢Å¡â¢ê¯Â¸Â Advanced Configuration</h3>
 <p class="text-xs text-neutral-400">settings.json, permissions, and providers</p>
 </a>
 <a class="group bg-dark-800 rounded-xl border border-dark-600 hover:border-emerald-500/30 p-5 transition-all" href="#modulo-1-5">
 <div class="flex items-center justify-between mb-2"><span class="text-emerald-400 font-bold text-sm">1.5</span><span class="text-xs text-neutral-500">~40 min</span></div>
-<h3 class="font-semibold mb-1 group-hover:text-emerald-400 transition-colors">ðŸ’¾ Memory and Persistent Context</h3>
+<h3 class="font-semibold mb-1 group-hover:text-emerald-400 transition-colors">ê°Å¸âÂ¾ Memory and Persistent Context</h3>
 <p class="text-xs text-neutral-400">Context window, compaction, and checkpoints</p>
 </a>
 <a class="group bg-dark-800 rounded-xl border border-dark-600 hover:border-emerald-500/30 p-5 transition-all" href="#modulo-1-6">
 <div class="flex items-center justify-between mb-2"><span class="text-emerald-400 font-bold text-sm">1.6</span><span class="text-xs text-neutral-500">~35 min</span></div>
-<h3 class="font-semibold mb-1 group-hover:text-emerald-400 transition-colors">ðŸ› ï¸ Your Personal Workflow</h3>
+<h3 class="font-semibold mb-1 group-hover:text-emerald-400 transition-colors">ê°Å¸âºÂ ê¯Â¸Â Your Personal Workflow</h3>
 <p class="text-xs text-neutral-400">Aliases, tmux, VS Code, and dotfiles</p>
 </a>
 </div>
 </section>
 <h2 class="text-2xl font-bold mb-6">Detailed content</h2>
 <!-- MODULO 1.1 -->
-<div class="bg-dark-800 rounded-xl border border-dark-600 mb-6" data-ARCKHÉ-module="1-1" data-ARCKHÉ-track="1" id="modulo-1-1">
+<div class="bg-dark-800 rounded-xl border border-dark-600 mb-6" data-ARCKHê-module="1-1" data-ARCKHê-track="1" id="modulo-1-1">
 <div class="p-6 border-b border-dark-600">
 <div class="flex items-center justify-between mb-2"><span class="text-emerald-400 font-bold">1.1</span><span class="text-xs text-neutral-500">~35 min</span></div>
-<h3 class="text-2xl font-bold mb-2">ðŸ“¦ Installation and First Command</h3>
+<h3 class="text-2xl font-bold mb-2">ê°Å¸âÂ¦ Installation and First Command</h3>
 <p class="text-neutral-400 text-sm">From npm install to your first working prompt. Everything you need to start using Claude Code today.</p>
 </div>
 <div class="divide-y divide-dark-600">
 <div class="topic-item">
 <button aria-expanded="false" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
 <span class="w-6 h-6 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">1</span>
-<span class="text-lg">ðŸ“‹</span><div><span class="font-medium">Requirements and installation</span><span class="text-neutral-500 text-sm ml-2">- npm, brew, or winget</span></div>
+<span class="text-lg">ê°Å¸ââ¹</span><div><span class="font-medium">Requirements and installation</span><span class="text-neutral-500 text-sm ml-2">- npm, brew, or winget</span></div>
 </button>
 <div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
 <div><span class="text-emerald-400 font-semibold">What is:</span><p class="text-neutral-300 text-sm">The three ways to install Claude Code: npm, Homebrew, and winget.</p></div>
@@ -238,7 +238,7 @@
 <div class="topic-item">
 <button aria-expanded="false" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
 <span class="w-6 h-6 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">2</span>
-<span class="text-lg">â–¶ï¸</span><div><span class="font-medium">First Claude in the terminal</span><span class="text-neutral-500 text-sm ml-2">- Hello World</span></div>
+<span class="text-lg">ê¢âÂ¶ê¯Â¸Â</span><div><span class="font-medium">First Claude in the terminal</span><span class="text-neutral-500 text-sm ml-2">- Hello World</span></div>
 </button>
 <div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
 <div><span class="text-emerald-400 font-semibold">What is:</span><p class="text-neutral-300 text-sm">Run the claude command for the first time and understand what appears.</p></div>
@@ -249,7 +249,7 @@
 <div class="topic-item">
 <button aria-expanded="false" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
 <span class="w-6 h-6 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">3</span>
-<span class="text-lg">ðŸ”€</span><div><span class="font-medium">Interactive vs. one-shot mode</span><span class="text-neutral-500 text-sm ml-2">- Two ways to use it</span></div>
+<span class="text-lg">ê°Å¸ââ¬</span><div><span class="font-medium">Interactive vs. one-shot mode</span><span class="text-neutral-500 text-sm ml-2">- Two ways to use it</span></div>
 </button>
 <div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
 <div><span class="text-emerald-400 font-semibold">What is:</span><p class="text-neutral-300 text-sm">claude (interactive) vs. claude -p "question" (one-shot, no session).</p></div>
@@ -260,7 +260,7 @@
 <div class="topic-item">
 <button aria-expanded="false" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
 <span class="w-6 h-6 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">4</span>
-<span class="text-lg">ðŸ“–</span><div><span class="font-medium">Navigating --help and essential flags</span><span class="text-neutral-500 text-sm ml-2">- The pocket guide</span></div>
+<span class="text-lg">ê°Å¸ââ</span><div><span class="font-medium">Navigating --help and essential flags</span><span class="text-neutral-500 text-sm ml-2">- The pocket guide</span></div>
 </button>
 <div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
 <div><span class="text-emerald-400 font-semibold">What is:</span><p class="text-neutral-300 text-sm">The flags you'll use every day: --help, --version, -p, --model, --verbose.</p></div>
@@ -271,7 +271,7 @@
 <div class="topic-item">
 <button aria-expanded="false" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
 <span class="w-6 h-6 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">5</span>
-<span class="text-lg">ðŸ”„</span><div><span class="font-medium">Updating and versioning</span><span class="text-neutral-500 text-sm ml-2">- Staying Up to Date</span></div>
+<span class="text-lg">ê°Å¸ââ</span><div><span class="font-medium">Updating and versioning</span><span class="text-neutral-500 text-sm ml-2">- Staying Up to Date</span></div>
 </button>
 <div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
 <div><span class="text-emerald-400 font-semibold">What is:</span><p class="text-neutral-300 text-sm">How to update Claude Code and check the installed version.</p></div>
@@ -282,7 +282,7 @@
 <div class="topic-item">
 <button aria-expanded="false" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
 <span class="w-6 h-6 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">6</span>
-<span class="text-lg">ðŸ”§</span><div><span class="font-medium">Diagnosing common problems</span><span class="text-neutral-500 text-sm ml-2">- Troubleshooting</span></div>
+<span class="text-lg">ê°Å¸âÂ§</span><div><span class="font-medium">Diagnosing common problems</span><span class="text-neutral-500 text-sm ml-2">- Troubleshooting</span></div>
 </button>
 <div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
 <div><span class="text-emerald-400 font-semibold">What is:</span><p class="text-neutral-300 text-sm">The most common installation errors and how to fix each one.</p></div>
@@ -297,17 +297,17 @@
 </div>
 </div>
 <!-- MODULO 1.2 -->
-<div class="bg-dark-800 rounded-xl border border-dark-600 mb-6" data-ARCKHÉ-module="1-2" data-ARCKHÉ-track="1" id="modulo-1-2">
+<div class="bg-dark-800 rounded-xl border border-dark-600 mb-6" data-ARCKHê-module="1-2" data-ARCKHê-track="1" id="modulo-1-2">
 <div class="p-6 border-b border-dark-600">
 <div class="flex items-center justify-between mb-2"><span class="text-emerald-400 font-bold">1.2</span><span class="text-xs text-neutral-500">~40 min</span></div>
-<h3 class="text-2xl font-bold mb-2">âŒ¨ï¸ Navigating the CLI Like a Pro</h3>
+<h3 class="text-2xl font-bold mb-2">ê¢ÅÂ¨ê¯Â¸Â Navigating the CLI Like a Pro</h3>
 <p class="text-neutral-400 text-sm">Keyboard shortcuts, slash commands, sessions, and pipes that multiply your speed.</p>
 </div>
 <div class="divide-y divide-dark-600">
 <div class="topic-item">
 <button aria-expanded="false" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
 <span class="w-6 h-6 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">1</span>
-<span class="text-lg">âš¡</span><div><span class="font-medium">Essential keyboard shortcuts</span><span class="text-neutral-500 text-sm ml-2">- Speed up</span></div>
+<span class="text-lg">ê¢Å¡Â¡</span><div><span class="font-medium">Essential keyboard shortcuts</span><span class="text-neutral-500 text-sm ml-2">- Speed up</span></div>
 </button>
 <div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
 <div><span class="text-emerald-400 font-semibold">What is:</span><p class="text-neutral-300 text-sm">Claude Code keyboard shortcuts: Escape, Tab, Ctrl+C, and more.</p></div>
@@ -318,7 +318,7 @@
 <div class="topic-item">
 <button aria-expanded="false" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
 <span class="w-6 h-6 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">2</span>
-<span class="text-lg">ðŸ”§</span><div><span class="font-medium">Slash commands</span><span class="text-neutral-500 text-sm ml-2">- /help, /clear, /model, /memory</span></div>
+<span class="text-lg">ê°Å¸âÂ§</span><div><span class="font-medium">Slash commands</span><span class="text-neutral-500 text-sm ml-2">- /help, /clear, /model, /memory</span></div>
 </button>
 <div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
 <div><span class="text-emerald-400 font-semibold">What is:</span><p class="text-neutral-300 text-sm">Slash commands inside the Claude Code interactive session.</p></div>
@@ -329,7 +329,7 @@
 <div class="topic-item">
 <button aria-expanded="false" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
 <span class="w-6 h-6 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">3</span>
-<span class="text-lg">ðŸ§ </span><div><span class="font-medium">Model and context window</span><span class="text-neutral-500 text-sm ml-2">- What runs under the hood</span></div>
+<span class="text-lg">ê°Å¸Â§Â </span><div><span class="font-medium">Model and context window</span><span class="text-neutral-500 text-sm ml-2">- What runs under the hood</span></div>
 </button>
 <div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
 <div><span class="text-emerald-400 font-semibold">What is:</span><p class="text-neutral-300 text-sm">Which model runs behind Claude Code, and how does context work?</p></div>
@@ -340,7 +340,7 @@
 <div class="topic-item">
 <button aria-expanded="false" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
 <span class="w-6 h-6 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">4</span>
-<span class="text-lg">ðŸ’¾</span><div><span class="font-medium">Sessions and /resume</span><span class="text-neutral-500 text-sm ml-2">- Resume conversation</span></div>
+<span class="text-lg">ê°Å¸âÂ¾</span><div><span class="font-medium">Sessions and /resume</span><span class="text-neutral-500 text-sm ml-2">- Resume conversation</span></div>
 </button>
 <div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
 <div><span class="text-emerald-400 font-semibold">What is:</span><p class="text-neutral-300 text-sm">Sessions persist between runs. /resume picks up the previous conversation.</p></div>
@@ -351,7 +351,7 @@
 <div class="topic-item">
 <button aria-expanded="false" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
 <span class="w-6 h-6 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">5</span>
-<span class="text-lg">ðŸ–¼ï¸</span><div><span class="font-medium">Reading images and screenshots</span><span class="text-neutral-500 text-sm ml-2">- Multimodal</span></div>
+<span class="text-lg">ê°Å¸âÂ¼ê¯Â¸Â</span><div><span class="font-medium">Reading images and screenshots</span><span class="text-neutral-500 text-sm ml-2">- Multimodal</span></div>
 </button>
 <div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
 <div><span class="text-emerald-400 font-semibold">What is:</span><p class="text-neutral-300 text-sm">Claude Code reads images from the filesystem and analyzes screenshots.</p></div>
@@ -362,7 +362,7 @@
 <div class="topic-item">
 <button aria-expanded="false" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
 <span class="w-6 h-6 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">6</span>
-<span class="text-lg">ðŸ“¤</span><div><span class="font-medium">Formatted output and pipes</span><span class="text-neutral-500 text-sm ml-2">- Integrating with Unix</span></div>
+<span class="text-lg">ê°Å¸âÂ¤</span><div><span class="font-medium">Formatted output and pipes</span><span class="text-neutral-500 text-sm ml-2">- Integrating with Unix</span></div>
 </button>
 <div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
 <div><span class="text-emerald-400 font-semibold">What is:</span><p class="text-neutral-300 text-sm">Use claude -p with Unix pipes: | jq, | grep, &gt; file.</p></div>
@@ -377,28 +377,28 @@
 </div>
 </div>
 <!-- MODULO 1.3 -->
-<div class="bg-dark-800 rounded-xl border border-dark-600 mb-6" data-ARCKHÉ-module="1-3" data-ARCKHÉ-track="1" id="modulo-1-3">
+<div class="bg-dark-800 rounded-xl border border-dark-600 mb-6" data-ARCKHê-module="1-3" data-ARCKHê-track="1" id="modulo-1-3">
 <div class="p-6 border-b border-dark-600">
 <div class="flex items-center justify-between mb-2"><span class="text-emerald-400 font-bold">1.3</span><span class="text-xs text-neutral-500">~45 min</span></div>
-<h3 class="text-2xl font-bold mb-2">ðŸ§  CLAUDE.md â€” The Project's Brain</h3>
+<h3 class="text-2xl font-bold mb-2">ê°Å¸Â§Â  CLAUDE.md ê¢â¬â The Project's Brain</h3>
 <p class="text-neutral-400 text-sm">The file that turns Claude Code from a general-purpose tool into a specialist in your project.</p>
 </div>
 <div class="divide-y divide-dark-600">
 <div class="topic-item">
 <button aria-expanded="false" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
 <span class="w-6 h-6 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">1</span>
-<span class="text-lg">ðŸ“„</span><div><span class="font-medium">What it is and why it exists</span><span class="text-neutral-500 text-sm ml-2">- The persistent system prompt</span></div>
+<span class="text-lg">ê°Å¸ââ</span><div><span class="font-medium">What it is and why it exists</span><span class="text-neutral-500 text-sm ml-2">- The persistent system prompt</span></div>
 </button>
 <div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
 <div><span class="text-emerald-400 font-semibold">What is:</span><p class="text-neutral-300 text-sm">A Markdown file that Claude Code reads automatically in every session.</p></div>
-<div><span class="text-emerald-400 font-semibold">Why learn:</span><p class="text-neutral-300 text-sm">Itâ€™s the only way to give the agent persistent context about your project.</p></div>
+<div><span class="text-emerald-400 font-semibold">Why learn:</span><p class="text-neutral-300 text-sm">Itê¢â¬â¢s the only way to give the agent persistent context about your project.</p></div>
 <div><span class="text-emerald-400 font-semibold">Key concepts:</span><p class="text-neutral-300 text-sm">System prompt; persistent instructions; project context.</p></div>
 </div></div>
 </div>
 <div class="topic-item">
 <button aria-expanded="false" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
 <span class="w-6 h-6 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">2</span>
-<span class="text-lg">ðŸ—ï¸</span><div><span class="font-medium">Hierarchy: global, project, and folder</span><span class="text-neutral-500 text-sm ml-2">- Three levels</span></div>
+<span class="text-lg">ê°Å¸Ââê¯Â¸Â</span><div><span class="font-medium">Hierarchy: global, project, and folder</span><span class="text-neutral-500 text-sm ml-2">- Three levels</span></div>
 </button>
 <div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
 <div><span class="text-emerald-400 font-semibold">What is:</span><p class="text-neutral-300 text-sm">~/.claude/CLAUDE.md (global) &gt; ./CLAUDE.md (project) &gt; subdir/CLAUDE.md (folder).</p></div>
@@ -409,7 +409,7 @@
 <div class="topic-item">
 <button aria-expanded="false" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
 <span class="w-6 h-6 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">3</span>
-<span class="text-lg">âœï¸</span><div><span class="font-medium">Effective syntax and conventions</span><span class="text-neutral-500 text-sm ml-2">- Markdown That Works</span></div>
+<span class="text-lg">ê¢ÅÂê¯Â¸Â</span><div><span class="font-medium">Effective syntax and conventions</span><span class="text-neutral-500 text-sm ml-2">- Markdown That Works</span></div>
 </button>
 <div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
 <div><span class="text-emerald-400 font-semibold">What is:</span><p class="text-neutral-300 text-sm">How to write a CLAUDE.md that the model actually follows.</p></div>
@@ -420,10 +420,10 @@
 <div class="topic-item">
 <button aria-expanded="false" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
 <span class="w-6 h-6 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">4</span>
-<span class="text-lg">ðŸŽ¯</span><div><span class="font-medium">Instructions that make a difference</span><span class="text-neutral-500 text-sm ml-2">- What to include</span></div>
+<span class="text-lg">ê°Å¸Å½Â¯</span><div><span class="font-medium">Instructions that make a difference</span><span class="text-neutral-500 text-sm ml-2">- What to include</span></div>
 </button>
 <div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
-<div><span class="text-emerald-400 font-semibold">What is:</span><p class="text-neutral-300 text-sm">Which types of instructions actually change the agentâ€™s behavior.</p></div>
+<div><span class="text-emerald-400 font-semibold">What is:</span><p class="text-neutral-300 text-sm">Which types of instructions actually change the agentê¢â¬â¢s behavior.</p></div>
 <div><span class="text-emerald-400 font-semibold">Why learn:</span><p class="text-neutral-300 text-sm">Fewer, right instructions &gt; many vague instructions.</p></div>
 <div><span class="text-emerald-400 font-semibold">Key concepts:</span><p class="text-neutral-300 text-sm">Stack; conventions; prohibitions; project standards.</p></div>
 </div></div>
@@ -431,7 +431,7 @@
 <div class="topic-item">
 <button aria-expanded="false" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
 <span class="w-6 h-6 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">5</span>
-<span class="text-lg">ðŸ“‚</span><div><span class="font-medium">Real examples of good CLAUDE.md files</span><span class="text-neutral-500 text-sm ml-2">- Learn by copying</span></div>
+<span class="text-lg">ê°Å¸ââ</span><div><span class="font-medium">Real examples of good CLAUDE.md files</span><span class="text-neutral-500 text-sm ml-2">- Learn by copying</span></div>
 </button>
 <div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
 <div><span class="text-emerald-400 font-semibold">What is:</span><p class="text-neutral-300 text-sm">Annotated examples of CLAUDE.md files from real projects.</p></div>
@@ -442,7 +442,7 @@
 <div class="topic-item">
 <button aria-expanded="false" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
 <span class="w-6 h-6 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">6</span>
-<span class="text-lg">ðŸ”„</span><div><span class="font-medium">Maintenance and version control</span><span class="text-neutral-500 text-sm ml-2">- Evolving with the Project</span></div>
+<span class="text-lg">ê°Å¸ââ</span><div><span class="font-medium">Maintenance and version control</span><span class="text-neutral-500 text-sm ml-2">- Evolving with the Project</span></div>
 </button>
 <div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
 <div><span class="text-emerald-400 font-semibold">What is:</span><p class="text-neutral-300 text-sm">CLAUDE.md should evolve along with the project and be committed to git.</p></div>
@@ -457,28 +457,28 @@
 </div>
 </div>
 <!-- MODULO 1.4 -->
-<div class="bg-dark-800 rounded-xl border border-dark-600 mb-6" data-ARCKHÉ-module="1-4" data-ARCKHÉ-track="1" id="modulo-1-4">
+<div class="bg-dark-800 rounded-xl border border-dark-600 mb-6" data-ARCKHê-module="1-4" data-ARCKHê-track="1" id="modulo-1-4">
 <div class="p-6 border-b border-dark-600">
 <div class="flex items-center justify-between mb-2"><span class="text-emerald-400 font-bold">1.4</span><span class="text-xs text-neutral-500">~40 min</span></div>
-<h3 class="text-2xl font-bold mb-2">âš™ï¸ Advanced Configuration</h3>
+<h3 class="text-2xl font-bold mb-2">ê¢Å¡â¢ê¯Â¸Â Advanced Configuration</h3>
 <p class="text-neutral-400 text-sm">settings.json, .claudeignore, permissions, and environment variables to fine-tune Claude Code.</p>
 </div>
 <div class="divide-y divide-dark-600">
 <div class="topic-item">
 <button aria-expanded="false" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
 <span class="w-6 h-6 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">1</span>
-<span class="text-lg">ðŸ“‹</span><div><span class="font-medium">settings.json â€” anatomy and location</span><span class="text-neutral-500 text-sm ml-2">- The central config</span></div>
+<span class="text-lg">ê°Å¸ââ¹</span><div><span class="font-medium">settings.json ê¢â¬â anatomy and location</span><span class="text-neutral-500 text-sm ml-2">- The central config</span></div>
 </button>
 <div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
 <div><span class="text-emerald-400 font-semibold">What is:</span><p class="text-neutral-300 text-sm">The JSON file that controls global and project-level behavior.</p></div>
-<div><span class="text-emerald-400 font-semibold">Why learn:</span><p class="text-neutral-300 text-sm">Without settings.json, youâ€™re stuck with generic defaults.</p></div>
+<div><span class="text-emerald-400 font-semibold">Why learn:</span><p class="text-neutral-300 text-sm">Without settings.json, youê¢â¬â¢re stuck with generic defaults.</p></div>
 <div><span class="text-emerald-400 font-semibold">Key concepts:</span><p class="text-neutral-300 text-sm">~/.claude/settings.json; .claude/settings.json; config merging.</p></div>
 </div></div>
 </div>
 <div class="topic-item">
 <button aria-expanded="false" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
 <span class="w-6 h-6 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">2</span>
-<span class="text-lg">ðŸš«</span><div><span class="font-medium">.claudeignore â€” what to hide</span><span class="text-neutral-500 text-sm ml-2">- Same as .gitignore</span></div>
+<span class="text-lg">ê°Å¸Å¡Â«</span><div><span class="font-medium">.claudeignore ê¢â¬â what to hide</span><span class="text-neutral-500 text-sm ml-2">- Same as .gitignore</span></div>
 </button>
 <div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
 <div><span class="text-emerald-400 font-semibold">What is:</span><p class="text-neutral-300 text-sm">File that tells Claude Code which files/folders to ignore.</p></div>
@@ -489,7 +489,7 @@
 <div class="topic-item">
 <button aria-expanded="false" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
 <span class="w-6 h-6 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">3</span>
-<span class="text-lg">ðŸ”</span><div><span class="font-medium">Permissions and allowedTools</span><span class="text-neutral-500 text-sm ml-2">- Access control</span></div>
+<span class="text-lg">ê°Å¸âÂ</span><div><span class="font-medium">Permissions and allowedTools</span><span class="text-neutral-500 text-sm ml-2">- Access control</span></div>
 </button>
 <div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
 <div><span class="text-emerald-400 font-semibold">What is:</span><p class="text-neutral-300 text-sm">Define which tools Claude Code can use without asking for permission.</p></div>
@@ -500,7 +500,7 @@
 <div class="topic-item">
 <button aria-expanded="false" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
 <span class="w-6 h-6 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">4</span>
-<span class="text-lg">ðŸŒ</span><div><span class="font-medium">Environment variables</span><span class="text-neutral-500 text-sm ml-2">- API keys and flags</span></div>
+<span class="text-lg">ê°Å¸ÅÂ</span><div><span class="font-medium">Environment variables</span><span class="text-neutral-500 text-sm ml-2">- API keys and flags</span></div>
 </button>
 <div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
 <div><span class="text-emerald-400 font-semibold">What is:</span><p class="text-neutral-300 text-sm">Environment variables recognized by Claude Code: ANTHROPIC_API_KEY, CLAUDE_MODEL, etc.</p></div>
@@ -511,7 +511,7 @@
 <div class="topic-item">
 <button aria-expanded="false" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
 <span class="w-6 h-6 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">5</span>
-<span class="text-lg">ðŸ‘¤</span><div><span class="font-medium">Project profiles</span><span class="text-neutral-500 text-sm ml-2">- Context-specific configuration</span></div>
+<span class="text-lg">ê°Å¸âÂ¤</span><div><span class="font-medium">Project profiles</span><span class="text-neutral-500 text-sm ml-2">- Context-specific configuration</span></div>
 </button>
 <div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
 <div><span class="text-emerald-400 font-semibold">What is:</span><p class="text-neutral-300 text-sm">Different configs for different projects/contexts.</p></div>
@@ -522,7 +522,7 @@
 <div class="topic-item">
 <button aria-expanded="false" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
 <span class="w-6 h-6 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">6</span>
-<span class="text-lg">ðŸ”€</span><div><span class="font-medium">Model override and providers</span><span class="text-neutral-500 text-sm ml-2">- Switch the model</span></div>
+<span class="text-lg">ê°Å¸ââ¬</span><div><span class="font-medium">Model override and providers</span><span class="text-neutral-500 text-sm ml-2">- Switch the model</span></div>
 </button>
 <div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
 <div><span class="text-emerald-400 font-semibold">What is:</span><p class="text-neutral-300 text-sm">How to use --model, /model, and alternative providers (Bedrock, Vertex).</p></div>
@@ -537,39 +537,39 @@
 </div>
 </div>
 <!-- MODULO 1.5 -->
-<div class="bg-dark-800 rounded-xl border border-dark-600 mb-6" data-ARCKHÉ-module="1-5" data-ARCKHÉ-track="1" id="modulo-1-5">
+<div class="bg-dark-800 rounded-xl border border-dark-600 mb-6" data-ARCKHê-module="1-5" data-ARCKHê-track="1" id="modulo-1-5">
 <div class="p-6 border-b border-dark-600">
 <div class="flex items-center justify-between mb-2"><span class="text-emerald-400 font-bold">1.5</span><span class="text-xs text-neutral-500">~40 min</span></div>
-<h3 class="text-2xl font-bold mb-2">ðŸ’¾ Memory and Persistent Context</h3>
+<h3 class="text-2xl font-bold mb-2">ê°Å¸âÂ¾ Memory and Persistent Context</h3>
 <p class="text-neutral-400 text-sm">How memory works, what a context window is, compaction, and strategies to avoid losing context.</p>
 </div>
 <div class="divide-y divide-dark-600">
 <div class="topic-item">
 <button aria-expanded="false" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
 <span class="w-6 h-6 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">1</span>
-<span class="text-lg">ðŸ§ </span><div><span class="font-medium">How memory works</span><span class="text-neutral-500 text-sm ml-2">- The mental model</span></div>
+<span class="text-lg">ê°Å¸Â§Â </span><div><span class="font-medium">How memory works</span><span class="text-neutral-500 text-sm ml-2">- The mental model</span></div>
 </button>
 <div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
 <div><span class="text-emerald-400 font-semibold">What is:</span><p class="text-neutral-300 text-sm">Claude Code doesn't have magical memory. Everything lives in the session's context window.</p></div>
-<div><span class="text-emerald-400 font-semibold">Why learn:</span><p class="text-neutral-300 text-sm">Understanding the mental model prevents frustration with â€œit forgot.â€</p></div>
+<div><span class="text-emerald-400 font-semibold">Why learn:</span><p class="text-neutral-300 text-sm">Understanding the mental model prevents frustration with ê¢â¬Åit forgot.ê¢â¬Â</p></div>
 <div><span class="text-emerald-400 font-semibold">Key concepts:</span><p class="text-neutral-300 text-sm">Context window = working memory; CLAUDE.md = persistent memory.</p></div>
 </div></div>
 </div>
 <div class="topic-item">
 <button aria-expanded="false" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
 <span class="w-6 h-6 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">2</span>
-<span class="text-lg">ðŸ’¡</span><div><span class="font-medium">The /memory command</span><span class="text-neutral-500 text-sm ml-2">- Save notes</span></div>
+<span class="text-lg">ê°Å¸âÂ¡</span><div><span class="font-medium">The /memory command</span><span class="text-neutral-500 text-sm ml-2">- Save notes</span></div>
 </button>
 <div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
 <div><span class="text-emerald-400 font-semibold">What is:</span><p class="text-neutral-300 text-sm">/memory saves persistent notes that Claude Code reads in every future session.</p></div>
-<div><span class="text-emerald-400 font-semibold">Why learn:</span><p class="text-neutral-300 text-sm">Itâ€™s the quick way to teach preferences without editing CLAUDE.md.</p></div>
+<div><span class="text-emerald-400 font-semibold">Why learn:</span><p class="text-neutral-300 text-sm">Itê¢â¬â¢s the quick way to teach preferences without editing CLAUDE.md.</p></div>
 <div><span class="text-emerald-400 font-semibold">Key concepts:</span><p class="text-neutral-300 text-sm">/memory; generated CLAUDE.md; ~/.claude/CLAUDE.md.</p></div>
 </div></div>
 </div>
 <div class="topic-item">
 <button aria-expanded="false" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
 <span class="w-6 h-6 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">3</span>
-<span class="text-lg">ðŸ“</span><div><span class="font-medium">Context window â€” the scarce resource</span><span class="text-neutral-500 text-sm ml-2">- Limited tokens</span></div>
+<span class="text-lg">ê°Å¸âÂ</span><div><span class="font-medium">Context window ê¢â¬â the scarce resource</span><span class="text-neutral-500 text-sm ml-2">- Limited tokens</span></div>
 </button>
 <div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
 <div><span class="text-emerald-400 font-semibold">What is:</span><p class="text-neutral-300 text-sm">The context window has a fixed limit (200k tokens). Everything competes for space.</p></div>
@@ -580,7 +580,7 @@
 <div class="topic-item">
 <button aria-expanded="false" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
 <span class="w-6 h-6 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">4</span>
-<span class="text-lg">ðŸ—œï¸</span><div><span class="font-medium">Compaction â€” when and how</span><span class="text-neutral-500 text-sm ml-2">- Compress the context</span></div>
+<span class="text-lg">ê°Å¸âÅê¯Â¸Â</span><div><span class="font-medium">Compaction ê¢â¬â when and how</span><span class="text-neutral-500 text-sm ml-2">- Compress the context</span></div>
 </button>
 <div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
 <div><span class="text-emerald-400 font-semibold">What is:</span><p class="text-neutral-300 text-sm">Claude Code automatically summarizes the conversation when the context fills up.</p></div>
@@ -591,7 +591,7 @@
 <div class="topic-item">
 <button aria-expanded="false" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
 <span class="w-6 h-6 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">5</span>
-<span class="text-lg">ðŸ”—</span><div><span class="font-medium">Session handoff between conversations</span><span class="text-neutral-500 text-sm ml-2">- Hand off the baton</span></div>
+<span class="text-lg">ê°Å¸ââ</span><div><span class="font-medium">Session handoff between conversations</span><span class="text-neutral-500 text-sm ml-2">- Hand off the baton</span></div>
 </button>
 <div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
 <div><span class="text-emerald-400 font-semibold">What is:</span><p class="text-neutral-300 text-sm">Strategies for transferring context from one session to another.</p></div>
@@ -602,7 +602,7 @@
 <div class="topic-item">
 <button aria-expanded="false" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
 <span class="w-6 h-6 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">6</span>
-<span class="text-lg">ðŸ“</span><div><span class="font-medium">Checkpoint strategies</span><span class="text-neutral-500 text-sm ml-2">- Save progress</span></div>
+<span class="text-lg">ê°Å¸âÂ</span><div><span class="font-medium">Checkpoint strategies</span><span class="text-neutral-500 text-sm ml-2">- Save progress</span></div>
 </button>
 <div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
 <div><span class="text-emerald-400 font-semibold">What is:</span><p class="text-neutral-300 text-sm">Techniques for saving the state of your work before the context fills up.</p></div>
@@ -617,17 +617,17 @@
 </div>
 </div>
 <!-- MODULO 1.6 -->
-<div class="bg-dark-800 rounded-xl border border-dark-600 mb-6" data-ARCKHÉ-module="1-6" data-ARCKHÉ-track="1" id="modulo-1-6">
+<div class="bg-dark-800 rounded-xl border border-dark-600 mb-6" data-ARCKHê-module="1-6" data-ARCKHê-track="1" id="modulo-1-6">
 <div class="p-6 border-b border-dark-600">
 <div class="flex items-center justify-between mb-2"><span class="text-emerald-400 font-bold">1.6</span><span class="text-xs text-neutral-500">~35 min</span></div>
-<h3 class="text-2xl font-bold mb-2">ðŸ› ï¸ Your Personal Workflow</h3>
+<h3 class="text-2xl font-bold mb-2">ê°Å¸âºÂ ê¯Â¸Â Your Personal Workflow</h3>
 <p class="text-neutral-400 text-sm">Aliases, wrapper scripts, tmux, VS Code, and the ultimate setup for using Claude Code every day.</p>
 </div>
 <div class="divide-y divide-dark-600">
 <div class="topic-item">
 <button aria-expanded="false" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
 <span class="w-6 h-6 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">1</span>
-<span class="text-lg">âš¡</span><div><span class="font-medium">Shell aliases for productivity</span><span class="text-neutral-500 text-sm ml-2">- Shortcuts in .bashrc</span></div>
+<span class="text-lg">ê¢Å¡Â¡</span><div><span class="font-medium">Shell aliases for productivity</span><span class="text-neutral-500 text-sm ml-2">- Shortcuts in .bashrc</span></div>
 </button>
 <div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
 <div><span class="text-emerald-400 font-semibold">What is:</span><p class="text-neutral-300 text-sm">Shell aliases that shorten frequently used Claude Code commands.</p></div>
@@ -638,7 +638,7 @@
 <div class="topic-item">
 <button aria-expanded="false" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
 <span class="w-6 h-6 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">2</span>
-<span class="text-lg">ðŸ“œ</span><div><span class="font-medium">Custom wrapper scripts</span><span class="text-neutral-500 text-sm ml-2">- Home automation</span></div>
+<span class="text-lg">ê°Å¸âÅ</span><div><span class="font-medium">Custom wrapper scripts</span><span class="text-neutral-500 text-sm ml-2">- Home automation</span></div>
 </button>
 <div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
 <div><span class="text-emerald-400 font-semibold">What is:</span><p class="text-neutral-300 text-sm">Shell scripts that combine claude -p with other tools.</p></div>
@@ -649,7 +649,7 @@
 <div class="topic-item">
 <button aria-expanded="false" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
 <span class="w-6 h-6 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">3</span>
-<span class="text-lg">ðŸ’»</span><div><span class="font-medium">VS Code integration</span><span class="text-neutral-500 text-sm ml-2">- Integrated terminal</span></div>
+<span class="text-lg">ê°Å¸âÂ»</span><div><span class="font-medium">VS Code integration</span><span class="text-neutral-500 text-sm ml-2">- Integrated terminal</span></div>
 </button>
 <div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
 <div><span class="text-emerald-400 font-semibold">What is:</span><p class="text-neutral-300 text-sm">Use Claude Code in the VS Code terminal with the official extension.</p></div>
@@ -660,7 +660,7 @@
 <div class="topic-item">
 <button aria-expanded="false" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
 <span class="w-6 h-6 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">4</span>
-<span class="text-lg">ðŸªŸ</span><div><span class="font-medium">Multiplexer: tmux/screen + Claude</span><span class="text-neutral-500 text-sm ml-2">- Parallel sessions</span></div>
+<span class="text-lg">ê°Å¸ÂªÅ¸</span><div><span class="font-medium">Multiplexer: tmux/screen + Claude</span><span class="text-neutral-500 text-sm ml-2">- Parallel sessions</span></div>
 </button>
 <div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
 <div><span class="text-emerald-400 font-semibold">What is:</span><p class="text-neutral-300 text-sm">Use tmux or screen to run Claude Code in persistent sessions.</p></div>
@@ -671,7 +671,7 @@
 <div class="topic-item">
 <button aria-expanded="false" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
 <span class="w-6 h-6 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">5</span>
-<span class="text-lg">ðŸ“¦</span><div><span class="font-medium">Dotfiles and portability</span><span class="text-neutral-500 text-sm ml-2">- Bringing Your Setup Along</span></div>
+<span class="text-lg">ê°Å¸âÂ¦</span><div><span class="font-medium">Dotfiles and portability</span><span class="text-neutral-500 text-sm ml-2">- Bringing Your Setup Along</span></div>
 </button>
 <div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
 <div><span class="text-emerald-400 font-semibold">What is:</span><p class="text-neutral-300 text-sm">Keep Claude Code configs in version-controlled dotfiles.</p></div>
@@ -682,7 +682,7 @@
 <div class="topic-item">
 <button aria-expanded="false" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
 <span class="w-6 h-6 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">6</span>
-<span class="text-lg">ðŸ†</span><div><span class="font-medium">The definitive daily driver setup</span><span class="text-neutral-500 text-sm ml-2">- Everything together</span></div>
+<span class="text-lg">ê°Å¸Ââ </span><div><span class="font-medium">The definitive daily driver setup</span><span class="text-neutral-500 text-sm ml-2">- Everything together</span></div>
 </button>
 <div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
 <div><span class="text-emerald-400 font-semibold">What is:</span><p class="text-neutral-300 text-sm">The complete setup that combines everything: aliases + tmux + VS Code + dotfiles.</p></div>
@@ -697,29 +697,29 @@
 </div>
 </div>
 <div class="flex flex-col sm:flex-row gap-4 mt-10">
-<a class="flex-1 text-center px-6 py-3 bg-dark-700 text-neutral-300 rounded-lg font-semibold hover:bg-dark-600 transition-colors" href="../../index.html">â† Home</a>
-<a class="flex-1 text-center px-6 py-3 bg-emerald-600 text-white rounded-lg font-semibold hover:bg-emerald-500 transition-colors" href="../trilha2/index.html">Track 2: Plan and Loop Modes â†’</a>
+<a class="flex-1 text-center px-6 py-3 bg-dark-700 text-neutral-300 rounded-lg font-semibold hover:bg-dark-600 transition-colors" href="../../index.html">ê¢â Â Home</a>
+<a class="flex-1 text-center px-6 py-3 bg-emerald-600 text-white rounded-lg font-semibold hover:bg-emerald-500 transition-colors" href="../trilha2/index.html">Track 2: Plan and Loop Modes ê¢â â</a>
 </div>
 </main>
-<div class="modal hidden fixed inset-0 z-50 flex items-center justify-center p-2 sm:p-4 bg-black/80" id="modal-1-1" onclick="if(event.target === this) closeModal()"><div class="bg-dark-800 rounded-xl w-full max-w-6xl h-[95vh] flex flex-col border border-dark-600"><div class="p-4 border-b border-dark-600 flex justify-between items-center flex-shrink-0"><div class="flex items-center space-x-3"><span class="text-emerald-400 font-bold">1.1</span><span class="font-semibold">Installation and First Command</span></div><button class="text-neutral-400 hover:text-white text-2xl leading-none" onclick="closeModal()">Ã—</button></div><iframe class="flex-1 w-full rounded-b-xl" src="modulo-1-1.html"></iframe></div></div>
-<div class="modal hidden fixed inset-0 z-50 flex items-center justify-center p-2 sm:p-4 bg-black/80" id="modal-1-2" onclick="if(event.target === this) closeModal()"><div class="bg-dark-800 rounded-xl w-full max-w-6xl h-[95vh] flex flex-col border border-dark-600"><div class="p-4 border-b border-dark-600 flex justify-between items-center flex-shrink-0"><div class="flex items-center space-x-3"><span class="text-emerald-400 font-bold">1.2</span><span class="font-semibold">Navigating the CLI like a Pro</span></div><button class="text-neutral-400 hover:text-white text-2xl leading-none" onclick="closeModal()">Ã—</button></div><iframe class="flex-1 w-full rounded-b-xl" src="modulo-1-2.html"></iframe></div></div>
-<div class="modal hidden fixed inset-0 z-50 flex items-center justify-center p-2 sm:p-4 bg-black/80" id="modal-1-3" onclick="if(event.target === this) closeModal()"><div class="bg-dark-800 rounded-xl w-full max-w-6xl h-[95vh] flex flex-col border border-dark-600"><div class="p-4 border-b border-dark-600 flex justify-between items-center flex-shrink-0"><div class="flex items-center space-x-3"><span class="text-emerald-400 font-bold">1.3</span><span class="font-semibold">CLAUDE.md â€” The Project's Brain</span></div><button class="text-neutral-400 hover:text-white text-2xl leading-none" onclick="closeModal()">Ã—</button></div><iframe class="flex-1 w-full rounded-b-xl" src="modulo-1-3.html"></iframe></div></div>
-<div class="modal hidden fixed inset-0 z-50 flex items-center justify-center p-2 sm:p-4 bg-black/80" id="modal-1-4" onclick="if(event.target === this) closeModal()"><div class="bg-dark-800 rounded-xl w-full max-w-6xl h-[95vh] flex flex-col border border-dark-600"><div class="p-4 border-b border-dark-600 flex justify-between items-center flex-shrink-0"><div class="flex items-center space-x-3"><span class="text-emerald-400 font-bold">1.4</span><span class="font-semibold">Advanced Configuration</span></div><button class="text-neutral-400 hover:text-white text-2xl leading-none" onclick="closeModal()">Ã—</button></div><iframe class="flex-1 w-full rounded-b-xl" src="modulo-1-4.html"></iframe></div></div>
-<div class="modal hidden fixed inset-0 z-50 flex items-center justify-center p-2 sm:p-4 bg-black/80" id="modal-1-5" onclick="if(event.target === this) closeModal()"><div class="bg-dark-800 rounded-xl w-full max-w-6xl h-[95vh] flex flex-col border border-dark-600"><div class="p-4 border-b border-dark-600 flex justify-between items-center flex-shrink-0"><div class="flex items-center space-x-3"><span class="text-emerald-400 font-bold">1.5</span><span class="font-semibold">Memory and Persistent Context</span></div><button class="text-neutral-400 hover:text-white text-2xl leading-none" onclick="closeModal()">Ã—</button></div><iframe class="flex-1 w-full rounded-b-xl" src="modulo-1-5.html"></iframe></div></div>
-<div class="modal hidden fixed inset-0 z-50 flex items-center justify-center p-2 sm:p-4 bg-black/80" id="modal-1-6" onclick="if(event.target === this) closeModal()"><div class="bg-dark-800 rounded-xl w-full max-w-6xl h-[95vh] flex flex-col border border-dark-600"><div class="p-4 border-b border-dark-600 flex justify-between items-center flex-shrink-0"><div class="flex items-center space-x-3"><span class="text-emerald-400 font-bold">1.6</span><span class="font-semibold">Your Personal Workflow</span></div><button class="text-neutral-400 hover:text-white text-2xl leading-none" onclick="closeModal()">Ã—</button></div><iframe class="flex-1 w-full rounded-b-xl" src="modulo-1-6.html"></iframe></div></div>
+<div class="modal hidden fixed inset-0 z-50 flex items-center justify-center p-2 sm:p-4 bg-black/80" id="modal-1-1" onclick="if(event.target === this) closeModal()"><div class="bg-dark-800 rounded-xl w-full max-w-6xl h-[95vh] flex flex-col border border-dark-600"><div class="p-4 border-b border-dark-600 flex justify-between items-center flex-shrink-0"><div class="flex items-center space-x-3"><span class="text-emerald-400 font-bold">1.1</span><span class="font-semibold">Installation and First Command</span></div><button class="text-neutral-400 hover:text-white text-2xl leading-none" onclick="closeModal()">êâ</button></div><iframe class="flex-1 w-full rounded-b-xl" src="modulo-1-1.html"></iframe></div></div>
+<div class="modal hidden fixed inset-0 z-50 flex items-center justify-center p-2 sm:p-4 bg-black/80" id="modal-1-2" onclick="if(event.target === this) closeModal()"><div class="bg-dark-800 rounded-xl w-full max-w-6xl h-[95vh] flex flex-col border border-dark-600"><div class="p-4 border-b border-dark-600 flex justify-between items-center flex-shrink-0"><div class="flex items-center space-x-3"><span class="text-emerald-400 font-bold">1.2</span><span class="font-semibold">Navigating the CLI like a Pro</span></div><button class="text-neutral-400 hover:text-white text-2xl leading-none" onclick="closeModal()">êâ</button></div><iframe class="flex-1 w-full rounded-b-xl" src="modulo-1-2.html"></iframe></div></div>
+<div class="modal hidden fixed inset-0 z-50 flex items-center justify-center p-2 sm:p-4 bg-black/80" id="modal-1-3" onclick="if(event.target === this) closeModal()"><div class="bg-dark-800 rounded-xl w-full max-w-6xl h-[95vh] flex flex-col border border-dark-600"><div class="p-4 border-b border-dark-600 flex justify-between items-center flex-shrink-0"><div class="flex items-center space-x-3"><span class="text-emerald-400 font-bold">1.3</span><span class="font-semibold">CLAUDE.md ê¢â¬â The Project's Brain</span></div><button class="text-neutral-400 hover:text-white text-2xl leading-none" onclick="closeModal()">êâ</button></div><iframe class="flex-1 w-full rounded-b-xl" src="modulo-1-3.html"></iframe></div></div>
+<div class="modal hidden fixed inset-0 z-50 flex items-center justify-center p-2 sm:p-4 bg-black/80" id="modal-1-4" onclick="if(event.target === this) closeModal()"><div class="bg-dark-800 rounded-xl w-full max-w-6xl h-[95vh] flex flex-col border border-dark-600"><div class="p-4 border-b border-dark-600 flex justify-between items-center flex-shrink-0"><div class="flex items-center space-x-3"><span class="text-emerald-400 font-bold">1.4</span><span class="font-semibold">Advanced Configuration</span></div><button class="text-neutral-400 hover:text-white text-2xl leading-none" onclick="closeModal()">êâ</button></div><iframe class="flex-1 w-full rounded-b-xl" src="modulo-1-4.html"></iframe></div></div>
+<div class="modal hidden fixed inset-0 z-50 flex items-center justify-center p-2 sm:p-4 bg-black/80" id="modal-1-5" onclick="if(event.target === this) closeModal()"><div class="bg-dark-800 rounded-xl w-full max-w-6xl h-[95vh] flex flex-col border border-dark-600"><div class="p-4 border-b border-dark-600 flex justify-between items-center flex-shrink-0"><div class="flex items-center space-x-3"><span class="text-emerald-400 font-bold">1.5</span><span class="font-semibold">Memory and Persistent Context</span></div><button class="text-neutral-400 hover:text-white text-2xl leading-none" onclick="closeModal()">êâ</button></div><iframe class="flex-1 w-full rounded-b-xl" src="modulo-1-5.html"></iframe></div></div>
+<div class="modal hidden fixed inset-0 z-50 flex items-center justify-center p-2 sm:p-4 bg-black/80" id="modal-1-6" onclick="if(event.target === this) closeModal()"><div class="bg-dark-800 rounded-xl w-full max-w-6xl h-[95vh] flex flex-col border border-dark-600"><div class="p-4 border-b border-dark-600 flex justify-between items-center flex-shrink-0"><div class="flex items-center space-x-3"><span class="text-emerald-400 font-bold">1.6</span><span class="font-semibold">Your Personal Workflow</span></div><button class="text-neutral-400 hover:text-white text-2xl leading-none" onclick="closeModal()">êâ</button></div><iframe class="flex-1 w-full rounded-b-xl" src="modulo-1-6.html"></iframe></div></div>
 <footer class="border-t border-dark-600 py-8 mt-16">
 <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-neutral-500 text-sm">
-<p>Transition to Claude Code Â· <a class="text-sky-400 hover:text-sky-300" href="https://ARCKHÉ AI" target="_blank">ARCKHÉ AI</a></p>
+<p>Transition to Claude Code êÂ· <a class="text-sky-400 hover:text-sky-300" href="https://ARCKHê AI" target="_blank">ARCKHê AI</a></p>
 </div>
 </footer>
 <script>
     function toggleTopic(button){var ti=button.closest('.topic-item');if(!ti)return;var ex=ti.querySelector('.topic-explanation');var mc=button.closest('.bg-dark-800');if(mc)mc.querySelectorAll('.topic-explanation.active').forEach(function(e){if(e!==ex){e.classList.remove('active');var b=e.closest('.topic-item').querySelector('button');if(b)b.setAttribute('aria-expanded','false');}});if(ex){ex.classList.toggle('active');button.setAttribute('aria-expanded',ex.classList.contains('active').toString());}}
-    (function(){var tt=document.getElementById('theme-toggle'),di=document.getElementById('theme-toggle-dark-icon'),li=document.getElementById('theme-toggle-light-icon'),h=document.documentElement;function s(){if(h.classList.contains('dark')){li.classList.remove('hidden');di.classList.add('hidden');}else{di.classList.remove('hidden');li.classList.add('hidden');}}s();tt&&tt.addEventListener('click',function(){h.classList.toggle('dark');var d=h.classList.contains('dark');h.style.colorScheme=d?'dark':'light';try{var p=JSON.parse(localStorage.getItem('ARCKHÉ.prefs')||'{}');p.theme=d?'ARCKHÉ-dark':'claro';localStorage.setItem('ARCKHÉ.prefs',JSON.stringify(p));localStorage.setItem('theme',d?'dark':'light');}catch(e){}s();});})();
+    (function(){var tt=document.getElementById('theme-toggle'),di=document.getElementById('theme-toggle-dark-icon'),li=document.getElementById('theme-toggle-light-icon'),h=document.documentElement;function s(){if(h.classList.contains('dark')){li.classList.remove('hidden');di.classList.add('hidden');}else{di.classList.remove('hidden');li.classList.add('hidden');}}s();tt&&tt.addEventListener('click',function(){h.classList.toggle('dark');var d=h.classList.contains('dark');h.style.colorScheme=d?'dark':'light';try{var p=JSON.parse(localStorage.getItem('ARCKHê.prefs')||'{}');p.theme=d?'ARCKHê-dark':'claro';localStorage.setItem('ARCKHê.prefs',JSON.stringify(p));localStorage.setItem('theme',d?'dark':'light');}catch(e){}s();});})();
     function openModal(id){var m=document.getElementById(id);if(m){m.classList.remove('hidden');document.body.style.overflow='hidden';}}
     function closeModal(){document.querySelectorAll('.modal').forEach(function(m){m.classList.add('hidden');});document.body.style.overflow='auto';}
     document.addEventListener('keydown',function(e){if(e.key==='Escape')closeModal();});
   </script>
 <script src="../../../assets/learn.js"></script>
-<script>document.addEventListener('DOMContentLoaded',function(){if(window.ARCKHÉ&&ARCKHÉ.init)ARCKHÉ.init();});</script>
+<script>document.addEventListener('DOMContentLoaded',function(){if(window.ARCKHê&&ARCKHê.init)ARCKHê.init();});</script>
 </body>
 </html>
